@@ -6,9 +6,6 @@
 
 * V line selection mode doesn't highlight empty rows
 
-# git
-* See if there's a go compiler at work so I can compile myself a lazygit copy
-* solve git problem
 
 # vspacecode fixes
 * Cannot evoke when no files are open

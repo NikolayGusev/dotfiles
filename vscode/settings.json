@@ -1,0 +1,110 @@
+{
+  /////////////////////////////////
+  // vim and editing expierience //
+  /////////////////////////////////
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/Cellar/neovim/0.8.0/bin/nvim",
+  "editor.cursorSurroundingLines": 50,
+
+  // General visiblitity
+  "editor.renderWhitespace": "none",
+  "window.zoomLevel": 1,
+  "workbench.activityBar.visible": false,
+  "editor.minimap.enabled": false,
+  "workbench.editor.tabCloseButton": "off",
+  "window.menuBarVisibility": "toggle",
+
+  // General usability
+  "explorer.autoReveal": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "terminal.integrated.gpuAcceleration": "off",
+  "editor.copyWithSyntaxHighlighting": false,
+  
+  // Never use pick window
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+
+  // TODO: remove this?
+  // "terminal.integrated.commandsToSkipShell": [
+    // "-workbench.action.terminal.paste"
+  // ],
+
+  ///////////
+  // Theme //
+  ///////////
+
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Colors:
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#ff7b00a1", // Current SELECTED text, required so that I can see what is yanked by vim
+    // Make leap usable in VSCode. W/o this it is hard to see marks on unused functions and objects, etc.
+    "editorUnnecessaryCode.opacity": "#000000ff",
+    "editorUnnecessaryCode.border": "#aaaaaa",
+    ////////////////////////////////////////
+    // TODO: not sure why do I need those //
+    ////////////////////////////////////////
+    // "editor.selectionHighlightBackground": "#e7e8ff", //same content as the selection
+    // "editor.findMatchBackground": "#00cc44a8", // Current SEARCH MATCH
+    // "editor.findMatchHighlightBackground": "#e7b8ff", // Other SEARCH matches
+    // "editorIndentGuide.activeBackground": "#e7b8ff77", 
+    // "editorIndentGuide.background": "#00000011",
+  },
+  
+  // magit better colors
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope":"markup.deleted",
+        "settings": {
+          "foreground": "#FF0000",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope":"markup.inserted",
+        "settings": {
+          "foreground": "#2ccc00",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+
+
+  /////////
+  // Git //
+  /////////
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.autofetchPeriod": 10,
+  "git.ignoreLegacyWarning": true,
+  "magit.display-buffer-function": "same-column",
+
+  ////////////////
+  // Extensions //
+  ////////////////
+  "numberedBookmarks.navigateThroughAllFiles": "replace",
+
+  // vspacecode
+  "vspacecode.bindingOverrides": [
+    {
+      "keys": "g.d",
+      "name": "Diff (vscode)",
+      "type": "command",
+      "command": "git.openChange"
+    }
+  ],
+
+  "javascript-repl.coverageTimes": false
+}

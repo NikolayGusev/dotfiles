@@ -65,6 +65,16 @@
     "key": "ctrl+u x",
     "command": "-magit.reset-hard"
   },
+  {
+    "key": "y",
+    "command": "-magit.show-refs",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress|Visual).*$/"
+  },
+  {
+    "key": "i",
+    "command": "-magit.ignoring",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
   // Neovim tab + magit compatibility
   {
     "key": "tab",

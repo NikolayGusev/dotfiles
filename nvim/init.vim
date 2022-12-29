@@ -53,11 +53,13 @@ nnoremap <S-L> <S-L>zz
 nnoremap <S-H> <S-H>zz
 vnoremap < <gv
 vnoremap > >gv
+:nnoremap <silent> J :let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>
 
 "  TODO: how to use this? Note the "cgn_,_" which doesn't work for ;
 "  nnoremap <leader>j /[,\|;]<CR>cgn,<CR><Esc>
 "  TODO: This doesn't work either (replaces with [,\|;]).
 "  nnoremap <leader>j /[,\|;]<CR>cgn<C-R>/<CR><Esc>
+" Not that good implementation of split by comma operator
 nnoremap <leader>j /,<CR>cgn,<CR><Esc>
 
 nnoremap gd <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
@@ -127,7 +129,6 @@ let g:clever_f_fix_key_direction = 1
 
 :lua require('leap').set_default_keymaps()
 :lua vim.keymap.set({'n', 'v'}, "'", function () require('leap').leap { target_windows = { vim.fn.win_getid() } } end)
-
 
 """""""""""""""
 " Cutlass.vim "

@@ -27,6 +27,7 @@
 
 # ANKI
 
+* ANKI iv, av for camelCase intermediate-word motion
 * ANKI sandwich surrounding function csf, ysiwf, etc
 * ANKI sandwich 2ysa" to surround with two surroundings
 * ANKI sandwich i, f, t objects

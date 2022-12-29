@@ -82,6 +82,14 @@ let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
 runtime macros/sandwich/keymap/surround.vim
 
 
+"""""""""""
+" Targets "
+"""""""""""
+" Newer syntax didn't work for me, so had to use deprecated one.
+let g:targets_argOpening = '[({[]'
+let g:targets_argClosing = '[]})]'
+let g:targets_argSeparator = '[,;]'
+
 """"""""""""""""""
 " VSCODE RELATED "
 """"""""""""""""""

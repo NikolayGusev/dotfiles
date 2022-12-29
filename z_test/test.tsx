@@ -1,7 +1,17 @@
 import "@logseq/libs";
+import {a,b,c} from 'asdf';
+const r = {
+  a: 1;
+  ba: 2;
+  c: 3;
+};
 
-const world = ("world");
+const opts = { type: "select", ...enqOpts };
+
+
+const myWorldHere = ("world");
 const c = some_func([1, 2], 1, 2, 3, True, lst=[], kw1=False, d={2, 3});
+const d = someFunc2("hello", "world", 42)
 const b = [1, 2, 3, 4];
 const a = `why
 87

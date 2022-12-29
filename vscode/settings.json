@@ -156,5 +156,7 @@
     "echo selected": "echo ${selectedTextList}",
     "checkout {commit} {filename} by selection": "git checkout `echo ${selectedTextList} | cut -d' ' -f1` -- `echo ${selectedTextList} | cut -d' ' -f2`",
     "BCKP checkout {commit} {filename} by selection": "echo `echo ${selectedTextList} | cut -d' ' -f2` `echo ${selectedTextList} | cut -d' ' -f1`",
+    "revert {patchText} by selection": "print \"${selectedTextSection}\" | git apply -R ",
+    "revert {patchText} by selection real": "git apply -R ${selectedTextSection}",
   }
 }

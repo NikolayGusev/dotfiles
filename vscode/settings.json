@@ -151,7 +151,10 @@
     "no-assume unchanged": "git update-index --no-assume-unchanged ${file}",
     "no-assume unchanged all": "git ls-files -v | grep '^[a-z]' | cut -c3- | xargs git update-index --no-assume-unchanged --",
     "delete merged branches": "git branch --merged origin/master | xargs git branch -d",
-    "checkout previous version": "git checkout HEAD~1 -- ${file}",
-    "checkout revision...": "git checkout ${input} -- ${file}",
+    "checkout penultimate version": "git checkout HEAD~1 -- ${file}",
+    "checkout previous version...": "git checkout ${input} -- ${file}",
+    "echo selected": "echo ${selectedTextList}",
+    "checkout {commit} {filename} by selection": "git checkout `echo ${selectedTextList} | cut -d' ' -f1` -- `echo ${selectedTextList} | cut -d' ' -f2`",
+    "BCKP checkout {commit} {filename} by selection": "echo `echo ${selectedTextList} | cut -d' ' -f2` `echo ${selectedTextList} | cut -d' ' -f1`",
   }
 }

@@ -153,7 +153,22 @@
     "delete merged branches": "git branch --merged origin/master | xargs git branch -d",
     "checkout penultimate version": "git checkout HEAD~1 -- ${file}",
     "checkout previous version...": "git checkout ${input} -- ${file}",
-    "echo selected": "echo ${selectedTextList}",
+
+
+    // Those seem to be broken
     "checkout {commit} {filename} by selection": "git checkout `echo ${selectedTextList} | cut -d' ' -f1` -- `echo ${selectedTextList} | cut -d' ' -f2`",
+    "revert changes {commit} {filename} by selection": "git show `echo ${selectedTextList} | cut -d' ' -f1` -- `echo ${selectedTextList} | cut -d' ' -f2` | git apply -R",
+
+    "checkout {commit filename} by input": "git checkout ${input}",
+    "revert changes {commit filename} by input": "git show ${input} | git apply -R",
+
+    // "revert changes {commit} {filename} by selection": "git show `echo ${selectedTextList} | cut -d' ' -f1` -- `echo ${selectedTextList} | cut -d' ' -f2` | git apply -R",
+    // "revert changes {commit} {filename} by input2": "git show `echo ${input} | cut -d' ' -f1` -- `echo ${input} | cut -d' ' -f2` | git apply -R",
+    // "revert changes {commit} {filename} by input": "git show ${input} | git apply -R",
+    // "revert changes from current patch file": "git apply -R '${file}'",
+
+    "echo selected": "echo ${selectedTextList}",
+    "double input test": "echo ${input} ${input} ${input}",
+
   }
 }

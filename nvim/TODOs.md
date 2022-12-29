@@ -2,6 +2,7 @@
 * Nvim as default text editor in windows
 * Consume and learn - https://github.com/rockerBOO/awesome-neovim
 * check fugitive and gv.vim - is it usable with vscode?
+* replace inside/around args shouldn't jump around to replace unknown something else for hard cases like import {a,b,c} from '...'
 
 # NON-CRUCIAL TODOS 
 

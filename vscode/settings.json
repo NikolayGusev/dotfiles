@@ -13,12 +13,14 @@
   "editor.minimap.enabled": false,
   "workbench.editor.tabCloseButton": "off",
   "window.menuBarVisibility": "toggle",
-
+  "extensions.ignoreRecommendations": false,
+  
   // General usability
   "explorer.autoReveal": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "terminal.integrated.gpuAcceleration": "off",
   "editor.copyWithSyntaxHighlighting": false,
+  "editor.formatOnSave": true,
   
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",
@@ -29,6 +31,7 @@
 
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off",
 
   // TODO: remove this?
   // "terminal.integrated.commandsToSkipShell": [
@@ -106,5 +109,49 @@
     }
   ],
 
-  "javascript-repl.coverageTimes": false
+  "javascript-repl.coverageTimes": false,
+  
+  "editor.codeActionsOnSave":{
+    "source.fixAll.eslint": true 
+  },
+  "eslint.validate":[
+    "javascript",
+    "javascriptReact",
+    "typescript",
+    "typescriptReact",
+  ],
+  "[javascript]":{
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "vscode.typescript-language-features", 
+  },
+  "[javascriptReact]":{
+    "editor.formatOnSave": false,
+  },
+  "[typescript]":{
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint", 
+  },
+  "[typescriptReact]":{
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint", 
+  },
+  
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.useAliasesForRenames": false,
+
+  "command-runner.showRunCommandInEditorContextMenu": false,
+  "command-runner.terminal.autoClear": false,
+  "command-runner.terminal.autoFocus": false,
+  "command-runner.terminal.name": "runCommand",
+  "command-runner.commands": {
+    "assume unchanged":"git update-index --assume-unchanged ${file}",
+    "assume unchanged list": "git ls-files -v | grep '^[[:lower:]]'",
+    "no-assume unchanged": "git update-index --no-assume-unchanged ${file}",
+    "no-assume unchanged all": "git ls-files -v | grep '^[a-z]' | cut -c3- | xargs git update-index --no-assume-unchanged --",
+    "delete merged branches": "git branch --merged origin/master | xargs git branch -d",
+    "checkout previous version": "git checkout HEAD~1 -- ${file}",
+    "checkout revision...": "git checkout ${input} -- ${file}",
+  }
 }

@@ -1,31 +1,8 @@
 # General
 * Nvim as default text editor in windows
-* Consume and learn - https://github.com/rockerBOO/awesome-neovim
-* check fugitive and gv.vim - is it usable with vscode?
-
-# NON-CRUCIAL TODOS 
-
-* https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-jump.md
-* some snippets for react comp+props, function, etc would be nice
-
-* Multi cursor - see if this is required. https://github.com/mg979/vim-visual-multi
-
-# Cleanup
-
-** leap f replacement - didn't work properly 16/10/2022
-** function text object
-** tab out of arguments - https://github.com/abecodes/tabout.nvim
-
-
-## Tree sitter stuff 
-* https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-* Tree sitter requires c compiler https://github.com/nvim-treesitter/nvim-treesitter
-* abecodes/tabout.nvim - exit context "({ etc faster
-* nvim-trevJ.lua - anti-<S-J>
 
 
 # ANKI
-
 * ANKI iv, av for camelCase intermediate-word motion
 * ANKI sandwich surrounding function csf, ysiwf, etc
 * ANKI sandwich 2ysa" to surround with two surroundings
@@ -48,3 +25,10 @@
 * switch to lua and lazy.nvim - https://github.com/folke/lazy.nvim#-structuring-your-plugins
 * fzf 
 ** https://github.com/yuki-yano/fzf-preview.vim#demo
+
+## Tree sitter stuff 
+* https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+* Tree sitter requires c compiler https://github.com/nvim-treesitter/nvim-treesitter
+* abecodes/tabout.nvim - exit context "({ etc faster
+* nvim-trevJ.lua - anti-<S-J>
+* tab out of arguments - https://github.com/abecodes/tabout.nvim

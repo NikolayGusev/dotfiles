@@ -4,6 +4,9 @@
 * run windows_symlink.ps1
 * run extensions_install.ps1
 
+## Misc
+* git ssh keys - see https://stackoverflow.com/a/58784438
+
 
 # Macos
 * install nvim - not sure how - dmg?

@@ -1,7 +1,7 @@
 
-echo "#! /bin/bash" > test.sh
-echo >> test.sh
-code --list-extensions | xargs -I{} echo code -intall-extension {} >> extensions_install.sh
+echo "#! /bin/bash" > extensions_install.sh
+echo >> extensions_install.sh
+code --list-extensions | xargs -I{} echo code --install-extension {} >> extensions_install.sh
 
 
-code --list-extensions | xargs -I{} echo code -intall-extension {} > extensions_install.ps1
+code --list-extensions | xargs -I{} echo code --install-extension {} > extensions_install.ps1

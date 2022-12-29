@@ -1,1 +1,0 @@
-code --list-extensions | % { "code --install-extension $_" } > extensions_install.ps1

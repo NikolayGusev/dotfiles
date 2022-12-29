@@ -33,9 +33,6 @@ Plug 'ThePrimeagen/vim-be-good'                 " Practice vim
 
 Plug 'gruvbox-community/gruvbox'                " Theme
 
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-
 call plug#end()
 
 let g:vim_be_good_delete_me_offset = 35

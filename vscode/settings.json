@@ -155,11 +155,5 @@
     "checkout previous version...": "git checkout ${input} -- ${file}",
     "echo selected": "echo ${selectedTextList}",
     "checkout {commit} {filename} by selection": "git checkout `echo ${selectedTextList} | cut -d' ' -f1` -- `echo ${selectedTextList} | cut -d' ' -f2`",
-    "BCKP checkout {commit} {filename} by selection": "echo `echo ${selectedTextList} | cut -d' ' -f2` `echo ${selectedTextList} | cut -d' ' -f1`",
-    "revert {patchText} by selection2": "git apply -R \"${selectedTextSection}\"",
-    "revert {patchText} by selection": "git apply -3 -v --whitespace=fix -R <<< '${selectedTextSection}'",
-    "revert {patchText} by selection4": "git apply -R <<< (printf \"${selectedTextSection}\")",
-    "revert {patchText} by selection3": "print \"${selectedTextSection}\" | git apply -R ",
-    "revert {patchText} by selection real": "git apply -R ${selectedTextSection}",
   }
 }

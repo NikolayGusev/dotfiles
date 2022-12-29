@@ -1,5 +1,6 @@
 import "@logseq/libs";
 import {a,b,c} from 'asdf';
+const testChange = 1;
 const r = {
   a: 1;
   ba: 2;

@@ -20,6 +20,7 @@
 - ANKI Abolish - %S instead of %S for case insensitive replace.
 - ANKI "vaBVd" to delete function to anki cards
 - ANKI alt+kj to move lines
+- ANKI ctrl+a/x - increment/decrement numbers
 
 # Strategic
 

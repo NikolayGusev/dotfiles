@@ -103,10 +103,49 @@
   "vspacecode.bindingOverrides": [
     {
       "keys": "g.d",
-      "name": "Diff (vscode)",
+      "name": "Diff",
       "type": "command",
       "command": "git.openChange"
-    }
+    },
+    {
+      "keys": "g.S",
+      "name": "Search commits",
+      "type": "command",
+      "command": "gitlens.showCommitSearch"
+    },
+    {
+      "keys": "g.b",
+      "name": "Toggle blame",
+      "type": "command",
+      "command": "gitlens.toggleFileBlame"
+    },
+    {
+      "keys": "g.c",
+      "name": "Show commits for selection",
+      "type": "command",
+      "command": "gitlens.showCommitsInView"
+    },
+    // initialize repo
+    {
+      "keys": "g.i",
+      "position": -1,
+    },
+    // magit dispatch
+    {
+      "keys": "g.m",
+      "position": -1,
+    },
+    // Unstage changes
+    {
+      "keys": "g.U",
+      "position": -1,
+    },
+    // f => *diff   *vscode built in file changes history
+    {
+      "keys": "g.f",
+      "position": -1,
+    },
+
   ],
 
   "javascript-repl.coverageTimes": false,
@@ -170,16 +209,19 @@
     "echo selected": "echo ${selectedTextList}",
     "double input test": "echo ${input} ${input} ${input}",
 
-  },
+
+  // gitlens 
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.scopes": [
-    "blocks"
-  ],
+  "gitlens.codeLens.scopes": [],
   "gitlens.statusBar.alignment": "left",
-  "gitlens.hovers.enabled": false,
   "gitlens.defaultDateFormat": null,
   "gitlens.defaultTimeFormat": null,
   "gitlens.showWelcomeOnInstall": false,
-  "gitlens.showWhatsNewAfterUpgrades": false
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.command": "gitlens.revealCommitInView",
+  "gitlens.hovers.enabled": false
+
+  },
 }

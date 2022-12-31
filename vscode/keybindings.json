@@ -160,16 +160,6 @@
     // Let's try with a free for all mode: use this hotkey anywhere.
     // "when": "panelFocus || sideBarFocus || neovim.mode == 'insert'"
   },
-  {
-    "key": "ctrl+k",
-    "when": "codeActionMenuVisible",
-    "command": "selectPrevCodeAction"
-  },
-  {
-    "key": "ctrl+j",
-    "when": "codeActionMenuVisible",
-    "command": "selectNextCodeAction"
-  },
   // Quick Navigation for diff view
   {
     "key": "ctrl+h",

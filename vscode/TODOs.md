@@ -5,11 +5,6 @@
 
 # Anki
 
-## Diff editor hotkeys
-
-- sux - stage, unstage, discard
-- enter - go to source
-
 ## snippets
 
 - space i s (do I really need this?)

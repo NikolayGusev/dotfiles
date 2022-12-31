@@ -292,6 +292,11 @@
           "key": "p",
           "name": "Previous",
           "command": "search.action.focusPreviousSearchResult"
+        },
+        {
+          "key": "N",
+          "name": "Previous",
+          "command": "search.action.focusPreviousSearchResult"
         }
       ]
     },
@@ -305,6 +310,11 @@
         },
         {
           "key": "p",
+          "name": "Previous",
+          "command": "workbench.action.editor.previousChange"
+        },
+        {
+          "key": "N",
           "name": "Previous",
           "command": "workbench.action.editor.previousChange"
         }

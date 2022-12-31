@@ -40,6 +40,13 @@ Anki - Diff editor hotkeys
 - How to search git history in a powerful manner?
   ** https://www.reddit.com/r/neovim/comments/zmwpcx/fzf_is_so_powerful_when_you_use_it_well/
   ** How to revert anything to anything?
+- Folds - how to fold and unfold stuff - see vspacecode z. menu
+
+- Search for todo comments to fix them
+
+# window management
+
+- resize window vertical/horizontal - separate commands like space-w-[]
 
 # git stuff
 

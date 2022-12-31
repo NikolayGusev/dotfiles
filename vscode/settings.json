@@ -380,6 +380,12 @@
       "type": "command",
       "command": "gitlens.showCommitsInView"
     },
+    {
+      "keys": "g.g",
+      "name": "Git Graph",
+      "type": "command",
+      "command": "git-graph.view"
+    },
 		{
       "keys": "g.n",
       "name": "Next change",

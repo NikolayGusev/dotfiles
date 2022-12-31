@@ -156,8 +156,10 @@
     },
     // f => *diff   *vscode built in file changes history
     {
-      "keys": "g.f",
-      "position": -1
+			"keys": "g.f",
+			"name": "Show commits for file",
+			"type": "command",
+			"command": "gitlens.openFileHistory"
     }
   ],
 

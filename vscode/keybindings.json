@@ -153,12 +153,32 @@
     "command": "workbench.action.navigateRight",
     "when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !isInDiffEditor"
   },
-  //vspacecode "shift-space" helpers
+  //vspacecode movement helpers
   {
     "key": "shift+space",
     "command": "vspacecode.space"
     // Let's try with a free for all mode: use this hotkey anywhere.
     // "when": "panelFocus || sideBarFocus || neovim.mode == 'insert'"
+  },
+  // {
+  //   "key":"ctrl+j",
+  //   "command":"cursorUp",
+  //   "when": "textInputFocus"
+  // },
+  // {
+  //   "key":"ctrl+k",
+  //   "command":"cursorDown",
+  //   "when": "textInputFocus"
+  // },
+  {
+    "key": "ctrl+k",
+    "when": "codeActionMenuVisible",
+    "command": "selectPrevCodeAction"
+  },
+  {
+    "key": "ctrl+j",
+    "when": "codeActionMenuVisible",
+    "command": "selectNextCodeAction"
   },
   // Quick Navigation for diff view
   {

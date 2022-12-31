@@ -13,7 +13,7 @@
 
 ## snippets
 
-space i s
+- space i s (do I really need this?)
 
 - make it possible to use hjkl and r/d/a/A in file explorer (not possible currently at work's vscode, possible locally)
 - Get extensions list from the work pc

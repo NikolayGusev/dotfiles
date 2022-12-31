@@ -3,8 +3,6 @@
 - clear nvim colors - see "not sure why do I need those"
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage
 
-* diff editor hotkeys readme
-
 Anki - Diff editor hotkeys
 
 - JK - next prev channge
@@ -46,4 +44,7 @@ Anki - Diff editor hotkeys
   - add magit hotkeys to go to the next prev file - JK
 
 - gitlens
+
   - GitLens: Open Blame Prior to Change (blame forward/backward)
+
+- How to view changes for commit range with a keyboard?

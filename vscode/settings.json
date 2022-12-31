@@ -252,30 +252,30 @@
       ]
     },
     "horizontalResize": {
-      "title": "Horizontal Resize",
+      "title": "Horizontal resize transient",
       "bindings": [
         {
-          "key": "j",
+          "key": "g",
           "name": "Grow",
           "command": "workbench.action.increaseViewWidth"
         },
         {
-          "key": "k",
+          "key": "s",
           "name": "Shrink",
           "command": "workbench.action.decreaseViewWidth"
         }
       ]
     },
     "verticalResize": {
-      "title": "Vertical Resize",
+      "title": "Vertical resize transient",
       "bindings": [
         {
-          "key": "j",
+          "key": "g",
           "name": "Grow",
           "command": "workbench.action.increaseViewHeight"
         },
         {
-          "key": "k",
+          "key": "s",
           "name": "Shrink",
           "command": "workbench.action.decreaseViewHeight"
         }
@@ -507,6 +507,63 @@
       "type": "command",
 			"command": "whichkey.showTransient",
 			"args": "whichkey.transient.verticalResize"    
+    },
+    {
+      "keys": "w.j",
+      "name": "Split editor below",
+      "type": "command",
+			"command": "workbench.action.splitEditorDown"
+    },
+    {
+      "keys": "w.l",
+      "name": "Split editor right",
+      "type": "command",
+			"command": "workbench.action.splitEditor"
+    },
+    // split below
+    {
+      "keys": "w.-",
+      "position": -1
+    },
+    // split right
+    {
+      "keys": "w./",
+      "position": -1
+    },
+    // shrink window
+    {
+      "keys": "w.[",
+      "position": -1
+    },
+    // grow window
+    {
+      "keys": "w.]",
+      "position": -1
+    },
+    // close window
+    {
+      "keys": "w.d",
+      "position": -1
+    },
+    // focus window up
+    {
+      "keys": "w.k",
+      "position": -1
+    },
+    // split window below
+    {
+      "keys": "w.s",
+      "position": -1
+    },
+    // focus next window
+    {
+      "keys": "w.w",
+      "position": -1
+    },
+    // focus previous window
+    {
+      "keys": "w.W",
+      "position": -1
     }
   ],
 

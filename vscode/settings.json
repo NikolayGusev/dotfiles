@@ -22,6 +22,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",
@@ -126,6 +127,18 @@
       "type": "command",
       "command": "gitlens.showCommitsInView"
     },
+    {
+      "keys": "g.n",
+      "name": "Next change",
+      "type": "command",
+      "command": "workbench.action.editor.nextChange"
+    },
+    {
+      "keys": "g.p",
+      "name": "Prev change",
+      "type": "command",
+      "command": "workbench.action.editor.previousChange"
+    },
     // initialize repo
     {
       "keys": "g.i",
@@ -223,6 +236,5 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.command": "gitlens.revealCommitInView",
   "gitlens.hovers.enabled": false
-
   }
 }

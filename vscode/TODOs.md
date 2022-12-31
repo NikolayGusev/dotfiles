@@ -1,11 +1,11 @@
 # nvim fixes
 
 - clear nvim colors - see "not sure why do I need those"
-- VSCodeCallVisual - send selection to vscode for magit operation
+- !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage
 
 * diff editor hotkeys readme
 
-Keys
+Anki - Diff editor hotkeys
 
 - JK - next prev channge
 - sux - stage, unstage, discard
@@ -38,3 +38,12 @@ Keys
 - How to search git history in a powerful manner?
   ** https://www.reddit.com/r/neovim/comments/zmwpcx/fzf_is_so_powerful_when_you_use_it_well/
   ** How to revert anything to anything?
+
+# git stuff
+
+- magit
+
+  - add magit hotkeys to go to the next prev file - JK
+
+- gitlens
+  - GitLens: Open Blame Prior to Change (blame forward/backward)

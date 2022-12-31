@@ -181,6 +181,10 @@
     },
     // move toggles to root "t" instead of "T"
     {
+      "keys": "T",
+      "position": -1
+    },
+    {
         "keys": "t.s",
         "name": "Toggle side bar visibility",
         "type": "command",

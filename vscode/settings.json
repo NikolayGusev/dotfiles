@@ -179,17 +179,42 @@
       "keys": "g.U",
       "position": -1
     },
+    // move toggles to root "t" instead of "T"
     {
-			"keys": "t.t",
-			"name": "Toggle terminal panel",
-			"type": "command",
-			"command": "workbench.action.togglePanel"
+        "keys": "t.s",
+        "name": "Toggle side bar visibility",
+        "type": "command",
+        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-			"keys": "t.s",
-			"name": "Toggle side panel",
-			"type": "command",
-			"command": "workbench.action.toggleSidebarVisibility"
+        "keys": "t.t",
+        "name": "Toggle panel visibility",
+        "type": "command",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "keys": "t.f",
+        "name": "Toggle full screen",
+        "type": "command",
+        "command": "workbench.action.toggleFullScreen"
+    },
+    {
+        "keys": "t.m",
+        "name": "Toggle maximized panel",
+        "type": "command",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "keys": "t.T",
+        "name": "Toggle tab visibility",
+        "type": "command",
+        "command": "workbench.action.toggleTabsVisibility"
+    },
+    {
+        "keys": "t.z",
+        "name": "Toggle zen mode",
+        "type": "command",
+        "command": "workbench.action.toggleZenMode"
     }
   ],
 

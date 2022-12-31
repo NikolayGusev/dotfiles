@@ -103,6 +103,18 @@
 
   // vspacecode
   "vspacecode.bindingOverrides": [
+    // Show active file in tree/explorer view
+    {
+      "keys": "f.T",
+      "position": -1
+    },
+    // Was toogle file panel
+    {
+      "keys": "f.t",
+      "name": "Show active file in tree/explorer view",
+      "type": "command",
+      "command": "workbench.files.action.showActiveFileInExplorer"
+    },
     {
       "keys": "g.d",
       "name": "Diff",
@@ -166,6 +178,18 @@
     {
       "keys": "g.U",
       "position": -1
+    },
+    {
+			"keys": "t.t",
+			"name": "Toggle terminal panel",
+			"type": "command",
+			"command": "workbench.action.togglePanel"
+    },
+    {
+			"keys": "t.s",
+			"name": "Toggle side panel",
+			"type": "command",
+			"command": "workbench.action.toggleSidebarVisibility"
     }
   ],
 

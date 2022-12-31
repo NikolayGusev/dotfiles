@@ -55,7 +55,7 @@
     "editor.selectionBackground": "#ff7b00a1", // Current SELECTED text, required so that I can see what is yanked by vim
     // Make leap usable in VSCode. W/o this it is hard to see marks on unused functions and objects, etc.
     "editorUnnecessaryCode.opacity": "#000000ff",
-    "editorUnnecessaryCode.border": "#aaaaaa",
+    "editorUnnecessaryCode.border": "#aaaaaa"
     ////////////////////////////////////////
     // TODO: not sure why do I need those //
     ////////////////////////////////////////
@@ -142,24 +142,23 @@
     // initialize repo
     {
       "keys": "g.i",
-      "position": -1,
+      "position": -1
     },
     // magit dispatch
     {
       "keys": "g.m",
-      "position": -1,
+      "position": -1
     },
     // Unstage changes
     {
       "keys": "g.U",
-      "position": -1,
+      "position": -1
     },
     // f => *diff   *vscode built in file changes history
     {
       "keys": "g.f",
-      "position": -1,
-    },
-
+      "position": -1
+    }
   ],
 
   "javascript-repl.coverageTimes": false,
@@ -171,22 +170,22 @@
     "javascript",
     "javascriptReact",
     "typescript",
-    "typescriptReact",
+    "typescriptReact"
   ],
   "[javascript]":{
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "vscode.typescript-language-features", 
+    "editor.defaultFormatter": "vscode.typescript-language-features" 
   },
   "[javascriptReact]":{
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": false
   },
   "[typescript]":{
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint", 
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint" 
   },
   "[typescriptReact]":{
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint", 
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint" 
   },
   
   "typescript.preferences.quoteStyle": "single",

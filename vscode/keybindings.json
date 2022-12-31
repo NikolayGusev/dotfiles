@@ -306,7 +306,7 @@
   },
   {
     "key": "cmd+k cmd+r",
-    "command": "-git.revertSelectedRanges",
+    "command": "-git.revertSelectedRanges"
   },
   {
     "key": "s",

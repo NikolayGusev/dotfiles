@@ -1,6 +1,7 @@
 # General
 
 - Nvim as default text editor in windows
+- nomagic mode for s replace and / search
 
 # ANKI
 

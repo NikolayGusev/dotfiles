@@ -110,3 +110,4 @@ Where:
 - quick picker (eg.. spc f f)
 - s(earch) n(ext), search p(revious)
 - ???
+- next/prev buffer

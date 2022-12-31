@@ -1,7 +1,7 @@
 # nvim fixes
 
-- clear nvim colors - see "not sure why do I need those"
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage
+- clear nvim colors - see "not sure why do I need those"
 
 ## snippets
 

@@ -23,6 +23,15 @@
 - ANKI alt+kj to move lines
 - ANKI ctrl+a/x - increment/decrement numbers
 
+- ANKI folds:
+  zM :call VSCodeNotify('editor.foldAll')<CR>
+  zR :call VSCodeNotify('editor.unfoldAll')<CR>
+  zc :call VSCodeNotify('editor.fold')<CR>
+  zC :call VSCodeNotify('editor.foldRecursively')<CR>
+  zo :call VSCodeNotify('editor.unfold')<CR>
+  zO :call VSCodeNotify('editor.unfoldRecursively')<CR>
+  za :call VSCodeNotify('editor.toggleFold')<CR>
+
 # Strategic
 
 - switch to lua and lazy.nvim - https://github.com/folke/lazy.nvim#-structuring-your-plugins

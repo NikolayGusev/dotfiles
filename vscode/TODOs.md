@@ -45,6 +45,7 @@
 
 # vscode general
 
+- move in text menus up/down with J and K
 - how to refine finder telescope window?
 
   e.g. I see the file that I need and do not want to scroll down, but would like to type more things to filter things out (e.g. when I cannot type it anymore because the text is infront of the text found by my query).

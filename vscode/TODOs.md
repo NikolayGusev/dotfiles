@@ -43,8 +43,6 @@
     - Replace with buffer by name?
   - "space >" to call command pallete
 
-- spc s n/p - make those transient
-
 # vscode general
 
 - move in text menus up/down with J and K

@@ -280,6 +280,21 @@
           "command": "workbench.action.decreaseViewHeight"
         }
       ]
+    },
+    "searchInfFiles": {
+      "title": "Search in files",
+      "bindings": [
+        {
+          "key": "n",
+          "name": "Next",
+          "command": "search.action.focusNextSearchResult"
+        },
+        {
+          "key": "p",
+          "name": "Previous",
+          "command": "search.action.focusPreviousSearchResult"
+        }
+      ]
     }
   },
 
@@ -385,31 +400,40 @@
     {
       "keys": "s.n",
       "name": "Next search result",
-      "type": "command",
-      "command": "search.action.focusNextSearchResult"
+      "type": "commands",
+      "commands": [
+          "search.action.focusNextSearchResult",
+          "whichkey.showTransient"
+      ],
+      "args": [null, "whichkey.transient.searchInfFiles"]    
     },
     // was Search in a project
     {
       "keys": "s.p",
       "name": "Previous search result",
-      "type": "command",
-      "command": "search.action.focusPreviousSearchResult"
+      "type": "commands",
+      "commands": [
+          "search.action.focusPreviousSearchResult",
+          "whichkey.showTransient"
+      ],
+      "args": [null, "whichkey.transient.searchInfFiles"]    
     },
     {
       "keys": "s.f",
       "name": "Search in files",
       "type": "command",
       "command": "workbench.action.findInFiles"
-  },
-  {
-      "keys": "s.F",
-      "name": "Search in files with a selection",
-      "type": "commands",
-      "commands": [
-          "editor.action.addSelectionToNextFindMatch",
-          "workbench.action.findInFiles"
-      ]
-  },
+    },
+    {
+        "keys": "s.F",
+        "name": "Search in files with a selection",
+        "type": "commands",
+        "commands": [
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.findInFiles"
+        ]
+    },
+
     // move toggles to root "t" instead of "T"
     {
       "keys": "T",

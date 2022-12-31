@@ -198,6 +198,34 @@
       "keys": "g.U",
       "position": -1
     },
+    {
+      "keys": "s.n",
+      "name": "Next search result",
+      "type": "command",
+      "command": "search.action.focusNextSearchResult"
+    },
+    // was Search in a project
+    {
+      "keys": "s.p",
+      "name": "Previous search result",
+      "type": "command",
+      "command": "search.action.focusPreviousSearchResult"
+    },
+    {
+      "keys": "s.f",
+      "name": "Search in files",
+      "type": "command",
+      "command": "workbench.action.findInFiles"
+  },
+  {
+      "keys": "s.F",
+      "name": "Search in files with a selection",
+      "type": "commands",
+      "commands": [
+          "editor.action.addSelectionToNextFindMatch",
+          "workbench.action.findInFiles"
+      ]
+  },
     // move toggles to root "t" instead of "T"
     {
       "keys": "T",

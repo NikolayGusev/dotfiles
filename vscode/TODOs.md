@@ -54,7 +54,10 @@
   ** How to revert anything to anything?
 - Folds - how to fold and unfold stuff - see vspacecode z. menu
 
-- Search for todo comments to fix them
+## TODOs
+
+- Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
+- Search for todo comments to fix them "spc i 1/2/3/t" to search for 1/2/3/all todos
 
 # window management
 

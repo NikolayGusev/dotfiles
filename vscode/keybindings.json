@@ -356,7 +356,7 @@
     "when": "isInDiffEditor"
   },
   {
-    "key": "shift+j",
+    "key": "ctrl+j",
     // "command": "editor.action.diffReview.next",                // This opens a nice preview with a patch, but seems to be unnecessary
     "command": "workbench.action.compareEditor.nextChange",
     "when": "isInDiffEditor"
@@ -367,7 +367,7 @@
     "when": "isInDiffEditor"
   },
   {
-    "key": "shift+k",
+    "key": "ctrl+k",
     // "command": "editor.action.diffReview.prev",
     "command": "workbench.action.compareEditor.previousChange",   // This opens a nice preview with a patch, but seems to be unnecessary
     "when": "isInDiffEditor"

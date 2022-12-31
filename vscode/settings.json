@@ -101,6 +101,7 @@
   "numberedBookmarks.navigateThroughAllFiles": "replace",
 
   // vspacecode
+  // default bindings here: https://github.com/VSpaceCode/vscode-which-key/blob/cb073ed69491d76501cb1042c060c3206a806a19/package.json
   "vspacecode.bindingOverrides": [
     // Show active file in tree/explorer view
     {

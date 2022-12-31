@@ -26,6 +26,7 @@ Anki - Diff editor hotkeys
 # vspacecode fixes
 
 - Cannot evoke when no files are open
+- Cannot evoke when inside of explorer, etc
 
 # vscode general
 
@@ -59,6 +60,8 @@ Anki - Diff editor hotkeys
   - GitLens: Open Blame Prior to Change (blame forward/backward)
 
 - How to view changes for commit range with a keyboard?
+
+- gitlens code lens and line blame turns on on its own after restarting vscode
 
 ## While viewing diff
 

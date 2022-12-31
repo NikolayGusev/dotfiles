@@ -160,16 +160,6 @@
     // Let's try with a free for all mode: use this hotkey anywhere.
     // "when": "panelFocus || sideBarFocus || neovim.mode == 'insert'"
   },
-  // {
-  //   "key":"ctrl+j",
-  //   "command":"cursorUp",
-  //   "when": "textInputFocus"
-  // },
-  // {
-  //   "key":"ctrl+k",
-  //   "command":"cursorDown",
-  //   "when": "textInputFocus"
-  // },
   {
     "key": "ctrl+k",
     "when": "codeActionMenuVisible",
@@ -356,7 +346,7 @@
     "when": "isInDiffEditor"
   },
   {
-    "key": "ctrl+j",
+    "key": "shift+j",
     // "command": "editor.action.diffReview.next",                // This opens a nice preview with a patch, but seems to be unnecessary
     "command": "workbench.action.compareEditor.nextChange",
     "when": "isInDiffEditor"
@@ -367,7 +357,7 @@
     "when": "isInDiffEditor"
   },
   {
-    "key": "ctrl+k",
+    "key": "shift+k",
     // "command": "editor.action.diffReview.prev",
     "command": "workbench.action.compareEditor.previousChange",   // This opens a nice preview with a patch, but seems to be unnecessary
     "when": "isInDiffEditor"

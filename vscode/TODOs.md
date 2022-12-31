@@ -5,7 +5,7 @@
 
 Anki - Diff editor hotkeys
 
-- JK - next prev channge
+- JK - next prev change (HACK: works only while in insert mode for the time being)
 - sux - stage, unstage, discard
 - enter - go to source
 

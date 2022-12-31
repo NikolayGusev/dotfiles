@@ -330,7 +330,8 @@
   },
   {
     "key": "shift+j",
-    "command": "editor.action.diffReview.next",
+    // "command": "editor.action.diffReview.next",                // This opens a nice preview with a patch, but seems to be unnecessary
+    "command": "workbench.action.compareEditor.nextChange",
     "when": "isInDiffEditor"
   },
   {
@@ -340,7 +341,8 @@
   },
   {
     "key": "shift+k",
-    "command": "editor.action.diffReview.prev",
+    // "command": "editor.action.diffReview.prev",
+    "command": "workbench.action.compareEditor.previousChange",   // This opens a nice preview with a patch, but seems to be unnecessary
     "when": "isInDiffEditor"
   },
   {

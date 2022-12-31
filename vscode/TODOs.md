@@ -25,6 +25,10 @@ Anki - Diff editor hotkeys
 
 # vspacecode fixes
 
+- learn how to reorder items
+- learn how to add separators
+- learn how to add icons
+
 - Cannot evoke when no files are open
 - Cannot evoke when inside of explorer, etc
 - double space should do something better
@@ -72,3 +76,11 @@ Anki - Diff editor hotkeys
 
 - revert file/hunk
 - checkout file
+
+# file explorer
+
+- consider which actions should I be able to do in file explorer
+- some ideas
+  - stage
+  - unstage
+  - view diff

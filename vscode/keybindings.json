@@ -286,8 +286,66 @@
     "key": "alt+cmd+g shift+b",
     "command": "-gitlens.toggleCodeLens",
     "when": "editorTextFocus && !gitlens:disabled && !gitlens:disabledToggleCodeLens && config.gitlens.keymap == 'chorded'"
-  }
+  },
   ////////////////////////
   // END gitlens unbind //
   ////////////////////////
+
+  /////////////////
+  // Diff Editor //
+  /////////////////
+  {
+    "key": "enter",
+    "command": "gitlens.openWorkingFile",
+    "when":"isInDiffEditor"
+  },
+  {
+    "key": "x",
+    "command": "git.revertSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "-git.revertSelectedRanges",
+  },
+  {
+    "key": "s",
+    "command": "git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+k alt+cmd+s",
+    "command": "-git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "u",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+k cmd+n",
+    "command": "-git.unstageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "shift+j",
+    "command": "editor.action.diffReview.next",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "f7",
+    "command": "-editor.action.diffReview.next",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.diffReview.prev",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "shift+f7",
+    "command": "-editor.action.diffReview.prev",
+    "when": "isInDiffEditor"
+  }
 ]

@@ -3,6 +3,14 @@
 - clear nvim colors - see "not sure why do I need those"
 - VSCodeCallVisual - send selection to vscode for magit operation
 
+* diff editor hotkeys readme
+
+Keys
+
+- JK - next prev channge
+- sux - stage, unstage, discard
+- enter - go to source
+
 * make it possible to use hjkl and r/d/a/A in file explorer (not possible currently at work's vscode, possible locally)
 * Get extensions list from the work pc
   ** partial diff

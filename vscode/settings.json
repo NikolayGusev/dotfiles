@@ -22,7 +22,6 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
-  "diffEditor.ignoreTrimWhitespace": false,
   
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",

@@ -37,10 +37,13 @@
 - Cannot evoke when no files are open
 - Cannot evoke when inside of explorer, etc
 - double space should do something better
+
   - Options
     - Replace with file file by name?
     - Replace with buffer by name?
   - "space >" to call command pallete
+
+- spc s n/p - make those transient
 
 # vscode general
 

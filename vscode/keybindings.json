@@ -156,8 +156,9 @@
   //vspacecode "shift-space" helpers
   {
     "key": "shift+space",
-    "command": "vspacecode.space",
-    "when": "panelFocus || sideBarFocus"
+    "command": "vspacecode.space"
+    // Let's try with a free for all mode: use this hotkey anywhere.
+    // "when": "panelFocus || sideBarFocus || neovim.mode == 'insert'"
   },
   // Quick Navigation for diff view
   {

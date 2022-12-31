@@ -216,6 +216,8 @@ if(exists("g:vscode"))
     nnoremap zo :call VSCodeNotify('editor.unfold')<CR>
     nnoremap zO :call VSCodeNotify('editor.unfoldRecursively')<CR>
     nnoremap za :call VSCodeNotify('editor.toggleFold')<CR>
+    nnoremap zj :call VSCodeNotify('editor.gotoNextFold')<CR>
+    nnoremap zk :call VSCodeNotify('editor.gotoPreviousFold')<CR>
     
     function! MoveCursor(direction) abort
         if(reg_recording() == '' && reg_executing() == '')

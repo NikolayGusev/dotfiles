@@ -153,6 +153,12 @@
     "command": "workbench.action.navigateRight",
     "when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !isInDiffEditor"
   },
+  //vspacecode "shift-space" helpers
+  {
+    "key": "shift+space",
+    "command": "vspacecode.space",
+    "when": "panelFocus || sideBarFocus"
+  },
   // Quick Navigation for diff view
   {
     "key": "ctrl+h",

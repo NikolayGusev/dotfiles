@@ -185,40 +185,83 @@
       "position": -1
     },
     {
-        "keys": "t.s",
-        "name": "Toggle side bar visibility",
-        "type": "command",
-        "command": "workbench.action.toggleSidebarVisibility"
+      "keys": "t.t",
+      "name": "Toggle terminal",
+      "type": "command",
+      "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "keys": "t.t",
-        "name": "Toggle panel visibility",
-        "type": "command",
-        "command": "workbench.action.togglePanel"
+      "keys": "t.o",
+      "name": "Toggle output",
+      "type": "command",
+      "command": "workbench.action.output.toggleOutput"
     },
     {
-        "keys": "t.f",
-        "name": "Toggle full screen",
-        "type": "command",
-        "command": "workbench.action.toggleFullScreen"
+      "keys": "t.p",
+      "name": "Toggle problems",
+      "type": "command",
+      "command": "workbench.actions.view.problems"
     },
     {
-        "keys": "t.m",
-        "name": "Toggle maximized panel",
-        "type": "command",
-        "command": "workbench.action.toggleMaximizedPanel"
+      "keys": "t.d",
+      "name": "Toggle debug",
+      "type": "command",
+      "command": "workbench.debug.action.toggleRepl"
     },
     {
-        "keys": "t.T",
-        "name": "Toggle tab visibility",
-        "type": "command",
-        "command": "workbench.action.toggleTabsVisibility"
+      "keys": "t.s",
+      "name": "Toggle side bar visibility",
+      "type": "command",
+      "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "keys": "t.z",
-        "name": "Toggle zen mode",
+      "keys": "t.w",
+      "name": "Toggle leading/trailing whitespace differences",
+      "type": "command",
+      "command": "toggle.diff.ignoreTrimWhitespace"
+    },
+    {
+        "keys": "t.W",
+        "name": "Toggle render whitespaces",
         "type": "command",
-        "command": "workbench.action.toggleZenMode"
+        "command": "editor.action.toggleRenderWhitespace"
+    },
+    {
+        "keys": "t.R",
+        "name": "Toggle word wrap",
+        "type": "command",
+        "command": "editor.action.toggleWordWrap"
+    },
+    // standard things moved "T" -> "t"
+    {
+      "keys": "t.j",
+      "name": "Toggle panel visibility",
+      "type": "command",
+      "command": "workbench.action.togglePanel"
+    },
+    {
+      "keys": "t.f",
+      "name": "Toggle full screen",
+      "type": "command",
+      "command": "workbench.action.toggleFullScreen"
+    },
+    {
+      "keys": "t.m",
+      "name": "Toggle maximized panel",
+      "type": "command",
+      "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+      "keys": "t.T",
+      "name": "Toggle tab visibility",
+      "type": "command",
+      "command": "workbench.action.toggleTabsVisibility"
+    },
+    {
+      "keys": "t.z",
+      "name": "Toggle zen mode",
+      "type": "command",
+      "command": "workbench.action.toggleZenMode"
     }
   ],
 

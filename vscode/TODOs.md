@@ -7,7 +7,6 @@
 
 ## Diff editor hotkeys
 
-- JK - next prev change (HACK: works only while in insert mode for the time being)
 - sux - stage, unstage, discard
 - enter - go to source
 
@@ -91,3 +90,20 @@
   - stage
   - unstage
   - view diff
+
+# next/prev global hotkeys
+
+Currently I use n and p to do that.
+Consider
+
+- n and m
+- n and N (like in vim / search)
+- j and k
+  - broken for quick picker (eg. spc f f)
+
+Where:
+
+- git diff
+- quick picker (eg.. spc f f)
+- s(earch) n(ext), search p(revious)
+- ???

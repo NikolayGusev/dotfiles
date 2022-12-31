@@ -11,6 +11,10 @@ const r = {
 
 const opts = { type: "select", ...enqOpts };
 
+const ref1 = 1;
+const ref2 = 2;
+const resultSum = ref1+ref2;
+
 
 const myWorldHere = ("world");
 const c = some_func([1, 2], 1, 2, 3, True, lst=[], kw1=False, d={2, 3});

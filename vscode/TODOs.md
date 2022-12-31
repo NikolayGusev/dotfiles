@@ -29,6 +29,10 @@ Anki - Diff editor hotkeys
 
 # vscode general
 
+- how to refine finder telescope window?
+
+  e.g. I see the file that I need and do not want to scroll down, but would like to type more things to filter things out (e.g. when I cannot type it anymore because the text is infront of the text found by my query).
+
 - How to open recently closed files list?
 
 - Decide ctrl+alt+<left/right arrow> vs F4/Shift-F4 to go to next prev result
@@ -48,3 +52,8 @@ Anki - Diff editor hotkeys
   - GitLens: Open Blame Prior to Change (blame forward/backward)
 
 - How to view changes for commit range with a keyboard?
+
+## While viewing diff
+
+- revert file/hunk
+- checkout file

@@ -139,6 +139,19 @@
       "type": "command",
       "command": "workbench.action.editor.previousChange"
     },
+    {
+			"keys": "g.l",
+			"name": "Show commits for line",
+			"type": "command",
+			"command": "gitlens.showLineHistoryView"
+    },
+    // f => *diff   *vscode built in file changes history
+    {
+			"keys": "g.f",
+			"name": "Show commits for file",
+			"type": "command",
+			"command": "gitlens.openFileHistory"
+    },
     // initialize repo
     {
       "keys": "g.i",
@@ -153,13 +166,6 @@
     {
       "keys": "g.U",
       "position": -1
-    },
-    // f => *diff   *vscode built in file changes history
-    {
-			"keys": "g.f",
-			"name": "Show commits for file",
-			"type": "command",
-			"command": "gitlens.openFileHistory"
     }
   ],
 

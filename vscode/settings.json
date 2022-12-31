@@ -293,9 +293,23 @@
           "command": "search.action.focusPreviousSearchResult"
         }
       ]
+    },
+    "gitChangesInFile": {
+      "title": "Navigate git changes in file",
+      "bindings": [
+        {
+          "key": "n",
+          "name": "Next",
+          "command": "workbench.action.editor.nextChange"
+        },
+        {
+          "key": "p",
+          "name": "Previous",
+          "command": "workbench.action.editor.previousChange"
+        }
+      ]
     }
   },
-
 
   // vspacecode
   // default bindings here: https://github.com/VSpaceCode/vscode-which-key/blob/cb073ed69491d76501cb1042c060c3206a806a19/package.json
@@ -355,17 +369,19 @@
       "type": "command",
       "command": "gitlens.showCommitsInView"
     },
-    {
+		{
       "keys": "g.n",
       "name": "Next change",
-      "type": "command",
-      "command": "workbench.action.editor.nextChange"
+      "type": "commands",
+      "commands": ["workbench.action.editor.nextChange", "whichkey.showTransient" ],
+			"args": [null, "whichkey.transient.gitChangesInFile"]
     },
     {
       "keys": "g.p",
       "name": "Prev change",
-      "type": "command",
-      "command": "workbench.action.editor.previousChange"
+      "type": "commands",
+      "commands": ["workbench.action.editor.previousChange", "whichkey.showTransient" ],
+			"args": [null, "whichkey.transient.gitChangesInFile"]
     },
     {
 			"keys": "g.l",

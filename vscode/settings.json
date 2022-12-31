@@ -170,5 +170,16 @@
     "echo selected": "echo ${selectedTextList}",
     "double input test": "echo ${input} ${input} ${input}",
 
-  }
+  },
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.scopes": [
+    "blocks"
+  ],
+  "gitlens.statusBar.alignment": "left",
+  "gitlens.hovers.enabled": false,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultTimeFormat": null,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false
 }

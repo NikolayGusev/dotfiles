@@ -3,8 +3,6 @@
 - clear nvim colors - see "not sure why do I need those"
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage
 
-# Anki
-
 ## snippets
 
 - space i s (do I really need this?)

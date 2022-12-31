@@ -3,14 +3,20 @@
 - clear nvim colors - see "not sure why do I need those"
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage
 
-Anki - Diff editor hotkeys
+# Anki
+
+## Diff editor hotkeys
 
 - JK - next prev change (HACK: works only while in insert mode for the time being)
 - sux - stage, unstage, discard
 - enter - go to source
 
-* make it possible to use hjkl and r/d/a/A in file explorer (not possible currently at work's vscode, possible locally)
-* Get extensions list from the work pc
+## snippets
+
+space i s
+
+- make it possible to use hjkl and r/d/a/A in file explorer (not possible currently at work's vscode, possible locally)
+- Get extensions list from the work pc
   ** partial diff
   ** peacock
   ** scope to this
@@ -19,9 +25,9 @@ Anki - Diff editor hotkeys
   ** error lens
   \*\* command runner
 
-* Close and reopen current window command to fix desync issues
+- Close and reopen current window command to fix desync issues
 
-* V line selection mode doesn't highlight empty rows
+- V line selection mode doesn't highlight empty rows
 
 # vspacecode fixes
 

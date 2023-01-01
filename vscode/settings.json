@@ -438,6 +438,16 @@
       ],
       "args": [null, "whichkey.transient.searchInfFiles"]    
     },
+    {
+      "keys": "s.N",
+      "name": "Previous search result",
+      "type": "commands",
+      "commands": [
+          "search.action.focusPreviousSearchResult",
+          "whichkey.showTransient"
+      ],
+      "args": [null, "whichkey.transient.searchInfFiles"]    
+    },
     // was Search in a project
     {
       "keys": "s.p",

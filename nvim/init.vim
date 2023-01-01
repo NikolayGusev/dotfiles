@@ -26,6 +26,7 @@ Plug 'svermeulen/vim-cutlass'
 Plug 'svermeulen/vim-yoink'
 Plug 'svermeulen/vim-subversive'
 Plug 'tpope/vim-abolish'                        " type error fixer, case insensitive replacer, pattern replacer, case changer
+Plug 'markonm/traces.vim'                       " highlights abolish and other commands before executing
 
 Plug 'matze/vim-move'
 
@@ -132,6 +133,10 @@ let g:clever_f_fix_key_direction = 1
 "  autocmd ColorScheme * highlight default CleverFMyOwnLabel cterm=bold,underline gui=bold,underline
 "  let g:clever_f_mark_char = "CleverFMyOwnLabel"
 
+""""""""""""""
+" traces.vim "
+""""""""""""""
+let g:traces_abolish_integration = 1
 
 """"""""
 " LEAP "

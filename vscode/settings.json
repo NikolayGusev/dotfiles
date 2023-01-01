@@ -435,6 +435,28 @@
 			"command": "editor.action.startFindReplaceAction"
     },
     {
+			"keys": "r.R",
+			"name": "Replace",
+			"type": "command",
+			"command": "editor.action.startFindReplaceAction"
+    },
+
+
+// {
+//         "keys": "s.F",
+//         "name": "Search in files with a selection",
+//         "type": "commands",
+//         "commands": [
+//             "editor.action.addSelectionToNextFindMatch",
+//             "workbench.action.findInFiles",
+//             "workbench.action.focusActiveEditorGroup",
+//             "whichkey.showTransient"
+//         ],
+//         "args": [null, null, null, "whichkey.transient.searchInfFiles"]    
+//     }
+
+
+    {
       "keys": "r.b",
       "position": -1
     },

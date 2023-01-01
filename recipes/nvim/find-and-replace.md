@@ -30,3 +30,38 @@
 ## Replace in solution
 
 - TODO
+
+# Scopes, types and other
+
+## Scopes
+
+- Selection
+- File
+- Files with filter
+- Solution
+
+## Type
+
+- Search
+  - What
+- Replace
+  - What
+  - With
+
+## What/With types
+
+- What
+  - Case sensitive
+  - Case insensitive
+- With
+  - Simple
+  - Keep case
+  - Abolish Pattern
+
+## What can be
+
+- input
+- last search result
+- default yank register
+- word under the cursor
+- visual selection

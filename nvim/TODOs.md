@@ -1,5 +1,6 @@
 # General
 
+- Why can't I use "z" for leap in visual mode, just like in replace mode? Or even better use ' in both modes like in normal mode?
 - Nvim as default text editor in windows
 - nomagic mode for s replace and / search
 

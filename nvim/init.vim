@@ -67,6 +67,8 @@ nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
 
 nnoremap <leader>r :%s/
 
+" don't jump on *, #, etc
+nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>
 
 """""""""""""""""""""""""
 " Text object parameter "

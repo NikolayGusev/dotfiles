@@ -32,6 +32,7 @@ Plug 'matze/vim-move'
 Plug 'ThePrimeagen/vim-be-good'                 " Practice vim
 
 Plug 'gruvbox-community/gruvbox'                " Theme
+Plug 'vim-scripts/vis'                          " Commands that only affect the selection, provides B: and S:
 
 call plug#end()
 
@@ -71,7 +72,7 @@ nnoremap <leader>r :%s/
 vnoremap <leader>r :s/\%V
 nnoremap <leader><leader>r :%Subvert/
 "  vnoremap <leader><leader>r :Subvert/\%V              " This doesn't work 
-vnoremap <leader><leader>r :Subvert/
+vnoremap <leader><leader>r :B Subvert/
 
 " don't jump on *, #, etc
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>

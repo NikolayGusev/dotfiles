@@ -25,7 +25,7 @@ Plug 'rhysd/clever-f.vim'
 Plug 'svermeulen/vim-cutlass'
 Plug 'svermeulen/vim-yoink'
 Plug 'svermeulen/vim-subversive'
-Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish'                        " type error fixer, case insensitive replacer, pattern replacer, case changer
 
 Plug 'matze/vim-move'
 
@@ -69,6 +69,9 @@ nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
 
 nnoremap <leader>r :%s/
 vnoremap <leader>r :s/\%V
+nnoremap <leader><leader>r :%Subvert/
+"  vnoremap <leader><leader>r :Subvert/\%V              " This doesn't work 
+vnoremap <leader><leader>r :Subvert/
 
 " don't jump on *, #, etc
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>

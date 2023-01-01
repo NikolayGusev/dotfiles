@@ -1,3 +1,5 @@
+- rename searchInfFiles
+
 # nvim fixes
 
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage
@@ -117,3 +119,8 @@ consider remaping zM to zm
 
 - for vim folds
 - for close all other buffers
+
+# Known hacks/problems
+
+- non-instant commands close whichkey popup. E.g. search next with "spc s n" is closed when new file is opened. See:
+  - https://github.com/VSpaceCode/vscode-which-key/issues/72

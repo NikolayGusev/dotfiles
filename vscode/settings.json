@@ -22,7 +22,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
   
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",

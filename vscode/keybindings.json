@@ -356,38 +356,5 @@
     "key": "shift+f7",
     "command": "-editor.action.diffReview.prev",
     "when": "isInDiffEditor"
-  },
-  {
-    "key": "shift+]",
-    "command": "references-view.next",
-    "when": "reference-list.hasResult && references-view.canNavigate"
-  },
-  {
-    "key": "shift+[",
-    "command": "references-view.prev",
-    "when": "reference-list.hasResult && references-view.canNavigate"
-  },
-  {
-    "key": "]",
-    "command": "search.action.focusNextSearchResult",
-    // "when": "(hasSearchResult || inSearchEditor) && (vim.mode != 'Insert' && !textInputFocus)"
-    // "when": "hasSearchResult && neovim.mode != 'Insert' && !textInputFocus || inSearchEditor && neovim.mode != 'Insert' && !textInputFocus"
-    "when": "hasSearchResult && neovim.mode != 'Insert'"
-  },
-  {
-    "key": "[",
-    "command": "search.action.focusPreviousSearchResult",
-    // "when": "hasSearchResult || inSearchEditor"
-    "when": "hasSearchResult && neovim.mode != 'Insert'"
-  },
-  {
-    "key": "shift+]",
-    "command": "goToNextReference",
-    "when": "inReferenceSearchEditor || referenceSearchVisible"
-  },
-  {
-    "key": "shift+[",
-    "command": "goToPreviousReference",
-    "when": "inReferenceSearchEditor || referenceSearchVisible"
   }
 ]

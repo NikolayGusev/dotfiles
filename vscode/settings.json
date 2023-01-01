@@ -280,7 +280,7 @@
         }
       ]
     },
-    "searchInfFiles": {
+    "searchInFiles": {
       "title": "Search in files",
       "bindings": [
         {
@@ -452,7 +452,7 @@
 //             "workbench.action.focusActiveEditorGroup",
 //             "whichkey.showTransient"
 //         ],
-//         "args": [null, null, null, "whichkey.transient.searchInfFiles"]    
+//         "args": [null, null, null, "whichkey.transient.searchInFiles"]    
 //     }
 
 
@@ -472,7 +472,7 @@
           "search.action.focusNextSearchResult",
           "whichkey.showTransient"
       ],
-      "args": [null, "whichkey.transient.searchInfFiles"]    
+      "args": [null, "whichkey.transient.searchInFiles"]    
     },
     {
       "keys": "s.N",
@@ -482,7 +482,7 @@
           "search.action.focusPreviousSearchResult",
           "whichkey.showTransient"
       ],
-      "args": [null, "whichkey.transient.searchInfFiles"]    
+      "args": [null, "whichkey.transient.searchInFiles"]    
     },
     // was Search in a project
     {
@@ -493,7 +493,7 @@
           "search.action.focusPreviousSearchResult",
           "whichkey.showTransient"
       ],
-      "args": [null, "whichkey.transient.searchInfFiles"]    
+      "args": [null, "whichkey.transient.searchInFiles"]    
     },
     {
       "keys": "s.f",
@@ -511,7 +511,7 @@
             "workbench.action.focusActiveEditorGroup",
             "whichkey.showTransient"
         ],
-        "args": [null, null, null, "whichkey.transient.searchInfFiles"]    
+        "args": [null, null, null, "whichkey.transient.searchInFiles"]    
     },
 
     // move toggles to root "t" instead of "T"

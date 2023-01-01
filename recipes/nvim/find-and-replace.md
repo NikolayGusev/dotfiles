@@ -11,6 +11,10 @@
 
 - use g\* to do so
 
+### Case insensitive replace
+
+- TODO
+
 ### Replace case insensitive
 
 ## Replace in solution

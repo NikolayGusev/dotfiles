@@ -65,7 +65,7 @@ nnoremap <leader>j /,<CR>cgn,<CR><Esc>
 nnoremap gd <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
 nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
 
-nnoremap g* <Cmd>call VSCodeNotify('workbench.action.findInFiles', { 'query': expand('<cword>')})<CR> 
+nnoremap <leader>r :%s/
 
 
 """""""""""""""""""""""""

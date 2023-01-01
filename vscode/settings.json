@@ -462,9 +462,10 @@
         "commands": [
             "editor.action.addSelectionToNextFindMatch",
             "workbench.action.findInFiles",
+            "workbench.action.focusActiveEditorGroup",
             "whichkey.showTransient"
         ],
-        "args": [null, null, "whichkey.transient.searchInfFiles"]    
+        "args": [null, null, null, "whichkey.transient.searchInfFiles"]    
     },
 
     // move toggles to root "t" instead of "T"

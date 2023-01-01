@@ -1,6 +1,9 @@
 # General
 
 - Why can't I use "z" for leap in visual mode, just like in replace mode? Or even better use ' in both modes like in normal mode?
+- Abolish and vim.vis fix
+  - https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
+  - See what it does and decide if necessary
 - Nvim as default text editor in windows
 - nomagic mode for s replace and / search
 

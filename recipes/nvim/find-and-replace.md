@@ -13,7 +13,7 @@
 
 ### Case insensitive replace
 
-- TODO
+- <leader>r word\C/replacement/
 
 ### Replace in selection
 

@@ -4,6 +4,7 @@
 - Abolish and vim.vis fix
   - https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
   - See what it does and decide if necessary
+- see if this is what I need to do the replacements in vscode
 - Nvim as default text editor in windows
 - nomagic mode for s replace and / search
 

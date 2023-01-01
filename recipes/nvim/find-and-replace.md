@@ -15,7 +15,9 @@
 
 - TODO
 
-### Replace case insensitive
+### Replace in selection
+
+- select and the <leader>r
 
 ## Replace in solution
 

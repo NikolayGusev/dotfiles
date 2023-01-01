@@ -67,6 +67,7 @@ nnoremap gd <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
 nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
 
 nnoremap <leader>r :%s/
+vnoremap <leader>r :s/
 
 " don't jump on *, #, etc
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>

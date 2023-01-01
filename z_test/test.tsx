@@ -41,10 +41,7 @@ const Comp = () => {
    <div>hello</div> 
    <div>hello</div> 
    <div>hello</div> 
-   <div>Hello</div> 
-   <div>hello</div> 
-   <div>Hello</div> 
-   <div>hello</div> 
+   <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div> 
    <div>hello</div> 
   </div>
 }

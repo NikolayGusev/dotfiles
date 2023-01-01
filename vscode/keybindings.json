@@ -371,12 +371,14 @@
     "key": "]",
     "command": "search.action.focusNextSearchResult",
     // "when": "(hasSearchResult || inSearchEditor) && (vim.mode != 'Insert' && !textInputFocus)"
-    "when": "hasSearchResult && neovim.mode != 'Insert' && !textInputFocus || inSearchEditor && neovim.mode != 'Insert' && !textInputFocus"
+    // "when": "hasSearchResult && neovim.mode != 'Insert' && !textInputFocus || inSearchEditor && neovim.mode != 'Insert' && !textInputFocus"
+    "when": "hasSearchResult && neovim.mode != 'Insert'"
   },
   {
     "key": "[",
     "command": "search.action.focusPreviousSearchResult",
-    "when": "hasSearchResult || inSearchEditor"
+    // "when": "hasSearchResult || inSearchEditor"
+    "when": "hasSearchResult && neovim.mode != 'Insert'"
   },
   {
     "key": "shift+]",

@@ -544,6 +544,12 @@
       "command": "workbench.debug.action.toggleRepl"
     },
     {
+      "keys": "t.g",
+      "name": "Toggle gitlens",
+      "type": "commands",
+      "commands": ["gitlens.toggleCodeLens", "gitlens.toggleLineBlame"]
+    },
+    {
       "keys": "t.s",
       "name": "Toggle side bar visibility",
       "type": "command",

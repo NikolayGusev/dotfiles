@@ -429,6 +429,12 @@
       "position": -1
     },
     {
+			"keys": "r.r",
+			"name": "Replace",
+			"type": "command",
+			"command": "editor.action.startFindReplaceAction"
+    },
+    {
       "keys": "r.b",
       "position": -1
     },

@@ -27,6 +27,10 @@
 - ANKI alt+kj to move lines
 - ANKI ctrl+a/x - increment/decrement numbers
 
+- ANKI
+
+  - find-and-replace.md
+
 - ANKI folds:
   zM :call VSCodeNotify('editor.foldAll')<CR>
   zR :call VSCodeNotify('editor.unfoldAll')<CR>

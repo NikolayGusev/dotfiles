@@ -69,6 +69,7 @@ nnoremap <leader>r :%s/
 
 " don't jump on *, #, etc
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>
+nnoremap <silent> g* :let @/=expand('<cword>') <bar> set hls <cr>
 
 """""""""""""""""""""""""
 " Text object parameter "

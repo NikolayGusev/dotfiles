@@ -72,8 +72,8 @@ nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
 nnoremap <leader>r :%s/
 vnoremap <leader>r :s/\%V
 nnoremap <leader><leader>r :%Subvert/
-"  vnoremap <leader><leader>r :Subvert/\%V              " This doesn't work 
-vnoremap <leader><leader>r :B Subvert/                  " See https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
+" See https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
+vnoremap <leader><leader>r :B Subvert/
 
 " don't jump on *, #, etc
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>

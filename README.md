@@ -16,3 +16,5 @@
 - run unix_symlink.sh
 - run extensions_install.sh
 - make sure to have this setting or git might ask for the key each time: https://superuser.com/a/1158050
+- enable F1-F12 in hotbar
+  Open system preference → keyboard. Then select the shortcut tab. On left, select Function Keys and then click the + plus sign. This will open the Applications folder. Select VS Code.

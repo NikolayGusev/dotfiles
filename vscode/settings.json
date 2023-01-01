@@ -429,6 +429,14 @@
       "position": -1
     },
     {
+      "keys": "r.b",
+      "position": -1
+    },
+    {
+      "keys": "r.s",
+      "position": -1
+    },
+    {
       "keys": "s.n",
       "name": "Next search result",
       "type": "commands",

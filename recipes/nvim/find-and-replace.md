@@ -11,13 +11,21 @@
 
 - use g\* to do so
 
-### Case insensitive replace
+### Match case
 
 - <leader>r word\C/replacement/
+
+### Keep case
+
+- <leader><leader>r
 
 ### Replace in selection
 
 - select and the <leader>r
+
+### Replace with patterns
+
+<leader><leader>r => facilit{y,ies}/building{,s}/
 
 ## Replace in solution
 

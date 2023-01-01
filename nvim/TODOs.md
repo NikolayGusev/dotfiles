@@ -3,6 +3,10 @@
 - Nvim as default text editor in windows
 - nomagic mode for s replace and / search
 
+# Better hotkeys
+
+- swap "iw" with "w" and so on?
+
 # ANKI
 
 - ANKI iv, av for camelCase intermediate-word motion

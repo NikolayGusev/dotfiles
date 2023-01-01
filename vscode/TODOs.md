@@ -38,7 +38,10 @@
 
 # vscode general
 
-- move in text menus up/down with J and K
+- find and replace quicker
+  - bind to "spc s r/R" for file/project replace?
+  - how to replace word under the cursor then? It might be a better idea to have capital letters to replace with word under the cursor.
+    - then it makes sense to bind to "spc r" - space "replace"
 - how to refine finder telescope window?
 
   e.g. I see the file that I need and do not want to scroll down, but would like to type more things to filter things out (e.g. when I cannot type it anymore because the text is infront of the text found by my query).

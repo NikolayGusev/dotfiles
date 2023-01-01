@@ -1,5 +1,3 @@
-- rename searchInfFiles
-
 # nvim fixes
 
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage

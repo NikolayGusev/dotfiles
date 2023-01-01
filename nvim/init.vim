@@ -48,6 +48,7 @@ nnoremap <Leader>/ :noh<CR>
 :set inccommand=nosplit
 :set gdefault                               " 'g' flag by default for replaces
 
+
 nnoremap gg gg0
 nnoremap G G$
 nnoremap <S-L> <S-L>zz
@@ -67,7 +68,7 @@ nnoremap gd <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
 nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
 
 nnoremap <leader>r :%s/
-vnoremap <leader>r :s/
+vnoremap <leader>r :s/\%V
 
 " don't jump on *, #, etc
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>

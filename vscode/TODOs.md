@@ -80,8 +80,6 @@
 
 - gitlens code lens and line blame turns on on its own after restarting vscode
 
-- magit "g" inside magit does not refresh the git status (new files don't appear, cannot see reverts that are done elsewhere, etc)
-
 ## While viewing diff
 
 - revert file/hunk

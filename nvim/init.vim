@@ -46,6 +46,7 @@ nnoremap <Leader>/ :noh<CR>
 :set cursorline
 :set ignorecase smartcase
 :set inccommand=nosplit
+:set gdefault                               " 'g' flag by default for replaces
 
 nnoremap gg gg0
 nnoremap G G$

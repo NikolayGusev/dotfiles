@@ -110,3 +110,10 @@ Where:
 - s(earch) n(ext), search p(revious)
 - ???
 - next/prev buffer
+
+# Folds
+
+consider remaping zM to zm
+
+- for vim folds
+- for close all other buffers

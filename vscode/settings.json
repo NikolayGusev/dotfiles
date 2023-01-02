@@ -55,15 +55,16 @@
     "editor.selectionBackground": "#ff7b00a1", // Current SELECTED text, required so that I can see what is yanked by vim
     // Make leap usable in VSCode. W/o this it is hard to see marks on unused functions and objects, etc.
     "editorUnnecessaryCode.opacity": "#000000ff",
-    "editorUnnecessaryCode.border": "#aaaaaa"
+    "editorUnnecessaryCode.border": "#aaaaaa",
     ////////////////////////////////////////
     // TODO: not sure why do I need those //
     ////////////////////////////////////////
     // "editor.selectionHighlightBackground": "#e7e8ff", //same content as the selection
     // "editor.findMatchBackground": "#00cc44a8", // Current SEARCH MATCH
     // "editor.findMatchHighlightBackground": "#e7b8ff", // Other SEARCH matches
-    // "editorIndentGuide.activeBackground": "#e7b8ff77", 
-    // "editorIndentGuide.background": "#00000011",
+
+    "editorIndentGuide.activeBackground": "#e7b8ff77", 
+    "editorIndentGuide.background": "#00000011"
   },
   
   // magit better colors

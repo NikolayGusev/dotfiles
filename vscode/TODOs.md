@@ -46,6 +46,8 @@
 
 # vscode general
 
+- go to next/prev reference (F3/F4) doesn't work in the same manner as go to next/prev find result
+  - the cursor stays inside of the search panel instead of jumping to the editor like in search
 - find and replace quicker
   - bind to "spc s r/R" for file/project replace?
   - how to replace word under the cursor then? It might be a better idea to have capital letters to replace with word under the cursor.

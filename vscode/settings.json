@@ -23,6 +23,9 @@
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
   "workbench.editor.enablePreview": false,
+  "update.enableWindowsBackgroundUpdates": false,           // Update manually
+  "update.mode": "none",                                    // Update manually
+
   
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",
@@ -738,6 +741,7 @@
 
     "echo selected": "echo ${selectedTextList}",
     "double input test": "echo ${input} ${input} ${input}",
+  },
 
 
   // gitlens 
@@ -752,5 +756,5 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.command": "gitlens.revealCommitInView",
   "gitlens.hovers.enabled": false
-  }
+
 }

@@ -1,3 +1,10 @@
+# dotfiles at work
+
+- at work I have some additional configs that do are not in the dotfiles repo.
+  - open folders scripts
+  - is it possible to merge json files somehow?
+- Nvim has a different installation file at work. How to update with a drop in replacement instead of carefully changing the config after copy-pasting?
+
 # nvim fixes
 
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage

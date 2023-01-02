@@ -25,6 +25,9 @@
   "workbench.editor.enablePreview": false,
   "update.enableWindowsBackgroundUpdates": false,           // Update manually
   "update.mode": "none",                                    // Update manually
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off",
 
   
   // Never use pick window
@@ -33,10 +36,6 @@
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.telemetryLevel": "off",
 
   // TODO: remove this?
   // "terminal.integrated.commandsToSkipShell": [
@@ -755,6 +754,6 @@
   "gitlens.showWhatsNewAfterUpgrades": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.command": "gitlens.revealCommitInView",
-  "gitlens.hovers.enabled": false
-
+  "gitlens.hovers.enabled": false,
+  "gitlens.telemetry.enabled": false
 }

@@ -4,6 +4,7 @@
   - open folders scripts
   - is it possible to merge json files somehow?
 - Nvim has a different installation file at work. How to update with a drop in replacement instead of carefully changing the config after copy-pasting?
+- eslint and prettier formatting on save
 
 # nvim fixes
 

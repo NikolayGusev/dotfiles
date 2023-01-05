@@ -24,8 +24,6 @@
   ** error lens
   \*\* command runner
 
-- Close and reopen current window command to fix desync issues
-
 - V line selection mode doesn't highlight empty rows
 
 # vspacecode fixes

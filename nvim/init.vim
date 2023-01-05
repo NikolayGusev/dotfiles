@@ -70,12 +70,14 @@ nnoremap gd <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
 nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
 
 nnoremap <leader>r :%s/
+nnoremap <Leader>R :%s/\<<C-r><C-w>\>/
 vnoremap <leader>r :s/\%V
 nnoremap <leader><leader>r :%Subvert/
+nnoremap <Leader>R :%Subvert/<C-r><C-w>/
 " See https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
 vnoremap <leader><leader>r :B Subvert/
 
-" don't jump on *, #, etc
+" don't jump on * and g*
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>
 nnoremap <silent> g* :let @/=expand('<cword>') <bar> set hls <cr>
 

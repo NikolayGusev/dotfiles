@@ -133,6 +133,7 @@ export const tags = {
 export async function getRewardsByRarity(rarity: Rarity) {
   const rarityTag = tags.rarity[rarity];
 
+  console.log("logseq!");
   const results = await logseq.DB.datascriptQuery(
     `[:find 
           (pull ?b [:block/title :block/uuid]) 

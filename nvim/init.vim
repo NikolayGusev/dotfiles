@@ -44,7 +44,7 @@ let g:vim_be_good_delete_me_offset = 35
 """""""""""
 language en_US
 let mapleader = ","
-nnoremap <Leader>/ :noh<CR>
+nnoremap <leader><leader>/ :noh<CR>
 :set cursorline
 :set ignorecase smartcase
 :set inccommand=nosplit
@@ -80,6 +80,11 @@ vnoremap <leader><leader>r :B Subvert/
 " don't jump on * and g*
 nnoremap <silent> * :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>
 nnoremap <silent> g* :let @/=expand('<cword>') <bar> set hls <cr>
+
+:nnoremap / /\V
+:nnoremap <leader>/ /
+:nnoremap ? ?\V
+:nnoremap <leader>? ?
 
 """""""""""""""""""""""""
 " Text object parameter "

@@ -5,6 +5,7 @@
   - See what it does and decide if necessary
 - see if this is what I need to do the replacements in vscode
 - Nvim as default text editor in windows
+- Check if I still need those <leader>o and <leader>O bindings
 
 # ANKI
 

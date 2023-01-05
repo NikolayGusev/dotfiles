@@ -86,6 +86,12 @@ nnoremap <silent> g* :let @/=expand('<cword>') <bar> set hls <cr>
 :nnoremap ? ?\V
 :nnoremap <leader>? ?
 
+"  Append lines above below while in normal mode and w/o any movement
+:nnoremap <leader>O :call append(line('.')-1, '')<CR>
+:nnoremap <leader>o :call append(line('.')+0, '')<CR>
+
+
+
 """""""""""""""""""""""""
 " Text object parameter "
 """""""""""""""""""""""""

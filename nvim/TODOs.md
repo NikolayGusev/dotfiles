@@ -6,10 +6,6 @@
 - see if this is what I need to do the replacements in vscode
 - Nvim as default text editor in windows
 
-# Better hotkeys
-
-- swap "iw" with "w" and so on?
-
 # ANKI
 
 - ANKI iv, av for camelCase intermediate-word motion

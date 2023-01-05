@@ -59,10 +59,6 @@
 
 # git stuff
 
-- magit
-
-  - add magit hotkeys to go to the next prev file - JK
-
 - gitlens
 
   - GitLens: Open Blame Prior to Change (blame forward/backward)
@@ -113,3 +109,9 @@ consider remaping zM to zm
 
 - non-instant commands close whichkey popup. E.g. search next with "spc s n" is closed when new file is opened. See:
   - https://github.com/VSpaceCode/vscode-which-key/issues/72
+
+## VS code anki
+
+### Magit
+
+next/prev diff - ctrl+n/p

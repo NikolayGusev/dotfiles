@@ -28,6 +28,7 @@
 
 # vspacecode fixes
 
+- Ctrl+n/p breaks sometimes for unknown reasons. Can try to clean keyboard hotkeys to see if this will help?
 - learn how to reorder items
 - learn how to add separators
 - learn how to add icons

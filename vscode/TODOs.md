@@ -55,11 +55,7 @@
 ## TODOs
 
 - Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
-- Search for todo comments to fix them "spc i 1/2/3/t" to search for 1/2/3/all todos
-
-# window management
-
-- resize window vertical/horizontal - separate commands like space-w-[]
+- Search for todo comments to fix them "spc s 1/2/3/t" to search for 1/2/3/all todos
 
 # git stuff
 

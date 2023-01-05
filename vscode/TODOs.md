@@ -32,15 +32,6 @@
 - learn how to add separators
 - learn how to add icons
 
-- Cannot evoke when no files are open
-- Cannot evoke when inside of explorer, etc
-- double space should do something better
-
-  - Options
-    - Replace with file file by name?
-    - Replace with buffer by name?
-  - "space >" to call command pallete
-
 # vscode general
 
 - go to next/prev reference (F3/F4) doesn't work in the same manner as go to next/prev find result

@@ -14,7 +14,7 @@
   "workbench.editor.tabCloseButton": "off",
   "window.menuBarVisibility": "toggle",
   "extensions.ignoreRecommendations": false,
-  
+
   // General usability
   "explorer.autoReveal": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -23,13 +23,12 @@
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
   "workbench.editor.enablePreview": false,
-  "update.enableWindowsBackgroundUpdates": false,           // Update manually
-  "update.mode": "none",                                    // Update manually
+  "update.enableWindowsBackgroundUpdates": false, // Update manually
+  "update.mode": "none", // Update manually
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.telemetryLevel": "off",
 
-  
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
@@ -39,7 +38,7 @@
 
   // TODO: remove this?
   // "terminal.integrated.commandsToSkipShell": [
-    // "-workbench.action.terminal.paste"
+  // "-workbench.action.terminal.paste"
   // ],
 
   ///////////
@@ -60,22 +59,22 @@
     "editorUnnecessaryCode.opacity": "#000000ff",
     "editorUnnecessaryCode.border": "#aaaaaa",
 
-    "editorIndentGuide.activeBackground": "#e7b8ff77", 
+    "editorIndentGuide.activeBackground": "#e7b8ff77",
     "editorIndentGuide.background": "#00000011"
   },
-  
+
   // magit better colors
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope":"markup.deleted",
+        "scope": "markup.deleted",
         "settings": {
           "foreground": "#FF0000",
           "fontStyle": "bold"
         }
       },
       {
-        "scope":"markup.inserted",
+        "scope": "markup.inserted",
         "settings": {
           "foreground": "#2ccc00",
           "fontStyle": "bold"
@@ -83,7 +82,6 @@
       }
     ]
   },
-
 
   /////////
   // Git //
@@ -384,32 +382,38 @@
       "type": "command",
       "command": "git-graph.view"
     },
-		{
+    {
       "keys": "g.n",
       "name": "Next change",
       "type": "commands",
-      "commands": ["workbench.action.editor.nextChange", "whichkey.showTransient" ],
-			"args": [null, "whichkey.transient.gitChangesInFile"]
+      "commands": [
+        "workbench.action.editor.nextChange",
+        "whichkey.showTransient"
+      ],
+      "args": [null, "whichkey.transient.gitChangesInFile"]
     },
     {
       "keys": "g.p",
       "name": "Prev change",
       "type": "commands",
-      "commands": ["workbench.action.editor.previousChange", "whichkey.showTransient" ],
-			"args": [null, "whichkey.transient.gitChangesInFile"]
+      "commands": [
+        "workbench.action.editor.previousChange",
+        "whichkey.showTransient"
+      ],
+      "args": [null, "whichkey.transient.gitChangesInFile"]
     },
     {
-			"keys": "g.l",
-			"name": "Show commits for line",
-			"type": "command",
-			"command": "gitlens.showLineHistoryView"
+      "keys": "g.l",
+      "name": "Show commits for line",
+      "type": "command",
+      "command": "gitlens.showLineHistoryView"
     },
     // f => *diff   *vscode built in file changes history
     {
-			"keys": "g.f",
-			"name": "Show commits for file",
-			"type": "command",
-			"command": "gitlens.openFileHistory"
+      "keys": "g.f",
+      "name": "Show commits for file",
+      "type": "command",
+      "command": "gitlens.openFileHistory"
     },
     // initialize repo
     {
@@ -427,32 +431,30 @@
       "position": -1
     },
     {
-			"keys": "r.r",
-			"name": "Replace",
-			"type": "command",
-			"command": "editor.action.startFindReplaceAction"
+      "keys": "r.r",
+      "name": "Replace",
+      "type": "command",
+      "command": "editor.action.startFindReplaceAction"
     },
     {
-			"keys": "r.R",
-			"name": "Replace",
-			"type": "command",
-			"command": "editor.action.startFindReplaceAction"
+      "keys": "r.R",
+      "name": "Replace",
+      "type": "command",
+      "command": "editor.action.startFindReplaceAction"
     },
 
-
-// {
-//         "keys": "s.F",
-//         "name": "Search in files with a selection",
-//         "type": "commands",
-//         "commands": [
-//             "editor.action.addSelectionToNextFindMatch",
-//             "workbench.action.findInFiles",
-//             "workbench.action.focusActiveEditorGroup",
-//             "whichkey.showTransient"
-//         ],
-//         "args": [null, null, null, "whichkey.transient.searchInFiles"]    
-//     }
-
+    // {
+    //         "keys": "s.F",
+    //         "name": "Search in files with a selection",
+    //         "type": "commands",
+    //         "commands": [
+    //             "editor.action.addSelectionToNextFindMatch",
+    //             "workbench.action.findInFiles",
+    //             "workbench.action.focusActiveEditorGroup",
+    //             "whichkey.showTransient"
+    //         ],
+    //         "args": [null, null, null, "whichkey.transient.searchInFiles"]
+    //     }
 
     {
       "keys": "r.b",
@@ -467,20 +469,20 @@
       "name": "Next search result",
       "type": "commands",
       "commands": [
-          "search.action.focusNextSearchResult",
-          "whichkey.showTransient"
+        "search.action.focusNextSearchResult",
+        "whichkey.showTransient"
       ],
-      "args": [null, "whichkey.transient.searchInFiles"]    
+      "args": [null, "whichkey.transient.searchInFiles"]
     },
     {
       "keys": "s.N",
       "name": "Previous search result",
       "type": "commands",
       "commands": [
-          "search.action.focusPreviousSearchResult",
-          "whichkey.showTransient"
+        "search.action.focusPreviousSearchResult",
+        "whichkey.showTransient"
       ],
-      "args": [null, "whichkey.transient.searchInFiles"]    
+      "args": [null, "whichkey.transient.searchInFiles"]
     },
     // was Search in a project
     {
@@ -488,10 +490,10 @@
       "name": "Previous search result",
       "type": "commands",
       "commands": [
-          "search.action.focusPreviousSearchResult",
-          "whichkey.showTransient"
+        "search.action.focusPreviousSearchResult",
+        "whichkey.showTransient"
       ],
-      "args": [null, "whichkey.transient.searchInFiles"]    
+      "args": [null, "whichkey.transient.searchInFiles"]
     },
     {
       "keys": "s.f",
@@ -500,16 +502,16 @@
       "command": "workbench.action.findInFiles"
     },
     {
-        "keys": "s.F",
-        "name": "Search in files with a selection",
-        "type": "commands",
-        "commands": [
-            "editor.action.addSelectionToNextFindMatch",
-            "workbench.action.findInFiles",
-            "workbench.action.focusActiveEditorGroup",
-            "whichkey.showTransient"
-        ],
-        "args": [null, null, null, "whichkey.transient.searchInFiles"]    
+      "keys": "s.F",
+      "name": "Search in files with a selection",
+      "type": "commands",
+      "commands": [
+        "editor.action.addSelectionToNextFindMatch",
+        "workbench.action.findInFiles",
+        "workbench.action.focusActiveEditorGroup",
+        "whichkey.showTransient"
+      ],
+      "args": [null, null, null, "whichkey.transient.searchInFiles"]
     },
 
     // move toggles to root "t" instead of "T"
@@ -560,16 +562,16 @@
       "command": "toggle.diff.ignoreTrimWhitespace"
     },
     {
-        "keys": "t.W",
-        "name": "Toggle render whitespaces",
-        "type": "command",
-        "command": "editor.action.toggleRenderWhitespace"
+      "keys": "t.W",
+      "name": "Toggle render whitespaces",
+      "type": "command",
+      "command": "editor.action.toggleRenderWhitespace"
     },
     {
-        "keys": "t.R",
-        "name": "Toggle word wrap",
-        "type": "command",
-        "command": "editor.action.toggleWordWrap"
+      "keys": "t.R",
+      "name": "Toggle word wrap",
+      "type": "command",
+      "command": "editor.action.toggleWordWrap"
     },
     // standard things moved "T" -> "t"
     {
@@ -606,27 +608,27 @@
       "keys": "w.h",
       "name": "Change window horizontal size",
       "type": "command",
-			"command": "whichkey.showTransient",
-			"args": "whichkey.transient.horizontalResize"    
+      "command": "whichkey.showTransient",
+      "args": "whichkey.transient.horizontalResize"
     },
     {
       "keys": "w.v",
       "name": "Change window vertical size",
       "type": "command",
-			"command": "whichkey.showTransient",
-			"args": "whichkey.transient.verticalResize"    
+      "command": "whichkey.showTransient",
+      "args": "whichkey.transient.verticalResize"
     },
     {
       "keys": "w.j",
       "name": "Split editor below",
       "type": "command",
-			"command": "workbench.action.splitEditorDown"
+      "command": "workbench.action.splitEditorDown"
     },
     {
       "keys": "w.l",
       "name": "Split editor right",
       "type": "command",
-			"command": "workbench.action.splitEditor"
+      "command": "workbench.action.splitEditor"
     },
     // split below
     {
@@ -676,32 +678,32 @@
   ],
 
   "javascript-repl.coverageTimes": false,
-  
-  "editor.codeActionsOnSave":{
-    "source.fixAll.eslint": true 
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
-  "eslint.validate":[
+  "eslint.validate": [
     "javascript",
     "javascriptReact",
     "typescript",
     "typescriptReact"
   ],
-  "[javascript]":{
+  "[javascript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "vscode.typescript-language-features" 
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[javascriptReact]":{
+  "[javascriptReact]": {
     "editor.formatOnSave": false
   },
-  "[typescript]":{
+  "[typescript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint" 
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[typescriptReact]":{
+  "[typescriptReact]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint" 
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  
+
   "typescript.preferences.quoteStyle": "single",
   "typescript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.importModuleSpecifier": "relative",
@@ -712,14 +714,13 @@
   "command-runner.terminal.autoFocus": false,
   "command-runner.terminal.name": "runCommand",
   "command-runner.commands": {
-    "assume unchanged":"git update-index --assume-unchanged ${file}",
+    "assume unchanged": "git update-index --assume-unchanged ${file}",
     "assume unchanged list": "git ls-files -v | grep '^[[:lower:]]'",
     "no-assume unchanged": "git update-index --no-assume-unchanged ${file}",
     "no-assume unchanged all": "git ls-files -v | grep '^[a-z]' | cut -c3- | xargs git update-index --no-assume-unchanged --",
     "delete merged branches": "git branch --merged origin/master | xargs git branch -d",
     "checkout penultimate version": "git checkout HEAD~1 -- ${file}",
     "checkout previous version...": "git checkout ${input} -- ${file}",
-
 
     // Those seem to be broken
     "checkout {commit} {filename} by selection": "git checkout `echo ${selectedTextList} | cut -d' ' -f1` -- `echo ${selectedTextList} | cut -d' ' -f2`",
@@ -734,11 +735,10 @@
     // "revert changes from current patch file": "git apply -R '${file}'",
 
     "echo selected": "echo ${selectedTextList}",
-    "double input test": "echo ${input} ${input} ${input}",
+    "double input test": "echo ${input} ${input} ${input}"
   },
 
-
-  // gitlens 
+  // gitlens
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.scopes": [],
@@ -752,6 +752,8 @@
   "gitlens.hovers.enabled": false,
   "gitlens.telemetry.enabled": false,
   "workbench.editorAssociations": {
-    "git-rebase-todo": "default"
-  }
+    "git-rebase-todo": "default" // disable gitlens rebase i dialog
+  },
+
+  "vsCodeGitWorktrees.move.openNewVscodeWindow": false
 }

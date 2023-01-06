@@ -58,19 +58,26 @@
 - Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
 - Search for todo comments to fix them "spc s 1/2/3/t" to search for 1/2/3/all todos
 
+# Search and replace
+
+- https://docs.google.com/spreadsheets/d/1VxzBHZskj6m2_07N202LfhwXPGQ-AzVTbcAAGxMsr_w/edit#gid=1119996906
+- (try to) use this to generate md table afterwards to be commited under this repo - https://www.tablesgenerator.com/markdown_tables
+
 # git stuff
 
-- Finish git patterns
-  - https://docs.google.com/spreadsheets/d/1VxzBHZskj6m2_07N202LfhwXPGQ-AzVTbcAAGxMsr_w/edit#gid=1119996906
-  - (try to) use this to generate md table afterwards to be commited under this repo - https://www.tablesgenerator.com/markdown_tables
 - it is hard to navigate and edit git diff at the same time (native vscode diff)
   - e.g. cannot input and the u(ndo)
   - cannot move up/down with j and k
 - gitlens
-
   - GitLens: Open Blame Prior to Change (blame forward/backward)
 
+## Diff
+
 - How to view changes for commit range with a keyboard?
+  - Consider "ll" in magit to view the log
+- How to revert changes from one particular commit or revert a patch?
+
+## Misc
 
 - gitlens code lens and line blame turns on on its own after restarting vscode
 

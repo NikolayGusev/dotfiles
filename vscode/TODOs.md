@@ -86,13 +86,6 @@
 - revert file/hunk
 - checkout file
 
-## Recipes
-
-- revert commit
-  - magit
-  - ll
-  - revert-at-point
-
 # file explorer
 
 - consider which actions should I be able to do in file explorer

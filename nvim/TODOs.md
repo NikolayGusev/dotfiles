@@ -8,6 +8,14 @@
 - Check if I still need those <leader>o and <leader>O bindings
 - Consider if "f" should be case insensitive. As currently it ignores the capital letter "A" when "fa" is used.
 
+## Russian keys mapping
+
+- Consider to map russian letters to vim english keys. E.g. like this:
+  https://t.me/kydavoiti/207?comment=2804
+  ```
+  vim.api.nvim_command('set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz')
+  ```
+
 # ANKI
 
 - iv, av for camelCase intermediate-word motion

@@ -60,6 +60,8 @@
 
 # git stuff
 
+- Finish git pattersn
+  - https://docs.google.com/spreadsheets/d/1VxzBHZskj6m2_07N202LfhwXPGQ-AzVTbcAAGxMsr_w/edit#gid=1119996906
 - it is hard to navigate and edit git diff at the same time (native vscode diff)
   - e.g. cannot input and the u(ndo)
   - cannot move up/down with j and k

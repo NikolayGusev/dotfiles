@@ -6,6 +6,7 @@
 - see if this is what I need to do the replacements in vscode
 - Nvim as default text editor in windows
 - Check if I still need those <leader>o and <leader>O bindings
+- Consider if "f" should be case insensitive. As currently it ignores the capital letter "A" when "fa" is used.
 
 # ANKI
 

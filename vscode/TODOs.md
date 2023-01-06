@@ -60,8 +60,9 @@
 
 # git stuff
 
-- Finish git pattersn
+- Finish git patterns
   - https://docs.google.com/spreadsheets/d/1VxzBHZskj6m2_07N202LfhwXPGQ-AzVTbcAAGxMsr_w/edit#gid=1119996906
+  - (try to) use this to generate md table afterwards to be commited under this repo - https://www.tablesgenerator.com/markdown_tables
 - it is hard to navigate and edit git diff at the same time (native vscode diff)
   - e.g. cannot input and the u(ndo)
   - cannot move up/down with j and k

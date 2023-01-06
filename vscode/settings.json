@@ -750,5 +750,8 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.command": "gitlens.revealCommitInView",
   "gitlens.hovers.enabled": false,
-  "gitlens.telemetry.enabled": false
+  "gitlens.telemetry.enabled": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  }
 }

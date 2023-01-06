@@ -128,5 +128,6 @@ consider remaping zM to zm
 
 ### Magit
 
-next/prev diff - ctrl+n/p
-toggle fold for all files in section - shift+tab while being ontop of the section.
+- ctrl+n/p - next/prev diff
+- shift+tab - toggle fold for all files in section - while being ontop of the section.
+- gr - refresh

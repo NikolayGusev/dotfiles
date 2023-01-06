@@ -21,3 +21,9 @@
 - Try this
   - https://github.com/vipzhicheng/logseq-plugin-vim-shortcuts
 - Proper MOC structure at work and at home
+
+## NVim
+
+- check this out https://github.com/renerocksai/telekasten.nvim
+  - problems
+    - doesn't work well in vscode because it opens its own windows and uses telescope

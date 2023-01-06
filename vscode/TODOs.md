@@ -60,6 +60,9 @@
 
 # git stuff
 
+- it is hard to navigate and edit git diff at the same time (native vscode diff)
+  - e.g. cannot input and the u(ndo)
+  - cannot move up/down with j and k
 - gitlens
 
   - GitLens: Open Blame Prior to Change (blame forward/backward)
@@ -111,7 +114,7 @@ consider remaping zM to zm
 - non-instant commands close whichkey popup. E.g. search next with "spc s n" is closed when new file is opened. See:
   - https://github.com/VSpaceCode/vscode-which-key/issues/72
 
-## VS code anki
+## VS code ANKI
 
 ### Magit
 

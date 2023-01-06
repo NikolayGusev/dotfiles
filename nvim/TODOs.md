@@ -9,23 +9,24 @@
 
 # ANKI
 
-- ANKI iv, av for camelCase intermediate-word motion
-- ANKI sandwich surrounding function csf, ysiwf, etc
-- ANKI sandwich 2ysa" to surround with two surroundings
-- ANKI sandwich i, f, t objects
-- ANKI cin<surrounding>, cil<surrounding> to change inside next/prev surrounding (or another op)
-- ANKI change visual selection side - o
-- ANKI entire buffer selector
-- ANKI entire visible screen selector
-- ANKI replace <leader>s, <leader><leader>ss, etc
-- ANKI Y to yank to the end anki card
-- ANKI crs, cru commands.
+- iv, av for camelCase intermediate-word motion
+- sandwich surrounding function csf, ysiwf, etc
+- sandwich 2ysa" to surround with two surroundings
+- sandwich i, f, t objects
+- cin<surrounding>, cil<surrounding> to change inside next/prev surrounding (or another op)
+- change visual selection side - o
+- entire buffer selector
+- entire visible screen selector
+- replace <leader>s, <leader><leader>ss, etc
+- Y to yank to the end anki card
+- gi to continue input at the last edit
+- crs, cru commands.
 - - Want to turn fooBar into foo_bar? Press crs (coerce to snake_case). MixedCase (crm), camelCase (crc), snake_case (crs), UPPER_CASE (cru), dash-case (cr-), dot.case (cr.), space case (cr<space>), and Title Case (crt) are all just 3 keystrokes away.
-- ANKI Abolish docs.
-- ANKI Abolish - %S instead of %S for case insensitive replace.
-- ANKI "vaBVd" to delete function to anki cards
-- ANKI alt+kj to move lines
-- ANKI ctrl+a/x - increment/decrement numbers
+- Abolish docs.
+- Abolish - %S instead of %S for case insensitive replace.
+- "vaBVd" to delete function to anki cards
+- alt+kj to move lines
+- ctrl+a/x - increment/decrement numbers
 
 - ANKI
 

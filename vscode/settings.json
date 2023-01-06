@@ -330,7 +330,7 @@
       "command": "workbench.action.showAllEditors"
     },
     {
-      "keys": ">",
+      "keys": ",",
       "name": "Commands",
       "type": "command",
       "command": "workbench.action.showCommands"

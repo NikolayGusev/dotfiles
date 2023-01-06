@@ -432,5 +432,10 @@
     "key": "ctrl+k",
     "command": "-magit.move-previous-entity",
     "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "shift+tab",
+    "command": "magit.toggle-all-folds-in-change-section-at-point",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
   }
 ]

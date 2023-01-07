@@ -7,6 +7,7 @@
 - Nvim as default text editor in windows
 - Check if I still need those <leader>o and <leader>O bindings
 - Consider if "f" should be case insensitive. As currently it ignores the capital letter "A" when "fa" is used.
+- How to surround visual selection? It seems there's a conflict with leap. Surround should work like "Vsa(", but 's' is already taken by the leap.
 
 ## Russian keys mapping
 

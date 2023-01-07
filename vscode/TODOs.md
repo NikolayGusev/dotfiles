@@ -137,3 +137,7 @@ consider remaping zM to zm
 - ctrl+n/p - next/prev diff
 - shift+tab - toggle fold for all files in section - while being ontop of the section.
 - gr - refresh
+
+### Preview
+
+- Space in timeline or explorer to preview selected file.

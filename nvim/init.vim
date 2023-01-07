@@ -188,6 +188,35 @@ nmap y <plug>(YoinkYankPreserveCursorPosition)
 xmap y <plug>(YoinkYankPreserveCursorPosition)
 
 
+""""""""""""
+" vim-swap "
+""""""""""""
+let g:swap#rules = deepcopy(g:swap#default_rules)
+" for templates see - https://github.com/machakann/vim-swap/blob/master/autoload/swap.vim
+let g:swap#rules += [
+\   {
+\     'description': 'Reorder the semicolon-separated items in [].',
+\     'mode': 'n',
+\     'surrounds': ['\[', '\]', 1],
+\     'delimiter': ['\s*;\s*'],
+\     'braket': [['(', ')'], ['[', ']'], ['{', '}']],
+\     'quotes': [['"', '"'], ["'", "'"]],
+\     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
+\   },
+\   {
+\     'description': 'Reorder the semicolon-separated items in {}.',
+\     'mode': 'n',
+\     'surrounds': ['{', ';[ \n]*}', 1],
+\     'delimiter': ['\s*;\s*'],
+\     'braket': [['(', ')'], ['[', ']'], ['{', '}']],
+\     'quotes': [['"', '"'], ["'", "'"]],
+\     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
+\   } ]
+
+" Problem: 'surrounds': ['{', ';\+[ \n]*}', 1], (note \+) allows make ; optional, but it breaks for nested curly braces
+
+
+
 """"""""""""""
 " Subversive "
 """"""""""""""

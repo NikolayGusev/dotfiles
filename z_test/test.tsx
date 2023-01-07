@@ -11,6 +11,31 @@ const r = {
 
 const opts = { type: "select", ...enqOpts };
 
+abc defg
+abc asdf
+abc defg
+type RarityDistribution = { rarity: Rarity; perc: number; }[];
+type RarityDistribution2 = {
+  perc: number;
+  rarity: Rarity;
+}[];
+a_b_c
+[a; b; c]
+{ a; b; c }
+
+export interface Example {
+  name: string;
+  items: {
+    [key: string]: Item
+  };
+}
+export interface Example { name: string; items: { key: string }; }
+export interface Example { name: string; items: (key: string) }
+export interface Example { name: { 123 }; items: 123 }
+export interface Example { items: 123; name: { 123 }; }
+export interface Example { items: 123; name: { 123}; }
+export interface Example { items: 123; name: string; }
+
 const ref1 = 1;
 const ref2 = 2;
 const resultSum = ref1 + ref2;
@@ -61,10 +86,6 @@ export function getRarityColor(rarity: Rarity) {
   }
 }
 
-type RarityDistribution = {
-  rarity: Rarity;
-  perc: number;
-}[];
 
 export type Reward = {
   name: string;

@@ -156,7 +156,7 @@ let g:traces_abolish_integration = 1
 """"""""
 
 :lua require('leap').set_default_keymaps()
-:lua vim.keymap.set({'n', 'v'}, "'", function () require('leap').leap { target_windows = { vim.fn.win_getid() } } end)
+:lua vim.keymap.set({'n', 'v', 'o', 'x'}, "'", function () require('leap').leap { target_windows = { vim.fn.win_getid() } } end)
 
 """""""""""""""
 " Cutlass.vim "

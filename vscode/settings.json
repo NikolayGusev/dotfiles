@@ -359,6 +359,12 @@
       "command": "git.openChange"
     },
     {
+      "keys": "g.t",
+      "name": "Timeline",
+      "type": "command",
+      "command": "timeline.focus"
+    },
+    {
       "keys": "g.S",
       "name": "Search commits",
       "type": "command",

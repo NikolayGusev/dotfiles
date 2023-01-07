@@ -340,16 +340,14 @@
       "keys": "f.T",
       "position": -1
     },
-    // was Open file/folder (creates new file usually, so its easier to use space-f-n instead)
-    {
-      "keys": "f.f",
-      "name": "+Find file in project",
-      "type": "command",
-      "command": "workbench.action.quickOpen"
-    },
     // Was toogle file panel
     {
       "keys": "f.t",
+      "position": -1
+    },
+    // was Open file/folder (creates new file usually, so its easier to use space-f-n instead)
+    {
+      "keys": "f.f",
       "name": "Show active file in tree/explorer view",
       "type": "command",
       "command": "workbench.files.action.showActiveFileInExplorer"

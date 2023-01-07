@@ -62,7 +62,9 @@
     "editorUnnecessaryCode.border": "#aaaaaa",
 
     "editorIndentGuide.activeBackground": "#e7b8ff77",
-    "editorIndentGuide.background": "#00000011"
+    "editorIndentGuide.background": "#00000011",
+
+    "editorStickyScroll.background":"#FFFFDDFF"
   },
 
   // magit better colors
@@ -558,10 +560,16 @@
       "commands": ["gitlens.toggleCodeLens", "gitlens.toggleLineBlame"]
     },
     {
-      "keys": "t.s",
+      "keys": "t.S",
       "name": "Toggle side bar visibility",
       "type": "command",
       "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+      "keys": "t.s",
+      "name": "Toggle sticky scroll",
+      "type": "command",
+      "command": "editor.action.toggleStickyScroll"
     },
     {
       "keys": "t.w",

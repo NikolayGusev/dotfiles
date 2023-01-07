@@ -15,8 +15,6 @@
   "window.menuBarVisibility": "toggle",
   "extensions.ignoreRecommendations": false,
   "breadcrumbs.enabled": false,
-  "editor.stickyScroll.enabled": true,
-  "editor.stickyScroll.maxLineCount": 5,
 
   // General usability
   "explorer.autoReveal": false,

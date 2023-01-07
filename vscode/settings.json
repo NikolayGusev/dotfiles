@@ -84,6 +84,19 @@
       }
     ]
   },
+  
+	"multiCommand.commands": [
+		{
+			"command": "multiCommand.openTerminalOutput",
+			"sequence": [
+				"workbench.action.terminal.selectAll",
+				"workbench.action.terminal.copySelection",
+				"workbench.action.terminal.clearSelection",
+				"workbench.action.files.newUntitledFile",
+				"editor.action.clipboardPasteAction"
+			]
+		}
+	],
 
   /////////
   // Git //
@@ -536,6 +549,12 @@
       "name": "Toggle terminal",
       "type": "command",
       "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "keys": "t.c",
+      "name": "Open terminal output",
+      "type": "command",
+      "command": "multiCommand.openTerminalOutput"
     },
 //    {
 //      "keys": "t.T",

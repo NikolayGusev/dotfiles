@@ -22,7 +22,6 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
-  "workbench.editor.enablePreview": false,
   "update.enableWindowsBackgroundUpdates": false, // Update manually
   "update.mode": "none", // Update manually
   "telemetry.enableTelemetry": false,

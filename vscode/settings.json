@@ -560,16 +560,16 @@
       "commands": ["gitlens.toggleCodeLens", "gitlens.toggleLineBlame"]
     },
     {
-      "keys": "t.S",
-      "name": "Toggle side bar visibility",
-      "type": "command",
-      "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
       "keys": "t.s",
       "name": "Toggle sticky scroll",
       "type": "command",
       "command": "editor.action.toggleStickyScroll"
+    },
+    {
+      "name": "Toggle side bar visibility",
+      "keys": "t.S",
+      "type": "command",
+      "command": "workbench.action.toggleSidebarVisibility"
     },
     {
       "keys": "t.w",

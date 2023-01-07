@@ -325,9 +325,9 @@
   "vspacecode.bindingOverrides": [
     {
       "keys": " ",
-      "name": "Show all buffers",
+      "name": "+Find file in project",
       "type": "command",
-      "command": "workbench.action.showAllEditors"
+      "command": "workbench.action.quickOpen"
     },
     {
       "keys": ",",

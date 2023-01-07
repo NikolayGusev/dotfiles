@@ -8,7 +8,7 @@ Plug 'machakann/vim-swap'
 
 Plug 'nvim-lua/plenary.nvim'
 
-""" Required by easyclip and leap
+""" Required by leap
 Plug 'tpope/vim-repeat'
 Plug 'machakann/vim-sandwich'
 

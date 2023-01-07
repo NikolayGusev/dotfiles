@@ -1,5 +1,5 @@
 import "@logseq/libs";
-import {a,b,c} from 'asdf';
+import { a, b, c } from 'asdf';
 const testChange = 1;
 const r = {
   a: 1;
@@ -13,11 +13,11 @@ const opts = { type: "select", ...enqOpts };
 
 const ref1 = 1;
 const ref2 = 2;
-const resultSum = ref1+ref2;
+const resultSum = ref1 + ref2;
 
 
 const myWorldHere = ("world");
-const c = some_func([1, 2], 1, 2, 3, True, lst=[], kw1=False, d={2, 3});
+const c = some_func([1, 2], 1, 2, 3, True, lst = [], kw1 = False, d = { 2, 3});
 const d = someFunc2("hello", "world", 42)
 const b = [1, 2, 3, 4];
 const a = `why
@@ -38,13 +38,13 @@ doing
 
 const Comp = () => {
   return <div>
-   <div>hello</div> 
-   <div>hello</div> 
-   <div>hello</div> 
-   <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div> 
-   <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div> 
-   <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div> 
-   <div>hello</div> 
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div>
+    <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div>
+    <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div>
+    <div>hello</div>
   </div>
 }
 

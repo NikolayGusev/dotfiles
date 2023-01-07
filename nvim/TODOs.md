@@ -1,5 +1,6 @@
 # General
 
+- ' doesn't work for d(eletes) and c(hanges)
 - Abolish and vim.vis fix
   - https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
   - See what it does and decide if necessary
@@ -38,19 +39,26 @@
 - alt+kj to move lines
 - ctrl+a/x - increment/decrement numbers
 - '{' and '}' in visual mode to select entire paragraphs faster
+- gs 
+  => hjkl - to move args around
+	=> s    - sort arbitrary strings
+  => r    - reverse
+  => g/G  - expand/collapse selection
+- g> and g< - move current arg left and right
+- gs + visual line selection - does the same for visual
 
 - ANKI
 
   - find-and-replace.md
 
 - ANKI folds:
-  zM :call VSCodeNotify('editor.foldAll')<CR>
-  zR :call VSCodeNotify('editor.unfoldAll')<CR>
+  za :call VSCodeNotify('editor.toggleFold')<CR>
   zc :call VSCodeNotify('editor.fold')<CR>
   zC :call VSCodeNotify('editor.foldRecursively')<CR>
+  zM :call VSCodeNotify('editor.foldAll')<CR>
   zo :call VSCodeNotify('editor.unfold')<CR>
   zO :call VSCodeNotify('editor.unfoldRecursively')<CR>
-  za :call VSCodeNotify('editor.toggleFold')<CR>
+  zR :call VSCodeNotify('editor.unfoldAll')<CR>
 
 # Strategic
 

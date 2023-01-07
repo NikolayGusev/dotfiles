@@ -527,10 +527,22 @@
     },
     {
       "keys": "t.t",
+      "name": "Terminal command",
+      "type": "command",
+      "command": "workbench.action.terminal.runRecentCommand"
+    },
+    {
+      "keys": "t.T",
       "name": "Toggle terminal",
       "type": "command",
       "command": "workbench.action.terminal.toggleTerminal"
     },
+//    {
+//      "keys": "t.T",
+//      "name": "Toggle tab visibility",
+//      "type": "command",
+//      "command": "workbench.action.toggleTabsVisibility"
+//    },
     {
       "keys": "t.o",
       "name": "Toggle output",
@@ -603,12 +615,6 @@
       "name": "Toggle maximized panel",
       "type": "command",
       "command": "workbench.action.toggleMaximizedPanel"
-    },
-    {
-      "keys": "t.T",
-      "name": "Toggle tab visibility",
-      "type": "command",
-      "command": "workbench.action.toggleTabsVisibility"
     },
     {
       "keys": "t.z",

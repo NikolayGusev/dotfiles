@@ -41,7 +41,7 @@
 - '{' and '}' in visual mode to select entire paragraphs faster
 - gs 
   => hjkl - to move args around
-	=> s    - sort arbitrary strings
+	=> s/S  - sort/sort desc
   => r    - reverse
   => g/G  - expand/collapse selection
 - g> and g< - move current arg left and right

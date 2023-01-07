@@ -37,6 +37,7 @@
 - "vaBVd" to delete function to anki cards
 - alt+kj to move lines
 - ctrl+a/x - increment/decrement numbers
+- '{' and '}' in visual mode to select entire paragraphs faster
 
 - ANKI
 

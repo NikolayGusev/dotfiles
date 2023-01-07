@@ -141,3 +141,7 @@ consider remaping zM to zm
 ### Preview
 
 - Space in timeline or explorer to preview selected file.
+
+###
+
+- space j i/I - got to symbol

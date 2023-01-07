@@ -145,3 +145,4 @@ consider remaping zM to zm
 ###
 
 - space j i/I - got to symbol
+- ctrl+enter to open to the side

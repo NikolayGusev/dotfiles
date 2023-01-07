@@ -771,5 +771,10 @@
     "git-rebase-todo": "default" // disable gitlens rebase i dialog
   },
 
-  "vsCodeGitWorktrees.move.openNewVscodeWindow": false
+  "vsCodeGitWorktrees.move.openNewVscodeWindow": false,
+
+  // Don't format settings.json automatically. This loses intellisense though.
+  "files.associations": {
+    "**/settings.json": "plaintext"
+  },
 }

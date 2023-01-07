@@ -131,7 +131,6 @@
     "when": "editorTextFocus && neovim.mode == 'visual'",
     "args": "<A-l>"
   },
-  
   // vspacecode-bonus move around windows
   {
     "key": "ctrl+h",
@@ -156,9 +155,10 @@
   //vspacecode movement helpers
   {
     "key": "shift+space",
-    "command": "vspacecode.space"
+    "command": "vspacecode.space",
     // Let's try with a free for all mode: use this hotkey anywhere.
     // "when": "panelFocus || sideBarFocus || neovim.mode == 'insert'"
+    "when": "neovim.mode != 'cmdline_normal' && neovim.mode != 'insert'"
   },
   // Quick Navigation for diff view
   {
@@ -297,14 +297,13 @@
   ////////////////////////
   // END gitlens unbind //
   ////////////////////////
-
   /////////////////
   // Diff Editor //
   /////////////////
   {
     "key": "enter",
     "command": "gitlens.openWorkingFile",
-    "when":"isInDiffEditor"
+    "when": "isInDiffEditor"
   },
   {
     "key": "x",
@@ -349,7 +348,7 @@
   {
     "key": "ctrl+p",
     // "command": "editor.action.diffReview.prev",
-    "command": "workbench.action.compareEditor.previousChange",   // This opens a nice preview with a patch, but seems to be unnecessary
+    "command": "workbench.action.compareEditor.previousChange", // This opens a nice preview with a patch, but seems to be unnecessary
     "when": "isInDiffEditor"
   },
   {

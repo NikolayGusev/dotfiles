@@ -10,3 +10,6 @@
       - this also switches to the new tab immediately
     - or
     - use CAPITAL letters to specify link name to navigate to
+
+## Anki
+- v c to enter caret mode

@@ -204,11 +204,20 @@ let g:swap#rules += [
 \     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
 \   },
 \   {
-\     'description': 'Reorder the semicolon-separated items in {}.',
+\     'description': 'Reorder the semicolon-separated items in {} with trailing ; support.',
 \     'mode': 'n',
 \     'surrounds': ['{', ';[ \n]*}', 1],
 \     'delimiter': ['\s*;\s*'],
 \     'braket': [['(', ')'], ['[', ']'], ['{', '}']],
+\     'quotes': [['"', '"'], ["'", "'"]],
+\     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
+\   },
+\   {
+\     'description': 'Reorder the comma-separated items in {} with <> and trailing , support.',
+\     'mode': 'n',
+\     'surrounds': ['{', '.[ \n]*}', 1],
+\     'delimiter': ['\s*,\s*'],
+\     'braket': [['(', ')'], ['[', ']'], ['{', '}'], ['<', '>']],
 \     'quotes': [['"', '"'], ["'", "'"]],
 \     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
 \   } ]

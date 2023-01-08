@@ -11,6 +11,17 @@ const r = {
 
 const opts = { type: "select", ...enqOpts };
 
+type MyType<T> = {
+  value: Option<T>;
+  result: string;
+}
+/*
+struct ReadUserInput {
+    result: Result < i32, std:: num:: ParseIntError >,
+    guess_str: String,
+}
+*/
+
 abc defg
 abc asdf
 abc defg
@@ -33,7 +44,7 @@ export interface Example { name: string; items: { key: string }; }
 export interface Example { name: string; items: (key: string) }
 export interface Example { name: { 123 }; items: 123 }
 export interface Example { items: 123; name: { 123 }; }
-export interface Example { items: 123; name: { 123}; }
+export interface Example { items: 123; name: { 123 }; }
 export interface Example { items: 123; name: string; }
 
 const ref1 = 1;

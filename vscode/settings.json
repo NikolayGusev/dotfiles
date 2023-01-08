@@ -62,7 +62,12 @@
     "editorIndentGuide.activeBackground": "#e7b8ff77",
     "editorIndentGuide.background": "#00000011",
 
-    "editorStickyScroll.background":"#FFFFDDFF"
+    "editorStickyScroll.background":"#FFFFDDFF",
+
+    "editorInlayHint.background": "#00000000",
+    "editorInlayHint.foreground": "#00000055",
+    "editorInlayHint.typeForeground": "#00000055",
+    "editorInlayHint.parameterForeground": "#00000055",
   },
 
   // magit better colors

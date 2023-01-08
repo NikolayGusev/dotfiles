@@ -1,5 +1,7 @@
 # General
 
+- Consider - https://github.com/andymass/vim-matchup
+- Consider - https://github.com/godlygeek/tabular
 - since s is not used, might bind it to something else
 - Abolish and vim.vis fix
   - https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759

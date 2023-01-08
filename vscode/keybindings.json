@@ -398,7 +398,7 @@
   },
   {
     "key": "cmd+s",
-    "command": "saveAll"
+    "command": "workbench.action.files.saveFiles"
   },
   {
     "key": "alt+cmd+s",

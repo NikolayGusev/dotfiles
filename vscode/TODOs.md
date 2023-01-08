@@ -1,6 +1,5 @@
 # dotfiles at work
 
-- save all should save every file which is not a new file (e.g is already created)
 - at work I have some additional configs that do are not in the dotfiles repo.
   - open folders scripts
   - is it possible to merge json files somehow?

@@ -799,14 +799,15 @@
   "gitlens.advanced.messages": {
     "suppressGitVersionWarning": true
   },
-  "workbench.editorAssociations": {
-    "git-rebase-todo": "default" // disable gitlens rebase i dialog
-  },
+  // Doesn't work at work
+  // "workbench.editorAssociations": {
+  //   "git-rebase-todo": "default" // disable gitlens rebase i dialog
+  // },
 
-  "vsCodeGitWorktrees.move.openNewVscodeWindow": false,
+  "vsCodeGitWorktrees.move.openNewVscodeWindow": false
 
-  // Don't format settings.json automatically. This loses intellisense though.
-  "files.associations": {
-    "**/settings.json": "plaintext"
-  }
+  //  // Don't format settings.json automatically. This loses intellisense though.
+  // "files.associations": {
+  //      "**/settings.json": "plaintext"
+  // },
 }

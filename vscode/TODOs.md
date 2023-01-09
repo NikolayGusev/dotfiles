@@ -36,6 +36,7 @@
 
 # vscode general
 
+- extensions - install specific versions, not just the latest ones
 - how to switch FAST between branches w/o rebuilding them all the time?
   - E.g. work on multiple branches which have own build folders, etc
   - Git workspaces to the resque?

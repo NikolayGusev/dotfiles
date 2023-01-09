@@ -401,7 +401,15 @@
     "command": "workbench.action.files.saveFiles"
   },
   {
+    "key": "ctrl+s",
+    "command": "workbench.action.files.saveFiles"
+  },
+  {
     "key": "alt+cmd+s",
+    "command": "-saveAll"
+  },
+  {
+    "key": "alt+ctrl+s",
     "command": "-saveAll"
   },
   {
@@ -436,19 +444,5 @@
     "key": "shift+tab",
     "command": "magit.toggle-all-folds-in-change-section-at-point",
     "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-  },
-  // Macros
-  {
-    "key": "alt+x",
-    "command": "extension.multiCommand.execute",
-    "args": {
-      "sequence": [
-        "workbench.action.terminal.selectAll",
-        "workbench.action.terminal.copySelection",
-        "workbench.action.terminal.clearSelection",
-        "workbench.action.files.newUntitledFile",
-        "editor.action.clipboardPasteAction"
-      ]
-    }
   }
 ]

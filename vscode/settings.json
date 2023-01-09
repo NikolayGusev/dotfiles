@@ -1,9 +1,16 @@
 {
+  //////////////////
+  // Work related //
+  //////////////////
+  "remote.SSH.remotePlatform": {
+    "devbox": "linux"
+  },
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  // "vscode-neovim.neovimExecutablePaths.win32": "D:\\dev\\apps\\Neovim\\bin\\nvim.exe",
+
   /////////////////////////////////
   // vim and editing expierience //
   /////////////////////////////////
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
-  // "vscode-neovim.neovimExecutablePaths.win32": "D:\\dev\\apps\\Neovim\\bin\\nvim.exe",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/Cellar/neovim/0.8.0/bin/nvim",
   "editor.cursorSurroundingLines": 50,
 
@@ -63,12 +70,12 @@
     "editorIndentGuide.activeBackground": "#e7b8ff77",
     "editorIndentGuide.background": "#00000011",
 
-    "editorStickyScroll.background":"#FFFFDDFF",
+    "editorStickyScroll.background": "#FFFFDDFF",
 
     "editorInlayHint.background": "#00000000",
     "editorInlayHint.foreground": "#00000055",
     "editorInlayHint.typeForeground": "#00000055",
-    "editorInlayHint.parameterForeground": "#00000055",
+    "editorInlayHint.parameterForeground": "#00000055"
   },
 
   // magit better colors
@@ -90,19 +97,19 @@
       }
     ]
   },
-  
-	"multiCommand.commands": [
-		{
-			"command": "multiCommand.openTerminalOutput",
-			"sequence": [
-				"workbench.action.terminal.selectAll",
-				"workbench.action.terminal.copySelection",
-				"workbench.action.terminal.clearSelection",
-				"workbench.action.files.newUntitledFile",
-				"editor.action.clipboardPasteAction"
-			]
-		}
-	],
+
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.openTerminalOutput",
+      "sequence": [
+        "workbench.action.terminal.selectAll",
+        "workbench.action.terminal.copySelection",
+        "workbench.action.terminal.clearSelection",
+        "workbench.action.files.newUntitledFile",
+        "editor.action.clipboardPasteAction"
+      ]
+    }
+  ],
 
   /////////
   // Git //
@@ -550,6 +557,7 @@
       "type": "command",
       "command": "workbench.action.terminal.runRecentCommand"
     },
+    // was Toggle tab visibility
     {
       "keys": "t.T",
       "name": "Toggle terminal",
@@ -562,12 +570,6 @@
       "type": "command",
       "command": "multiCommand.openTerminalOutput"
     },
-//    {
-//      "keys": "t.T",
-//      "name": "Toggle tab visibility",
-//      "type": "command",
-//      "command": "workbench.action.toggleTabsVisibility"
-//    },
     {
       "keys": "t.o",
       "name": "Toggle output",
@@ -794,6 +796,9 @@
   "gitlens.statusBar.command": "gitlens.revealCommitInView",
   "gitlens.hovers.enabled": false,
   "gitlens.telemetry.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressGitVersionWarning": true
+  },
   "workbench.editorAssociations": {
     "git-rebase-todo": "default" // disable gitlens rebase i dialog
   },
@@ -803,5 +808,5 @@
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {
     "**/settings.json": "plaintext"
-  },
+  }
 }

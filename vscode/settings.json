@@ -3,6 +3,7 @@
   // vim and editing expierience //
   /////////////////////////////////
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  // "vscode-neovim.neovimExecutablePaths.win32": "D:\\dev\\apps\\Neovim\\bin\\nvim.exe",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/Cellar/neovim/0.8.0/bin/nvim",
   "editor.cursorSurroundingLines": 50,
 

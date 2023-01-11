@@ -6,6 +6,8 @@
 - Nvim has a different installation file at work. How to update with a drop in replacement instead of carefully changing the config after copy-pasting?
 - eslint and prettier formatting on save
 
+- lint settings aren't the same and lead to errors - copy settings from README.md at work
+
 # nvim fixes
 
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage

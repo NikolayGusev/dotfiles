@@ -30,6 +30,7 @@
 
 # vspacecode fixes
 
+- remove search next/prev from "spc.s.F" as it doesn't work properly and it is easier to use F1/F2 anyway.
 - shift+space - disable this in nvim edit mode and produce space instead
 - Ctrl+n/p breaks sometimes for unknown reasons. Can try to clean keyboard hotkeys to see if this will help?
 - learn how to reorder items

@@ -16,6 +16,7 @@ code --install-extension hediet.vscode-drawio
 code --install-extension jacobdufault.fuzzy-search
 code --install-extension kahole.magit
 code --install-extension mhutchie.git-graph
+code --install-extension mishkinf.goto-next-previous-member
 code --install-extension PKief.material-icon-theme
 code --install-extension pomdtr.excalidraw-editor
 code --install-extension rust-lang.rust-analyzer

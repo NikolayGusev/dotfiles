@@ -444,5 +444,13 @@
     "key": "shift+tab",
     "command": "magit.toggle-all-folds-in-change-section-at-point",
     "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-gotoNextPreviousMember.nextMember"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "-gotoNextPreviousMember.previousMember"
   }
 ]

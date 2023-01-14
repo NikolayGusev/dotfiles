@@ -326,6 +326,26 @@
         }
       ]
     },
+    "membersNavigation": {
+      "title": "Member Navigations",
+      "bindings": [
+        {
+          "key": "n",
+          "name": "Next",
+          "command": "gotoNextPreviousMember.nextMember"
+        },
+        {
+          "key": "p",
+          "name": "Previous",
+          "command": "gotoNextPreviousMember.previousMember"
+        },
+        {
+          "key": "N",
+          "name": "Previous",
+          "command": "gotoNextPreviousMember.previousMember"
+        }
+      ]
+    },
     "gitChangesInFile": {
       "title": "Navigate git changes in file",
       "bindings": [
@@ -463,6 +483,15 @@
     {
       "keys": "g.U",
       "position": -1
+    },
+    {
+      "keys": "j.m",
+      "name": "Members transient",
+      "type": "commands",
+      "commands": [
+        "whichkey.showTransient"
+      ],
+      "args": ["whichkey.transient.membersNavigation"]
     },
     {
       "keys": "r.r",

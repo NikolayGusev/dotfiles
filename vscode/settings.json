@@ -18,6 +18,7 @@
   "editor.renderWhitespace": "none",
   "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
   "editor.minimap.enabled": false,
   "workbench.editor.tabCloseButton": "off",
   "window.menuBarVisibility": "toggle",
@@ -825,5 +826,5 @@
    // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {
     "**/settings.json": "plaintext"
-  },
+  }
 }

@@ -24,6 +24,7 @@
   "window.menuBarVisibility": "toggle",
   "extensions.ignoreRecommendations": false,
   "breadcrumbs.enabled": false,
+  "editor.inlayHints.enabled": "offUnlessPressed"
 
   // General usability
   "explorer.autoReveal": false,

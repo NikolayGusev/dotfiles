@@ -330,6 +330,16 @@
       "title": "Member Navigations",
       "bindings": [
         {
+          "key": "j",
+          "name": "Next",
+          "command": "gotoNextPreviousMember.nextMember"
+        },
+        {
+          "key": "k",
+          "name": "Previous",
+          "command": "gotoNextPreviousMember.previousMember"
+        },
+        {
           "key": "n",
           "name": "Next",
           "command": "gotoNextPreviousMember.nextMember"

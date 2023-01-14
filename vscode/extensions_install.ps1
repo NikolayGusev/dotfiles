@@ -2,6 +2,7 @@ code --install-extension achil.vscode-javascript-repl
 code --install-extension alefragnani.numbered-bookmarks
 code --install-extension AndenetAlexander.vim-cheatsheet
 code --install-extension asvetliakov.vscode-neovim
+code --install-extension bierner.docs-view
 code --install-extension bodil.file-browser
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension DominicVonk.auto-toggle-sidebar

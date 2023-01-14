@@ -557,6 +557,15 @@
       "type": "command",
       "command": "workbench.action.terminal.runRecentCommand"
     },
+    {
+      "keys": "t.h",
+      "name": "Toggle help",
+      "type": "commands",
+      "commands": [
+        "workbench.action.toggleAuxiliaryBar",
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    },
     // was Toggle tab visibility
     {
       "keys": "t.T",

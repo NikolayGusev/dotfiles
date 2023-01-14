@@ -1,3 +1,5 @@
+- switch between terminals an easier way (ideally with ctrl+hjkl)
+
 # dotfiles at work
 
 - at work I have some additional configs that do are not in the dotfiles repo.

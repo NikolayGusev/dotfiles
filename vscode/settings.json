@@ -128,11 +128,21 @@
   "numberedBookmarks.navigateThroughAllFiles": "replace",
 
   "whichkey.transient": {
-    "error": {
+    "customErrorTransient": {
       "title": "Error transient",
       "bindings": [
         {
-          "key": "N",
+          "key": "f",
+          "name": "Fix error",
+          "command": "editor.action.quickFix"
+        },
+        {
+          "key": "j",
+          "name": "Next error",
+          "command": "editor.action.marker.next"
+        },
+        {
+          "key": "k",
           "name": "Previous error",
           "command": "editor.action.marker.prev"
         },
@@ -143,6 +153,11 @@
         },
         {
           "key": "p",
+          "name": "Previous error",
+          "command": "editor.action.marker.prev"
+        },
+        {
+          "key": "N",
           "name": "Previous error",
           "command": "editor.action.marker.prev"
         }
@@ -392,6 +407,16 @@
       "name": "Commands",
       "type": "command",
       "command": "workbench.action.showCommands"
+    },
+    {
+      "keys": "e.e",
+      "name": "Error transient",
+      "type": "commands",
+      "commands": [
+        "editor.action.marker.prev",
+        "whichkey.showTransient"
+      ],
+      "args": [null, "whichkey.transient.customErrorTransient"]
     },
     // Show active file in tree/explorer view
     {

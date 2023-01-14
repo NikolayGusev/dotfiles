@@ -1,5 +1,5 @@
 - switch between terminals an easier way (ideally with ctrl+hjkl)
-- consider https://marketplace.visualstudio.com/items?itemName=mishkinf.goto-next-previous-member#overview
+- for transients allow/override jk (not only nNp)
 
 # dotfiles at work
 

@@ -1,5 +1,7 @@
 - switch between terminals an easier way (ideally with ctrl+hjkl)
 - for transients allow/override jk (not only nNp)
+- close right panel on editor movements (just like the left one)
+  - to do so, have to write own vscode extension it seems (copy code from autoclose left panel extension)
 
 # dotfiles at work
 

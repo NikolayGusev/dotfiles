@@ -11,6 +11,9 @@
 
 - use g\* to do so
 
+### Amend the word 
+- Use &. e.g. "s/foo/&bar/g" to replace "foo" with "foobar". Or "s/foo/bar&/g" to replace "foo" with "barfoo".
+
 ### Match case
 
 - <leader>r word\C/replacement/

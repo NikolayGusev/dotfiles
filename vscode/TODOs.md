@@ -5,6 +5,9 @@
 - transparency for the window - is it useful?
   - AHK script https://stackoverflow.com/a/45246326
   - glassIt extension
+- Multiple cursors
+  - alt/opt click to set new one
+  - cmd+shift+l to select all the same words under the cursor
 
 # dotfiles at work
 

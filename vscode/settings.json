@@ -129,6 +129,7 @@
   // Extensions //
   ////////////////
   "numberedBookmarks.navigateThroughAllFiles": "replace",
+  "numberedBookmarks.keepBookmarksOnLineDelete": true,
 
   "whichkey.transient": {
     "customErrorTransient": {

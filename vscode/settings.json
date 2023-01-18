@@ -340,36 +340,6 @@
         }
       ]
     },
-    "membersNavigation": {
-      "title": "Member Navigations",
-      "bindings": [
-        {
-          "key": "j",
-          "name": "Next",
-          "command": "gotoNextPreviousMember.nextMember"
-        },
-        {
-          "key": "k",
-          "name": "Previous",
-          "command": "gotoNextPreviousMember.previousMember"
-        },
-        {
-          "key": "n",
-          "name": "Next",
-          "command": "gotoNextPreviousMember.nextMember"
-        },
-        {
-          "key": "p",
-          "name": "Previous",
-          "command": "gotoNextPreviousMember.previousMember"
-        },
-        {
-          "key": "N",
-          "name": "Previous",
-          "command": "gotoNextPreviousMember.previousMember"
-        }
-      ]
-    },
     "gitChangesInFile": {
       "title": "Navigate git changes in file",
       "bindings": [
@@ -519,13 +489,16 @@
       "position": -1
     },
     {
-      "keys": "j.m",
-      "name": "Members transient",
-      "type": "commands",
-      "commands": [
-        "whichkey.showTransient"
-      ],
-      "args": ["whichkey.transient.membersNavigation"]
+      "keys": "j.j",
+      "name": "Jump to symbol in buffer",
+      "type": "command",
+      "command": "workbench.action.gotoSymbol",
+    },
+    {
+      "keys": "j.J",
+      "name": "Jump to symbol in workspace",
+      "type": "command",
+      "command": "workbench.action.showAllSymbols",
     },
     {
       "keys": "r.r",

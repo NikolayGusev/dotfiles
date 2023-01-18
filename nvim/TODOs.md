@@ -1,6 +1,5 @@
 # General
 
-- there's no need to have "space j m" to navigate between members because this is already possible with "space j i" + "ctrl n/p"
 - make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
 
 - I'm still not confortable with jumping to a single occurance with leap. Thus coz it doesn't show me the expected landing place after the first symbol I get really confused.

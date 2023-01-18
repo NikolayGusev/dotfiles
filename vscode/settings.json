@@ -385,6 +385,12 @@
           "key": "m",
           "name": "Toggle maximized panel",
           "command": "workbench.action.toggleMaximizedPanel"
+        },
+        {
+          "key": "t",
+          "name": "Go to terminal tabs pane",
+					"exit": true,
+          "command": "workbench.action.terminal.focusTabs"
         }
       ]
     },
@@ -658,14 +664,14 @@
       "position": -1
     },
     {
-      "keys": "t.T",
+      "keys": "t.t",
       "name": "Toggle terminal",
       "type": "command",
       "command": "workbench.action.terminal.toggleTerminal"
     },
     // was Toggle tab visibility
     {
-      "keys": "t.t",
+      "keys": "t.T",
       "name": "Terminal command",
       "type": "commands",
       "commands": [

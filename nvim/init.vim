@@ -53,6 +53,8 @@ nnoremap <leader><leader>/ :noh<CR>
 
 nnoremap gg gg0
 nnoremap G G$
+nnoremap <tab> <Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>
+nnoremap <S-tab> <Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>
 nnoremap <S-L> <S-L>zz
 nnoremap <S-H> <S-H>zz
 vnoremap < <gv

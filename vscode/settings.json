@@ -328,6 +328,62 @@
         }
       ]
     },
+    "terminalControl" :{
+      "title": "Terminal control",
+      "bindings": [
+        {
+          "key": "h",
+          "name": "Previous in split",
+          "command": "workbench.action.terminal.focusPreviousPane"
+        },
+        {
+          "key": "l",
+          "name": "Next in split",
+          "command": "workbench.action.terminal.focusNextPane"
+        },
+        {
+          "key": "k",
+          "name": "Previous Group",
+          "command": "workbench.action.terminal.focusPrevious"
+        },
+        {
+          "key": "j",
+          "name": "Previous Group",
+          "command": "workbench.action.terminal.focusNext"
+        },
+        // TODO: doesn't work, loses focus?
+        {
+          "key": "r",
+          "name": "Rename",
+          "command": "workbench.action.terminal.renameInstance"
+        },
+        {
+          "key": "x",
+          "name": "Kill",
+          "command": "workbench.action.terminal.kill"
+        },
+        {
+          "key": "n",
+          "name": "New",
+          "command": "workbench.action.terminal.split"
+        },
+        {
+          "key": "N",
+          "name": "New group",
+          "command": "workbench.action.terminal.new"
+        },
+        {
+          "key": "e",
+          "name": "Execute",
+          "command": "workbench.action.terminal.runRecentCommand"
+        },
+        {
+          "key": "m",
+          "name": "Toggle maximized panel",
+          "command": "workbench.action.toggleMaximizedPanel"
+        }
+      ]
+    },
     "searchInFiles": {
       "title": "Search in files",
       "bindings": [
@@ -599,9 +655,20 @@
     },
     {
       "keys": "t.T",
-      "name": "Terminal command",
+      "name": "Toggle terminal",
       "type": "command",
-      "command": "workbench.action.terminal.runRecentCommand"
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // was Toggle tab visibility
+    {
+      "keys": "t.t",
+      "name": "Terminal command",
+      "type": "commands",
+      "commands": [
+        "workbench.action.terminal.focus",
+        "whichkey.showTransient",
+      ],
+      "args": [null, "whichkey.transient.terminalControl"]
     },
     {
       "keys": "t.h",
@@ -611,13 +678,6 @@
         "workbench.action.toggleAuxiliaryBar",
         "workbench.action.focusActiveEditorGroup"
       ]
-    },
-    // was Toggle tab visibility
-    {
-      "keys": "t.t",
-      "name": "Toggle terminal",
-      "type": "command",
-      "command": "workbench.action.terminal.toggleTerminal"
     },
     {
       "keys": "t.c",

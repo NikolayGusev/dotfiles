@@ -1,4 +1,5 @@
 - https://github.com/chubin/cheat.sh#visual-studio-code
+- consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
 - switch between terminals an easier way (ideally with ctrl+hjkl)
   - split                             workbench.action.terminal.split
   - create new terminal               workbench.action.terminal.new

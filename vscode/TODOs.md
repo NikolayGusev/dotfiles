@@ -11,6 +11,7 @@
   - cmd+shift+l to select all the same words under the cursor
 - make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
 - How to reoder tabs? E.g. move tab to the left or to the right.
+- "space t H" - to pin/unpin help shown with "space t h"
 
 
 # dotfiles at work

@@ -25,8 +25,8 @@
   "breadcrumbs.enabled": false,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.lineNumbers": "off",
-  "editor.glyphMargin": false,
   "editor.showFoldingControls": "never",
+  "editor.lineDecorationsWidth": 0,
 
 
   // General usability

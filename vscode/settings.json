@@ -828,6 +828,10 @@
     
     "sparse-checkout init": "git sparse-checkout init",
     "sparse-checkout disable": "git sparse-checkout disable",
+    // e.g.
+    //    /*
+    //    !/packages/*
+    //    /packages/my-package
     "sparse-checkout edit": "vim .git/info/sparse-checkout",
 
     "echo selected": "echo ${selectedTextList}",

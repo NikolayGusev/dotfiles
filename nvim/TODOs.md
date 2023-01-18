@@ -1,6 +1,5 @@
 # General
 
-- make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
 
 - I'm still not confortable with jumping to a single occurance with leap. Thus coz it doesn't show me the expected landing place after the first symbol I get really confused.
 - fFtT don't allow me to jump back and this is messy

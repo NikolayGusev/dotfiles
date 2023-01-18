@@ -8,6 +8,8 @@
 - Multiple cursors
   - alt/opt click to set new one
   - cmd+shift+l to select all the same words under the cursor
+- make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
+
 
 # dotfiles at work
 

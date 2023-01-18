@@ -275,13 +275,20 @@ au TextYankPost * silent! lua vim.highlight.on_yank { timeout=1000 }
 """""""""""
 " Fix source: https://github.com/vscode-neovim/vscode-neovim/issues/58#issuecomment-989481648
 if(exists("g:vscode"))
+    nnoremap zm :call VSCodeNotify('editor.foldAll')<CR>
     nnoremap zM :call VSCodeNotify('editor.foldAll')<CR>
+
+    nnoremap zr :call VSCodeNotify('editor.unfoldAll')<CR>
     nnoremap zR :call VSCodeNotify('editor.unfoldAll')<CR>
+
     nnoremap zc :call VSCodeNotify('editor.fold')<CR>
     nnoremap zC :call VSCodeNotify('editor.foldRecursively')<CR>
     nnoremap zo :call VSCodeNotify('editor.unfold')<CR>
     nnoremap zO :call VSCodeNotify('editor.unfoldRecursively')<CR>
+
     nnoremap za :call VSCodeNotify('editor.toggleFold')<CR>
+    nnoremap zz :call VSCodeNotify('editor.toggleFold')<CR>
+
     nnoremap zj :call VSCodeNotify('editor.gotoNextFold')<CR>
     nnoremap zk :call VSCodeNotify('editor.gotoPreviousFold')<CR>
     

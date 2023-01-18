@@ -24,6 +24,10 @@
   "extensions.ignoreRecommendations": false,
   "breadcrumbs.enabled": false,
   "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.lineNumbers": "off",
+  "editor.glyphMargin": false,
+  "editor.showFoldingControls": "never",
+
 
   // General usability
   "explorer.autoReveal": false,

@@ -10,6 +10,7 @@
 - I don't use. How do I remember to use those?
   - folds
   - jump to member
+  - swap places with gs
 
 - How to surround in visual mode? "s" doesn't work.
 - Cannots switch args in [] in this example:
@@ -29,6 +30,8 @@
 - Check if I still need those <leader>o and <leader>O bindings
 - Consider if "f" should be case insensitive. As currently it ignores the capital letter "A" when "fa" is used.
 - How to surround visual selection? It seems there's a conflict with leap. Surround should work like "Vsa(", but 's' is already taken by the leap.
+
+- How to write tests for nvim (and vscode, ugh) config?
 
 ## Russian keys mapping
 

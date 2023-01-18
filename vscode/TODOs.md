@@ -1,5 +1,11 @@
 - https://github.com/chubin/cheat.sh#visual-studio-code
 - switch between terminals an easier way (ideally with ctrl+hjkl)
+  - split                             workbench.action.terminal.split
+  - create new terminal               workbench.action.terminal.new
+  - next/prev terminal in split       workbench.action.terminal.focusNextPane / workbench.action.terminal.focusPreviousPane
+  - close terminal                    workbench.action.terminal.kill
+  - next terminal group               workbench.action.terminal.focusNext
+  - scroll up/down in terminal
 - for transients allow/override jk (not only nNp)
 - close right panel on editor movements (just like the left one)
   - to do so, have to write own vscode extension it seems (copy code from autoclose left panel extension)

@@ -1,3 +1,4 @@
+- https://github.com/chubin/cheat.sh#visual-studio-code
 - switch between terminals an easier way (ideally with ctrl+hjkl)
 - for transients allow/override jk (not only nNp)
 - close right panel on editor movements (just like the left one)

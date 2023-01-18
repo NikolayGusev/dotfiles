@@ -10,6 +10,10 @@
   - jump to member
   - swap places with gs
 
+- Consider if tab and s-tab are ok to move between windows 
+  - breaks with magit that is using tab to expand
+  - doesn't work when VsCode windows are open
+
 - How to surround in visual mode? "s" doesn't work.
 - Cannots switch args in [] in this example:
 ```

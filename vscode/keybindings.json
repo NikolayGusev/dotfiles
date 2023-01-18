@@ -452,5 +452,10 @@
   {
     "key": "ctrl+up",
     "command": "-gotoNextPreviousMember.previousMember"
+  },
+  {
+    "key": "r",
+    "command": "workbench.action.terminal.renameInstance",
+    "when": "terminalTabsFocus"
   }
 ]

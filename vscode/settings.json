@@ -332,22 +332,22 @@
       "title": "Terminal control",
       "bindings": [
         {
-          "key": "h",
+          "key": "k",
           "name": "Previous in split",
           "command": "workbench.action.terminal.focusPreviousPane"
         },
         {
-          "key": "l",
+          "key": "j",
           "name": "Next in split",
           "command": "workbench.action.terminal.focusNextPane"
         },
         {
-          "key": "k",
+          "key": "h",
           "name": "Previous Group",
           "command": "workbench.action.terminal.focusPrevious"
         },
         {
-          "key": "j",
+          "key": "l",
           "name": "Previous Group",
           "command": "workbench.action.terminal.focusNext"
         },
@@ -355,7 +355,11 @@
         {
           "key": "r",
           "name": "Rename",
-          "command": "workbench.action.terminal.renameInstance"
+          "exit": true,
+          "commands": [
+            "workbench.action.terminal.focusTabs",
+            "workbench.action.terminal.renameInstance",
+          ]
         },
         {
           "key": "x",

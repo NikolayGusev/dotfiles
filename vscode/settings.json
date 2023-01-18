@@ -667,7 +667,7 @@
       "keys": "t.t",
       "name": "Toggle terminal",
       "type": "command",
-      "command": "workbench.action.terminal.toggleTerminal"
+      "command": "workbench.action.terminal.focus"
     },
     // was Toggle tab visibility
     {

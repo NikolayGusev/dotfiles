@@ -825,6 +825,10 @@
     // "revert changes {commit} {filename} by input2": "git show `echo ${input} | cut -d' ' -f1` -- `echo ${input} | cut -d' ' -f2` | git apply -R",
     // "revert changes {commit} {filename} by input": "git show ${input} | git apply -R",
     // "revert changes from current patch file": "git apply -R '${file}'",
+    
+    "sparse-checkout init": "git sparse-checkout init",
+    "sparse-checkout disable": "git sparse-checkout disable",
+    "sparse-checkout edit": "vim .git/info/sparse-checkout",
 
     "echo selected": "echo ${selectedTextList}",
     "double input test": "echo ${input} ${input} ${input}"

@@ -1,5 +1,3 @@
-- close right panel on editor movements (just like the left one)
-  - to do so, have to write own vscode extension it seems (copy code from autoclose left panel extension)
 - transparency for the window - is it useful?
   - AHK script https://stackoverflow.com/a/45246326
   - glassIt extension

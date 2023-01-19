@@ -453,6 +453,9 @@
     "key": "ctrl+up",
     "command": "-gotoNextPreviousMember.previousMember"
   },
+  //////////////
+  // Terminal //
+  //////////////
   {
     "key": "r",
     "command": "workbench.action.terminal.renameInstance",
@@ -472,5 +475,15 @@
     "key": "x",
     "command": "workbench.action.terminal.killInstance",
     "when": "terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.terminal.focus",
+    "when": "terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.focusTabs",
+    "when": "terminalFocus"
   }
 ]

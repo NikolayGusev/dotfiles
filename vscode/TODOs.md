@@ -136,6 +136,7 @@ consider remaping zM to zm
 
 - multiple cursors for word under the cursor - ctrl+shift+L
   - alt/opt click to set new one
+- terminalTabsFocus commands from keybindings.json
 
 ### Magit
 

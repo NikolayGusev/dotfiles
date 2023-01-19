@@ -7,6 +7,10 @@ const r = {
   c: 3;
 };
 
+// Cannot swap args around in that one.
+fn split_into_row_ranges(row: & str) -> RowRanges {
+  row.split([',', '-']);
+}
 
 rust_variable_for_av_and_iv
 rust_variable_for_av_and_iv

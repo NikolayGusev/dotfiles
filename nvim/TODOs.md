@@ -1,7 +1,5 @@
 # General
 
-- ' (leap search) doesn't work in VSCode for words that have search highlight. Instead of an actual letter to jump, letter in the word itself is shown.
-  - Clear highlight before jump? Not that good solution actually, since I won't be able to proceed with the search or replace.
 - I'm still not confortable with jumping to a single occurance with leap. Thus coz it doesn't show me the expected landing place after the first symbol I get really confused.
 - fFtT don't allow me to jump back and this is messy
 - As a solution might set a mark before doing a messy movement operation, and the later there's an accessible key to jump back
@@ -35,6 +33,11 @@
 - How to surround visual selection? It seems there's a conflict with leap. Surround should work like "Vsa(", but 's' is already taken by the leap.
 
 - How to write tests for nvim (and vscode, ugh) config?
+
+// Not sure how to fix this. Waiting for new neovim plugin release - https://github.com/vscode-neovim/vscode-neovim/pull/1075
+- ' (leap search) doesn't work in VSCode for words that have search highlight. Instead of an actual letter to jump, letter in the word itself is shown.
+  - Clear highlight before jump? Not that good solution actually, since I won't be able to proceed with the search or replace.
+
 
 ## Russian keys mapping
 

@@ -7,6 +7,12 @@ const r = {
   c: 3;
 };
 
+
+rust_variable_for_av_and_iv
+rust_variable_for_av_and_iv
+rust_variable_and_iv
+rust_variable_for_av_and_iv
+rust_variable_for_av_and_iv
 // TODO: test todo1
 
 const opts = { type: "select", ...enqOpts };

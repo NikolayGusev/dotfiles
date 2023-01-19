@@ -88,6 +88,8 @@
 ## Misc
 
 - gitlens code lens and line blame turns on on its own after restarting vscode
+- tmux - have a single terminal and open tmux in it:
+  - https://medium.com/@joaomoreno/persistent-terminal-sessions-in-vs-code-8fc469ed6b41
 
 ## While viewing diff
 

@@ -21,6 +21,8 @@ Plug 'wellle/targets.vim'
 
 Plug 'ggandor/leap.nvim'
 Plug 'rhysd/clever-f.vim'
+Plug 'romainl/vim-cool'                         " Autoclear search (/) highlight when cursor moves.
+
 
 Plug 'svermeulen/vim-cutlass'
 Plug 'svermeulen/vim-yoink'

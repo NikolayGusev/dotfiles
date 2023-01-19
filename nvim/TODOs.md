@@ -1,8 +1,6 @@
 # General
 
 - I'm still not confortable with jumping to a single occurance with leap. Thus coz it doesn't show me the expected landing place after the first symbol I get really confused.
-- fFtT don't allow me to jump back and this is messy
-- As a solution might set a mark before doing a messy movement operation, and the later there's an accessible key to jump back
 
 - I don't use. How do I remember to use those?
   - folds

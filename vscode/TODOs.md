@@ -1,11 +1,11 @@
-- if separate threads for VSCode extensions won't help: 
-  - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
 - TBD: consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
 - TBD: for transients allow/override jk (not only nNp)
 - TBD: make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
 - Later: transparency for the window - is it useful?
   - AHK script https://stackoverflow.com/a/45246326
   - glassIt extension
+- Later: if separate threads for VSCode extensions won't help: 
+  - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
 
 
 

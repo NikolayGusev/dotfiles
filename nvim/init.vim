@@ -99,6 +99,11 @@ nnoremap <silent> g* :let @/=expand('<cword>') <bar> set hls <cr>
 """""""""""""""""""""""""
 let g:vim_textobj_parameter_mapping = 'a'
 
+""""""""""""
+" clever_f "
+""""""""""""
+let g:clever_f_across_no_line = 1
+let g:clever_f_smart_case = 1
 
 """"""""""""
 " Sandwich "

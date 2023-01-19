@@ -1,9 +1,3 @@
-- transparency for the window - is it useful?
-  - AHK script https://stackoverflow.com/a/45246326
-  - glassIt extension
-- Multiple cursors
-  - alt/opt click to set new one
-  - cmd+shift+l to select all the same words under the cursor
 - make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
 - How to reoder tabs? E.g. move tab to the left or to the right.
 - "space t H" - to pin/unpin help shown with "space t h"
@@ -11,6 +5,10 @@
   - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
 - TBD: consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
 - TBD: for transients allow/override jk (not only nNp)
+- Later: transparency for the window - is it useful?
+  - AHK script https://stackoverflow.com/a/45246326
+  - glassIt extension
+
 
 
 # dotfiles at work
@@ -150,6 +148,9 @@ consider remaping zM to zm
   - https://github.com/VSpaceCode/vscode-which-key/issues/72
 
 ## VS code ANKI
+
+- multiple cursors for word under the cursor - ctrl+shift+L
+  - alt/opt click to set new one
 
 ### Magit
 

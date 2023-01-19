@@ -1,7 +1,5 @@
 # General
 
-- gss highlight is messy in vscode
-
 - I don't use. How do I remember to use those?
   - folds
   - jump to member
@@ -30,10 +28,6 @@
 - How to surround visual selection? It seems there's a conflict with leap. Surround should work like "Vsa(", but 's' is already taken by the leap.
 
 - How to write tests for nvim (and vscode, ugh) config?
-
-// Not sure how to fix this. Waiting for new neovim plugin release - https://github.com/vscode-neovim/vscode-neovim/pull/1075
-- ' (leap search) doesn't work in VSCode for words that have search highlight. Instead of an actual letter to jump, letter in the word itself is shown.
-  - Clear highlight before jump? Not that good solution actually, since I won't be able to proceed with the search or replace.
 
 
 ## Russian keys mapping
@@ -102,3 +96,12 @@
 - abecodes/tabout.nvim - exit context "({ etc faster
 - nvim-trevJ.lua - anti-<S-J>
 - tab out of arguments - https://github.com/abecodes/tabout.nvim
+
+## "Couldn't fix" issues
+
+// Not sure how to fix this. Waiting for new neovim plugin release - https://github.com/vscode-neovim/vscode-neovim/pull/1075
+- ' (leap search) doesn't work in VSCode for words that have search highlight. Instead of an actual letter to jump, letter in the word itself is shown.
+  - Clear highlight before jump? Not that good solution actually, since I won't be able to proceed with the search or replace.
+
+// Couldn't fix this one by changing colors in config
+- gss highlight is messy in vscode

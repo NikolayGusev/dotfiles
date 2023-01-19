@@ -111,6 +111,14 @@ let g:clever_f_smart_case = 1
 let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
 runtime macros/sandwich/keymap/surround.vim
 
+"" Source: https://github.com/machakann/vim-sandwich/blob/ffe2bae2fc70ebecf7091a140b6338a95215878c/macros/sandwich/keymap/surround.vim
+nmap s <Plug>(sandwich-add)
+vmap s <Plug>(sandwich-add)
+onoremap <SID>line :normal! ^vg_<CR>
+nmap <silent> ss <Plug>(sandwich-add)<SID>line
+onoremap <SID>gul g_
+nmap <silent> S <Plug>(sandwich-add)<SID>gul
+
 
 """""""""""
 " Targets "
@@ -162,7 +170,6 @@ let g:traces_abolish_integration = 1
 " LEAP "
 """"""""
 
-:lua require('leap').set_default_keymaps()
 :lua vim.keymap.set({'n', 'v', 'o', 'x'}, "'", function () require('leap').leap { target_windows = { vim.fn.win_getid() } } end)
 
 """""""""""""""

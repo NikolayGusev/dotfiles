@@ -1,6 +1,7 @@
 - scroll up/down in terminal
 - consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
-- see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
+- if separate threads for VSCode extensions won't help: 
+  - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
 - for transients allow/override jk (not only nNp)
 - close right panel on editor movements (just like the left one)
   - to do so, have to write own vscode extension it seems (copy code from autoclose left panel extension)

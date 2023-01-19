@@ -47,10 +47,6 @@
 # vscode general
 
 - extensions - install specific versions, not just the latest ones
-- how to switch FAST between branches w/o rebuilding them all the time?
-  - E.g. work on multiple branches which have own build folders, etc
-  - Git workspaces to the resque?
-  - How does that work with VSCode?
 - go to next/prev reference (F3/F4) doesn't work in the same manner as go to next/prev find result
   - the cursor stays inside of the search panel instead of jumping to the editor like in search
 - find and replace quicker

@@ -643,7 +643,16 @@
       "type": "commands",
       "commands": [
         "workbench.action.toggleAuxiliaryBar",
+        "docsView.documentationView.unpin",
         "workbench.action.focusActiveEditorGroup"
+      ]
+    },
+    {
+      "keys": "t.H",
+      "name": "Pin help",
+      "type": "commands",
+      "commands": [
+        "docsView.documentationView.pin",
       ]
     },
     {

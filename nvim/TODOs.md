@@ -1,6 +1,6 @@
 # General
 
-- gri" doesn't work
+- gri" doesn't work sometimes - not clear when - to be investigated
 
 - I don't use. How do I remember to use those?
   - folds

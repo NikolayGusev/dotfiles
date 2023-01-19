@@ -156,6 +156,7 @@
   "git.autofetchPeriod": 10,
   "git.ignoreLegacyWarning": true,
   "magit.display-buffer-function": "same-column",
+  "magit.quick-switch-enabled": true,
 
   ////////////////
   // Extensions //

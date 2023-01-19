@@ -81,8 +81,6 @@
 # Strategic
 
 - switch to lua and lazy.nvim - https://github.com/folke/lazy.nvim#-structuring-your-plugins
-- fzf
-  \*\* https://github.com/yuki-yano/fzf-preview.vim#demo
 
 ## Tree sitter stuff
 

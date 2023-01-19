@@ -78,12 +78,17 @@ doing
 
 // TODO: test todo1
 
-const Comp = () => {
+const comp = () => {
   return <div>
     <div>hello</div>
     <div>hello</div>
-    <div>hello</div>
-    <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div>
+
+    <div>
+      <span>
+        test
+      </span>
+    </div>
+    <div>hello</div> <div>hello</div> <div>hello</div> <div>hello</div>
     <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div>
     <div>Hello</div> <div>hello</div> <div>Hello</div> <div>hello</div>
     <div>hello</div>

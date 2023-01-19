@@ -457,5 +457,20 @@
     "key": "r",
     "command": "workbench.action.terminal.renameInstance",
     "when": "terminalTabsFocus"
+  },
+  {
+    "key": "a",
+    "command": "multiCommand.splitCurrentTerminal",
+    "when": "terminalTabsFocus"
+  },
+  {
+    "key": "shift-a",
+    "command": "multiCommand.addNewTerminal",
+    "when": "terminalTabsFocus"
+  },
+  {
+    "key": "x",
+    "command": "workbench.action.terminal.killInstance",
+    "when": "terminalTabsFocus"
   }
 ]

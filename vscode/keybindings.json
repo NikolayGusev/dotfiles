@@ -492,6 +492,11 @@
     "when": "terminalTabsFocus"
   },
   {
+    "key": "g",
+    "command": "workbench.action.terminal.goToRecentDirectory",
+    "when": "terminalTabsFocus"
+  },
+  {
     "key": "ctrl+h",
     "command": "workbench.action.terminal.focus",
     "when": "terminalTabsFocus"

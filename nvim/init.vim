@@ -15,7 +15,7 @@ Plug 'machakann/vim-sandwich'
 """ Required by textobj-parameter
 Plug 'kana/vim-textobj-user'
 Plug 'julian/vim-textobj-variable-segment'
-Plug 'michaeljsmith/vim-indent-object'
+Plug 'urxvtcd/vim-indent-object'
 Plug 'wellle/targets.vim'
 
 
@@ -261,6 +261,26 @@ nmap <leader>ss <plug>(SubversiveSubstituteWordRange)
 nmap <leader><leader>s <plug>(SubversiveSubvertRange)
 xmap <leader><leader>s <plug>(SubversiveSubvertRange)
 nmap <leader><leader>ss <plug>(SubversiveSubvertWordRange)
+
+"""""""""""""""""""""
+" vim-indent-object "
+"""""""""""""""""""""
+
+omap ii <Plug>(indent-object_linewise-none)
+vmap ii <Plug>(indent-object_linewise-none)
+omap ai <Plug>(indent-object_linewise-both)
+vmap ai <Plug>(indent-object_linewise-both)
+
+omap ij <Plug>(indent-object_linewise-none-keep-start)
+xmap ij <Plug>(indent-object_linewise-none-keep-start)
+omap ik <Plug>(indent-object_linewise-none-keep-end)
+xmap ik <Plug>(indent-object_linewise-none-keep-end)
+
+omap ibj <Plug>(indent-object_blockwise-none-keep-start)
+xmap ibj <Plug>(indent-object_blockwise-none-keep-start)
+
+omap ibk <Plug>(indent-object_blockwise-none-keep-end)
+xmap ibk <Plug>(indent-object_blockwise-none-keep-end)
 
 """"""""""""""""
 " COLOR SCHEME "

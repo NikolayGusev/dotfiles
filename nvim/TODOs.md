@@ -1,6 +1,5 @@
 # General
 
-- delete from here to the end of indent
 - ' (leap search) doesn't work in VSCode for words that have search highlight. Instead of an actual letter to jump, letter in the word itself is shown.
   - Clear highlight before jump? Not that good solution actually, since I won't be able to proceed with the search or replace.
 - I'm still not confortable with jumping to a single occurance with leap. Thus coz it doesn't show me the expected landing place after the first symbol I get really confused.
@@ -48,6 +47,7 @@
 # ANKI
 
 - iv, av for camelCase intermediate-word motion
+- ii to expand selection in visual mode
 - sandwich surrounding function csf, ysiwf, etc
 - sandwich 2ysa" to surround with two surroundings
 - sandwich i, f, t objects

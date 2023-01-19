@@ -46,6 +46,9 @@
 
   // Terminal
   "terminal.integrated.tabs.title": "${cwdFolder}",
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.terminal.focusTabs"
+  ],
 
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",

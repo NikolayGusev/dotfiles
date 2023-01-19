@@ -483,7 +483,7 @@
   },
   // Hack: just ctrl+l doesn't work beacuse it clears the screen instead (executes terminal's command)
   {
-    "key": "ctrl+l ctrl+l",
+    "key": "ctrl+l",
     "command": "workbench.action.terminal.focusTabs",
     "when": "terminalFocus"
   }

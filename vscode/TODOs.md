@@ -1,7 +1,3 @@
-- consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
-- if separate threads for VSCode extensions won't help: 
-  - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
-- for transients allow/override jk (not only nNp)
 - close right panel on editor movements (just like the left one)
   - to do so, have to write own vscode extension it seems (copy code from autoclose left panel extension)
 - transparency for the window - is it useful?
@@ -13,6 +9,10 @@
 - make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
 - How to reoder tabs? E.g. move tab to the left or to the right.
 - "space t H" - to pin/unpin help shown with "space t h"
+- if separate threads for VSCode extensions won't help: 
+  - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
+- TBD: consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
+- TBD: for transients allow/override jk (not only nNp)
 
 
 # dotfiles at work

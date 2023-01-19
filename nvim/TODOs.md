@@ -94,6 +94,7 @@
 
 ## "Couldn't fix" issues
 
+// This is fixed by vim/cool. If it really proves to work fine, delete this todo.
 // Not sure how to fix this. Waiting for new neovim plugin release - https://github.com/vscode-neovim/vscode-neovim/pull/1075
 - ' (leap search) doesn't work in VSCode for words that have search highlight. Instead of an actual letter to jump, letter in the word itself is shown.
   - Clear highlight before jump? Not that good solution actually, since I won't be able to proceed with the search or replace.

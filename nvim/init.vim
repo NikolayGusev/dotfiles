@@ -77,7 +77,7 @@ nnoremap <leader>r :%s/
 nnoremap <Leader>R :%s/\<<C-r><C-w>\>/
 vnoremap <leader>r :s/\%V
 nnoremap <leader><leader>r :%Subvert/
-nnoremap <Leader>R :%Subvert/<C-r><C-w>/
+nnoremap <Leader><Leader>R :%Subvert/<C-r><C-w>/
 " See https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
 vnoremap <leader><leader>r :B Subvert/
 

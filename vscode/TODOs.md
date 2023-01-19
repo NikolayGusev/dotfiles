@@ -1,3 +1,8 @@
+- currently it is not possible to run new command from terminaltabs (it is possible to run pervious though with an "e")
+  - make it possible to run other commands
+  - see if it is possible to avoid focusing on the terminals because they are not really necessary anymore - all work can be done in terminaltabs
+
+
 - TBD: consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
 - TBD: for transients allow/override jk (not only nNp)
 - TBD: make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item

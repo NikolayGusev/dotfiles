@@ -44,6 +44,9 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.telemetryLevel": "off",
 
+  // Terminal
+  "terminal.integrated.tabs.title": "${cwdFolder}",
+
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",

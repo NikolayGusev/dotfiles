@@ -52,6 +52,8 @@
 - sandwich 2ysa" to surround with two surroundings
 - sandwich i, f, t objects
 - cin<surrounding>, cil<surrounding> to change inside next/prev surrounding (or another op)
+- sandwich dss, css - automatically determine which surrounding to delete or change
+
 - change visual selection side - o
 - entire buffer selector
 - entire visible screen selector

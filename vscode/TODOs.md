@@ -1,4 +1,3 @@
-- scroll up/down in terminal
 - consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)
 - if separate threads for VSCode extensions won't help: 
   - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work

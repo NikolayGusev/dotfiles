@@ -1,5 +1,7 @@
 # General
 
+- gss highlight is messy in vscode
+
 - I don't use. How do I remember to use those?
   - folds
   - jump to member

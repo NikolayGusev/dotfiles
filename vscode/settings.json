@@ -352,72 +352,6 @@
         }
       ]
     },
-    "terminalControl" :{
-      "title": "Terminal control",
-      "bindings": [
-        {
-          "key": "k",
-          "name": "Previous in split",
-          "command": "workbench.action.terminal.focusPreviousPane"
-        },
-        {
-          "key": "j",
-          "name": "Next in split",
-          "command": "workbench.action.terminal.focusNextPane"
-        },
-        {
-          "key": "h",
-          "name": "Previous Group",
-          "command": "workbench.action.terminal.focusPrevious"
-        },
-        {
-          "key": "l",
-          "name": "Previous Group",
-          "command": "workbench.action.terminal.focusNext"
-        },
-        // TODO: doesn't work, loses focus?
-        {
-          "key": "r",
-          "name": "Rename",
-          "exit": true,
-          "commands": [
-            "workbench.action.terminal.focusTabs",
-            "workbench.action.terminal.renameInstance",
-          ]
-        },
-        {
-          "key": "x",
-          "name": "Kill",
-          "command": "workbench.action.terminal.kill"
-        },
-        {
-          "key": "n",
-          "name": "New",
-          "command": "workbench.action.terminal.split"
-        },
-        {
-          "key": "N",
-          "name": "New group",
-          "command": "workbench.action.terminal.new"
-        },
-        {
-          "key": "e",
-          "name": "Execute",
-          "command": "workbench.action.terminal.runRecentCommand"
-        },
-        {
-          "key": "m",
-          "name": "Toggle maximized panel",
-          "command": "workbench.action.toggleMaximizedPanel"
-        },
-        {
-          "key": "t",
-          "name": "Go to terminal tabs pane",
-					"exit": true,
-          "command": "workbench.action.terminal.focusTabs"
-        }
-      ]
-    },
     "searchInFiles": {
       "title": "Search in files",
       "bindings": [
@@ -696,13 +630,7 @@
     // was Toggle tab visibility
     {
       "keys": "t.T",
-      "name": "Terminal command",
-      "type": "commands",
-      "commands": [
-        "workbench.action.terminal.focus",
-        "whichkey.showTransient",
-      ],
-      "args": [null, "whichkey.transient.terminalControl"]
+      "position": -1
     },
     {
       "keys": "t.h",

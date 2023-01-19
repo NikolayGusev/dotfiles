@@ -56,8 +56,6 @@
 
 - How to open recently closed files list?
 
-- Decide ctrl+alt+<left/right arrow> vs F4/Shift-F4 to go to next prev result
-
 - How to search git history in a powerful manner?
   ** https://www.reddit.com/r/neovim/comments/zmwpcx/fzf_is_so_powerful_when_you_use_it_well/
   ** How to revert anything to anything?

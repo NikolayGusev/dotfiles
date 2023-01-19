@@ -477,11 +477,20 @@
     "when": "terminalTabsFocus"
   },
   {
+    "key": "e",
+    "command": "workbench.action.terminal.runRecentCommand",
+    "when": "terminalTabsFocus"
+  },
+  {
+    "key": "m",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalTabsFocus"
+  },
+  {
     "key": "ctrl+h",
     "command": "workbench.action.terminal.focus",
     "when": "terminalTabsFocus"
   },
-  // Hack: just ctrl+l doesn't work beacuse it clears the screen instead (executes terminal's command)
   {
     "key": "ctrl+l",
     "command": "workbench.action.terminal.focusTabs",

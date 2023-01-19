@@ -6,7 +6,7 @@
   - glassIt extension
 - Later: if separate threads for VSCode extensions won't help: 
   - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
-
+- Not sure how to fix: V line selection mode doesn't highlight empty rows
 
 
 # dotfiles at work
@@ -34,7 +34,6 @@
   ** error lens
   \*\* command runner
 
-- V line selection mode doesn't highlight empty rows
 
 # vspacecode fixes
 

@@ -487,6 +487,11 @@
     "when": "terminalTabsFocus"
   },
   {
+    "key": "c",
+    "command": "multiCommand.openTerminalOutput",
+    "when": "terminalTabsFocus"
+  },
+  {
     "key": "ctrl+h",
     "command": "workbench.action.terminal.focus",
     "when": "terminalTabsFocus"

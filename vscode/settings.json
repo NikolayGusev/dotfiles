@@ -43,6 +43,11 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.telemetryLevel": "off",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1,
+    "VSpaceCode.vspacecode": 1,
+  },
+
 
   // Terminal
   "terminal.integrated.tabs.title": "${cwdFolder}",

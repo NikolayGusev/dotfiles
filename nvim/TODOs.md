@@ -9,7 +9,6 @@
   - breaks with magit that is using tab to expand
   - doesn't work when VsCode windows are open
 
-- How to surround in visual mode? "s" doesn't work.
 - Cannots switch args in [] in this example:
 ```
     fn split_into_row_ranges(row: &str) -> RowRanges {

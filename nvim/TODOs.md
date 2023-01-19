@@ -15,7 +15,6 @@
         row.split([',', '-']);
     }
 ```
-- since s is not used, might bind it to something else
 - Abolish and vim.vis fix
   - https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
   - See what it does and decide if necessary

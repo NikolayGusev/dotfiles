@@ -1,4 +1,11 @@
-- currently it is not possible to run new command from terminaltabs (it is possible to run pervious though with an "e")
+- TBD: currently it is not possible to run new command from terminaltabs (it is possible to run pervious though with an "e"). 
+  - It is actually possible to run, but not convenient:
+    - e
+    - alt+CR
+    - edit the command in terminal (bad point #1 - have to edit some command and not just type a new one)
+    - CR
+    - command executes
+    - go back to tabspanel with C-L (bad point #2 - have to jump back to terminal tabs)
   - make it possible to run other commands
   - see if it is possible to avoid focusing on the terminals because they are not really necessary anymore - all work can be done in terminaltabs
 

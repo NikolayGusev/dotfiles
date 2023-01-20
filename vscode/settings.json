@@ -50,6 +50,7 @@
 
 
   // Terminal
+  "terminal.integrated.tabs.hideCondition": "never",
   "terminal.integrated.tabs.title": "${cwdFolder}",
   "terminal.integrated.commandsToSkipShell": [
     "workbench.action.terminal.focusTabs"

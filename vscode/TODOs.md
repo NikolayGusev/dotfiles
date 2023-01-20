@@ -4,6 +4,9 @@
 
 - Spellchecker? But must be fast.
 
+- https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid
+  - Check if this is a defacto standard right now.
+
 - TBD: See if it is possible to throw away vscode terminal stuff and just use tmux next to it or directly inside of it.
   - tmux - have a single terminal and open tmux in it:
     - https://medium.com/@joaomoreno/persistent-terminal-sessions-in-vs-code-8fc469ed6b41

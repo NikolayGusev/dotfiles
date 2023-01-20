@@ -1,3 +1,6 @@
+- TBD: See if it is possible to throw away vscode terminal stuff and just use tmux next to it or directly inside of it.
+  - tmux - have a single terminal and open tmux in it:
+    - https://medium.com/@joaomoreno/persistent-terminal-sessions-in-vs-code-8fc469ed6b41
 - TBD: currently it is not possible to run new command from terminaltabs (it is possible to run pervious though with an "e"). 
   - It is actually possible to run, but not convenient:
     - e
@@ -104,8 +107,6 @@
 ## Misc
 
 - gitlens code lens and line blame turns on on its own after restarting vscode
-- tmux - have a single terminal and open tmux in it:
-  - https://medium.com/@joaomoreno/persistent-terminal-sessions-in-vs-code-8fc469ed6b41
 
 ## While viewing diff
 

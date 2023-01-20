@@ -8,6 +8,10 @@
     - go back to tabspanel with C-L (bad point #2 - have to jump back to terminal tabs)
   - make it possible to run other commands
   - see if it is possible to avoid focusing on the terminals because they are not really necessary anymore - all work can be done in terminaltabs
+- TBD: Not sure how recent commands list is populated - running commands doesn't seem to amend the list.
+- TBD: run last command hotkey for terminal tabs
+  - see https://stackoverflow.com/questions/62302065/vscode-hotkey-for-execute-last-terminal-command-while-editing-and-return-focus
+- Clear terminal hotkey.
 
 
 - TBD: consider some other button other than space as a vspacecode leader, so that I can use the same button in terminal and other menus (e.g. alt)

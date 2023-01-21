@@ -1,5 +1,7 @@
 # General
 
+- https://github.com/junegunn/vim-easy-align
+
 - gri" doesn't work sometimes - not clear when - to be investigated
 
 - I don't use. How do I remember to use those?

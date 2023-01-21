@@ -2,6 +2,8 @@
   - Can write more additional keybindings this way.
   - What about WhichKey? Does it support two hierarchies?
 
+- Move mutliple lines of code with alt+up/down.
+
 - Spellchecker? But must be fast.
 
 - https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid

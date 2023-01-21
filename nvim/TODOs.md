@@ -1,5 +1,7 @@
 # General
 
+- vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" after first n/N.
+
 - gri" doesn't work sometimes - not clear when - to be investigated
 
 - I don't use. How do I remember to use those?

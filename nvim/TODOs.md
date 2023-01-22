@@ -1,5 +1,6 @@
 # General
 
+- Visual selection + ,,R (SubvertReplace) do not work together
 - VimBeGood custom challenges.
 - https://github.com/junegunn/vim-easy-align - do I ever need this though? 
   - For simple non-repeatatie tasks column might be easier and more versatile. Otherwise just use language formatter.

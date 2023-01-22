@@ -1,7 +1,23 @@
-* yabai/Amethyst/built in "Spaces"      - window management
-    * try spaces first
-    * there's also phoenix 
-    * and Magnet (paid app)
+* Amethyst
 * hammerspoon                           - automation, e.g. message when some process is finished
 * alfred / spotter
 * karabiner                             - remap keys 
+
+
+### defaults example dotfile
+- https://github.com/mathiasbynens/dotfiles/blob/main/.macos
+- https://github.com/janka102/dotfiles/blob/master/defaults.sh
+
+```
+# Set faster key repeat
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
+Alternative version
+```
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+```

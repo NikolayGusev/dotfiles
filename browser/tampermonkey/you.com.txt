@@ -1,0 +1,49 @@
+// ==UserScript==
+// @name         You.com styles
+// @namespace    https://you.com/
+// @version      0.1
+// @description  Add custom CSS to any website
+// @author       Your Name
+// @match        https://you.com/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    var style = document.createElement('style');
+    style.type = 'text/css';
+    style.innerHTML = `
+         [data-testid="layout-id"]{
+            position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30000;
+    background: white;
+        }
+        [data-testid="app-mainline"] {
+           max-width: inherit !important;
+        }
+        #section {
+        padding:0px !important;
+        }
+        [data-type="app"] {
+           height: 100vh !important;
+           padding: 0 !important;
+        }
+        [data-testid="YouChat-app"] > li {
+            max-height: 100vh !important;
+            height: 100vh !important;
+            width: 100vw !important;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            z-index: 30000;
+        }
+    `;
+    document.getElementsByTagName('head')[0].appendChild(style);
+})();

@@ -1,6 +1,8 @@
 # General
 
-- https://github.com/junegunn/vim-easy-align
+- VimBeGood custom challenges.
+- https://github.com/junegunn/vim-easy-align - do I ever need this though? 
+  - For simple non-repeatatie tasks column might be easier and more versatile. Otherwise just use language formatter.
 
 - gri" doesn't work sometimes - not clear when - to be investigated
 

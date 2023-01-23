@@ -34,6 +34,10 @@
   - Can write more additional keybindings this way.
   - What about WhichKey? Does it support two hierarchies?
 
+## Vim practice
+- ^ instead of 0 to jump to the start of the line (first char)
+  - it is easier to press on a keyboard as well
+
 ## Russian keys mapping
 
 - Consider to map russian letters to vim english keys. E.g. like this:

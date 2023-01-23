@@ -30,8 +30,9 @@
 - Nvim as default text editor in windows
 - Check if I still need those <leader>o and <leader>O bindings
 
-- How to write tests for nvim (and vscode, ugh) config?
-
+- Second leader? Is that what major is for btw?
+  - Can write more additional keybindings this way.
+  - What about WhichKey? Does it support two hierarchies?
 
 ## Russian keys mapping
 

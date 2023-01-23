@@ -1,6 +1,5 @@
-- Second leader? Is that what major is for btw?
-  - Can write more additional keybindings this way.
-  - What about WhichKey? Does it support two hierarchies?
+- Check that ,sF actually presses enter after search.
+  - And remove next/prev menu which is useless since I can just F1/F2 through anyway.
 
 - Move mutliple lines of code with alt+up/down.
 
@@ -86,6 +85,7 @@
 - How to search git history in a powerful manner?
   ** https://www.reddit.com/r/neovim/comments/zmwpcx/fzf_is_so_powerful_when_you_use_it_well/
   ** How to revert anything to anything?
+  
 
 ## TODOs
 

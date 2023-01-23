@@ -63,6 +63,11 @@ vnoremap < <gv
 vnoremap > >gv
 :nnoremap <silent> J :let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>
 
+
+" duplicate row
+nmap <C-d> :.t-1<CR>
+vmap <C-d> ypgv
+
 "  TODO: how to use this? Note the "cgn_,_" which doesn't work for ;
 "  nnoremap <leader>j /[,\|;]<CR>cgn,<CR><Esc>
 "  TODO: This doesn't work either (replaces with [,\|;]).

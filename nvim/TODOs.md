@@ -1,8 +1,7 @@
 # General
 
-- double line with ctrl+d
 - vii doesn't work at work
-
+ 
 - vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" after first n/N.
 - Visual selection + ,,R (SubvertReplace) do not work together
 - VimBeGood custom challenges.

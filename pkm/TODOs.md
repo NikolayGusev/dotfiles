@@ -1,5 +1,9 @@
 ## Features I need
 
+### AutoCommit breaks olds files
+- Disallow to delete files in autocommits
+- Or commit manually
+
 ### Navigation
 
 - Go to today

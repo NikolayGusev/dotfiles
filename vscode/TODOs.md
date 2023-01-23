@@ -1,3 +1,11 @@
+- Second leader? Is that what major is for btw?
+  - Can write more additional keybindings this way.
+  - What about WhichKey? Does it support two hierarchies?
+
+- Move mutliple lines of code with alt+up/down.
+
+- Spellchecker? But must be fast.
+
 - TBD: See if it is possible to throw away vscode terminal stuff and just use tmux next to it or directly inside of it.
   - tmux - have a single terminal and open tmux in it:
     - https://medium.com/@joaomoreno/persistent-terminal-sessions-in-vs-code-8fc469ed6b41

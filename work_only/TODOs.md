@@ -1,0 +1,2 @@
+- Switch to eslint_d to make checks faster.
+- Find out how to get reggrip.

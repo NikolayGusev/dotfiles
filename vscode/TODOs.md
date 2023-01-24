@@ -1,6 +1,9 @@
 - Is it possible to terminal task in terminal from terminal tabs? Add a button to do so.
 - 'x' in terminal tabs should ask if I want to close terminal.
 
+- Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
+- Search for todo comments to fix them "spc s 1/2/3/t" to search for 1/2/3/all todos
+
 - Check that ,sF actually presses enter after search.
   - And remove next/prev menu which is useless since I can just F1/F2 through anyway.
 
@@ -92,8 +95,6 @@
 
 ## TODOs
 
-- Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
-- Search for todo comments to fix them "spc s 1/2/3/t" to search for 1/2/3/all todos
 - check todotree ext? probably shouldn't do that
 
 # Search and replace

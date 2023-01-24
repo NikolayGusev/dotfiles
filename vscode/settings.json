@@ -631,8 +631,11 @@
     {
       "keys": "t.t",
       "name": "Toggle terminal",
-      "type": "command",
-      "command": "workbench.action.terminal.focus"
+      "type": "commands",
+      "commands": [
+        "workbench.action.terminal.focus",
+        "workbench.action.terminal.focusTabs"
+      ]
     },
     // was Toggle tab visibility
     {

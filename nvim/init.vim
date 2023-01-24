@@ -190,7 +190,9 @@ nnoremap mm dd
 nnoremap M D
 
 set clipboard+=unnamed  " use the clipboards of vim and win
-set paste               " Paste from a windows or from vim
+"  This breaks vim-cool plugin:
+"  vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" right after moving to the next result.
+"  set paste               " Paste from a windows or from vim
 
 """""""""
 " Yoink "

@@ -2,6 +2,12 @@
 
 - vii doesn't work at work
 - daa (delete around argument) doesn't work with "f<T, T2>" when deleting "T, ".
+
+- Consider
+  - JK to open next/prev buffer
+  - K is replaced by gh already (hover)
+  - J can be replaced by <leader>j or <leader>J
+
  
 - vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" after first n/N.
 - Visual selection + ,,R (SubvertReplace) do not work together

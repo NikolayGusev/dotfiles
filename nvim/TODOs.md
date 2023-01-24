@@ -3,7 +3,7 @@
 - vii doesn't work at work
 
  
-- vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" after first n/N.
+- vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" right after moving to the next result.
 - VimBeGood custom challenges.
 - https://github.com/junegunn/vim-easy-align - do I ever need this though? 
   - For simple non-repeatatie tasks column might be easier and more versatile. Otherwise just use language formatter.

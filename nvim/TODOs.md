@@ -1,7 +1,6 @@
 # General
 
 - vii doesn't work at work
-- daa (delete around argument) doesn't work with "f<T, T2>" when deleting "T, ".
 
  
 - vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" after first n/N.

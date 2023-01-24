@@ -132,8 +132,8 @@ nmap <silent> S <Plug>(sandwich-add)<SID>gul
 " Targets "
 """""""""""
 " Newer syntax didn't work for me, so had to use deprecated one.
-let g:targets_argOpening = '[({[]'
-let g:targets_argClosing = '[]})]'
+let g:targets_argOpening = '[({<[]'
+let g:targets_argClosing = '[]>})]'
 let g:targets_argSeparator = '[,;]'
 
 """"""""""""""""""

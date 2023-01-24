@@ -510,7 +510,7 @@
     "when": "terminalTabsFocus"
   },
   {
-    "key": "k",
+    "key": "l",
     "command": "workbench.action.terminal.clear",
     "when": "terminalTabsFocus"
   },

@@ -502,17 +502,22 @@
     "when": "terminalTabsFocus"
   },
   {
-    "key": "ctrl+l",
-    "command": "workbench.action.terminal.focusTabs",
-    "when": "terminalFocus"
-  },
-  {
     "key": "ctrl+c",
     "command": "workbench.action.terminal.sendSequence",
     "args": {
       "text": "\u0003"
     },
     "when": "terminalTabsFocus"
+  },
+  {
+    "key": "k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.focusTabs",
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+d",

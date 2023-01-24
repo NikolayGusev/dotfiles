@@ -1,12 +1,3 @@
-## Nav between buffers
-- Consider
-  - JK to open next/prev buffer
-  - K is replaced by gh already (hover)
-  - J can be replaced by <leader>j or <leader>J
-- Consider if tab and s-tab are ok to move between windows 
-  - breaks with magit that is using tab to expand
-  - doesn't work when VsCode windows are open
-
 # General
 
 - vii doesn't work at work

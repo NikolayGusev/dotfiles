@@ -457,6 +457,11 @@
   // Terminal //
   //////////////
   {
+    "key": "space",
+    "command": "vspacecode.space",
+    "when": "terminalTabsFocus"
+  },
+  {
     "key": "r",
     "command": "workbench.action.terminal.renameInstance",
     "when": "terminalTabsFocus"

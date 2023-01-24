@@ -7,6 +7,10 @@ const r = {
   c: 3;
 };
 
+function f<T, T2>(a: string, b: number) {
+  return null;
+}
+
 // Cannot swap args around in that one.
 fn split_into_row_ranges(row: & str) -> RowRanges {
   row.split([',', '-']);

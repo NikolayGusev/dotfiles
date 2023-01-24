@@ -1,12 +1,16 @@
-# General
-
-- vii doesn't work at work
-- daa (delete around argument) doesn't work with "f<T, T2>" when deleting "T, ".
-
+## Nav between buffers
 - Consider
   - JK to open next/prev buffer
   - K is replaced by gh already (hover)
   - J can be replaced by <leader>j or <leader>J
+- Consider if tab and s-tab are ok to move between windows 
+  - breaks with magit that is using tab to expand
+  - doesn't work when VsCode windows are open
+
+# General
+
+- vii doesn't work at work
+- daa (delete around argument) doesn't work with "f<T, T2>" when deleting "T, ".
 
  
 - vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" after first n/N.
@@ -22,9 +26,6 @@
   - jump to member
   - swap places with gs
 
-- Consider if tab and s-tab are ok to move between windows 
-  - breaks with magit that is using tab to expand
-  - doesn't work when VsCode windows are open
 
 - Cannots switch args in [] in this example:
 ```

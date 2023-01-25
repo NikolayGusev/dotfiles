@@ -10,7 +10,7 @@ interface A {
 
 const f2 = () => console.log('f2'); 
 
-function f1(a: string, b: string, extracted: {d: string, e?: string}) {
+function f1(a: string, b: string, extracted: {d: string, e?: string}): string {
     if (1 === 2-1) {
        console.log(123) ;
     }
@@ -19,5 +19,15 @@ function f1(a: string, b: string, extracted: {d: string, e?: string}) {
     const f = sumStrings(d, hello, 'asdf');
     return a + sumStrings(b,d, 'fdsa') + hello + hello;
 }
+const f3 = (
+    a: number, 
+    b: number,
+    c: number,
+    d: number,
+    e: number,
+    ): number => {
+    return a +b;
+}
+
 
 

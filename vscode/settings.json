@@ -359,26 +359,6 @@
         }
       ]
     },
-    "searchInFiles": {
-      "title": "Search in files",
-      "bindings": [
-        {
-          "key": "n",
-          "name": "Next",
-          "command": "search.action.focusNextSearchResult"
-        },
-        {
-          "key": "p",
-          "name": "Previous",
-          "command": "search.action.focusPreviousSearchResult"
-        },
-        {
-          "key": "N",
-          "name": "Previous",
-          "command": "search.action.focusPreviousSearchResult"
-        }
-      ]
-    },
     "gitChangesInFile": {
       "title": "Navigate git changes in file",
       "bindings": [
@@ -551,20 +531,6 @@
       "type": "command",
       "command": "editor.action.startFindReplaceAction"
     },
-
-    // {
-    //         "keys": "s.F",
-    //         "name": "Search in files with a selection",
-    //         "type": "commands",
-    //         "commands": [
-    //             "editor.action.addSelectionToNextFindMatch",
-    //             "workbench.action.findInFiles",
-    //             "workbench.action.focusActiveEditorGroup",
-    //             "whichkey.showTransient"
-    //         ],
-    //         "args": [null, null, null, "whichkey.transient.searchInFiles"]
-    //     }
-
     {
       "keys": "r.b",
       "position": -1
@@ -573,36 +539,10 @@
       "keys": "r.s",
       "position": -1
     },
-    {
-      "keys": "s.n",
-      "name": "Next search result",
-      "type": "commands",
-      "commands": [
-        "search.action.focusNextSearchResult",
-        "whichkey.showTransient"
-      ],
-      "args": [null, "whichkey.transient.searchInFiles"]
-    },
-    {
-      "keys": "s.N",
-      "name": "Previous search result",
-      "type": "commands",
-      "commands": [
-        "search.action.focusPreviousSearchResult",
-        "whichkey.showTransient"
-      ],
-      "args": [null, "whichkey.transient.searchInFiles"]
-    },
     // was Search in a project
     {
       "keys": "s.p",
-      "name": "Previous search result",
-      "type": "commands",
-      "commands": [
-        "search.action.focusPreviousSearchResult",
-        "whichkey.showTransient"
-      ],
-      "args": [null, "whichkey.transient.searchInFiles"]
+      "position": -1
     },
     {
       "keys": "s.f",
@@ -620,7 +560,7 @@
         "workbench.action.focusActiveEditorGroup",
         "whichkey.showTransient"
       ],
-      "args": [null, null, null, "whichkey.transient.searchInFiles"]
+      "args": [null, null, null]
     },
 
     // move toggles to root "t" instead of "T"

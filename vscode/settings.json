@@ -829,6 +829,12 @@
       "command": "abracadabra.inline"
     },
     {
+      "keys": "x.s",
+      "name": "Singature (change)",
+      "type": "command",
+      "command": "abracadabra.changeSignature"
+    },
+    {
       "keys": "z.o",
       "name": "Opacity",
       "type": "command",

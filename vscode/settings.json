@@ -359,6 +359,21 @@
         }
       ]
     },
+    "windowOpacity": {
+      "title": "Windnow opacity",
+      "bindings": [
+        {
+          "key": "j",
+          "name": "Increase opacity",
+          "command": "glassit.increase"
+        },
+        {
+          "key": "k",
+          "name": "Decrease opacity",
+          "command": "glassit.decrease"
+        }
+      ]
+    },
     "gitChangesInFile": {
       "title": "Navigate git changes in file",
       "bindings": [
@@ -755,7 +770,15 @@
     {
       "keys": "w.W",
       "position": -1
-    }
+    },
+
+    {
+      "keys": "z.o",
+      "name": "Opacity",
+      "type": "command",
+      "command": "whichkey.showTransient",
+      "args": "whichkey.transient.windowOpacity"
+    },
   ],
 
   "javascript-repl.coverageTimes": false,

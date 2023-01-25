@@ -151,6 +151,9 @@ Where:
 
 # Folds
 
+- have a proper "fold all high level blocks" w/o folding their internals
+  - likely would require an extension
+
 consider remaping zM to zm
 
 - for vim folds

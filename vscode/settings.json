@@ -879,6 +879,9 @@
   "vsCodeGitWorktrees.move.openNewVscodeWindow": true,
   
   "ActiveFileInStatusBar.fullpath": false,
+  
+  "abracadabra.changeSignature.showInQuickFix": false,
+
 
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {

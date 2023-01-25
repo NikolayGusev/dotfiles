@@ -12,6 +12,7 @@
     - Notify of terminal events (started, failed, etc)
     - When switching from editor to a terminal, autoswitch to terminalTabs
   - Extension w/o writing extension - https://github.com/BetterThanTomorrow/joyride
+  - And another one - https://github.com/alhassy/easy-extensibility
   
 - Snippets
   - IIEF surround
@@ -56,6 +57,9 @@
 # nvim fixes
 
 - !! VSCodeCallVisual - send selection to vscode for magit operation or for editdiff multilineselection and stage
+
+# Debug
+- https://mfcallahan.blog/2022/08/26/the-microsoft-edge-dev-tools-extension-for-vs-code-is-so-awesome-that-im-ditching-chrome-for-web-development/
 
 ## misc
 

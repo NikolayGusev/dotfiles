@@ -28,14 +28,6 @@
   - see https://stackoverflow.com/questions/62302065/vscode-hotkey-for-execute-last-terminal-command-while-editing-and-return-focus
 - Clear terminal hotkey.
 
-
-- TBD: for transients allow/override jk (not only nNp)
-- TBD: make it easier to jump around lists - add "ctrl +j/k" to move to the next prev item
-- Later: transparency for the window - is it useful?
-  - AHK script https://stackoverflow.com/a/45246326
-  - glassIt extension
-- Later: if separate threads for VSCode extensions won't help: 
-  - see if https://vspacecode.github.io/docs/whichkey/reference/#delay would help with unresponsive space at work
 - Not sure how to fix: V line selection mode doesn't highlight empty rows
 
 

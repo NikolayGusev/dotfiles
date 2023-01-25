@@ -16,6 +16,7 @@ code --install-extension GitWorktrees.git-worktrees
 code --install-extension hdevalke.rust-test-lens
 code --install-extension hediet.vscode-drawio
 code --install-extension jacobdufault.fuzzy-search
+code --install-extension jebbs.plantuml
 code --install-extension kahole.magit
 code --install-extension mhutchie.git-graph
 code --install-extension pixelbyte-studios.pixelbyte-love2d
@@ -24,6 +25,8 @@ code --install-extension pomdtr.excalidraw-editor
 code --install-extension RoscoP.ActiveFileInStatusBar
 code --install-extension rust-lang.rust-analyzer
 code --install-extension ryuta46.multi-command
+code --install-extension s-nlf-fh.glassit
+code --install-extension sumneko.lua
 code --install-extension tamasfe.even-better-toml
 code --install-extension tombonnike.vscode-status-bar-format-toggle
 code --install-extension usernamehw.errorlens

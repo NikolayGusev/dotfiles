@@ -12,6 +12,9 @@
 
 - Consider - Inline fold extension or some other ways to fold code easier
   - hide classes or some other unrelated things
+  
+- Snippets
+  - IIEF surround
 
 - Spellchecker? But must be fast.
 

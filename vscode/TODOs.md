@@ -8,9 +8,6 @@
   - Notify of terminal events (started, failed, etc)
   - When switching from editor to a terminal, autoswitch to terminalTabs
 
-- Check that ,sF actually presses enter after search.
-  - And remove next/prev menu which is useless since I can just F1/F2 through anyway.
-
 - Move mutliple lines of code with alt+up/down.
 
 - Spellchecker? But must be fast.

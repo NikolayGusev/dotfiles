@@ -61,6 +61,8 @@ nnoremap J <Cmd>call VSCodeNotify('workbench.action.previousEditor')<CR>
 nnoremap K <Cmd>call VSCodeNotify('workbench.action.nextEditor')<CR>
 vnoremap < <gv
 vnoremap > >gv
+nnoremap ; <Cmd>call VSCodeNotify('editor.action.quickFix')<CR>
+vnoremap ; <Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>
 
 
 " duplicate row

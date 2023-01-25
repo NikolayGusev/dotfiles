@@ -771,6 +771,51 @@
       "keys": "w.W",
       "position": -1
     },
+    // find all references
+    {
+      "keys": "x.a",
+      "position": -1
+    },
+    // open link
+    {
+      "keys": "x.o",
+      "position": -1
+    },
+    // to upper case
+    {
+      "keys": "x.U",
+      "position": -1
+    },
+    // to lower case
+    {
+      "keys": "x.u",
+      "position": -1
+    },
+    // move lines up
+    {
+      "keys": "x.K",
+      "position": -1
+    },
+    // move lines down
+    {
+      "keys": "x.J",
+      "position": -1
+    },
+    // Delete trailing whitespaces
+    {
+      "keys": "x.d",
+      "position": -1
+    },
+    // lines - duplicate/sort
+    {
+      "keys": "x.l",
+      "position": -1
+    },
+    // refactor
+    {
+      "keys": "x.R",
+      "position": -1
+    },
     {
       "keys": "x.e",
       "name": "Extract",
@@ -782,12 +827,6 @@
       "name": "Inline",
       "type": "command",
       "command": "abracadabra.inline"
-    },
-    {
-      "keys": "x.x",
-      "name": "Quick fix",
-      "type": "command",
-      "command": "editor.action.quickFix"
     },
     {
       "keys": "z.o",
@@ -892,9 +931,6 @@
   
   "ActiveFileInStatusBar.fullpath": false,
   
-  "abracadabra.changeSignature.showInQuickFix": false,
-
-
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {
     "**/settings.json": "plaintext"

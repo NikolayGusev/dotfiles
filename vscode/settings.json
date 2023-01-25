@@ -772,6 +772,18 @@
       "position": -1
     },
     {
+      "keys": "x.e",
+      "name": "Extract",
+      "type": "command",
+      "command": "abracadabra.extract"
+    },
+    {
+      "keys": "x.i",
+      "name": "Inline",
+      "type": "command",
+      "command": "abracadabra.inline"
+    },
+    {
       "keys": "x.x",
       "name": "Quick fix",
       "type": "command",

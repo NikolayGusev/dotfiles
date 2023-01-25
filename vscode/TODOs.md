@@ -15,6 +15,8 @@
   
 - Snippets
   - IIEF surround
+  
+- See total typescript extension - does it really help with cryptic error texts?
 
 - Spellchecker? But must be fast.
 

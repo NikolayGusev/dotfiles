@@ -771,7 +771,12 @@
       "keys": "w.W",
       "position": -1
     },
-
+    {
+      "keys": "x.x",
+      "name": "Quick fix",
+      "type": "command",
+      "command": "editor.action.quickFix"
+    },
     {
       "keys": "z.o",
       "name": "Opacity",

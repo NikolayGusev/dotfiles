@@ -2,6 +2,9 @@
 - Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
 - Search for todo comments to fix them "spc s 1/2/3/t" to search for 1/2/3/all todos
 
+- Discover what workspaces can offer
+  - Might be a good alternative to spare checkout in git to improve perf
+
 - Own extension:
   - What do I need: 
     - Collapse sidebar (copy code from current extension)

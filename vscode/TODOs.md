@@ -2,11 +2,13 @@
 - Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
 - Search for todo comments to fix them "spc s 1/2/3/t" to search for 1/2/3/all todos
 
-- Own extension to:
-  - Collapse sidebar (copy code from current extension)
-  - Collapse terminal
-  - Notify of terminal events (started, failed, etc)
-  - When switching from editor to a terminal, autoswitch to terminalTabs
+- Own extension:
+  - What do I need: 
+    - Collapse sidebar (copy code from current extension)
+    - Collapse terminal
+    - Notify of terminal events (started, failed, etc)
+    - When switching from editor to a terminal, autoswitch to terminalTabs
+  - Extension w/o writing extension - https://github.com/BetterThanTomorrow/joyride
 
 - Spellchecker? But must be fast.
 

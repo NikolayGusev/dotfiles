@@ -35,6 +35,8 @@
 
 - Not sure how to fix: V line selection mode doesn't highlight empty rows
 
+- Consider: blockman? Need good styles tho
+
 
 # dotfiles at work
 

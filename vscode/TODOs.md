@@ -8,8 +8,6 @@
   - Notify of terminal events (started, failed, etc)
   - When switching from editor to a terminal, autoswitch to terminalTabs
 
-- Move mutliple lines of code with alt+up/down.
-
 - Spellchecker? But must be fast.
 
 - TBD: See if it is possible to throw away vscode terminal stuff and just use tmux next to it or directly inside of it.
@@ -169,6 +167,7 @@ consider remaping zM to zm
 - multiple cursors for word under the cursor - ctrl+shift+L
   - alt/opt click to set new one
 - terminalTabsFocus commands from keybindings.json
+- alt+j/k - move lines up/down
 
 ### Magit
 

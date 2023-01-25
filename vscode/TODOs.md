@@ -9,9 +9,6 @@
     - Notify of terminal events (started, failed, etc)
     - When switching from editor to a terminal, autoswitch to terminalTabs
   - Extension w/o writing extension - https://github.com/BetterThanTomorrow/joyride
-
-- Consider - Inline fold extension or some other ways to fold code easier
-  - hide classes or some other unrelated things
   
 - Snippets
   - IIEF surround
@@ -151,8 +148,17 @@ Where:
 
 # Folds
 
+- Consider - Inline fold extension or some other ways to fold code easier
+  - hide classes or some other unrelated things
+
 - have a proper "fold all high level blocks" w/o folding their internals
   - likely would require an extension
+- fold some things automatically
+  - see https://github.com/zokugun/vscode-explicit-folding
+  - to fold
+    - class names
+    - imports
+    - ...?
 
 consider remaping zM to zm
 

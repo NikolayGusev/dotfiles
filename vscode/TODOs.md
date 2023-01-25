@@ -10,6 +10,9 @@
     - When switching from editor to a terminal, autoswitch to terminalTabs
   - Extension w/o writing extension - https://github.com/BetterThanTomorrow/joyride
 
+- Consider - Inline fold extension or some other ways to fold code easier
+  - hide classes or some other unrelated things
+
 - Spellchecker? But must be fast.
 
 - TBD: See if it is possible to throw away vscode terminal stuff and just use tmux next to it or directly inside of it.

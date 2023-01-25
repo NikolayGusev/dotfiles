@@ -17,6 +17,7 @@ code --install-extension jacobdufault.fuzzy-search
 code --install-extension jebbs.plantuml
 code --install-extension kahole.magit
 code --install-extension mhutchie.git-graph
+code --install-extension MohammadBaqer.better-folding
 code --install-extension nicoespeon.abracadabra
 code --install-extension pixelbyte-studios.pixelbyte-love2d
 code --install-extension PKief.material-icon-theme

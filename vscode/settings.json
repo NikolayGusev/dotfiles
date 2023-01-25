@@ -95,7 +95,9 @@
     "editorInlayHint.background": "#00000000",
     "editorInlayHint.foreground": "#00000055",
     "editorInlayHint.typeForeground": "#00000055",
-    "editorInlayHint.parameterForeground": "#00000055"
+    "editorInlayHint.parameterForeground": "#00000055",
+    
+    "editor.foldBackground": "#e0a96544"
   },
 
   // magit better colors

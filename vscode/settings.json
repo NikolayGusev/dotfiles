@@ -7,6 +7,8 @@
   },
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
   // "vscode-neovim.neovimExecutablePaths.win32": "D:\\dev\\apps\\Neovim\\bin\\nvim.exe",
+  // "workbench.tree.indent": 20,
+
 
   /////////////////////////////////
   // vim and editing expierience //

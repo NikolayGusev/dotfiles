@@ -40,6 +40,7 @@
   "diffEditor.renderSideBySide": false,
   "update.enableWindowsBackgroundUpdates": false, // Update manually
   "update.mode": "none", // Update manually
+  "extensions.autoCheckUpdates": false,
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.telemetryLevel": "off",

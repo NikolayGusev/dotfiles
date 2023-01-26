@@ -848,29 +848,38 @@
 
   "javascript-repl.coverageTimes": false,
 
+  
+  // TODO: Delete this old option if everything works
+  //  "eslint.autoFixOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+
   "eslint.validate": [
     "javascript",
-    "javascriptReact",
-    "typescript",
-    "typescriptReact"
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autofix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autofix": true
+    }
   ],
+  
+  "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[javascriptReact]": {
+  "[javascriptreact]": {
     "editor.formatOnSave": false
   },
   "[typescript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[typescriptReact]": {
+  "[typescriptreact]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "typescript.preferences.quoteStyle": "single",

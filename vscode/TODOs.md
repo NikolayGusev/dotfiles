@@ -10,6 +10,8 @@
   - space to open vspacecode
   - enter to peek
   - h to open in editor
+  
+- cannot split window left/top with space-w-h/k
 
 - space-e-e currently opens a navigation to go throw the error list. While
   useful this is not the most used feature I think. Better to have a "move to

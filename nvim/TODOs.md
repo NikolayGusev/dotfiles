@@ -1,5 +1,7 @@
 # General
 
+- 2<leader>j doesn't work (join two lines)
+
 - vii doesn't work at work
 
  

@@ -1,5 +1,11 @@
 - shift+jk should cycle only active window's buffers, not buffers in all windows
 
+- space-e-e currently opens a navigation to go throw the error list. While
+  useful this is not the most used feature I think. Better to have a "move to
+  the next error and activate quickfix" combo on that hotkey.
+  - And then when pressed for the second time, skip this error and jump to
+    fixing the next one.
+
 - Pressing space to trigger actions of vspacecode inputs a space into vim. Stop
   inputing space.
   - It is a problem when I do visual selection and then want to run some

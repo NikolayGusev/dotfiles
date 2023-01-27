@@ -2,6 +2,13 @@
 
 - 2<leader>j doesn't work (join two lines)
 
+- gr in {} doesn't work for this code:
+  - ```
+    initialState={}
+    ^
+    |------ cursor is here
+    ```
+
  
 - VimBeGood custom challenges.
 - https://github.com/junegunn/vim-easy-align - do I ever need this though? 

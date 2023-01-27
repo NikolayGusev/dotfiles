@@ -1,3 +1,5 @@
+- shift+jk should cycle only active window's buffers, not buffers in all windows
+
 - Pressing space to trigger actions of vspacecode inputs a space into vim. Stop
   inputing space.
   - It is a problem when I do visual selection and then want to run some

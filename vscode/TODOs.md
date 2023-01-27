@@ -1,3 +1,5 @@
+- clean up "j" menu
+
 - space-s-f doesn't work for some reason and is glitchy overall
   - shouldn't show some input box like it does right now
     - this is actually interesting, how to show such a dialog for some other commands that might need an input?

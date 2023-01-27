@@ -2,8 +2,6 @@
 
 - 2<leader>j doesn't work (join two lines)
 
-- vii doesn't work at work
-
  
 - VimBeGood custom challenges.
 - https://github.com/junegunn/vim-easy-align - do I ever need this though? 

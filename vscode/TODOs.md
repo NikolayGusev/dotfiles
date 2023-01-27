@@ -19,6 +19,9 @@
     case atm.
   - And then when pressed for the second time, skip this error and jump to
     fixing the next one.
+  - Have two separate ways to jump through the errors:
+    - errors in current file
+    - errors everywhere
 
 - Pressing space to trigger actions of vspacecode inputs a space into vim. Stop
   inputing space.

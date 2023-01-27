@@ -8,6 +8,9 @@
     ^
     |------ cursor is here
     ```
+    
+- is it possible to delete surrounding function which is static. E.g. for
+  "Utils.convert(a)" leave just an "a" afterwards.
 
  
 - VimBeGood custom challenges.

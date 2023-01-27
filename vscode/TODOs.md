@@ -1,3 +1,9 @@
+- Pressing space to trigger actions of vspacecode inputs a space into vim. Stop
+  inputing space.
+  - It is a problem when I do visual selection and then want to run some
+    command in vspacecode against this selection. If I do a mistake, I have to
+    shrink selection before trying once again.
+
 - add "scope to this addin" to the list
 
 - Add todo via "spc i 1/2/3" to add todo with priority 1/2/3

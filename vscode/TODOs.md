@@ -1,4 +1,15 @@
+- space-s-f doesn't work for some reason and is glitchy overall
+  - shouldn't show some input box like it does right now
+    - this is actually interesting, how to show such a dialog for some other commands that might need an input?
+  - should search for the work under the cursor or for the selection
+  - should update and search again when I select new text or move to a new word and trigger it again
+
 - shift+jk should cycle only active window's buffers, not buffers in all windows
+
+- space-g-t ("timeline") should behave just like file explorer
+  - space to open vspacecode
+  - enter to peek
+  - h to open in editor
 
 - space-e-e currently opens a navigation to go throw the error list. While
   useful this is not the most used feature I think. Better to have a "move to

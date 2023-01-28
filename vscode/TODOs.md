@@ -2,6 +2,9 @@
 
 - gD which opens definition in a window to the right, not replaces current buffer
 
+- Allow <c-p> and <c-n> navigation in "space-t-p" (problems list). 
+- Also allow to see problems for the current file only. E.g. "space-t-p" for current file and "space-t-P" for whole project.
+
 - space-s-f doesn't work for some reason and is glitchy overall
   - shouldn't show some input box like it does right now
     - this is actually interesting, how to show such a dialog for some other commands that might need an input?

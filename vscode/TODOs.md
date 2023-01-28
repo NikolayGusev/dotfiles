@@ -201,6 +201,7 @@ Where:
 # Folds
 
 - Consider - Inline fold extension or some other ways to fold code easier
+  - https://github.com/moalamri/vscode-inline-fold
   - hide classes or some other unrelated things
 
 - have a proper "fold all high level blocks" w/o folding their internals

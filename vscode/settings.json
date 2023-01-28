@@ -951,6 +951,9 @@
   
   "ActiveFileInStatusBar.fullpath": false,
   
+  "glassit.alpha": 255,
+
+  
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {
     "**/settings.json": "plaintext"

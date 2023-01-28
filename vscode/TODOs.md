@@ -19,7 +19,10 @@
   - h to open in editor
   
 - Check out what soft undo does in VSCode:
-  Use the Soft Undo (⌘/⌃ + U) to move the cursor back to it's previous location. This is particularly useful when you need to move down in a long file to copy a variable or function name and then go back to your original position.
+  Use the Soft Undo (⌘/⌃ + U) to move the cursor back to it's previous
+  location. This is particularly useful when you need to move down in a long
+  file to copy a variable or function name and then go back to your original
+  position.
 
   
 - cannot split window left/top with space-w-h/k
@@ -50,7 +53,7 @@
 
 - Vim has a nice feature - tabs, which work like workspaces. So when I want to get to testing my component, I can switch to testing workspace. And when I want to develop it, I can have multiple workspaces that have desired set of windows/buffers I need for each of the programming tasks.
   - Vs code has a plugin to do that (but they say it is buggy) - https://marketplace.visualstudio.com/items?itemName=agquick.workviews
-  - Vs code is getting native support, check this PR - couldn't find it yet.
+  - Does it make sense to open multiple workspaces and switch between those?
 
 - Add todo via "spc i 1/2/3" to add todo with priority 1/2/3
 - Search for todo comments to fix them "spc s 1/2/3/t" to search for 1/2/3/all todos

@@ -953,6 +953,8 @@
   
   "glassit.alpha": 255,
 
+  "totalTypeScript.showFullTranslation": true,
+  "totalTypeScript.hideBasicTips": true,
   
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {

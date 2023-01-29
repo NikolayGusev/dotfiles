@@ -50,6 +50,8 @@
     "asvetliakov.vscode-neovim": 1,
     "VSpaceCode.vspacecode": 1,
   },
+  "problems.defaultViewMode": "table",
+  "problems.showCurrentInStatus": true,
 
 
   // Terminal

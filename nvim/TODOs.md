@@ -2,13 +2,6 @@
 
 - 2<leader>j doesn't work (join two lines)
 
-- gr in {} doesn't work for this code:
-  - ```
-    initialState={}
-    ^
-    |------ cursor is here
-    ```
-    
 - is it possible to delete surrounding function which is static. E.g. for
   "Utils.convert(a)" leave just an "a" afterwards.
 
@@ -121,3 +114,11 @@
 
 // Couldn't fix this one by changing colors in config
 - gss highlight is messy in vscode
+
+- gr in {} doesn't work for this code:
+  - ```
+    initialState={}
+    ^
+    |------ cursor is here
+    ```
+    - Use ci{<Esc>p instead for now

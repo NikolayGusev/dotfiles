@@ -1,6 +1,9 @@
 - clean up "j" menu
 
 
+- Consider one option instead of two. Make things consistent.
+  - "space e l(ist)" and "space t p(roblems)" do the same thing.
+  - "space t e(rrors)" might be an option as well.
 
 - space-s-f doesn't work for some reason and is glitchy overall
   - shouldn't show some input box like it does right now

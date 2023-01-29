@@ -64,6 +64,7 @@
 - sandwich 2ysa" to surround with two surroundings
 - sandwich i, f, t objects
 - cin<surrounding>, cil<surrounding> to change inside next/prev surrounding (or another op)
+- cIn<surrounding> - change inside next, keep whitespaces (replace in place)
 - sandwich dss, css - automatically determine which surrounding to delete or change
 
 - change visual selection side - o

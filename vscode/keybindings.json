@@ -552,5 +552,15 @@
     "key": "enter",
     "command": "filesExplorer.openFilePreserveFocus",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
-  }
+  },
+  {
+    "key": "space",
+    "command": "vspacecode.space",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.toggleExpand",
+    "when": "listFocus && !inputFocus"
+  },
 ]

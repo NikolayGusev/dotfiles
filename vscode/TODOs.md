@@ -1,6 +1,5 @@
 - clean up "j" menu
 
-- gD which opens definition in a window to the right, not replaces current buffer
 
 - Allow <c-p> and <c-n> navigation in "space-t-p" (problems list). 
 - Also allow to see problems for the current file only. E.g. "space-t-p" for current file and "space-t-P" for whole project.
@@ -258,3 +257,10 @@ consider remaping zM to zm
 
 - space j i/I - got to symbol
 - ctrl+enter to open to the side
+
+
+### Couldn't or won't fix
+- gD which opens definition in a window to the right, not replaces current buffer
+  - Instead do this:
+    - gd 
+    - <space>bl (move buffer to the right)

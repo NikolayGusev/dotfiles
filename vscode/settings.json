@@ -529,6 +529,46 @@
       "keys": "g.U",
       "position": -1
     },
+    // Format buffer
+    {
+      "keys": "j.+",
+      "position": -1
+    },
+    // Format region or buffer
+    {
+      "keys": "j.=",
+      "position": -1
+    },
+    // Jump to symbol in buffer
+    {
+      "keys": "j.i",
+      "position": -1
+    },
+    // Jump to symbol in project
+    {
+      "keys": "j.I",
+      "position": -1
+    },
+    // Split new line
+    {
+      "keys": "j.n",
+      "position": -1
+    },
+    // Jump to linne
+    {
+      "keys": "j.l",
+      "position": -1
+    },
+    // Jump to outline/variables
+    {
+      "keys": "j.v",
+      "position": -1
+    },
+    // Jump to word
+    {
+      "keys": "j.w",
+      "position": -1
+    },
     {
       "keys": "j.j",
       "name": "Jump to symbol in buffer",

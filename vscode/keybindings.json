@@ -562,5 +562,5 @@
     "key": "enter",
     "command": "list.toggleExpand",
     "when": "listFocus && !inputFocus"
-  },
+  }
 ]

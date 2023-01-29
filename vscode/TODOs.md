@@ -1,6 +1,3 @@
-- J and K should also switch tabs in file explorer, TerminalTabs, etc
-
-
 - Consider one option instead of two. Make things consistent.
   - "space e l(ist)" and "space t p(roblems)" do the same thing.
   - "space t e(rrors)" might be an option as well.

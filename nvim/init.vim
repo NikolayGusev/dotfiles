@@ -138,6 +138,8 @@ let g:targets_argOpening = '[({<[]'
 let g:targets_argClosing = '[]>})]'
 let g:targets_argSeparator = '[,;]'
 let g:targets_jumpRanges = ''
+" Only consider targets fully contained in current line:
+let g:targets_seekRanges = 'cc cr cb cB lc ac Ac lr rr ll'
 
 """"""""""""""""""
 " VSCODE RELATED "

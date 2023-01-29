@@ -13,11 +13,6 @@
   - should search for the work under the cursor or for the selection
   - should update and search again when I select new text or move to a new word and trigger it again
 
-- space-g-t ("timeline") should behave just like file explorer
-  - space to open vspacecode
-  - enter to peek
-  - h to open in editor
-  
 - Check out what soft undo does in VSCode:
   Use the Soft Undo (⌘/⌃ + U) to move the cursor back to it's previous
   location. This is particularly useful when you need to move down in a long

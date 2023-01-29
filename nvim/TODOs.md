@@ -8,6 +8,8 @@
     ^
     |------ cursor is here
     ```
+- targets - only change on current line, do not jump lines ever
+  - What if im inside of a multiline array and would like to change the next element on the next row?
     
 - is it possible to delete surrounding function which is static. E.g. for
   "Utils.convert(a)" leave just an "a" afterwards.

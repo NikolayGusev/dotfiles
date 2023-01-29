@@ -137,6 +137,7 @@ nmap <silent> S <Plug>(sandwich-add)<SID>gul
 let g:targets_argOpening = '[({<[]'
 let g:targets_argClosing = '[]>})]'
 let g:targets_argSeparator = '[,;]'
+let g:targets_jumpRanges = ''
 
 """"""""""""""""""
 " VSCODE RELATED "

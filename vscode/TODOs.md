@@ -1,10 +1,4 @@
-- Consider one option instead of two. Make things consistent.
-  - "space e l(ist)" and "space t p(roblems)" do the same thing.
-  - "space t e(rrors)" might be an option as well.
-
-- space-s-f doesn't work for some reason and is glitchy overall
-  - shouldn't show some input box like it does right now
-    - this is actually interesting, how to show such a dialog for some other commands that might need an input?
+- space-s-F doesn't work for some reason and is glitchy overall
   - should search for the work under the cursor or for the selection
   - should update and search again when I select new text or move to a new word and trigger it again
 
@@ -32,6 +26,9 @@
     command in vspacecode against this selection. If I do a mistake, I have to
     shrink selection before trying once again.
     
+- Consider one option instead of two. Make things consistent.
+  - "space e l(ist)" and "space t p(roblems)" do the same thing.
+  - "space t e(rrors)" might be an option as well.
 
 - add "scope to this addin" to the list
 

@@ -1,8 +1,6 @@
 - clean up "j" menu
 
 
-- Allow <c-p> and <c-n> navigation in "space-t-p" (problems list). 
-- Also allow to see problems for the current file only. E.g. "space-t-p" for current file and "space-t-P" for whole project.
 
 - space-s-f doesn't work for some reason and is glitchy overall
   - shouldn't show some input box like it does right now
@@ -264,3 +262,7 @@ consider remaping zM to zm
   - Instead do this:
     - gd 
     - <space>bl (move buffer to the right)
+
+
+- Allow to see problems for the current file only. E.g. "space-t-p" for current file and "space-t-P" for whole project.
+  - Can be manually turned on with mouse by clicking on a filter button and picking "Show Active file only".

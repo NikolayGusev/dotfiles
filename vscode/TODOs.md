@@ -1,8 +1,3 @@
-- space-s-F doesn't work for some reason and is glitchy overall
-  - should search for the work under the cursor or for the selection
-  - should update and search again when I select new text or move to a new word and trigger it again
-
-  
 - cannot split window left/top with space-w-h/k
   - Those are defaults in vim:
     -<Ctrl-W>+v       # Opens a new vertical split
@@ -262,3 +257,6 @@ consider remaping zM to zm
 
 - Allow to see problems for the current file only. E.g. "space-t-p" for current file and "space-t-P" for whole project.
   - Can be manually turned on with mouse by clicking on a filter button and picking "Show Active file only".
+
+- space-s-F should search for the work under the cursor or for the selection
+  - yank selected text, space-s-f and paste as a workaround

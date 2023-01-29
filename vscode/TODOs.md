@@ -1,5 +1,3 @@
-- clean up "j" menu
-
 - J and K should also switch tabs in file explorer, TerminalTabs, etc
 
 

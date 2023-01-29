@@ -13,12 +13,6 @@
   - should search for the work under the cursor or for the selection
   - should update and search again when I select new text or move to a new word and trigger it again
 
-- Check out what soft undo does in VSCode:
-  Use the Soft Undo (⌘/⌃ + U) to move the cursor back to it's previous
-  location. This is particularly useful when you need to move down in a long
-  file to copy a variable or function name and then go back to your original
-  position.
-
   
 - cannot split window left/top with space-w-h/k
   - Those are defaults in vim:
@@ -255,6 +249,16 @@ consider remaping zM to zm
 
 - space j i/I - got to symbol
 - ctrl+enter to open to the side
+
+
+
+### Someday
+- If I don't like the way <C-i> and <C-o> work:
+  - Check out what soft undo does in VSCode:
+    Use the Soft Undo (‚åò/‚åÉ + U) to move the cursor back to it's previous
+    location. This is particularly useful when you need to move down in a long
+    file to copy a variable or function name and then go back to your original
+    position.
 
 
 ### Couldn't or won't fix

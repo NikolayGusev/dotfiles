@@ -57,8 +57,8 @@ nnoremap gg gg0
 nnoremap G G$
 nnoremap <S-L> <S-L>zz
 nnoremap <S-H> <S-H>zz
-nnoremap J <Cmd>call VSCodeNotify('workbench.action.previousEditor')<CR>
-nnoremap K <Cmd>call VSCodeNotify('workbench.action.nextEditor')<CR>
+nnoremap J <Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>
+nnoremap K <Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>
 vnoremap < <gv
 vnoremap > >gv
 nnoremap ; <Cmd>call VSCodeNotify('editor.action.quickFix')<CR>

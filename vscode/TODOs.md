@@ -11,8 +11,6 @@
   - should search for the work under the cursor or for the selection
   - should update and search again when I select new text or move to a new word and trigger it again
 
-- shift+jk should cycle only active window's buffers, not buffers in all windows
-
 - space-g-t ("timeline") should behave just like file explorer
   - space to open vspacecode
   - enter to peek

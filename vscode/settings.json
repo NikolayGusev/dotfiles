@@ -619,8 +619,7 @@
       "commands": [
         "editor.action.addSelectionToNextFindMatch",
         "workbench.action.findInFiles",
-        "workbench.action.focusActiveEditorGroup",
-        "whichkey.showTransient"
+        "workbench.action.focusActiveEditorGroup"
       ],
       "args": [null, null, null]
     },

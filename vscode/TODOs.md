@@ -1,3 +1,6 @@
+- Cannot press F1/F2 to go to the prev/next search result when find in project panel is closed.
+- See if it is the same for find references (gD -> F3/F4).
+
 - cannot split window left/top with space-w-h/k
   - Those are defaults in vim:
     -<Ctrl-W>+v       # Opens a new vertical split

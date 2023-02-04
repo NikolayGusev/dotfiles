@@ -122,6 +122,7 @@ let g:clever_f_smart_case = 1
 let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
 runtime macros/sandwich/keymap/surround.vim
 
+"  match function calls like "console.log(123)"
 let g:sandwich#magicchar#f#patterns = [
 	\   {
 	\     'header' : '\<\%(\h\k*\.\)*\h\k*',

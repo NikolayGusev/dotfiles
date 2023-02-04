@@ -1,3 +1,5 @@
+- Allow multiple files with the same name in the same tab.
+
 - Cannot press F1/F2 to go to the prev/next search result when find in project panel is closed.
 - See if it is the same for find references (gD -> F3/F4).
 

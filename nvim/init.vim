@@ -299,19 +299,21 @@ nmap <leader><leader>ss <plug>(SubversiveSubvertWordRange)
 
 omap ii <Plug>(indent-object_linewise-none)
 vmap ii <Plug>(indent-object_linewise-none)
+omap Ii <Plug>(indent-object_blockwise-none)
+vmap Ii <Plug>(indent-object_blockwise-none)
 omap ai <Plug>(indent-object_linewise-both)
 vmap ai <Plug>(indent-object_linewise-both)
+omap Ai <Plug>(indent-object_blockwise-both)
+vmap Ai <Plug>(indent-object_blockwise-both)
 
 omap ij <Plug>(indent-object_linewise-none-keep-start)
 xmap ij <Plug>(indent-object_linewise-none-keep-start)
+omap Ij <Plug>(indent-object_blockwise-none-keep-start)
+xmap Ij <Plug>(indent-object_blockwise-none-keep-start)
 omap ik <Plug>(indent-object_linewise-none-keep-end)
 xmap ik <Plug>(indent-object_linewise-none-keep-end)
-
-omap ibj <Plug>(indent-object_blockwise-none-keep-start)
-xmap ibj <Plug>(indent-object_blockwise-none-keep-start)
-
-omap ibk <Plug>(indent-object_blockwise-none-keep-end)
-xmap ibk <Plug>(indent-object_blockwise-none-keep-end)
+omap Ik <Plug>(indent-object_blockwise-none-keep-end)
+xmap Ik <Plug>(indent-object_blockwise-none-keep-end)
 
 """"""""""""""""
 " COLOR SCHEME "

@@ -149,8 +149,13 @@ let g:targets_argOpening = '[({<[]'
 let g:targets_argClosing = '[]>})]'
 let g:targets_argSeparator = '[,;]'
 let g:targets_jumpRanges = ''
-" Only consider targets fully contained in current line:
-let g:targets_seekRanges = 'cc cr cb cB lc ac Ac lr rr ll'
+"  "  Only consider targets around cursor:
+"  let g:targets_seekRanges = 'cc cr cb cB lc ac Ac lr lb ar ab lB Ar aB Ab AB'
+"  " Only consider targets fully contained in current line:
+"  let g:targets_seekRanges = 'cc cr cb cB lc ac Ac lr rr ll'
+autocmd User targets#mappings#user call targets#mappings#extend({
+    \ 'b': {'pair': [{'o':'<', 'c':'>'}, {'o':'{', 'c':'}'}, {'o':'(', 'c':')'}, {'o':'[', 'c':']'}]}
+    \ })
 
 """"""""""""""""""
 " VSCODE RELATED "

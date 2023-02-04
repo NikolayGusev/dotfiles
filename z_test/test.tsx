@@ -56,8 +56,8 @@ export interface Example {
 }
 export interface Example { name: string; items: { key: string }; }
 export interface Example { name: string; items: (key: string) }
-export interface Example { name: { 123 }; items: 123 }
 export interface Example { items: 123; name: { 123 }; }
+export interface Example { name: { 123 }; items: 123 }
 export interface Example { items: 123; name: { 123 }; }
 export interface Example { items: 123; name: string; }
 

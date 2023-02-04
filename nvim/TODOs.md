@@ -79,6 +79,7 @@
   => g/G  - expand/collapse selection
 - g> and g< - move current arg left and right
 - gs + visual line selection - does the same for visual
+- '<space><space> to jump to an empty line
 
 - ANKI
 

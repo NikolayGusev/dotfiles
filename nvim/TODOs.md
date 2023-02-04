@@ -1,5 +1,7 @@
 # General
 
+- "cib" lags for half a second - guess vim is waiting for another keystrokes. Fix this delay.
+
 - 2<leader>j doesn't work (join two lines)
 
 - is it possible to delete surrounding function which is static. E.g. for

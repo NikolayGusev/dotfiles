@@ -345,33 +345,28 @@
         }
       ]
     },
-    "horizontalResize": {
-      "title": "Horizontal resize transient",
+    "resizeWindow": {
+      "title": "Resize window transient",
       "bindings": [
         {
-          "key": "g",
-          "name": "Grow",
-          "command": "workbench.action.increaseViewWidth"
-        },
-        {
-          "key": "s",
-          "name": "Shrink",
-          "command": "workbench.action.decreaseViewWidth"
-        }
-      ]
-    },
-    "verticalResize": {
-      "title": "Vertical resize transient",
-      "bindings": [
-        {
-          "key": "g",
-          "name": "Grow",
+          "key": "j",
+          "name": "Grow height",
           "command": "workbench.action.increaseViewHeight"
         },
         {
-          "key": "s",
-          "name": "Shrink",
+          "key": "k",
+          "name": "Shrink height",
           "command": "workbench.action.decreaseViewHeight"
+        },
+        {
+          "key": "l",
+          "name": "Grow width",
+          "command": "workbench.action.increaseViewWidth"
+        },
+        {
+          "key": "h",
+          "name": "Shrink width",
+          "command": "workbench.action.decreaseViewWidth"
         }
       ]
     },
@@ -755,19 +750,13 @@
       "type": "command",
       "command": "workbench.action.toggleZenMode"
     },
+    // focus next window
     {
-      "keys": "w.h",
-      "name": "Change window horizontal size",
+      "keys": "w.w",
+      "name": "Change window size",
       "type": "command",
       "command": "whichkey.showTransient",
-      "args": "whichkey.transient.horizontalResize"
-    },
-    {
-      "keys": "w.v",
-      "name": "Change window vertical size",
-      "type": "command",
-      "command": "whichkey.showTransient",
-      "args": "whichkey.transient.verticalResize"
+      "args": "whichkey.transient.resizeWindow"
     },
     {
       "keys": "w.j",
@@ -780,6 +769,19 @@
       "name": "Split editor right",
       "type": "command",
       "command": "workbench.action.splitEditor"
+    },
+    // focus window up
+    {
+      "keys": "w.k",
+      "name": "Split editor above",
+      "type": "command",
+      "command": "workbench.action.splitEditorUp"
+    },
+    {
+      "keys": "w.h",
+      "name": "Split editor left",
+      "type": "command",
+      "command": "workbench.action.splitEditorLeft"
     },
     // split below
     {
@@ -806,19 +808,9 @@
       "keys": "w.d",
       "position": -1
     },
-    // focus window up
-    {
-      "keys": "w.k",
-      "position": -1
-    },
     // split window below
     {
       "keys": "w.s",
-      "position": -1
-    },
-    // focus next window
-    {
-      "keys": "w.w",
       "position": -1
     },
     // focus previous window

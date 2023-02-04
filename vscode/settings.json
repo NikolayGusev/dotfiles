@@ -18,7 +18,7 @@
 
   // General visiblitity
   "editor.renderWhitespace": "none",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
   "editor.minimap.enabled": false,
   "workbench.editor.tabCloseButton": "off",
@@ -89,6 +89,7 @@
 
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
+  "editor.fontSize": 14,
 
   "workbench.iconTheme": "material-icon-theme",
 

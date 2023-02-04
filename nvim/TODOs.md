@@ -2,6 +2,11 @@
 
 - "cib" lags for half a second - guess vim is waiting for another keystrokes. Fix this delay.
 
+- vii on first indentation level selects whole file
+  - indent_object_except_first_level setting was present in original plugin
+  - see readme for current one
+    - https://github.com/urxvtcd/vim-indent-object/blob/master/doc/indent-object.txt
+
 - 2<leader>j doesn't work (join two lines)
 
 - is it possible to delete surrounding function which is static. E.g. for

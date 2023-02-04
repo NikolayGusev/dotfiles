@@ -1,9 +1,9 @@
 import { sumStrings } from './sumStrings';
 
-const a:number = 123456;
+const a: number = 123456;
 
 interface A {
-    a:  string,
+    a: string,
     b: number,
     c: string,
 }
@@ -20,25 +20,28 @@ interface A {
 //     initialState=" "
 //       or here    ^ 
 //
-const f2 = () => console.log('f2'); 
+const f2 = () => console.log('f2');
 
-function f1(a: string, b: string, extracted: {d: string, e?: string}): string {
-    if (1 === 2-1) {
-       console.log(123) ;
+function f1(a: string, b: string, extracted: { d: string, e?: string }):
+    string
+    | number {
+    if (1 === 2 - 1) {
+        console.log(123);
     }
+
     const hello = ["hello", "hello", "hello"];
     const { d } = extracted;
     const f = sumStrings(d, hello[0], 'asdf');
-    return a + sumStrings(b,d, 'fdsa') + hello + hello;
+    return a + sumStrings(b, d, 'fdsa') + hello + hello;
 }
 const f3 = (
-    a: number, 
+    a: number,
     b: number,
     c: number,
     d: number,
     e: number,
-    ): number => {
-    return a +b;
+): number => {
+    return a + b;
 }
 
 

@@ -121,6 +121,15 @@ let g:clever_f_smart_case = 1
 let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
 runtime macros/sandwich/keymap/surround.vim
 
+let g:sandwich#magicchar#f#patterns = [
+	\   {
+	\     'header' : '\<\%(\h\k*\.\)*\h\k*',
+	\     'bra'    : '(',
+	\     'ket'    : ')',
+	\     'footer' : '',
+	\   },
+	\ ]
+
 "" Source: https://github.com/machakann/vim-sandwich/blob/ffe2bae2fc70ebecf7091a140b6338a95215878c/macros/sandwich/keymap/surround.vim
 nmap s <Plug>(sandwich-add)
 vmap s <Plug>(sandwich-add)

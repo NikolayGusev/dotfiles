@@ -36,6 +36,7 @@
   "outline.showFields": false,
   "outline.showProperties": false,
   "outline.showVariables": false,
+  "window.title": "${remoteName}${separator}${rootName}${separator}${activeEditorMedium}",
 
 
   // General usability

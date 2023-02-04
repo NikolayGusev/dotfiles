@@ -17,6 +17,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'julian/vim-textobj-variable-segment'
 Plug 'urxvtcd/vim-indent-object'
 Plug 'wellle/targets.vim'
+Plug 'D4KU/vim-textobj-chainmember'
 
 
 Plug 'ggandor/leap.nvim'

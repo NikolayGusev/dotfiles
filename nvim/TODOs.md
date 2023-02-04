@@ -80,6 +80,7 @@
 - g> and g< - move current arg left and right
 - gs + visual line selection - does the same for visual
 - '<space><space> to jump to an empty line
+- yam, dam, cam - copy chain member, e.g. "map" in the following - "vec.iter().map(...)"
 
 - ANKI
 

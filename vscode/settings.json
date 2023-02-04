@@ -52,6 +52,10 @@
   },
   "problems.defaultViewMode": "table",
   "problems.showCurrentInStatus": true,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
 
 
   // Terminal

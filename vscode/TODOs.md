@@ -1,4 +1,6 @@
-- Allow multiple files with the same name in the same tab.
+- F3 und F4 sind verwendet
+
+- enter doesn't work in terminal tabs to focus on a terminal
 
 - Cannot press F1/F2 to go to the prev/next search result when find in project panel is closed.
 - See if it is the same for find references (gD -> F3/F4).
@@ -265,3 +267,5 @@ consider remaping zM to zm
 
 - space-s-F should search for the work under the cursor or for the selection
   - yank selected text, space-s-f and paste as a workaround
+
+- Allow multiple files with the same name in the same tab.

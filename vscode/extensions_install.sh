@@ -19,6 +19,7 @@ code --install-extension jacobdufault.fuzzy-search
 code --install-extension jebbs.plantuml
 code --install-extension kahole.magit
 code --install-extension mhutchie.git-graph
+code --install-extension moalamri.inline-fold
 code --install-extension MohammadBaqer.better-folding
 code --install-extension nicoespeon.abracadabra
 code --install-extension pixelbyte-studios.pixelbyte-love2d
@@ -33,6 +34,7 @@ code --install-extension tamasfe.even-better-toml
 code --install-extension tombonnike.vscode-status-bar-format-toggle
 code --install-extension usernamehw.errorlens
 code --install-extension vadimcn.vscode-lldb
+code --install-extension vscode-org-mode.org-mode
 code --install-extension vscode-snippet.snippet
 code --install-extension VSpaceCode.vspacecode
 code --install-extension VSpaceCode.whichkey

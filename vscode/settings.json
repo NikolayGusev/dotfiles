@@ -1000,6 +1000,13 @@
   "totalTypeScript.showFullTranslation": true,
   "totalTypeScript.hideBasicTips": true,
   
+  "inlineFold.regex": ":.*:.*",
+  "inlineFold.regexFlags": "g",
+  "inlineFold.regexGroup": 0,
+  "inlineFold.supportedLanguages": [
+    "org"
+  ],
+  
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {
     "**/settings.json": "plaintext"

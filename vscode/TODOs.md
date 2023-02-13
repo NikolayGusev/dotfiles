@@ -1,4 +1,4 @@
-- F3 und F4 sind verwendet
+- Add hotkey to fold any arbitratry selection.
 
 - enter doesn't work in terminal tabs to focus on a terminal
 

@@ -1000,12 +1000,45 @@
   "totalTypeScript.showFullTranslation": true,
   "totalTypeScript.hideBasicTips": true,
   
-  "inlineFold.regex": ":.*:.*",
+  "inlineFold.regex": "\\[\\[([^\\]1234567890]*\\.)[^\\]]*\\]\\]",
   "inlineFold.regexFlags": "g",
-  "inlineFold.regexGroup": 0,
+  "inlineFold.regexGroup": 1,
   "inlineFold.supportedLanguages": [
-    "org"
+    "markdown"
   ],
+  "inlineFold.maskChar": "◦",
+  
+  
+
+  "todo-tree.general.tagGroups": {
+    "INTERUPTS" : ["[!]"],
+    "EVENTS" : ["- o"],
+    "ACTIVE ITEMS" : ["[/]"],
+    "TASKS" : ["TODO", "[ ]"],
+    "WAIT" : ["WAIT", "[?]"],
+    "DONE": ["[x]"],
+    "CANCELLED" : ["[-]"],
+    "MIGRATED" : ["[>]"],
+    "ARCHIVED" : ["ARCH"],
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "TODO:1",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "[>]",
+    "[-]",
+    "[/]",
+    "[!]",
+    "[?]",
+    "- o"
+  ],
+  "todo-tree.tree.groupedByTag": true
+
   
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {

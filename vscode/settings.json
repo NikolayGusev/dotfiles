@@ -424,6 +424,126 @@
       "type": "command",
       "command": "workbench.action.showCommands"
     },
+
+    {
+      "keys": "a",
+      "name": "Dendron...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "a",
+          "name": "Lookup Note",
+          "type": "command",
+          "command": "dendron.lookupNote"
+        },
+        {
+          "key": "b",
+          "name": "Backlinks",
+          "type": "command",
+          "command": "dendron.backlinks.focus"
+        },
+        {
+          "key": "C",
+          "name": "Complete Task",
+          "type": "command",
+          "command": "dendron.completeTask"
+        },
+        {
+          "key": "d",
+          "name": "Daily",
+          "type": "command",
+          "command": "dendron.createDailyJournalNote"
+        },
+        {
+          "key": "i",
+          "name": "Insert Template",
+          "type": "command",
+          "command": "dendron.applyTemplate"
+        },
+        {
+          "key": "s",
+          "name": "Scratch Note",
+          "type": "command",
+          "command": "dendron.createScratchNote"
+        },
+        {
+          "key": "t",
+          "name": "Tree",
+          "type": "command",
+          "command": "dendron.treeView.focus"
+        },
+        {
+          "key": "T",
+          "name": "Create task note",
+          "type": "command",
+          "command": "dendron.createTask"
+        },
+
+        {
+          "key": "m",
+          "name": "Move...",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "s",
+              "name": "Move Selection To",
+              "type": "command",
+              "command": "dendron.moveSelectionTo"
+            },
+            {
+              "key": "n",
+              "name": "Move Note (rename)",
+              "type": "command",
+              "command": "dendron.renameNote"
+            },
+            {
+              "key": "h",
+              "name": "Move Header",
+              "type": "command",
+              "command": "dendron.moveHeader"
+            }
+          ]
+        },
+
+        {
+          "key": "n",
+          "name": "Next Sibling",
+          "type": "command",
+          "command": "dendron.goNextHierarchy"
+        },
+        {
+          "key": "p",
+          "name": "Prev Sibling",
+          "type": "command",
+          "command": "dendron.goPrevHierarchy"
+        },
+        {
+          "key": "x",
+          "name": "Delete Note",
+          "type": "command",
+          "command": "dendron.delete"
+        },
+        {
+          "key": "y",
+          "name": "Yank Note Link",
+          "type": "command",
+          "command": "dendron.copyNoteLink"
+        },
+        {
+          "key": "D",
+          "name": "Go Down the Hierarchy",
+          "type": "command",
+          "command": "dendron.goDownHierarchy"
+        },
+        {
+          "key": "U",
+          "name": "Go Up the Hierarchy",
+          "type": "command",
+          "command": "dendron.goUpHierarchy"
+        }
+      ],
+    },
+
     {
       "keys": "e.e",
       "name": "Error transient",
@@ -1037,7 +1157,7 @@
     "[?]",
     "- o"
   ],
-  "todo-tree.tree.groupedByTag": true
+  "todo-tree.tree.groupedByTag": true,
 
   
   // Don't format settings.json automatically. This loses intellisense though.

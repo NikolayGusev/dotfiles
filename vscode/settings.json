@@ -1129,7 +1129,6 @@
   "inlineFold.maskChar": "◦",
   
   
-
   "todo-tree.general.tagGroups": {
     "INTERUPTS" : ["[!]"],
     "EVENTS" : ["- o"],
@@ -1140,6 +1139,7 @@
     "CANCELLED" : ["[-]"],
     "MIGRATED" : ["[>]"],
     "ARCHIVED" : ["ARCH"],
+    "CURRENT PROBLEMS": ["TODO:1"],
   },
   "todo-tree.general.tags": [
     "BUG",
@@ -1158,6 +1158,65 @@
     "- o"
   ],
   "todo-tree.tree.groupedByTag": true,
+  "todo-tree.highlights.defaultHighlight": {
+      "type": "text",
+      "background": "#00000000",
+      "foreground": "black",
+      "opacity": 20,
+  },
+  "todo-tree.highlights.customHighlight": {
+      "INTERUPTS" : {
+          "icon": "alert",
+          "type": "line"
+      },
+      "ACTIVE ITEMS" : {
+        "icon": "play",
+        "type": "line",
+        "background": "#0F0",
+        "opacity": 50,
+      },
+      "WAIT" : {
+        "icon": "clock",
+        "type": "line",
+        "background": "#FF0",
+        "opacity": 50,
+      },
+      "DONE": {
+        "icon": "check",
+        "type": "line",
+        "iconColour": "#000",
+        "background": "#000",
+      },
+      "CANCELLED" : {
+        "icon": "diff-removed",
+        "type": "line",
+        "iconColour": "grey",
+        "background": "#000",
+        "opacity": 70,
+        "foreground": "white",
+      },
+      "MIGRATED" : {
+        "icon": "diff-renamed",
+        "type": "line",
+        "background": "#F00",
+        "opacity": 50,
+      },
+      "ARCHIVED" : {
+        "icon": "check",
+        "type": "line"
+      },
+      "TASKS": {
+          "icon": "circle",
+          "type": "line",
+          "background": "#F00",
+      },
+      "EVENTS": {
+          "background": "pink",
+          "icon": "calendar",
+          "iconColour": "red",
+          "gutterIcon": true
+      }
+  },
 
   
   // Don't format settings.json automatically. This loses intellisense though.

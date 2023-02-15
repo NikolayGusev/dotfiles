@@ -1190,7 +1190,9 @@
         "icon": "check",
         "type": "line",
         "iconColour": "#000",
-        "background": "#000",
+        "background": "#000000",
+        "foreground": "#00000055",
+        "opacity": 10,
       },
       "CANCELLED" : {
         "icon": "diff-removed",
@@ -1214,6 +1216,7 @@
           "icon": "circle",
           "type": "line",
           "background": "#F00",
+          "opacity": 30,
       },
       "EVENTS": {
           "background": "pink",

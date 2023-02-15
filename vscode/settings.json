@@ -62,6 +62,7 @@
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": true,
+  "workbench.hover.delay": 0, // For instant dendron hovers in backlinks
 
 
   // Terminal
@@ -113,7 +114,7 @@
     "editorInlayHint.typeForeground": "#00000055",
     "editorInlayHint.parameterForeground": "#00000055",
     
-    "editor.foldBackground": "#e0a96544"
+    "editor.foldBackground": "#65e0a944"
   },
 
   // magit better colors
@@ -491,7 +492,7 @@
               "command": "dendron.moveSelectionTo"
             },
             {
-              "key": "n",
+              "key": "m",
               "name": "Move Note (rename)",
               "type": "command",
               "command": "dendron.renameNote"
@@ -1129,6 +1130,10 @@
   "inlineFold.maskChar": "◦",
   
   
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules/*/**",
+    "**/template*"
+  ],
   "todo-tree.general.tagGroups": {
     "INTERUPTS" : ["[!]"],
     "EVENTS" : ["- o"],

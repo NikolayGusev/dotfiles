@@ -481,19 +481,19 @@
         },
 
         {
-          "key": "m",
-          "name": "Move...",
+          "key": "r",
+          "name": "Refactor...",
           "type": "bindings",
           "bindings": [
             {
-              "key": "s",
-              "name": "Move Selection To",
+              "key": "e",
+              "name": "Extract Selection To",
               "type": "command",
               "command": "dendron.moveSelectionTo"
             },
             {
-              "key": "m",
-              "name": "Move Note (rename)",
+              "key": "r",
+              "name": "Rename Note",
               "type": "command",
               "command": "dendron.renameNote"
             },

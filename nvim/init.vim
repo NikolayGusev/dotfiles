@@ -103,6 +103,9 @@ nnoremap <silent> g* :let @/=expand('<cword>') <bar> set hls <cr>
 :nnoremap <leader>O :call append(line('.')-1, '')<CR>
 :nnoremap <leader>o :call append(line('.')+0, '')<CR>
 
+:lua vim.keymap.set('x', '/', '<Esc>/\\%V')         " search in visual selection with '/'
+
+
 
 
 """""""""""""""""""""""""

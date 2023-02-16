@@ -1,3 +1,29 @@
+- Fix undesired unfolding
+  - steps to reproduce
+  - use this file:
+    ```
+# A
+
+## A1
+
+  text
+
+## A2
+
+  text
+
+
+    ```
+  - gg
+  - zz (fold)
+  - G
+  - o
+  - result: fold unfolds, while expected result is just that I get a new line and "# A" is still folded
+
+
+- See if it is possible to use https://fusejs.io/ search as dendron does. This would allow to search for both "A B" and "B A" and still get the same results.
+  - https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/#lookups
+
 - Add hotkey to fold any arbitratry selection.
 
 - When searching in a project I can open results in an editor (cmd+enter on mac by default).

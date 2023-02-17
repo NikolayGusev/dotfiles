@@ -1,3 +1,6 @@
+- vim.leap doesn't show highlight when navigating with "'+A+j" below:
+  - HKMAj,
+
 - Fix undesired unfolding
   - steps to reproduce
   - use this file:

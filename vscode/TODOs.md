@@ -1,6 +1,7 @@
 - vim.leap doesn't show highlight when navigating with "'+A+j" below:
   - HKMAj,
 
+
 - Fix undesired unfolding
   - steps to reproduce
   - use this file:
@@ -23,6 +24,8 @@
   - o
   - result: fold unfolds, while expected result is just that I get a new line and "# A" is still folded
 
+
+- See if it possible to prompt before closing terminal with "x" from terminal tabs.
 
 - See if it is possible to use https://fusejs.io/ search as dendron does. This would allow to search for both "A B" and "B A" and still get the same results.
   - https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/#lookups

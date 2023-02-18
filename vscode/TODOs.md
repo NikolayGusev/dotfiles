@@ -1,5 +1,11 @@
 - vim.leap doesn't show highlight when navigating with "'+A+j" below:
   - HKMAj,
+  
+- Compare two side by side buffers in vscode
+
+- Confirm on closing unsaved file with ZZ?
+  - Else I cannot use vscode for temp files efficiently.
+  - Also persist them between sessions like in notepad++.
 
 
 - Fix undesired unfolding

@@ -1,3 +1,7 @@
+- Highlight all search results when searching with /
+  - Trying out selection highlighter chrome extension currently, seems to work fine.
+  - Surfing keys has support for this - https://github.com/philc/vimium/issues/591#issuecomment-670615627
+
 ## Surfing keys
 
 - Consider surfing keys instead

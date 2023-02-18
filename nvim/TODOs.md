@@ -135,3 +135,11 @@
     |------ cursor is here
     ```
     - Use ci{<Esc>p instead for now
+
+## Someday maybe
+- embed plugins into configs
+  - Why?
+    - Can monkey patch things (but getting updates gets harder, unless some patching utility is used)
+    - Can have a whole "download-and-plug" config for work, since it is no longer possible to download nvim plugins.
+  - Resources
+    - https://www.reddit.com/r/neovim/comments/10x8ffa/comment/j7u7yl4/?utm_source=share&utm_medium=web2x&context=3

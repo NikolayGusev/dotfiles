@@ -444,6 +444,12 @@
           "command": "dendron.backlinks.focus"
         },
         {
+          "key": "c",
+          "name": "Calendar",
+          "type": "command",
+          "command": "dendron.calendar-view.focus"
+        },
+        {
           "key": "C",
           "name": "Complete Task",
           "type": "command",

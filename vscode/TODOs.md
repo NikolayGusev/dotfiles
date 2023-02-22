@@ -1,5 +1,5 @@
 - right click on the file -> quick open file history
-  - learn to use
+  - learn how to use and add to menu
   
 - space-f-D (delete file) sometimes deletes a wrong file
   - Is it related to the issue with wrong file being selector in file explorer?

@@ -37,6 +37,7 @@
   "outline.showProperties": false,
   "outline.showVariables": false,
   "window.title": "${remoteName}${separator}${rootName}${separator}${activeEditorMedium}",
+  "editor.foldingImportsByDefault": true,
 
 
   // General usability
@@ -1233,6 +1234,17 @@
       }
   },
 
+  "[markdown]": {
+      "editor.foldingStrategy": "auto",
+      "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
+      "explicitFolding.rules": [
+      {
+          "begin": "---",
+          "end": "---",
+          "autoFold": true
+      },
+    ]
+  },
   
   // Don't format settings.json automatically. This loses intellisense though.
   "files.associations": {

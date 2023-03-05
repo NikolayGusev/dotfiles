@@ -1,6 +1,3 @@
-- See if it is possible to use https://fusejs.io/ search as dendron does. This would allow to search for both "A B" and "B A" and still get the same results.
-  - https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/#lookups
-
 - Add hotkey to fold any arbitratry selection.
 
 - Do not add commentary to the new line when line breaking a last line with comments.

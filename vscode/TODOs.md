@@ -1,8 +1,3 @@
-- cannot split window left/top with space-w-h/k
-  - Those are defaults in vim:
-    -<Ctrl-W>+v       # Opens a new vertical split
-    -<Ctrl-W>+s       # Opens a new horizontal split
-
 - space-e-e currently opens a navigation to go throw the error list. While
   useful this is not the most used feature I think. Better to have a "move to
   the next error and activate quickfix" combo on that hotkey.

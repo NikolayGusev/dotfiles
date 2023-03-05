@@ -1,9 +1,3 @@
-- When searching in a project I can open results in an editor (cmd+enter on mac by default).
-  - Then I can apply changes with Search Editor: Apply Changes. cmd+down to move down to the editor from the search input.
-  - Find out if there's a more convenient hotkey, ankify and make this usable overall.
-
-- enter doesn't work in terminal tabs to focus on a terminal
-
 - Cannot press F1/F2 to go to the prev/next search result when find in project panel is closed.
 - See if it is the same for find references (gD -> F3/F4).
 

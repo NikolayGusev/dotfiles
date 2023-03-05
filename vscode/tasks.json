@@ -1,1 +1,20 @@
-{}
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "label": "Notes Made This Month",
+            "type": "shell",
+            "command": "cd \"${workspaceFolder}\" && ls -lT *.md | awk '{print $6,$9,$NF}' | grep \"$(date +\"%b %Y\")\" | awk '{print \"[[\"$NF\"]]\"}'"
+        },
+        {
+            "label": "Notes Made Today",
+            "type": "shell",
+            "command": "cd \"${workspaceFolder}\" && ls -lT *.md | awk '{print $6,$7,$9,$NF}' | grep \"$(date +\"%b %d %Y\")\" | awk '{print \"[[\"$NF\"]]\"}'"
+        },
+    ]
+}

@@ -753,6 +753,23 @@
       "position": -1
     },
     {
+      "keys": "s.e",
+      "name": "Search and edit in files",
+      "type": "command",
+      "command": "search.action.openEditor"
+    },
+    {
+      "keys": "s.E",
+      "name": "Search and edit in files with a selection",
+      "type": "commands",
+      "commands": [
+        "editor.action.addSelectionToNextFindMatch",
+        "search.action.openEditor",
+        "workbench.action.focusActiveEditorGroup"
+      ],
+      "args": [null, null, null]
+    },
+    {
       "keys": "s.f",
       "name": "Search in files",
       "type": "command",

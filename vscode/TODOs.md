@@ -1,15 +1,3 @@
-- space-e-e currently opens a navigation to go throw the error list. While
-  useful this is not the most used feature I think. Better to have a "move to
-  the next error and activate quickfix" combo on that hotkey.
-  - Make sure it is easy to land on this error for manual fix. I.e. cursor
-    should actually jump to the error. For some reason this is not always the
-    case atm.
-  - And then when pressed for the second time, skip this error and jump to
-    fixing the next one.
-  - Have two separate ways to jump through the errors:
-    - errors in current file
-    - errors everywhere
-
 - Pressing space to trigger actions of vspacecode inputs a space into vim. Stop
   inputing space.
   - It is a problem when I do visual selection and then want to run some

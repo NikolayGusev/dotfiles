@@ -648,6 +648,12 @@
       "type": "command",
       "command": "gitlens.openFileHistory"
     },
+    {
+      "keys": "g.F",
+      "name": "Quick open file history (gitlens)",
+      "type": "command",
+      "command": "gitlens.quickOpenFileHistory"
+    },
     // initialize repo
     {
       "keys": "g.i",

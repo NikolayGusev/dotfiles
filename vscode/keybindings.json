@@ -477,7 +477,7 @@
     "when": "terminalTabsFocus"
   },
   {
-    "key": "x",
+    "key": "x x",
     "command": "workbench.action.terminal.killInstance",
     "when": "terminalTabsFocus"
   },

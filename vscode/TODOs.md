@@ -1,5 +1,3 @@
-- Do not add commentary to the new line when line breaking a last line with comments.
-
 - When searching in a project I can open results in an editor (cmd+enter on mac by default).
   - Then I can apply changes with Search Editor: Apply Changes. cmd+down to move down to the editor from the search input.
   - Find out if there's a more convenient hotkey, ankify and make this usable overall.
@@ -302,3 +300,5 @@ consider remaping zM to zm
         - result: fold unfolds, while expected result is just that I get a new line and "# A" is still folded
   - won't fix as not that crucial
 
+- Do not add commentary to the new line when line breaking a last line with comments.
+  - cannot reproduce in mac

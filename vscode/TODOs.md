@@ -1,7 +1,3 @@
-- consider using "space-b-m" instead of "space-b-M" to close all other buffers.
-  - consider having "close all the the right" hotkey (and use it in vimium too)
-    - on other hand won't this be too hard to memorise and use? can just use mouse to do that or close tabs manually, or with gm + pinned tabs
-
 - See if it possible to prompt before closing terminal with "x" from terminal tabs.
 
 - See if it is possible to use https://fusejs.io/ search as dendron does. This would allow to search for both "A B" and "B A" and still get the same results.

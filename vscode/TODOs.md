@@ -1,29 +1,3 @@
-- Scroll in current tab group only with JK in vscode
-
-
-- Fix undesired unfolding
-  - steps to reproduce
-  - use this file:
-    ```
-# A
-
-## A1
-
-  text
-
-## A2
-
-  text
-
-
-    ```
-  - gg
-  - zz (fold)
-  - G
-  - o
-  - result: fold unfolds, while expected result is just that I get a new line and "# A" is still folded
-
-
 - consider using "space-b-m" instead of "space-b-M" to close all other buffers.
   - consider having "close all the the right" hotkey (and use it in vimium too)
     - on other hand won't this be too hard to memorise and use? can just use mouse to do that or close tabs manually, or with gm + pinned tabs
@@ -310,3 +284,32 @@ consider remaping zM to zm
   - yank selected text, space-s-f and paste as a workaround
 
 - Allow multiple files with the same name in the same tab.
+
+
+- Scroll in current tab group only with JK in vscode
+  - works on macos just fine
+  
+
+- Fix undesired unfolding
+  - steps to reproduce
+    - use this file:
+        ```
+      # A
+
+      ## A1
+
+        text
+
+      ## A2
+
+        text
+
+
+          ```
+        - gg
+        - zz (fold)
+        - G
+        - o
+        - result: fold unfolds, while expected result is just that I get a new line and "# A" is still folded
+  - won't fix as not that crucial
+

@@ -1,4 +1,4 @@
-## Checkout anything
+## Checkout any commit (headless)
 
 - magit
 - ll

@@ -641,6 +641,12 @@
       "type": "command",
       "command": "gitlens.showLineHistoryView"
     },
+    {
+      "keys": "g.L",
+      "name": "Show commits",
+      "type": "command",
+      "command": "gitlens.showCommitsView"
+    },
     // f => *diff   *vscode built in file changes history
     {
       "keys": "g.f",

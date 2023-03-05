@@ -1,5 +1,3 @@
-- Add hotkey to fold any arbitratry selection.
-
 - Do not add commentary to the new line when line breaking a last line with comments.
 
 - When searching in a project I can open results in an editor (cmd+enter on mac by default).

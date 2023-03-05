@@ -359,6 +359,7 @@ if(exists("g:vscode"))
     nnoremap za :call VSCodeNotify('editor.toggleFold')<CR>
     nnoremap zz :call VSCodeNotify('editor.toggleFold')<CR>
     vnoremap <silent> zz <Esc>`>mb`<mv`vvgg<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>`bvG<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>
+    vnoremap <silent> zZ <Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>
 
     nnoremap zj :call VSCodeNotify('editor.gotoNextFold')<CR>
     nnoremap zk :call VSCodeNotify('editor.gotoPreviousFold')<CR>

@@ -105,6 +105,9 @@
   zo :call VSCodeNotify('editor.unfold')<CR>
   zO :call VSCodeNotify('editor.unfoldRecursively')<CR>
   zR :call VSCodeNotify('editor.unfoldAll')<CR>
+  
+  zz - fold everything but selection
+  zZ - fold selection
 
 # Strategic
 

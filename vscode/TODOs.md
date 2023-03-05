@@ -1,7 +1,3 @@
-- Confirm on closing unsaved file with ZZ?
-  - Else I cannot use vscode for temp files efficiently.
-  - Also persist them between sessions like in notepad++.
-  
 - Scroll in current tab group only with JK in vscode
 
 

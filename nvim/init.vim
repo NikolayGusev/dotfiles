@@ -176,7 +176,7 @@ nmap gcc <Plug>VSCodeCommentaryLine
 
 
 nnoremap <space> :call VSCodeNotify('vspacecode.space')<CR>
-vnoremap <silent> <space> <Cmd>call VSCodeNotifyVisual('vspacecode.space', 1)<CR>
+vnoremap <space> <Cmd>call VSCodeNotifyVisual('vspacecode.space', 0)<CR>
 
 """"""""""""
 " UNSORTED "

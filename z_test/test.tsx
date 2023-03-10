@@ -7,6 +7,8 @@ const r = {
   c: 3;
 };
 
+// MYTODO
+
 function f<T, T2>(a: string, b: number) {
   return null;
 }

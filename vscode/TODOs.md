@@ -1,3 +1,5 @@
+- Fix "- o" in task tree - don't need this status.
+
 - Consider one option instead of two. Make things consistent.
   - "space e l(ist)" and "space t p(roblems)" do the same thing.
   - "space t e(rrors)" might be an option as well.
@@ -197,6 +199,8 @@ consider remaping zM to zm
 - terminalTabsFocus commands from keybindings.json
 - alt+j/k - move lines up/down
 - alt+Enter to edit command that I run from terminalTabs with "e"
+- space-s-e(E) search in files and edit
+- git commands from space-g-..
 
 ### Magit
 

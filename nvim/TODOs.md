@@ -1,5 +1,9 @@
 # General
 
+- learn to use "gi" to insert in the last place
+  - e.g. edit something and then I need to check the type
+    - exit edit mode, go check and then "gi"
+
 - "dsq" to "delete surrounding quotes" doesn't work inside of single quotes:
 ```
 <div>'asdf'</div>

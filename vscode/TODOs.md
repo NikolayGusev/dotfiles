@@ -2,6 +2,8 @@
 
 - Stop asking for name of the terminal when new one is created. This is mostly not required and when it is I can rename with an "r".
 
+- how to move rows up and down? alt-arrows or something?
+
 - Consider one option instead of two. Make things consistent.
   - "space e l(ist)" and "space t p(roblems)" do the same thing.
   - "space t e(rrors)" might be an option as well.

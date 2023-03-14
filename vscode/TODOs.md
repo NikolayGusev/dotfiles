@@ -2,6 +2,8 @@
 
 - Remove warnings from the list of traversible errors (with space-e-e).
   - Doesn't make sense to fix them usually before doing the final push, so they are just a hindrance.
+  
+- Stop adding comments when "o" or "O" is used next to the line which has "//" commentary.
 
 - Stop asking for name of the terminal when new one is created. This is mostly not required and when it is I can rename with an "r".
 

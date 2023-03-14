@@ -1,5 +1,8 @@
 - Fix "- o" in task tree - don't need this status.
 
+- Remove warnings from the list of traversible errors (with space-e-e).
+  - Doesn't make sense to fix them usually before doing the final push, so they are just a hindrance.
+
 - Stop asking for name of the terminal when new one is created. This is mostly not required and when it is I can rename with an "r".
 
 - how to move rows up and down? alt-arrows or something?

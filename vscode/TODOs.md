@@ -1,5 +1,9 @@
 - Fix "- o" in task tree - don't need this status.
 
+- Going to the problems panel doesn't work well
+  - I have to go down with a ctrl+<arrow down> else I'll type in filter
+  - I have to use <C-p/n> to move around. "j/k" would be entered in filter instead of moving me upward/downwards.
+
 - Remove warnings from the list of traversible errors (with space-e-e).
   - Doesn't make sense to fix them usually before doing the final push, so they are just a hindrance.
   

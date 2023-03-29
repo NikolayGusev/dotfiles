@@ -1,5 +1,9 @@
 - Fix "- o" in task tree - don't need this status.
 
+- Speed up "m" - cut
+  - it works instantly without selection
+    - Does that mean that nvim waits for a second chord and operation is indeed fast? I had similar situation with some other command, probably should unbind some key "m" somehow. See vim config for unbinds.
+
 - Going to the problems panel doesn't work well
   - I have to go down with a ctrl+<arrow down> else I'll type in filter
   - I have to use <C-p/n> to move around. "j/k" would be entered in filter instead of moving me upward/downwards.

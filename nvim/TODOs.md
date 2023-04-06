@@ -4,11 +4,6 @@
   - e.g. edit something and then I need to check the type
     - exit edit mode, go check and then "gi"
 
-- vii on first indentation level selects whole file
-  - indent_object_except_first_level setting was present in original plugin
-  - see readme for current one
-    - https://github.com/urxvtcd/vim-indent-object/blob/master/doc/indent-object.txt
-
 - 2<leader>j doesn't work (join two lines)
 
 - is it possible to delete surrounding function which is static. E.g. for

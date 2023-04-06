@@ -3,10 +3,6 @@
 - learn to use "gi" to insert in the last place
   - e.g. edit something and then I need to check the type
     - exit edit mode, go check and then "gi"
-
-- is it possible to delete surrounding function which is static. E.g. for
-  "Utils.convert(a)" leave just an "a" afterwards.
-
  
 - VimBeGood custom challenges.
 - https://github.com/junegunn/vim-easy-align - do I ever need this though? 

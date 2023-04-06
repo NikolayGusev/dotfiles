@@ -7,6 +7,7 @@
 - "dsq" to "delete surrounding quotes" doesn't work inside of single quotes:
 ```
 <div>'asdf'</div>
+<div>"asdf"</div>
 ```
 - "cib" lags for half a second - guess vim is waiting for another keystrokes. Fix this delay.
 

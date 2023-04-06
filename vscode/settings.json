@@ -1173,7 +1173,6 @@
   ],
   "todo-tree.general.tagGroups": {
     "INTERUPTS" : ["[!]"],
-    "EVENTS" : ["- o"],
     "ACTIVE ITEMS" : ["[/]"],
     "TASKS" : ["TODO", "[ ]"],
     "WAIT" : ["WAIT", "[?]"],
@@ -1197,7 +1196,6 @@
     "[/]",
     "[!]",
     "[?]",
-    "- o"
   ],
   "todo-tree.tree.groupedByTag": true,
   "todo-tree.highlights.defaultHighlight": {

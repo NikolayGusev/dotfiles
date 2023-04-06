@@ -4,8 +4,6 @@
   - e.g. edit something and then I need to check the type
     - exit edit mode, go check and then "gi"
 
-- 2<leader>j doesn't work (join two lines)
-
 - is it possible to delete surrounding function which is static. E.g. for
   "Utils.convert(a)" leave just an "a" afterwards.
 

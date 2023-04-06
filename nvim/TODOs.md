@@ -4,9 +4,6 @@
   - e.g. edit something and then I need to check the type
     - exit edit mode, go check and then "gi"
 
-
-- "cib" lags for half a second - guess vim is waiting for another keystrokes. Fix this delay.
-
 - vii on first indentation level selects whole file
   - indent_object_except_first_level setting was present in original plugin
   - see readme for current one

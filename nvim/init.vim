@@ -208,7 +208,7 @@ let g:traces_abolish_integration = 1
 " Cutlass.vim "
 """""""""""""""
 nnoremap m d
-xnoremap m d
+xnoremap <nowait> m d
 
 nnoremap mm dd
 nnoremap M D

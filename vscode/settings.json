@@ -28,7 +28,7 @@
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.lineNumbers": "off",
   "editor.showFoldingControls": "never",
-  "editor.lineDecorationsWidth": 0,
+  "editor.lineDecorationsWidth": 10,
   "editor.scrollbar.horizontalScrollbarSize": 4,
   "editor.scrollbar.verticalScrollbarSize": 6,
   "outline.showEnumMembers": false,

@@ -39,6 +39,7 @@ Plug 'gruvbox-community/gruvbox'                " Theme
 Plug 'vim-scripts/vis'                          " Commands that only affect the selection, provides :B for visual commands and :S for visual searches.
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'glepnir/lspsaga.nvim'
 
 call plug#end()
 
@@ -384,6 +385,22 @@ endif
 " LSP "
 """""""
 :lua require('lspconfig').tsserver.setup {}
+
+"  :lua require('lspsaga').init_lsp_saga { server_filetype_map = { typescript = 'typescript' } }
+:lua require('lspsaga').setup {}
+
+:lua local opts = { noremap = true, silent = true, nowait = true}
+:lua vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
+:lua vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
+"  :lua vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', opts)
+:lua vim.keymap.set('n', 'gd', '<Cmd>Lspsaga goto_definition<CR>', opts)
+:lua vim.keymap.set('n', 'gD', '<Cmd>Lspsaga lsp_finder<CR>', opts)
+:lua vim.keymap.set('n', ';', '<Cmd>Lspsaga Lightbulb<CR>', opts)
+:lua vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<CR>', opts)
+:lua vim.keymap.set('n', 'gp', '<Cmd>Lspsaga preview_definition<CR>', opts)
+"  :lua vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', { nowait = true })
+:lua vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename ++project<CR>', { nowait = true })
+
 
 " Global mappings.
 " See `:help vim.diagnostic.*` for documentation on any of the below functions

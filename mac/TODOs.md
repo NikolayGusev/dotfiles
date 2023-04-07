@@ -1,3 +1,9 @@
+## Tasks
+### Sofle
+- mod1 + left right move with cmd instead of control. As a result it jumps just as home/end buttons do, not word by word.
+
+
+## Apps
 * Amethyst
 * hammerspoon                           - automation, e.g. message when some process is finished
 * alfred / spotter

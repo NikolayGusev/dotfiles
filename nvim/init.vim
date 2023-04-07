@@ -327,7 +327,9 @@ xmap Ik <Plug>(indent-object_blockwise-none-keep-end)
 colorscheme gruvbox
 
 let g:gruvbox_contrast_light="hard"             " Light colors, values are soft/medium/hard
-set background=light                            " Setting light mode
+
+"  set background=light                         " Setting light mode
+highlight Normal guibg=none                     " Transparency support
 
 highlight OperatorSandwichBuns guifg='#aa91a0' gui=underline ctermfg=172 cterm=underline
 highlight OperatorSandwichChange guifg='#ff0000' gui=underline ctermfg='yellow' cterm=underline

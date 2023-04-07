@@ -395,17 +395,17 @@
         {
           "key": "n",
           "name": "Next",
-          "command": "workbench.action.editor.nextChange"
+          "command": "editor.action.dirtydiff.next"
         },
         {
           "key": "p",
           "name": "Previous",
-          "command": "workbench.action.editor.previousChange"
+          "command": "editor.action.dirtydiff.previous"
         },
         {
           "key": "N",
           "name": "Previous",
-          "command": "workbench.action.editor.previousChange"
+          "command": "editor.action.dirtydiff.previous"
         }
       ]
     }
@@ -620,7 +620,7 @@
       "name": "Next change",
       "type": "commands",
       "commands": [
-        "workbench.action.editor.nextChange",
+        "editor.action.dirtydiff.next",
         "whichkey.showTransient"
       ],
       "args": [null, "whichkey.transient.gitChangesInFile"]
@@ -630,7 +630,7 @@
       "name": "Prev change",
       "type": "commands",
       "commands": [
-        "workbench.action.editor.previousChange",
+        "editor.action.dirtydiff.previous",
         "whichkey.showTransient"
       ],
       "args": [null, "whichkey.transient.gitChangesInFile"]

@@ -3,6 +3,14 @@
 - mod1 + left right move with cmd instead of control. As a result it jumps just as home/end buttons do, not word by word.
 - vim hotkeys like "ctrl+d" to duplicate line
 
+### Telescope
+- ripgrep
+- fzf plugin
+
+### Tmux
+- https://github.com/joshmedeski/dotfiles/blob/main/.config/tmux/tmux.conf
+
+
 ## Apps
 * Amethyst
 * hammerspoon                           - automation, e.g. message when some process is finished

@@ -94,6 +94,9 @@
   zz - fold everything but selection
   zZ - fold selection
 
+- Vimium
+  - shift+w - open tab in a new window
+
 # Strategic
 
 - switch to lua and lazy.nvim - https://github.com/folke/lazy.nvim#-structuring-your-plugins

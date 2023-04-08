@@ -10,6 +10,7 @@
 ### fzf
 - let g:fzf_layout = { 'up': '~50%' }
     => You get the FZF search entry right in the center of the screen. I find it annoying to look at the bottom of my 32" screen in portrait mode when I use FZF
+- Find how to use it with ripgrep fast together, so that fzf feeds its filter into rg.
 
 ### Tmux
 - https://github.com/joshmedeski/dotfiles/blob/main/.config/tmux/tmux.conf

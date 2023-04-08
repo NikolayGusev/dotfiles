@@ -41,6 +41,10 @@ Plug 'vim-scripts/vis'                          " Commands that only affect the 
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+
 call plug#end()
 
 let g:vim_be_good_delete_me_offset = 35
@@ -447,3 +451,38 @@ endif
 " Tree sitter text objects "
 """"""""""""""""""""""""""""
 """ TODO
+
+
+
+"""""""""""""
+" Telescope "
+"""""""""""""
+
+" You dont need to set any of these options. These are the default ones. Only
+" the loading is important
+:lua require('telescope').setup {}
+"  require('telescope').setup { extensions = {
+"      fzf = {
+"        fuzzy = true,                    -- false will only do exact matching
+"        override_generic_sorter = true,  -- override the generic sorter
+"        override_file_sorter = true,     -- override the file sorter
+"        case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+"                                         -- the default case_mode is "smart_case"
+"      }
+"    }
+"  }
+" To get fzf loaded and working with telescope, you need to call
+" load_extension, somewhere after setup function:
+:lua require('telescope').load_extension('fzf')
+
+" Find files using Telescope command-line sugar.
+nnoremap <space><space> <cmd>Telescope find_files<cr>
+nnoremap <space>ss <cmd>Telescope live_grep<cr>
+nnoremap <space>bb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" Using Lua functions
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>

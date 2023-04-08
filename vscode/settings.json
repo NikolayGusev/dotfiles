@@ -117,10 +117,10 @@
     
     "editor.foldBackground": "#65e0a944",
     
-    "diffEditor.insertedTextBackground": "#00FF0066",
-    "diffEditor.insertedLineBackground": "#00FF0022",
-    "diffEditor.removedTextBackground": "#FF000066"
-    "diffEditor.removedTextBackground": "#FF000066"
+    "diffEditor.insertedTextBackground": "#00FF0088",
+    "diffEditor.insertedLineBackground": "#00FF0011",
+    "diffEditor.removedTextBackground": "#FF000066",
+    "diffEditor.removedLineBackground": "#FF000022"
   },
 
   // magit better colors

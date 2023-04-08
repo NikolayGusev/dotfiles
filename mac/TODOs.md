@@ -17,6 +17,11 @@
 * alfred / spotter
 * karabiner                             - remap keys 
 
+### Nvim setup
+- https://dev.to/craftzdog/my-neovim-setup-for-react-typescript-tailwind-css-etc-58fb
+
+### Lazy git
+- https://github.com/so-fancy/diff-so-fancy. Diff for lazygit that shows word diffs. Is a script so should work w/o admin permissions. https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
 
 ### defaults example dotfile
 - https://github.com/mathiasbynens/dotfiles/blob/main/.macos

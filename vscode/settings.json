@@ -181,8 +181,7 @@
       "interval": 500,
       "sequence": [
         "workbench.action.terminal.splitInstance",
-        "workbench.action.terminal.focusTabs",
-        "workbench.action.terminal.renameInstance",
+        "workbench.action.terminal.focusTabs"
       ]
     },
     {
@@ -190,8 +189,7 @@
       "interval": 500,
       "sequence": [
         "workbench.action.terminal.new",
-        "workbench.action.terminal.focusTabs",
-        "workbench.action.terminal.renameInstance",
+        "workbench.action.terminal.focusTabs"
       ]
     },
   ],

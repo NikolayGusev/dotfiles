@@ -178,7 +178,7 @@
     },
     {
       "command": "multiCommand.splitCurrentTerminal",
-      "interval": 500,
+      "interval": 0,
       "sequence": [
         "workbench.action.terminal.splitInstance",
         "workbench.action.terminal.focusTabs"
@@ -186,7 +186,7 @@
     },
     {
       "command": "multiCommand.addNewTerminal",
-      "interval": 500,
+      "interval": 0,
       "sequence": [
         "workbench.action.terminal.new",
         "workbench.action.terminal.focusTabs"

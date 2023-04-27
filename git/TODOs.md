@@ -1,5 +1,6 @@
 # Lazygit + vscode
 - Cannot move commit around with ctrl+j/k because those are already occupied by move to the window above/below in vscode.
+- create PR for bitbucket at work
 
 ## Anki
 - How to check the latest branches I have? 

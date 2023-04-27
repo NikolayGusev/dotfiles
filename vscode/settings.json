@@ -636,6 +636,21 @@
     },
     {
       "keys": "g.g",
+      "name": "lazygit",
+      "type": "commands",
+      "commands": [
+        "workbench.action.createTerminalEditor",
+        "workbench.action.terminal.sendSequence",
+      ],
+      "args": [
+        null, 
+        {
+          "text": "lazygit \u000D"
+        }
+      ]
+    },
+    {
+      "keys": "g.G",
       "name": "Git Graph",
       "type": "command",
       "command": "git-graph.view"

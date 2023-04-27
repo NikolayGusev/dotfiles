@@ -43,7 +43,6 @@
   // General usability
   "explorer.autoReveal": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "terminal.integrated.gpuAcceleration": "off",
   "editor.copyWithSyntaxHighlighting": false,
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
@@ -61,7 +60,6 @@
   "problems.showCurrentInStatus": true,
   "editor.smoothScrolling": true,
   "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": true,
   "workbench.hover.delay": 0, // For instant dendron hovers in backlinks
 
@@ -72,6 +70,11 @@
   "terminal.integrated.commandsToSkipShell": [
     "workbench.action.terminal.focusTabs"
   ],
+  "terminal.integrated.confirmOnKill": "never",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.gpuAcceleration": "off",
+
+
 
   // Never use pick window
   "editor.gotoLocation.multipleDeclarations": "goto",

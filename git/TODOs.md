@@ -1,4 +1,6 @@
 # Lazygit + vscode
+- Create a custom command that selects all the commits from current branch so I can view the diff easily what was changed in entire PR.
+    - It won't have that nice feature from gitgraph where you can mark files as viewed during this local review?
 - Cannot move commit around with ctrl+j/k because those are already occupied by move to the window above/below in vscode.
 - create PR for bitbucket at work
 

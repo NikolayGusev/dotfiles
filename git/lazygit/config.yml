@@ -37,6 +37,7 @@ customCommands:
     command: "{{index .PromptResponses 0}}"
     
 
+# Switch places {} and []
 
 # Assume unchanged reset and view should work even when no file is selected in
 # files view. Right now they throw an error because SelectedFile.Name cannot be
@@ -58,3 +59,9 @@ customCommands:
 # Find out what does "edit hunk" command do when I stage file line by
 # line. It opens an editor with hunk, but how do I apply some changes?
 # Nothing happens when I change something and save the file.
+
+# Make lazygit keep its state with tmux in vscode? Else I  lose the context all
+# the time when I open it once again. E.g. during a review when I need to move
+# file by file.
+
+# See extra commands here: https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium

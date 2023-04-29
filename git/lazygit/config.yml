@@ -24,13 +24,13 @@ customCommands:
         title: 'Pick a command.'
         options:
           - name: 'assume-unchanged'
-            description: 'A'
+            description: 'Single selection'
             value: 'git update-index --assume-unchanged {{.SelectedFile.Name | quote}}'
           - name: 'list all assume-unchanged files'
-            description: 'B'
+            description: 'Global command'
             value: 'git ls-files -v | grep ''^[[:lower:]]''; false'
           - name: 'reset all assume unchanged files'
-            description: 'C'
+            description: 'Global command'
             value: 'git update-index --really-refresh; true'
     command: "{{index .PromptResponses 0}}"
     context: 'files'
@@ -39,3 +39,4 @@ customCommands:
 
 
 # add command to push up to selected commit and keep later commits local
+# How to expand staged pane to the maximum?

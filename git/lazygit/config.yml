@@ -4,6 +4,8 @@ git:
   paging:
     colorArg: always -w
     pager: diff-so-fancy
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline {{branchName}} --"
+  allBranchesLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
 customCommands:
   - key: 'o'

@@ -7,6 +7,13 @@ git:
   branchLogCmd: "git diff master..{{branchName}}"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
+keybinding:
+  universal:
+    prevItem: null #override up/down to move commits in commits pane
+    nextItem: null #override up/down to move commits in commits pane
+  commits:
+    moveDownCommit: '<down>' # move commit down one
+    moveUpCommit: '<up>' # move commit up one
 customCommands:
   - key: 'o'
     command: 'open "https://stash.gto.intranet.db.com:8082/dashboard"'

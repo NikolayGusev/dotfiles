@@ -33,10 +33,11 @@ customCommands:
             description: 'Global command'
             value: 'git update-index --really-refresh; true'
     command: "{{index .PromptResponses 0}}"
-    context: 'files'
-    loadingText: '' 
     
 
 
-# add command to push up to selected commit and keep later commits local
+# Add command to push up to selected commit and keep later commits local.
 # How to expand staged pane to the maximum?
+# Create worktree.
+# Open associated JIRA.
+# Open file in bitbucket with current line so I can share it easily.

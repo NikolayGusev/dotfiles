@@ -1,8 +1,10 @@
+os:
+  editCommand: 'code'
 git:
   paging:
     colorArg: always -w
     pager: diff-so-fancy
-promptToReturnFromSubprocess: true # display confirmation when subprocess terminates
+promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
 customCommands:
   - key: 'o'
     command: 'open "https://stash.gto.intranet.db.com:8082/dashboard"'

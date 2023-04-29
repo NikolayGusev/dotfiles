@@ -4,7 +4,7 @@ git:
   paging:
     colorArg: always -w
     pager: diff-so-fancy
-  branchLogCmd: "git diff master..{{branchName}}"
+  branchLogCmd: "git diff origin/master..{{branchName}}"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
 keybinding:
@@ -19,6 +19,8 @@ customCommands:
     command: 'open "https://stash.gto.intranet.db.com:8082/dashboard"'
     context: 'localBranches'
   - key: 'u'
+    context: 'files'
+    loadingText: '...' 
     prompts:
       - type: 'menu'
         title: 'Pick a command.'

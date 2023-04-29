@@ -2,6 +2,7 @@
 
 ln -fns $(pwd)/nvim ~/.config/
 ln -fns $(pwd)/git/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
+ln -fns $(pwd)/terminal/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 for filename in vscode/*.*; do
     name=${filename##*/}

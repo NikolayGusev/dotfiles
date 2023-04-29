@@ -2,8 +2,8 @@ os:
   editCommand: 'code'
 git:
   paging:
-    colorArg: always -w
-    pager: diff-so-fancy
+    colorArg: always
+    pager: delta --dark --paging=never
   branchLogCmd: "bash -c 'git diff $(git merge-base {{branchName}} origin/master) {{branchName}}'"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates

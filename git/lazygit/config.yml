@@ -4,7 +4,7 @@ git:
   paging:
     colorArg: always -w
     pager: diff-so-fancy
-  branchLogCmd: "git diff origin/master..{{branchName}}"
+  branchLogCmd: "bash -c 'git diff $(git merge-base {{branchName}} origin/master) {{branchName}}'"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
 keybinding:
@@ -41,10 +41,6 @@ customCommands:
 # Assume unchanged reset and view should work even when no file is selected in
 # files view. Right now they throw an error because SelectedFile.Name cannot be
 # read for the "assume unchanged" command.
-
-# Highlighted branch Git diff should compare changes in the branch only,
-# so it shouldn't compare with remote master, but rather with a commit
-# that is a diverge point of that branch from a master branch.
 
 # Switch to delta as it can knows about the code structure and diff looks
 # way better because of that (https://github.com/dandavison/delta)

@@ -5,7 +5,7 @@ git:
     colorArg: always -w
     pager: diff-so-fancy
   branchLogCmd: "git diff master..{{branchName}}"
-  allBranchesLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
+  allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
 customCommands:
   - key: 'o'

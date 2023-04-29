@@ -38,8 +38,27 @@ customCommands:
     
 
 
+# Assume unchanged reset and view should work even when no file is selected in
+# files view. Right now they throw an error because SelectedFile.Name cannot be
+# read for the "assume unchanged" command.
+
+# Highlighted branch Git diff should compare changes in the branch only,
+# so it shouldn't compare with remote master, but rather with a commit
+# that is a diverge point of that branch from a master branch.
+
+# Switch to delta as it can knows about the code structure and diff looks
+# way better because of that (https://github.com/dandavison/delta)
+
 # Add command to push up to selected commit and keep later commits local.
+
 # How to expand staged pane to the maximum?
+
 # Create worktree.
+
 # Open associated JIRA.
+
 # Open file in bitbucket with current line so I can share it easily.
+
+# Find out what does "edit hunk" command do when I stage file line by
+# line. It opens an editor with hunk, but how do I apply some changes?
+# Nothing happens when I change something and save the file.

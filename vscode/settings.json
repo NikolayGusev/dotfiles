@@ -38,6 +38,7 @@
   "outline.showVariables": false,
   "window.title": "${remoteName}${separator}${rootName}${separator}${activeEditorMedium}",
   "editor.foldingImportsByDefault": true,
+  "debug.inlineValues": "on",
 
 
   // General usability

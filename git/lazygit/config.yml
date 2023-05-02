@@ -23,8 +23,9 @@ customCommands:
     command: 'open "https://stash.gto.intranet.db.com:8082/dashboard"'
     context: 'localBranches'
   - key: 'w'
-    command: 'cd $(while [ ! -d ".bare" ]; do cd ..; pwd) && git worktree add {{.SelectedRemoteBranch.Name}} {.SelectedRemoteBranch.Name}'
+    command: 'cd $(while [ ! -d ".bare" ]; do cd ..; done; pwd) && git worktree add {{.SelectedRemoteBranch.Name}} {{.SelectedRemoteBranch.Name}}'
     context: 'remoteBranches'
+    showOutput: true
     prompts:
       - type: 'confirm'
         title: "Confirm:"

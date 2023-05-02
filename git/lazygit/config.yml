@@ -3,7 +3,10 @@ os:
 git:
   paging:
     colorArg: always
-    pager: delta --dark --paging=never
+    pager: >
+      delta 
+      --light 
+      --paging=never
   branchLogCmd: "bash -c 'git diff $(git merge-base {{branchName}} origin/master) {{branchName}}'"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates

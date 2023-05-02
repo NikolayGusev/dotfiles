@@ -12,7 +12,10 @@ git:
       --plus-style="normal #004400"
       --plus-emph-style="normal #7fdb72"
       --minus-emph-style="normal #de9488"
-  branchLogCmd: "bash -c 'git diff $(git merge-base {{branchName}} origin/master) {{branchName}}'"
+  # old one with regular diff
+  # branchLogCmd: "bash -c 'git diff $(git merge-base {{branchName}} origin/master) {{branchName}}'"
+  # Experimental variants for better diff reviewing with --word-diff. Problem is that it is inconsistent and I cannot use the same in other panes.
+  branchLogCmd: "bash -c 'git diff --word-diff=color $(git merge-base {{branchName}} origin/master) {{branchName}}'"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
 keybinding:

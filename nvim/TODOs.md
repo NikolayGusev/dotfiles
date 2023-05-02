@@ -1,3 +1,6 @@
+# Migrate my stuff to nvim kickstater config
+This is a minimalist config with nothing but crucial things and lazy loading.
+
 # General
 
 - learn to use "gi" to insert in the last place

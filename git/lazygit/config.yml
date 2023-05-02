@@ -6,12 +6,12 @@ git:
     colorArg: always
     pager: >
       delta 
-      --light 
+      --dark 
       --paging=never
-      --minus-emph-style="syntax #FE9488"
-      --minus-style="syntax #FFE6D3"
-      --plus-emph-style="syntax #7FFB72"
-      --plus-style="syntax #EDF6D3"
+      --minus-style="normal #72202f"
+      --plus-style="normal #004400"
+      --plus-emph-style="normal #7fdb72"
+      --minus-emph-style="normal #de9488"
   branchLogCmd: "bash -c 'git diff $(git merge-base {{branchName}} origin/master) {{branchName}}'"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates

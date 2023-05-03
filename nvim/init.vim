@@ -461,6 +461,6 @@ local opts = {noremap = true, silent = true}
 vim.keymap.set({"n", "x"}, "gs", '<cmd>ISwapWith<cr>', opts)
 vim.keymap.set({"n", "x"}, "g[", '<cmd>ISwapNodeWithLeft<cr>', opts)
 vim.keymap.set({"n", "x"}, "g]", '<cmd>ISwapNodeWithRight<cr>', opts)
-vim.keymap.set({"n", "x"}, "g<", '<cmd>ISwapWithLeft<cr>', opts)
-vim.keymap.set({"n", "x"}, "g>", '<cmd>ISwapWithRight<cr>', opts)
+vim.keymap.set({"n", "x"}, "g,", '<cmd>ISwapWithLeft<cr>', opts)
+vim.keymap.set({"n", "x"}, "g.", '<cmd>ISwapWithRight<cr>', opts)
 EOF

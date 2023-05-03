@@ -4,8 +4,6 @@
 
 call plug#begin(stdpath('data') . '/plugged')
 
-Plug 'machakann/vim-swap'
-
 Plug 'nvim-lua/plenary.nvim'
 
 """ Required by leap
@@ -31,12 +29,32 @@ Plug 'svermeulen/vim-subversive'
 Plug 'tpope/vim-abolish'                        " type error fixer, case insensitive replacer, pattern replacer, case changer
 Plug 'markonm/traces.vim'                       " highlights abolish and other commands before executing
 
-Plug 'matze/vim-move'
+"  Plug 'matze/vim-move'
 
 Plug 'ThePrimeagen/vim-be-good'                 " Practice vim
 
 Plug 'gruvbox-community/gruvbox'                " Theme
 Plug 'vim-scripts/vis'                          " Commands that only affect the selection, provides :B for visual commands and :S for visual searches.
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+
+
+"""""" ???
+Plug 'mizlan/iswap.nvim'
+
+
+""""""""""""""""""""""""""""""
+"""""" Treesitter stuff """"""
+""""""""""""""""""""""""""""""
+""""""  Navigate through syntax tree with swap around support.
+""""""  This guy is really cool but buggy for some reason when I actually do the swaps
+"  Plug 'ziontee113/syntax-tree-surfer'
+"""""" This generally works, but there's no fast way to switch to next arg
+"  Plug 'Wansmer/sibling-swap.nvim'
+""""""  Swaps between expanded and collapsed views of the same thing, useful to make editing easier.
+""""""  Doesn't work for some reason (only collapses but doesn't expand)
+"  Plug 'Wansmer/treesj'
 
 call plug#end()
 
@@ -239,45 +257,6 @@ let g:yoinkIncludeDeleteOperations = 1
 nmap y <plug>(YoinkYankPreserveCursorPosition)
 xmap y <plug>(YoinkYankPreserveCursorPosition)
 
-
-""""""""""""
-" vim-swap "
-""""""""""""
-let g:swap#rules = deepcopy(g:swap#default_rules)
-" for templates see - https://github.com/machakann/vim-swap/blob/master/autoload/swap.vim
-let g:swap#rules += [
-\   {
-\     'description': 'Reorder the semicolon-separated items in [].',
-\     'mode': 'n',
-\     'surrounds': ['\[', '\]', 1],
-\     'delimiter': ['\s*;\s*'],
-\     'braket': [['(', ')'], ['[', ']'], ['{', '}']],
-\     'quotes': [['"', '"'], ["'", "'"]],
-\     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
-\   },
-\   {
-\     'description': 'Reorder the semicolon-separated items in {} with trailing ; support.',
-\     'mode': 'n',
-\     'surrounds': ['{', ';[ \n]*}', 1],
-\     'delimiter': ['\s*;\s*'],
-\     'braket': [['(', ')'], ['[', ']'], ['{', '}']],
-\     'quotes': [['"', '"'], ["'", "'"]],
-\     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
-\   },
-\   {
-\     'description': 'Reorder the comma-separated items in {} with <> and trailing , support.',
-\     'mode': 'n',
-\     'surrounds': ['{', '.[ \n]*}', 1],
-\     'delimiter': ['\s*,\s*'],
-\     'braket': [['(', ')'], ['[', ']'], ['{', '}'], ['<', '>']],
-\     'quotes': [['"', '"'], ["'", "'"]],
-\     'immutable': ['\%(^\_s\|\n\)\s*', '\s\+$']
-\   } ]
-
-" Problem: 'surrounds': ['{', ';\+[ \n]*}', 1], (note \+) allows make ; optional, but it breaks for nested curly braces
-
-
-
 """"""""""""""
 " Subversive "
 """"""""""""""
@@ -385,4 +364,102 @@ endif
 """"""""""""""""""""""""""""
 " Tree sitter text objects "
 """"""""""""""""""""""""""""
-""" TODO
+lua <<EOF
+
+require'nvim-treesitter.configs'.setup {
+  textobjects = {
+    select = {
+      enable = true,
+
+      -- Automatically jump forward to textobj, similar to targets.vim
+      lookahead = true,
+
+      keymaps = {
+        -- You can use the capture groups defined in textobjects.scm
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@class.outer",
+        -- You can optionally set descriptions to the mappings (used in the desc parameter of
+        -- nvim_buf_set_keymap) which plugins like which-key display
+        ["ic"] = { query = "@class.inner", desc = "Select inner part of a class region" },
+        -- You can also use captures from other query groups like `locals.scm`
+        ["as"] = { query = "@scope", query_group = "locals", desc = "Select language scope" },
+      },
+      -- You can choose the select mode (default is charwise 'v')
+      --
+      -- Can also be a function which gets passed a table with the keys
+      -- * query_string: eg '@function.inner'
+      -- * method: eg 'v' or 'o'
+      -- and should return the mode ('v', 'V', or '<c-v>') or a table
+      -- mapping query_strings to modes.
+      selection_modes = {
+        ['@parameter.outer'] = 'v', -- charwise
+        ['@function.outer'] = 'V', -- linewise
+        ['@class.outer'] = '<c-v>', -- blockwise
+      },
+      -- If you set this to `true` (default is `false`) then any textobject is
+      -- extended to include preceding or succeeding whitespace. Succeeding
+      -- whitespace has priority in order to act similarly to eg the built-in
+      -- `ap`.
+      --
+      -- Can also be a function which gets passed a table with the keys
+      -- * query_string: eg '@function.inner'
+      -- * selection_mode: eg 'v'
+      -- and should return true of false
+      include_surrounding_whitespace = true,
+    },
+  },
+}
+EOF
+
+lua <<EOF
+require('iswap').setup{
+  -- The keys that will be used as a selection, in order
+  -- ('asdfghjklqwertyuiopzxcvbnm' by default)
+  keys = 'qwertyuiop',
+
+  -- Grey out the rest of the text when making a selection
+  -- (enabled by default)
+  grey = 'disable',
+
+  -- Highlight group for the sniping value (asdf etc.)
+  -- default 'Search'
+  hl_snipe = 'ErrorMsg',
+
+  -- Highlight group for the visual selection of terms
+  -- default 'Visual'
+  hl_selection = 'WarningMsg',
+
+  -- Highlight group for the greyed background
+  -- default 'Comment'
+  hl_grey = 'LineNr',
+
+  -- Post-operation flashing highlight style,
+  -- either 'simultaneous' or 'sequential', or false to disable
+  -- default 'sequential'
+  flash_style = false,
+
+  -- Highlight group for flashing highlight afterward
+  -- default 'IncSearch'
+  hl_flash = 'ModeMsg',
+
+  -- Move cursor to the other element in ISwap*With commands
+  -- default false
+  move_cursor = true,
+
+  -- Automatically swap with only two arguments
+  -- default nil
+  autoswap = true,
+
+  -- Other default options you probably should not change:
+  debug = nil,
+  hl_grey_priority = '1000',
+}
+
+local opts = {noremap = true, silent = true}
+vim.keymap.set({"n", "x"}, "gs", '<cmd>ISwapWith<cr>', opts)
+vim.keymap.set({"n", "x"}, "g[", '<cmd>ISwapNodeWithLeft<cr>', opts)
+vim.keymap.set({"n", "x"}, "g]", '<cmd>ISwapNodeWithRight<cr>', opts)
+vim.keymap.set({"n", "x"}, "g<", '<cmd>ISwapWithLeft<cr>', opts)
+vim.keymap.set({"n", "x"}, "g>", '<cmd>ISwapWithRight<cr>', opts)
+EOF

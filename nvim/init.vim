@@ -82,7 +82,7 @@ vnoremap < <gv
 vnoremap > >gv
 nnoremap ; <Cmd>call VSCodeNotify('editor.action.quickFix')<CR>
 vnoremap ; <Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>
-vnoremap <leader>f <Cmd>call VSCodeCallVisual('multiCommand.searchSelected', 1)<CR>
+vnoremap <leader>f <Cmd>call VSCodeCallVisual('multiCommand.searchSelected', 1)<CR><Esc>
 
 
 " duplicate row

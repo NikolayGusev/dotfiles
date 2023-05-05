@@ -3,6 +3,9 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
+- Cannot insert into empty () with rg
+- comment plugin creates a new line with comment on it
+
 - learn to use "gi" to insert in the last place
   - e.g. edit something and then I need to check the type
     - exit edit mode, go check and then "gi"

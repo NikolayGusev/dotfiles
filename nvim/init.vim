@@ -39,8 +39,8 @@ Plug 'vim-scripts/vis'                          " Commands that only affect the 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
+Plug 'chrisgrieser/nvim-spider'
 
-"""""" ???
 Plug 'mizlan/iswap.nvim'
 
 
@@ -137,6 +137,16 @@ let g:vim_textobj_parameter_mapping = 'a'
 """"""""""""
 let g:clever_f_across_no_line = 1
 let g:clever_f_smart_case = 1
+
+"""""""""""""""
+" nvim-spider "
+"""""""""""""""
+lua <<EOF
+vim.keymap.set({"n", "o", "x"}, "w", "<cmd>lua require('spider').motion('w')<CR>", { desc = "Spider-w" })
+vim.keymap.set({"n", "o", "x"}, "e", "<cmd>lua require('spider').motion('e')<CR>", { desc = "Spider-e" })
+vim.keymap.set({"n", "o", "x"}, "b", "<cmd>lua require('spider').motion('b')<CR>", { desc = "Spider-b" })
+vim.keymap.set({"n", "o", "x"}, "ge", "<cmd>lua require('spider').motion('ge')<CR>", { desc = "Spider-ge" })
+EOF
 
 """"""""""""
 " Sandwich "

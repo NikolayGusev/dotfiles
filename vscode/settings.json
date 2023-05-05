@@ -197,6 +197,14 @@
         "workbench.action.terminal.focusTabs"
       ]
     },
+    {
+      "command": "multiCommand.searchSelected",
+      "interval": 0,
+      "sequence": [
+        "editor.action.addSelectionToNextFindMatch",
+        "workbench.action.findInFiles"
+      ]
+    },
   ],
 
   /////////
@@ -822,7 +830,7 @@
     },
     {
       "keys": "s.F",
-      "name": "Search in files with a selection",
+      "name": "Search word under ther cursor in files",
       "type": "commands",
       "commands": [
         "editor.action.addSelectionToNextFindMatch",

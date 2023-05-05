@@ -277,7 +277,7 @@ xmap y <plug>(YoinkYankPreserveCursorPosition)
 " ie = inner entire buffer
 onoremap ie :exec "normal! ggVG"<cr>
 
-" iv = current viewable text in the buffer
+" ix = current viewable text in the buffer
 onoremap ix :exec "normal! HVL"<cr>
 
 nmap gr <plug>(SubversiveSubstitute)

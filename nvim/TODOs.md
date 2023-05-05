@@ -93,13 +93,6 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 - switch to lua and lazy.nvim - https://github.com/folke/lazy.nvim#-structuring-your-plugins
 
-## Tree sitter stuff
-
-- https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-- Tree sitter requires c compiler https://github.com/nvim-treesitter/nvim-treesitter
-- abecodes/tabout.nvim - exit context "({ etc faster
-- tab out of arguments - https://github.com/abecodes/tabout.nvim
-
 ## "Couldn't fix" issues
 
 // This is fixed by vim/cool. If it really proves to work fine, delete this todo.

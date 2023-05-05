@@ -71,6 +71,8 @@ nnoremap <leader><leader>/ :noh<CR>
 :set ignorecase smartcase
 :set inccommand=nosplit
 :set gdefault                               " 'g' flag by default for replaces
+" Format options come from this guy: formatoptions=jcroql Last set from /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/ftplugin/typescript.vim line 1
+autocmd FileType * setlocal formatoptions-=ro
 
 
 nnoremap gg gg0

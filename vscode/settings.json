@@ -39,6 +39,9 @@
   "window.title": "${remoteName}${separator}${rootName}${separator}${activeEditorMedium}",
   "editor.foldingImportsByDefault": true,
   "debug.inlineValues": "on",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 1,
+  "workbench.editor.limit.perEditorGroup": true,
 
 
   // General usability

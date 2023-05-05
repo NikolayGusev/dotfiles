@@ -84,13 +84,13 @@
   {
     "key": "tab",
     "command": "vscode-neovim.send",
-    "when": "editorTextFocus && neovim.init && neovim.mode != 'cmdline_normal' && editorLangId != 'magit'",
+    "when": "editorTextFocus && neovim.init && neovim.mode != 'cmdline_normal' && editorLangId != 'magit' && editorLangId != 'markdown'",
     "args": "<Tab>"
   },
   {
     "key": "shift-tab",
     "command": "vscode-neovim.send",
-    "when": "editorTextFocus && neovim.init && neovim.mode != 'cmdline_normal' && editorLangId != 'magit'",
+    "when": "editorTextFocus && neovim.init && neovim.mode != 'cmdline_normal' && editorLangId != 'magit' && editorLangId != 'markdown'",
     "args": "<S-Tab>"
   },
   // VSCode unbindings

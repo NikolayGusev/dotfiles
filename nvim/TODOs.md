@@ -16,20 +16,6 @@ This is a minimalist config with nothing but crucial things and lazy loading.
   - jump to member
   - swap places with gs
 
-
-- Cannots switch args in [] in this example:
-```
-    fn split_into_row_ranges(row: &str) -> RowRanges {
-        row.split([',', '-']);
-    }
-```
-- Abolish and vim.vis fix
-  - https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
-  - See what it does and decide if necessary
-- see if this is what I need to do the replacements in vscode
-- Nvim as default text editor in windows
-- Check if I still need those <leader>o and <leader>O bindings
-
 - Second leader? Is that what major is for btw?
   - Can write more additional keybindings this way.
   - What about WhichKey? Does it support two hierarchies?
@@ -109,7 +95,6 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 - https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 - Tree sitter requires c compiler https://github.com/nvim-treesitter/nvim-treesitter
 - abecodes/tabout.nvim - exit context "({ etc faster
-- nvim-trevJ.lua - anti-<S-J>
 - tab out of arguments - https://github.com/abecodes/tabout.nvim
 
 ## "Couldn't fix" issues

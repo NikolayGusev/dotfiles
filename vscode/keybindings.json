@@ -140,12 +140,12 @@
   {
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown",
-    "when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible"
+    "when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !inSearchEditor"
   },
   {
     "key": "ctrl+k",
     "command": "workbench.action.navigateUp",
-    "when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible"
+    "when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !inSearchEditor"
   },
   {
     "key": "ctrl+l",
@@ -365,6 +365,16 @@
     "key": "shift+f4",
     "command": "-references-view.prev",
     "when": "reference-list.hasResult && references-view.canNavigate"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.findInFiles",
+    "when": "hasSearchResult || inSearchEditor"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "search.action.focusSearchList",
+    "when": "hasSearchResult || inSearchEditor"
   },
   {
     "key": "f2",

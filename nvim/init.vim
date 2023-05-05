@@ -51,11 +51,6 @@ Plug 'mizlan/iswap.nvim'
 """"""  Navigate through syntax tree with swap around support.
 """"""  This guy is really cool but buggy for some reason when I actually do the swaps
 "  Plug 'ziontee113/syntax-tree-surfer'
-"""""" This generally works, but there's no fast way to switch to next arg
-"  Plug 'Wansmer/sibling-swap.nvim'
-""""""  Swaps between expanded and collapsed views of the same thing, useful to make editing easier.
-""""""  Doesn't work for some reason (only collapses but doesn't expand)
-"  Plug 'Wansmer/treesj'
 
 call plug#end()
 

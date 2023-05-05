@@ -43,7 +43,7 @@ Plug 'chrisgrieser/nvim-spider'
 Plug 'abecodes/tabout.nvim'
 
 Plug 'mizlan/iswap.nvim'
-
+Plug 'AckslD/nvim-trevJ.lua'
 
 """"""""""""""""""""""""""""""
 """""" Treesitter stuff """"""
@@ -89,12 +89,6 @@ vmap <C-d> ypgv
 
 :nnoremap <silent> <leader>j :let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>
 :vnoremap <silent> <leader>j J
-"  TODO: how to use this? Note the "cgn_,_" which doesn't work for ;
-"  nnoremap <leader>j /[,\|;]<CR>cgn,<CR><Esc>
-"  TODO: This doesn't work either (replaces with [,\|;]).
-"  nnoremap <leader>j /[,\|;]<CR>cgn<C-R>/<CR><Esc>
-" Not that good implementation of split by comma operator
-nnoremap <leader><leader>j /,<CR>cgn,<CR><Esc>
 
 nnoremap gd <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
 nnoremap gD <Cmd>call VSCodeNotify('references-view.find')<CR>
@@ -450,4 +444,12 @@ vim.keymap.set({"n", "x"}, "g[", '<cmd>ISwapNodeWithLeft<cr><cmd>ISwapWith<cr>',
 vim.keymap.set({"n", "x"}, "g]", '<cmd>ISwapNodeWithRight<cr><cmd>ISwapWith<cr>', opts)
 vim.keymap.set({"n", "x"}, "g,", '<cmd>ISwapWithLeft<cr>', opts)
 vim.keymap.set({"n", "x"}, "g.", '<cmd>ISwapWithRight<cr>', opts)
+EOF
+
+"""""""""
+" trevj "
+"""""""""
+lua <<EOF
+require("trevj").setup() -- optional call for configurating non-default filetypes etc
+vim.keymap.set('n', '<leader><leader>j', function() require('trevj').format_at_cursor() end)
 EOF

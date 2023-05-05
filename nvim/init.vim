@@ -433,6 +433,8 @@ lua <<EOF
 require('tabout').setup {
     act_as_tab = false, -- shift content if tab out is not possible
 }
+vim.api.nvim_set_keymap('i', '<Tab>', "<Plug>(TaboutMulti)", {silent = true})
+vim.api.nvim_set_keymap('i', '<S-Tab>', "<Plug>(TaboutBackMulti)", {silent = true})
 EOF
 
 

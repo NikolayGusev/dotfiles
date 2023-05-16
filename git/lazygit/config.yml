@@ -54,7 +54,12 @@ customCommands:
             description: 'Global command'
             value: 'git update-index --really-refresh; true'
     command: "{{index .PromptResponses 0}}"
-    
+  - key: 'P'
+    command: "git push {{.SelectedRemote.RefName}} {{.SelectedLocalCommit.Sha}}:{{.SelectedLocalBranch.RefName}}"
+    context: "commits"
+    loadingText: "Pushing commit..."
+    description: "Push a specific commit (and any preceding)"
+    stream: yes   
 
 # Switch places {} and []
 

@@ -40,7 +40,7 @@
   "editor.foldingImportsByDefault": true,
   "debug.inlineValues": "on",
   "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.value": 1,
+  "workbench.editor.limit.value": 2,
   "workbench.editor.limit.perEditorGroup": true,
 
 

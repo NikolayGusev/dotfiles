@@ -13,6 +13,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Helper functions
 local merge = function(a, b)
   local c = {}
   for k, v in pairs(a) do c[k] = v end
@@ -20,7 +21,9 @@ local merge = function(a, b)
   return c
 end
 
+local map = vim.keymap.set;
 
+-- plugins
 require('lazy').setup({
   { "nvim-lua/plenary.nvim" },
 
@@ -76,7 +79,7 @@ vim.g.vim_be_good_delete_me_offset = 35
 -- General
 vim.cmd("language en_US")
 vim.g.mapleader = ","
-vim.keymap.set("n", "<leader><leader>/", ":noh<CR>", {})
+map("n", "<leader><leader>/", ":noh<CR>", {})
 vim.opt.cursorline = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -85,51 +88,51 @@ vim.opt.gdefault = true -- 'g' flag by default for replaces
 -- Format options come from this guy: formatoptions=jcroql Last set from /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/ftplugin/typescript.vim line 1
 vim.cmd([[autocmd FileType * setlocal formatoptions-=ro]])
 
-vim.keymap.set("n", "gg", "gg0", {})
-vim.keymap.set("n", "G", "G$", {})
-vim.keymap.set("n", "<S-L>", "<S-L>zz", {})
-vim.keymap.set("n", "<S-H>", "<S-H>zz", {})
-vim.keymap.set("n", "J", "<Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>", {})
-vim.keymap.set("n", "K", "<Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>", {})
-vim.keymap.set("v", "<", "<gv", {})
-vim.keymap.set("v", ">", ">gv", {})
-vim.keymap.set("n", ";", "<Cmd>call VSCodeNotify('editor.action.quickFix')<CR>", {})
-vim.keymap.set("v", ";", "<Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>", {})
-vim.keymap.set("v", "<leader>f", "<Cmd>call VSCodeCallVisual('multiCommand.searchSelected', 1)<CR><Esc>", {})
+map("n", "gg", "gg0", {})
+map("n", "G", "G$", {})
+map("n", "<S-L>", "<S-L>zz", {})
+map("n", "<S-H>", "<S-H>zz", {})
+map("n", "J", "<Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>", {})
+map("n", "K", "<Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>", {})
+map("v", "<", "<gv", {})
+map("v", ">", ">gv", {})
+map("n", ";", "<Cmd>call VSCodeNotify('editor.action.quickFix')<CR>", {})
+map("v", ";", "<Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>", {})
+map("v", "<leader>f", "<Cmd>call VSCodeCallVisual('multiCommand.searchSelected', 1)<CR><Esc>", {})
 
 -- duplicate row
-vim.keymap.set("n", "<C-d>", ":.t-1<CR>", {})
-vim.keymap.set("v", "<C-d>", "ypgv", {})
+map("n", "<C-d>", ":.t-1<CR>", {})
+map("v", "<C-d>", "ypgv", {})
 
-vim.keymap.set("n", "<silent> <leader>j", ":let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>", {})
-vim.keymap.set("v", "<silent> <leader>j", "J", {})
+map("n", "<silent> <leader>j", ":let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>", {})
+map("v", "<silent> <leader>j", "J", {})
 
-vim.keymap.set("n", "gd", "<Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>", {})
-vim.keymap.set("n", "gD", "<Cmd>call VSCodeNotify('references-view.find')<CR>", {})
+map("n", "gd", "<Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>", {})
+map("n", "gD", "<Cmd>call VSCodeNotify('references-view.find')<CR>", {})
 
-vim.keymap.set("n", "<leader>r", ":%s/", {})
-vim.keymap.set("n", "<Leader>R", ":%s/\\<<C-r><C-w>\\>/", {})
-vim.keymap.set("v", "<leader>r", ":s/\\%V", {})
-vim.keymap.set("n", "<leader><leader>r", ":%Subvert/", {})
-vim.keymap.set("n", "<Leader><Leader>R", ":%Subvert/<C-r><C-w>/", {})
+map("n", "<leader>r", ":%s/", {})
+map("n", "<Leader>R", ":%s/\\<<C-r><C-w>\\>/", {})
+map("v", "<leader>r", ":s/\\%V", {})
+map("n", "<leader><leader>r", ":%Subvert/", {})
+map("n", "<Leader><Leader>R", ":%Subvert/<C-r><C-w>/", {})
 -- See https://github.com/tpope/vim-abolish/issues/56#issuecomment-457929759
-vim.keymap.set("v", "<leader><leader>r", ":B Subvert/", {})
+map("v", "<leader><leader>r", ":B Subvert/", {})
 
 -- don't jump on * and g*
-vim.keymap.set("n", "<silent> * ", ":let @/= '\\<' . expand('<cword>') . '\\>' <bar> set hls <cr>", {})
-vim.keymap.set("n", "<silent> g* ", ":let @/=expand('<cword>') <bar> set hls <cr>", {})
+map("n", "<silent> * ", ":let @/= '\\<' . expand('<cword>') . '\\>' <bar> set hls <cr>", {})
+map("n", "<silent> g* ", ":let @/=expand('<cword>') <bar> set hls <cr>", {})
 
-vim.keymap.set("n", "/", "/\\V", {})
-vim.keymap.set("n", "<leader>/ ", "/", {})
-vim.keymap.set("n", "? ", "?\\V", {})
-vim.keymap.set("n", "<leader>? ", "? ", {})
+map("n", "/", "/\\V", {})
+map("n", "<leader>/ ", "/", {})
+map("n", "? ", "?\\V", {})
+map("n", "<leader>? ", "? ", {})
 
 -- Append lines above below while in normal mode and w/o any movement
-vim.keymap.set("n", "<leader>O", ":call append(line('.')-1, '')<CR>", {})
-vim.keymap.set("n", "<leader>o", ":call append(line('.')+0, '')<CR>", {})
+map("n", "<leader>O", ":call append(line('.')-1, '')<CR>", {})
+map("n", "<leader>o", ":call append(line('.')+0, '')<CR>", {})
 
 -- search in visual selection with '/'
-vim.keymap.set('x', '/', '<Esc>/\\%V')
+map('x', '/', '<Esc>/\\%V')
 
 
 -- Text object parameter
@@ -140,10 +143,10 @@ vim.g.clever_f_across_no_line = 1
 vim.g.clever_f_smart_case = 1
 
 -- nvim-spider
-vim.keymap.set({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<CR>", { desc = "Spider-w" })
-vim.keymap.set({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<CR>", { desc = "Spider-e" })
-vim.keymap.set({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b')<CR>", { desc = "Spider-b" })
-vim.keymap.set({ "n", "o", "x" }, "ge", "<cmd>lua require('spider').motion('ge')<CR>", { desc = "Spider-ge" })
+map({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<CR>", { desc = "Spider-w" })
+map({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<CR>", { desc = "Spider-e" })
+map({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b')<CR>", { desc = "Spider-b" })
+map({ "n", "o", "x" }, "ge", "<cmd>lua require('spider').motion('ge')<CR>", { desc = "Spider-ge" })
 
 -- Sandwich
 vim.g.sandwich_recipes = vim.deepcopy(vim.g.sandwich_default_recipes)
@@ -160,10 +163,10 @@ vim.g.sandwich_magicchar_f_patterns = {
 }
 
 -- Source: https://github.com/machakann/vim-sandwich/blob/ffe2bae2fc70ebecf7091a140b6338a95215878c/macros/sandwich/keymap/surround.vim
-vim.keymap.set("n", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
-vim.keymap.set("v", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
-vim.keymap.set("n", "ss", "^vg_<Plug>(sandwich-add)", { desc = "Surround line with..." })
-vim.keymap.set("n", "S", "<Plug>(sandwich-add)$", { desc = "Surround to the end of line with..." })
+map("n", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
+map("v", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
+map("n", "ss", "^vg_<Plug>(sandwich-add)", { desc = "Surround line with..." })
+map("n", "S", "<Plug>(sandwich-add)$", { desc = "Surround to the end of line with..." })
 vim.cmd('xunmap sr')
 vim.cmd('xunmap sd')
 vim.cmd('xunmap sa')
@@ -187,24 +190,24 @@ vim.cmd([[
 ]])
 
 -- VSCODE RELATED
-vim.keymap.set("x", "<silent> gc", "<Cmd>call VSCodeNotifyVisual('editor.action.commentLine', 1)<CR>", {})
-vim.keymap.set("n", "gc", "<Plug>VSCodeCommentary", {})
-vim.keymap.set("o", "gc", "<Plug>VSCodeCommentary", {})
+map("x", "<silent> gc", "<Cmd>call VSCodeNotifyVisual('editor.action.commentLine', 1)<CR>", {})
+map("n", "gc", "<Plug>VSCodeCommentary", {})
+map("o", "gc", "<Plug>VSCodeCommentary", {})
 
-vim.keymap.set("x", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
-vim.keymap.set("n", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
-vim.keymap.set("o", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
+map("x", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
+map("n", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
+map("o", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
 
-vim.keymap.set("n", "gcc", "<Plug>VSCodeCommentaryLine", {})
+map("n", "gcc", "<Plug>VSCodeCommentaryLine", {})
 
-vim.keymap.set("n", "<space>", ":call VSCodeNotify('vspacecode.space')<CR>", {})
-vim.keymap.set("v", "<space>", "<Cmd>call VSCodeNotifyVisual('vspacecode.space', 0)<CR>", {})
+map("n", "<space>", ":call VSCodeNotify('vspacecode.space')<CR>", {})
+map("v", "<space>", "<Cmd>call VSCodeNotifyVisual('vspacecode.space', 0)<CR>", {})
 
 -- UNSORTED
 -- let g:camelcasemotion_key = '<leader>'
 
 -- cleaver-f
-vim.keymap.set("n", "<Esc>", ":<C-u>call clever_f#reset()<CR>", {})
+map("n", "<Esc>", ":<C-u>call clever_f#reset()<CR>", {})
 vim.g.clever_f_fix_key_direction = 1
 
 -- autocmd ColorScheme * highlight default CleverFMyOwnLabel cterm=bold,underline gui=bold,underline
@@ -215,14 +218,14 @@ vim.g.traces_abolish_integration = 1
 
 -- LEAP
 if vim.g.vscode then
-  vim.keymap.set({ 'n', 'v', 'o', 'x' }, "'", function()
+  map({ 'n', 'v', 'o', 'x' }, "'", function()
     require('leap').leap {
       opts = { highlight_unlabeled_phase_one_targets = true },
       target_windows = { vim.fn.win_getid() }
     }
   end)
 else -- jump to any window with leap
-  vim.keymap.set({ 'n', 'v', 'o', 'x' }, "'", function()
+  map({ 'n', 'v', 'o', 'x' }, "'", function()
     require('leap').leap {
       opts = { highlight_unlabeled_phase_one_targets = true },
       target_windows = vim.tbl_filter(function(win)
@@ -233,72 +236,72 @@ else -- jump to any window with leap
 end
 
 -- Cutlass.vim
-vim.keymap.set("n", "m", "d", {})
-vim.keymap.set("x", "<nowait> m", "d", {})
+map("n", "m", "d", {})
+map("x", "<nowait> m", "d", {})
 
-vim.keymap.set("n", "mm", "dd", {})
-vim.keymap.set("n", "M", "D", {})
+map("n", "mm", "dd", {})
+map("n", "M", "D", {})
 
 vim.opt.clipboard:append("unnamed") -- use the clipboards of vim and win
 -- This breaks vim-cool plugin:
 -- vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" right after moving to the next result.
 -- set paste -- Paste from a windows or from vim
 -- Yoink
-vim.keymap.set("n", "<Left>", "<plug>(YoinkPostPasteSwapBack)", {})
-vim.keymap.set("n", "<Right>", "<plug>(YoinkPostPasteSwapForward)", {})
+map("n", "<Left>", "<plug>(YoinkPostPasteSwapBack)", {})
+map("n", "<Right>", "<plug>(YoinkPostPasteSwapForward)", {})
 
-vim.keymap.set("n", "p", "<plug>(YoinkPaste_p)", {})
-vim.keymap.set("n", "P", "<plug>(YoinkPaste_P)", {})
+map("n", "p", "<plug>(YoinkPaste_p)", {})
+map("n", "P", "<plug>(YoinkPaste_P)", {})
 
-vim.keymap.set("n", "<leader>p", "p", {})
-vim.keymap.set("n", "<leader>P", "P", {})
+map("n", "<leader>p", "p", {})
+map("n", "<leader>P", "P", {})
 
 -- Also replace the default gp with yoink paste so we can toggle paste in this case too
-vim.keymap.set("n", "gp", "<plug>(YoinkPaste_gp)", {})
-vim.keymap.set("n", "gP", "<plug>(YoinkPaste_gP)", {})
+map("n", "gp", "<plug>(YoinkPaste_gp)", {})
+map("n", "gP", "<plug>(YoinkPaste_gP)", {})
 
 vim.g.yoinkIncludeDeleteOperations = 1
-vim.keymap.set("n", "y", "<plug>(YoinkYankPreserveCursorPosition)", {})
-vim.keymap.set("x", "y", "<plug>(YoinkYankPreserveCursorPosition)", {})
+map("n", "y", "<plug>(YoinkYankPreserveCursorPosition)", {})
+map("x", "y", "<plug>(YoinkYankPreserveCursorPosition)", {})
 
 -- Subversive
 -- ie = inner entire buffer
-vim.keymap.set("o", "ie", ":exec \"normal! ggVG\"<cr>", {})
+map("o", "ie", ":exec \"normal! ggVG\"<cr>", {})
 
 -- ix = current viewable text in the buffer
-vim.keymap.set("o", "ix", ":exec \"normal! HVL\"<cr>", {})
+map("o", "ix", ":exec \"normal! HVL\"<cr>", {})
 
-vim.keymap.set("n", "gr", "<plug>(SubversiveSubstitute)", {})
-vim.keymap.set("x", "gr", "<plug>(SubversiveSubstitute)", {})
-vim.keymap.set("n", "grr", "<plug>(SubversiveSubstituteLine)", {})
-vim.keymap.set("n", "gR", "<plug>(SubversiveSubstituteToEndOfLine)", {})
+map("n", "gr", "<plug>(SubversiveSubstitute)", {})
+map("x", "gr", "<plug>(SubversiveSubstitute)", {})
+map("n", "grr", "<plug>(SubversiveSubstituteLine)", {})
+map("n", "gR", "<plug>(SubversiveSubstituteToEndOfLine)", {})
 
-vim.keymap.set("n", "<leader>s", "<plug>(SubversiveSubstituteRange)", {})
-vim.keymap.set("x", "<leader>s", "<plug>(SubversiveSubstituteRange)", {})
-vim.keymap.set("n", "<leader>ss", "<plug>(SubversiveSubstituteWordRange)", {})
+map("n", "<leader>s", "<plug>(SubversiveSubstituteRange)", {})
+map("x", "<leader>s", "<plug>(SubversiveSubstituteRange)", {})
+map("n", "<leader>ss", "<plug>(SubversiveSubstituteWordRange)", {})
 
-vim.keymap.set("n", "<leader><leader>s", "<plug>(SubversiveSubvertRange)", {})
-vim.keymap.set("x", "<leader><leader>s", "<plug>(SubversiveSubvertRange)", {})
-vim.keymap.set("n", "<leader><leader>ss", "<plug>(SubversiveSubvertWordRange)", {})
+map("n", "<leader><leader>s", "<plug>(SubversiveSubvertRange)", {})
+map("x", "<leader><leader>s", "<plug>(SubversiveSubvertRange)", {})
+map("n", "<leader><leader>ss", "<plug>(SubversiveSubvertWordRange)", {})
 
 -- vim-indent-object
-vim.keymap.set("o", "ii", "<Plug>(indent-object_linewise-none)", {})
-vim.keymap.set("v", "ii", "<Plug>(indent-object_linewise-none)", {})
-vim.keymap.set("o", "Ii", "<Plug>(indent-object_blockwise-none)", {})
-vim.keymap.set("v", "Ii", "<Plug>(indent-object_blockwise-none)", {})
-vim.keymap.set("o", "ai", "<Plug>(indent-object_linewise-both)", {})
-vim.keymap.set("v", "ai", "<Plug>(indent-object_linewise-both)", {})
-vim.keymap.set("o", "Ai", "<Plug>(indent-object_blockwise-both)", {})
-vim.keymap.set("v", "Ai", "<Plug>(indent-object_blockwise-both)", {})
+map("o", "ii", "<Plug>(indent-object_linewise-none)", {})
+map("v", "ii", "<Plug>(indent-object_linewise-none)", {})
+map("o", "Ii", "<Plug>(indent-object_blockwise-none)", {})
+map("v", "Ii", "<Plug>(indent-object_blockwise-none)", {})
+map("o", "ai", "<Plug>(indent-object_linewise-both)", {})
+map("v", "ai", "<Plug>(indent-object_linewise-both)", {})
+map("o", "Ai", "<Plug>(indent-object_blockwise-both)", {})
+map("v", "Ai", "<Plug>(indent-object_blockwise-both)", {})
 
-vim.keymap.set("o", "ij", "<Plug>(indent-object_linewise-none-keep-start)", {})
-vim.keymap.set("x", "ij", "<Plug>(indent-object_linewise-none-keep-start)", {})
-vim.keymap.set("o", "Ij", "<Plug>(indent-object_blockwise-none-keep-start)", {})
-vim.keymap.set("x", "Ij", "<Plug>(indent-object_blockwise-none-keep-start)", {})
-vim.keymap.set("o", "ik", "<Plug>(indent-object_linewise-none-keep-end)", {})
-vim.keymap.set("x", "ik", "<Plug>(indent-object_linewise-none-keep-end)", {})
-vim.keymap.set("o", "Ik", "<Plug>(indent-object_blockwise-none-keep-end)", {})
-vim.keymap.set("x", "Ik", "<Plug>(indent-object_blockwise-none-keep-end)", {})
+map("o", "ij", "<Plug>(indent-object_linewise-none-keep-start)", {})
+map("x", "ij", "<Plug>(indent-object_linewise-none-keep-start)", {})
+map("o", "Ij", "<Plug>(indent-object_blockwise-none-keep-start)", {})
+map("x", "Ij", "<Plug>(indent-object_blockwise-none-keep-start)", {})
+map("o", "ik", "<Plug>(indent-object_linewise-none-keep-end)", {})
+map("x", "ik", "<Plug>(indent-object_linewise-none-keep-end)", {})
+map("o", "Ik", "<Plug>(indent-object_blockwise-none-keep-end)", {})
+map("x", "Ik", "<Plug>(indent-object_blockwise-none-keep-end)", {})
 
 -- COLOR SCHEME
 
@@ -321,27 +324,27 @@ vim.cmd([[au TextYankPost * silent! lua vim.highlight.on_yank { timeout=1000 }]]
 -- Folding
 -- Fix source: https://github.com/vscode-neovim/vscode-neovim/issues/58#issuecomment-989481648
 if vim.g.vscode then
-  vim.keymap.set("n", "zm", ":call VSCodeNotify('editor.foldAll')<CR>", {})
-  vim.keymap.set("n", "zM", ":call VSCodeNotify('editor.foldAll')<CR>", {})
+  map("n", "zm", ":call VSCodeNotify('editor.foldAll')<CR>", {})
+  map("n", "zM", ":call VSCodeNotify('editor.foldAll')<CR>", {})
 
-  vim.keymap.set("n", "zr", ":call VSCodeNotify('editor.unfoldAll')<CR>", {})
-  vim.keymap.set("n", "zR", ":call VSCodeNotify('editor.unfoldAll')<CR>", {})
+  map("n", "zr", ":call VSCodeNotify('editor.unfoldAll')<CR>", {})
+  map("n", "zR", ":call VSCodeNotify('editor.unfoldAll')<CR>", {})
 
-  vim.keymap.set("n", "zc", ":call VSCodeNotify('editor.fold')<CR>", {})
-  vim.keymap.set("n", "zC", ":call VSCodeNotify('editor.foldRecursively')<CR>", {})
-  vim.keymap.set("n", "zo", ":call VSCodeNotify('editor.unfold')<CR>", {})
-  vim.keymap.set("n", "zO", ":call VSCodeNotify('editor.unfoldRecursively')<CR>", {})
+  map("n", "zc", ":call VSCodeNotify('editor.fold')<CR>", {})
+  map("n", "zC", ":call VSCodeNotify('editor.foldRecursively')<CR>", {})
+  map("n", "zo", ":call VSCodeNotify('editor.unfold')<CR>", {})
+  map("n", "zO", ":call VSCodeNotify('editor.unfoldRecursively')<CR>", {})
 
-  vim.keymap.set("n", "za", ":call VSCodeNotify('editor.toggleFold')<CR>", {})
-  vim.keymap.set("n", "zz", ":call VSCodeNotify('editor.toggleFold')<CR>", {})
-  vim.keymap.set("v", "<silent> zz",
+  map("n", "za", ":call VSCodeNotify('editor.toggleFold')<CR>", {})
+  map("n", "zz", ":call VSCodeNotify('editor.toggleFold')<CR>", {})
+  map("v", "<silent> zz",
     "<Esc>`>mb`<mv`vvgg<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>`bvG<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>",
     {})
-  vim.keymap.set("v", "<silent> zZ",
+  map("v", "<silent> zZ",
     "<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>", {})
 
-  vim.keymap.set("n", "zj", ":call VSCodeNotify('editor.gotoNextFold')<CR>", {})
-  vim.keymap.set("n", "zk", ":call VSCodeNotify('editor.gotoPreviousFold')<CR>", {})
+  map("n", "zj", ":call VSCodeNotify('editor.gotoNextFold')<CR>", {})
+  map("n", "zk", ":call VSCodeNotify('editor.gotoPreviousFold')<CR>", {})
 
   _G.MoveCursor = function(direction)
     if vim.fn.reg_recording() == '' and vim.fn.reg_executing() == '' then
@@ -351,8 +354,8 @@ if vim.g.vscode then
     end
   end
 
-  vim.keymap.set("n", "j", "<Cmd>lua return MoveCursor('j')<CR>", { expr = true })
-  vim.keymap.set("n", "k", "<Cmd>lua return MoveCursor('k')<CR>", { expr = true })
+  map("n", "j", "<Cmd>lua return MoveCursor('j')<CR>", { expr = true })
+  map("n", "k", "<Cmd>lua return MoveCursor('k')<CR>", { expr = true })
 end
 
 -- Tree sitter text objects "
@@ -408,8 +411,8 @@ require 'nvim-treesitter.configs'.setup {
 require('tabout').setup {
   act_as_tab = false, -- shift content if tab out is not possible
 }
-vim.keymap.set('i', '<Tab>', "<Plug>(TaboutMulti)", { silent = true })
-vim.keymap.set('i', '<S-Tab>', "<Plug>(TaboutBackMulti)", { silent = true })
+map('i', '<Tab>', "<Plug>(TaboutMulti)", { silent = true })
+map('i', '<S-Tab>', "<Plug>(TaboutBackMulti)", { silent = true })
 
 
 -- iswap "
@@ -419,12 +422,12 @@ require('iswap').setup {
 }
 
 local opts = { noremap = true, silent = true }
-vim.keymap.set({ "n", "x" }, "gs", '<cmd>ISwapWith<cr>', merge(opts, { desc = "Swap with..." }))
-vim.keymap.set({ "n", "x" }, "g[", '<cmd>ISwapNodeWithLeft<cr><cmd>ISwapWith<cr>', opts)
-vim.keymap.set({ "n", "x" }, "g]", '<cmd>ISwapNodeWithRight<cr><cmd>ISwapWith<cr>', opts)
-vim.keymap.set({ "n", "x" }, "g,", '<cmd>ISwapWithLeft<cr>', opts)
-vim.keymap.set({ "n", "x" }, "g.", '<cmd>ISwapWithRight<cr>', opts)
+map({ "n", "x" }, "gs", '<cmd>ISwapWith<cr>', merge(opts, { desc = "Swap with..." }))
+map({ "n", "x" }, "g[", '<cmd>ISwapNodeWithLeft<cr><cmd>ISwapWith<cr>', opts)
+map({ "n", "x" }, "g]", '<cmd>ISwapNodeWithRight<cr><cmd>ISwapWith<cr>', opts)
+map({ "n", "x" }, "g,", '<cmd>ISwapWithLeft<cr>', opts)
+map({ "n", "x" }, "g.", '<cmd>ISwapWithRight<cr>', opts)
 
 -- trevj "
 require("trevj").setup() -- optional call for configurating non-default filetypes etc
-vim.keymap.set('n', '<leader><leader>j', function() require('trevj').format_at_cursor() end)
+map('n', '<leader><leader>j', function() require('trevj').format_at_cursor() end)

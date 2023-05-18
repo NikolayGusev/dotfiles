@@ -354,8 +354,8 @@ if vim.g.vscode then
     end
   end
 
-  map("n", "j", "<Cmd>lua return MoveCursor('j')<CR>", { expr = true })
-  map("n", "k", "<Cmd>lua return MoveCursor('k')<CR>", { expr = true })
+  -- map("n", "j", "<Cmd>lua return MoveCursor('j')<CR>", { expr = true })
+  -- map("n", "k", "<Cmd>lua return MoveCursor('k')<CR>", { expr = true })
 end
 
 -- Tree sitter text objects "

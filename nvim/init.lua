@@ -104,8 +104,8 @@ map("v", "<leader>f", "<Cmd>call VSCodeCallVisual('multiCommand.searchSelected',
 map("n", "<C-d>", ":.t-1<CR>", {})
 map("v", "<C-d>", "ypgv", {})
 
-map("n", "<silent> <leader>j", ":let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>", {})
-map("v", "<silent> <leader>j", "J", {})
+map("n", "<leader>j", ":let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>", { silent = true })
+map("v", "<leader>j", "J", { silent = true })
 
 map("n", "gd", "<Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>", {})
 map("n", "gD", "<Cmd>call VSCodeNotify('references-view.find')<CR>", {})
@@ -119,8 +119,8 @@ map("n", "<Leader><Leader>R", ":%Subvert/<C-r><C-w>/", {})
 map("v", "<leader><leader>r", ":B Subvert/", {})
 
 -- don't jump on * and g*
-map("n", "<silent> * ", ":let @/= '\\<' . expand('<cword>') . '\\>' <bar> set hls <cr>", {})
-map("n", "<silent> g* ", ":let @/=expand('<cword>') <bar> set hls <cr>", {})
+map("n", "* ", ":let @/= '\\<' . expand('<cword>') . '\\>' <bar> set hls <cr>", { silent = true })
+map("n", "g* ", ":let @/=expand('<cword>') <bar> set hls <cr>", { silent = true })
 
 map("n", "/", "/\\V", {})
 map("n", "<leader>/ ", "/", {})
@@ -186,13 +186,13 @@ vim.cmd([[
 ]])
 
 -- VSCODE RELATED
-map("x", "<silent> gc", "<Cmd>call VSCodeNotifyVisual('editor.action.commentLine', 1)<CR>", {})
+map("x", "gc", "<Cmd>call VSCodeNotifyVisual('editor.action.commentLine', 1)<CR>", { silent = true })
 map("n", "gc", "<Plug>VSCodeCommentary", {})
 map("o", "gc", "<Plug>VSCodeCommentary", {})
 
-map("x", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
-map("n", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
-map("o", "<silent> gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", {})
+map("x", "gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", { silent = true })
+map("n", "gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", { silent = true })
+map("o", "gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", { silent = true })
 
 map("n", "gcc", "<Plug>VSCodeCommentaryLine", {})
 
@@ -330,11 +330,11 @@ if vim.g.vscode then
 
   map("n", "za", ":call VSCodeNotify('editor.toggleFold')<CR>", {})
   map("n", "zz", ":call VSCodeNotify('editor.toggleFold')<CR>", {})
-  map("v", "<silent> zz",
+  map("v", "zz",
     "<Esc>`>mb`<mv`vvgg<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>`bvG<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>",
-    {})
-  map("v", "<silent> zZ",
-    "<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>", {})
+    { silent = true })
+  map("v", "zZ",
+    "<Cmd>call VSCodeNotifyVisual('editor.createFoldingRangeFromSelection', 1)<CR><Esc>", { silent = true })
 
   map("n", "zj", ":call VSCodeNotify('editor.gotoNextFold')<CR>", {})
   map("n", "zk", ":call VSCodeNotify('editor.gotoPreviousFold')<CR>", {})

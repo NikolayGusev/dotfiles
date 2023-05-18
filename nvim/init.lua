@@ -13,33 +13,31 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local merge = function(a, b)
+  local c = {}
+  for k, v in pairs(a) do c[k] = v end
+  for k, v in pairs(b) do c[k] = v end
+  return c
+end
+
 
 require('lazy').setup({
   { "nvim-lua/plenary.nvim" },
 
-  { "machakann/vim-sandwich" },
-
   {
-    "julian/vim-textobj-variable-segment",
-    dependencies = {
-      { "kana/vim-textobj-user" },
-    }
+    "folke/which-key.nvim",
+    config = function() require("which-key").setup({}) end,
   },
+
+  -- targets
+  { "machakann/vim-sandwich" },
+  { "julian/vim-textobj-variable-segment", dependencies = { { "kana/vim-textobj-user" }, } },
   { "urxvtcd/vim-indent-object" },
   { "wellle/targets.vim" },
-  {
-    "D4KU/vim-textobj-chainmember",
-    dependencies = {
-      { "kana/vim-textobj-user" },
-    }
-  },
+  { "D4KU/vim-textobj-chainmember",        dependencies = { { "kana/vim-textobj-user" }, } },
 
-  {
-    "ggandor/leap.nvim",
-    dependencies = {
-      { "tpope/vim-repeat" },
-    }
-  },
+  --nav
+  { "ggandor/leap.nvim",                   dependencies = { { "tpope/vim-repeat" }, } },
   { "rhysd/clever-f.vim" },
   -- Autoclear search (/) highlight when cursor moves.
   { "romainl/vim-cool" },
@@ -162,10 +160,10 @@ vim.g.sandwich_magicchar_f_patterns = {
 }
 
 -- Source: https://github.com/machakann/vim-sandwich/blob/ffe2bae2fc70ebecf7091a140b6338a95215878c/macros/sandwich/keymap/surround.vim
-vim.api.nvim_set_keymap("n", "s", "<Plug>(sandwich-add)", {})
-vim.api.nvim_set_keymap("v", "s", "<Plug>(sandwich-add)", {})
-vim.api.nvim_set_keymap("n", "ss", "^vg_<Plug>(sandwich-add)", {})
-vim.api.nvim_set_keymap("n", "S", "<Plug>(sandwich-add)$", {})
+vim.api.nvim_set_keymap("n", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
+vim.api.nvim_set_keymap("v", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
+vim.api.nvim_set_keymap("n", "ss", "^vg_<Plug>(sandwich-add)", { desc = "Surround line with..." })
+vim.api.nvim_set_keymap("n", "S", "<Plug>(sandwich-add)$", { desc = "Surround to the end of line with..." })
 vim.cmd('xunmap sr')
 vim.cmd('xunmap sd')
 vim.cmd('xunmap sa')
@@ -421,7 +419,7 @@ require('iswap').setup {
 }
 
 local opts = { noremap = true, silent = true }
-vim.keymap.set({ "n", "x" }, "gs", '<cmd>ISwapWith<cr>', opts)
+vim.keymap.set({ "n", "x" }, "gs", '<cmd>ISwapWith<cr>', merge(opts, { desc = "Swap with..." }))
 vim.keymap.set({ "n", "x" }, "g[", '<cmd>ISwapNodeWithLeft<cr><cmd>ISwapWith<cr>', opts)
 vim.keymap.set({ "n", "x" }, "g]", '<cmd>ISwapNodeWithRight<cr><cmd>ISwapWith<cr>', opts)
 vim.keymap.set({ "n", "x" }, "g,", '<cmd>ISwapWithLeft<cr>', opts)

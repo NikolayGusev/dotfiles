@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ln -fns $(pwd)/nvim/init.vim ~/.config/nvim/init.vim
+ln -fns $(pwd)/nvim/init.lua ~/.config/nvim/init.lua
 ln -fns $(pwd)/nvim/lazy-lock.json ~/.config/nvim/lazy-lock.json
 ln -fns $(pwd)/git/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
 ln -fns $(pwd)/terminal/alacritty.yml ~/.config/alacritty/alacritty.yml

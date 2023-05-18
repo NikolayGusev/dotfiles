@@ -1,5 +1,6 @@
 # Migrate to lazy
 - adopt whichkey plus less verbose way to define keybinds
+- handle lazy lock file - must be symlinked
 
 # Migrate my stuff to nvim kickstater config
 This is a minimalist config with nothing but crucial things and lazy loading.

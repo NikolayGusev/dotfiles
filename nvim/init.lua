@@ -354,9 +354,19 @@ if vim.g.vscode then
     end
   end
 
-  -- map("n", "j", "<Cmd>lua return MoveCursor('j')<CR>", { expr = true })
-  -- map("n", "k", "<Cmd>lua return MoveCursor('k')<CR>", { expr = true })
+  -- https://github.com/vscode-neovim/vscode-neovim/issues/58#issuecomment-1229279216
+  local function moveCursor(direction)
+    if (vim.fn.reg_recording() == '' and vim.fn.reg_executing() == '') then
+      return ('g' .. direction)
+    else
+      return direction
+    end
+  end
+  map('n', 'k', function() return moveCursor('k') end, { expr = true, remap = true })
+  map('n', 'j', function() return moveCursor('j') end, { expr = true, remap = true })
 end
+
+
 
 -- Tree sitter text objects "
 require("nvim-treesitter.install").prefer_git = true

@@ -1,8 +1,7 @@
 # Migrate to lazy
-- adopt whichkey plus less verbose way to define keybinds
+- gciw should create a block comment - TBD?
 - handle lazy lock file - must be symlinked
 - srr, srd to delete/replace surrounding automatically?
-- gc inside of selectionn doesn't work - cannot comment code this way
 
 # Migrate my stuff to nvim kickstater config
 This is a minimalist config with nothing but crucial things and lazy loading.

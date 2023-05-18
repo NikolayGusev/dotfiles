@@ -17,18 +17,29 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   { "nvim-lua/plenary.nvim" },
 
-  -- Required by leap
-  { "tpope/vim-repeat" },
   { "machakann/vim-sandwich" },
 
-  -- Required by textobj-parameter
-  { "kana/vim-textobj-user" },
-  { "julian/vim-textobj-variable-segment" },
+  {
+    "julian/vim-textobj-variable-segment",
+    dependencies = {
+      { "kana/vim-textobj-user" },
+    }
+  },
   { "urxvtcd/vim-indent-object" },
   { "wellle/targets.vim" },
-  { "D4KU/vim-textobj-chainmember" },
+  {
+    "D4KU/vim-textobj-chainmember",
+    dependencies = {
+      { "kana/vim-textobj-user" },
+    }
+  },
 
-  { "ggandor/leap.nvim" },
+  {
+    "ggandor/leap.nvim",
+    dependencies = {
+      { "tpope/vim-repeat" },
+    }
+  },
   { "rhysd/clever-f.vim" },
   -- Autoclear search (/) highlight when cursor moves.
   { "romainl/vim-cool" },

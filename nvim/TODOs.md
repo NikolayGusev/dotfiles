@@ -1,5 +1,5 @@
 # Migrate to lazy
-- gciw should create a block comment - TBD?
+- duplicate doesn't work properly sometimes
 - handle lazy lock file - must be symlinked
 - srr, srd to delete/replace surrounding automatically?
 

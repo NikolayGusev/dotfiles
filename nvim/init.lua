@@ -237,7 +237,7 @@ end
 
 -- Cutlass.vim
 map("n", "m", "d", {})
-map("x", "<nowait> m", "d", {})
+map("x", "m", "d", { nowait = true })
 
 map("n", "mm", "dd", {})
 map("n", "M", "D", {})

@@ -164,13 +164,9 @@ vim.g.sandwich_magicchar_f_patterns = {
 
 -- Source: https://github.com/machakann/vim-sandwich/blob/ffe2bae2fc70ebecf7091a140b6338a95215878c/macros/sandwich/keymap/surround.vim
 map("n", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
-map("v", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
+map("v", "s", "<Plug>(sandwich-add)", { desc = "Surround with...", nowait = true })
 map("n", "ss", "^vg_<Plug>(sandwich-add)", { desc = "Surround line with..." })
 map("n", "S", "<Plug>(sandwich-add)$", { desc = "Surround to the end of line with..." })
-vim.cmd('xunmap sr')
-vim.cmd('xunmap sd')
-vim.cmd('xunmap sa')
-vim.cmd('nunmap sa')
 
 
 -- Targets

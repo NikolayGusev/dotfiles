@@ -199,9 +199,6 @@ map("n", "gcc", "<Plug>VSCodeCommentaryLine", {})
 map("n", "<space>", ":call VSCodeNotify('vspacecode.space')<CR>", {})
 map("v", "<space>", "<Cmd>call VSCodeNotifyVisual('vspacecode.space', 0)<CR>", {})
 
--- UNSORTED
--- let g:camelcasemotion_key = '<leader>'
-
 -- cleaver-f
 map("n", "<Esc>", ":<C-u>call clever_f#reset()<CR>", {})
 vim.g.clever_f_fix_key_direction = 1

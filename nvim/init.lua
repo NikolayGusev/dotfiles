@@ -188,12 +188,7 @@ vim.cmd([[
 -- VSCODE RELATED
 map("x", "gc", "<Cmd>call VSCodeNotifyVisual('editor.action.commentLine', 1)<CR>", { silent = true })
 map("n", "gc", "<Plug>VSCodeCommentary", {})
-map("o", "gc", "<Plug>VSCodeCommentary", {})
-
 map("x", "gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", { silent = true })
-map("n", "gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", { silent = true })
-map("o", "gC", "<Cmd>call VSCodeNotifyVisual('editor.action.blockComment', 1)<CR>", { silent = true })
-
 map("n", "gcc", "<Plug>VSCodeCommentaryLine", {})
 
 map("n", "<space>", ":call VSCodeNotify('vspacecode.space')<CR>", {})

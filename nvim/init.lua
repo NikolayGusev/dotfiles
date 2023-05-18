@@ -14,7 +14,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 
-
 require('lazy').setup({
   { "nvim-lua/plenary.nvim" },
 
@@ -144,8 +143,6 @@ vim.cmd("runtime macros/sandwich/keymap/surround.vim")
 -- match function calls like "console.log(123)"
 vim.g.sandwich_magicchar_f_patterns = {
   {
-    -- TODO: check if this works
-    -- https://github.com/machakann/vim-sandwich/issues/115#issuecomment-940869113
     header = "\\<\\%(\\h\\k*\\.\\)*\\h\\k*",
     bra = "(",
     ket = ")",
@@ -156,11 +153,12 @@ vim.g.sandwich_magicchar_f_patterns = {
 -- Source: https://github.com/machakann/vim-sandwich/blob/ffe2bae2fc70ebecf7091a140b6338a95215878c/macros/sandwich/keymap/surround.vim
 vim.api.nvim_set_keymap("n", "s", "<Plug>(sandwich-add)", {})
 vim.api.nvim_set_keymap("v", "s", "<Plug>(sandwich-add)", {})
--- TODO: what's that? It also complains about <SID> usage
--- vim.api.nvim_set_keymap("o", "<SID>line", ":normal! ^vg_<CR>", {})
--- vim.api.nvim_set_keymap("n", "<silent> ss", "<Plug>(sandwich-add)<SID>line", {})
--- vim.api.nvim_set_keymap("o", "<SID>gul", "g_", {})
--- vim.api.nvim_set_keymap("n", "<silent> S", "<Plug>(sandwich-add)<SID>gul", {})
+vim.api.nvim_set_keymap("n", "ss", "^vg_<Plug>(sandwich-add)", {})
+vim.api.nvim_set_keymap("n", "S", "<Plug>(sandwich-add)$", {})
+vim.cmd('xunmap sr')
+vim.cmd('xunmap sd')
+vim.cmd('xunmap sa')
+vim.cmd('nunmap sa')
 
 
 -- Targets

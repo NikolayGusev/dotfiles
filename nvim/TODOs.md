@@ -1,3 +1,7 @@
+# Migrate to lazy
+- Fix <SID> bindings
+- adopt whichkey plus less verbose way to define keybinds
+
 # Migrate my stuff to nvim kickstater config
 This is a minimalist config with nothing but crucial things and lazy loading.
 

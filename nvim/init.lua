@@ -145,6 +145,7 @@ vim.cmd("runtime macros/sandwich/keymap/surround.vim")
 vim.g.sandwich_magicchar_f_patterns = {
   {
     -- TODO: check if this works
+    -- https://github.com/machakann/vim-sandwich/issues/115#issuecomment-940869113
     header = "\\<\\%(\\h\\k*\\.\\)*\\h\\k*",
     bra = "(",
     ket = ")",

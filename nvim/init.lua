@@ -174,6 +174,8 @@ vim.g.sandwich_magicchar_f_patterns = {
 
 -- Source: https://github.com/machakann/vim-sandwich/blob/ffe2bae2fc70ebecf7091a140b6338a95215878c/macros/sandwich/keymap/surround.vim
 map("n", "s", "<Plug>(sandwich-add)", { desc = "Surround with..." })
+map("n", "sdd", "<Plug>(sandwich-delete-auto)", { desc = "Remove surrounding (auto)" })
+map("n", "srr", "<Plug>(sandwich-replace-auto)", { desc = "Change surrounding (auto)" })
 map("v", "s", "<Plug>(sandwich-add)", { desc = "Surround with...", nowait = true })
 map("n", "ss", "^vg_<Plug>(sandwich-add)", { desc = "Surround line with..." })
 map("n", "S", "<Plug>(sandwich-add)$", { desc = "Surround to the end of line with..." })

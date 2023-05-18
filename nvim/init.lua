@@ -103,9 +103,16 @@ map("n", ";", "<Cmd>call VSCodeNotify('editor.action.quickFix')<CR>", {})
 map("v", ";", "<Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>", {})
 map("v", "<leader>f", "<Cmd>call VSCodeCallVisual('multiCommand.searchSelected', 1)<CR><Esc>", {})
 
--- duplicate row
-map("n", "<C-d>", ":.t-1<CR>", {})
-map("v", "<C-d>", "ypgv", {})
+map("n", "<C-d>", ":.t-1<CR>", { desc = "Duplicate row" })
+map('v', '<C-d>', [[<Cmd>lua DuplicateSelection()<CR>]], { noremap = true })
+function DuplicateSelection()
+  if vim.fn.mode() == 'V' then
+    local keys = vim.api.nvim_replace_termcodes(":'<,'>t'><CR>gv", true, false, true)
+    vim.api.nvim_feedkeys(keys, 'v', false)
+  else
+    vim.api.nvim_feedkeys('ypgv', 'v', true)
+  end
+end
 
 map("n", "<leader>j", ":let p=getpos('.')<bar>join<bar>call setpos('.', p)<cr>", { silent = true })
 map("v", "<leader>j", "J", { silent = true })

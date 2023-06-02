@@ -51,20 +51,37 @@ require('lazy').setup({
         escape_quit = true,
       })
 
-      map("n", "<space>ff", ":Lf<CR>", { desc = "Open LF" })
+      if not vim.g.vscode then
+        map("n", "<space>ff", ":Lf<CR>", { desc = "Open LF" })
+      end
     end,
     dependencies = { { "plenary.nvim" }, { "toggleterm.nvim" } }
   },
 
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.1',
+    config = function()
+      if not vim.g.vscode then
+        require('telescope').load_extension('fzf')
+        local builtin = require('telescope.builtin')
+        vim.keymap.set('n', '<space><space>', builtin.find_files, {})
+        vim.keymap.set('n', '<space>bb', builtin.buffers, {})
+      end
+    end,
+    dependencies = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-fzf-native.nvim' }
+  },
+  { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+
   -- targets
   { "machakann/vim-sandwich" },
-  { "julian/vim-textobj-variable-segment", dependencies = { { "kana/vim-textobj-user" }, } },
+  { "julian/vim-textobj-variable-segment",      dependencies = { { "kana/vim-textobj-user" }, } },
   { "urxvtcd/vim-indent-object" },
   { "wellle/targets.vim" },
-  { "D4KU/vim-textobj-chainmember",        dependencies = { { "kana/vim-textobj-user" }, } },
+  { "D4KU/vim-textobj-chainmember",             dependencies = { { "kana/vim-textobj-user" }, } },
 
   --nav
-  { "ggandor/leap.nvim",                   dependencies = { { "tpope/vim-repeat" }, } },
+  { "ggandor/leap.nvim",                        dependencies = { { "tpope/vim-repeat" }, } },
   { "rhysd/clever-f.vim" },
   -- Autoclear search (/) highlight when cursor moves.
   { "romainl/vim-cool" },
@@ -78,7 +95,7 @@ require('lazy').setup({
   { "markonm/traces.vim" },
 
   -- Comments
-  { 'numToStr/Comment.nvim',               config = function() require('Comment').setup() end, },
+  { 'numToStr/Comment.nvim',                    config = function() require('Comment').setup() end, },
 
   -- Practice vim
   { "ThePrimeagen/vim-be-good" },

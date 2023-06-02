@@ -493,11 +493,11 @@ require 'nvim-treesitter.configs'.setup {
 
 
 -- tabout
-require('tabout').setup {
-  act_as_tab = false, -- shift content if tab out is not possible
-}
-map('i', '<Tab>', "<Plug>(TaboutMulti)", { silent = true })
-map('i', '<S-Tab>', "<Plug>(TaboutBackMulti)", { silent = true })
+-- require('tabout').setup {
+--   act_as_tab = false, -- shift content if tab out is not possible
+-- }
+-- map('i', '<Tab>', "<Plug>(TaboutMulti)", { silent = true })
+-- map('i', '<S-Tab>', "<Plug>(TaboutBackMulti)", { silent = true })
 
 
 -- iswap "
@@ -520,17 +520,30 @@ map('n', '<leader><leader>j', function() require('trevj').format_at_cursor() end
 
 -- LSP
 
-map('n', 'gd', vim.lsp.buf.definition, { desc = '[G]oto [D]efinition' })
-map('n', 'gr', require('telescope.builtin').lsp_references, { desc = '[G]oto [R]eferences' })
-map('n', 'gh', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
--- map('n', 'gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
--- map('n', '<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
-map('n', '<space>jj', require('telescope.builtin').lsp_document_symbols, { desc = '[D]ocument [S]ymbols' })
--- map('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+if not vim.g.vscode then
+  map('n', '<space>xr', vim.lsp.buf.rename, { desc = '[R]e[n]ame' })
+  map('n', 'gd', vim.lsp.buf.definition, { desc = '[G]oto [D]efinition' })
+  map('n', 'gr', require('telescope.builtin').lsp_references, { desc = '[G]oto [R]eferences' })
+  map('n', 'gh', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
+  -- map('n', 'gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
+  -- map('n', '<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
+  map('n', '<space>jj', require('telescope.builtin').lsp_document_symbols, { desc = '[D]ocument [S]ymbols' })
+  -- map('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+end
 
 
 -- Keep signcolumn on by default, else erros that appear will make gutter jump
 vim.wo.signcolumn = 'yes'
+
+-- Decrease update time
+vim.o.updatetime = 250
+vim.o.timeout = true
+vim.o.timeoutlen = 300
+
+-- Set completeopt to have a better completion experience
+vim.o.completeopt = 'menuone,noselect'
+
+
 -- Enable the following language servers
 --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
 --
@@ -551,6 +564,7 @@ local servers = {
   },
 }
 
+-- move to opts?
 -- Setup neovim lua configuration
 require('neodev').setup()
 
@@ -593,7 +607,8 @@ cmp.setup {
     ['<C-p>'] = cmp.mapping.select_prev_item(),
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete {},
+    -- ['<C-Space>'] = cmp.mapping.complete {},
+    ['<C-i>'] = cmp.mapping.complete {},
     ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,

@@ -52,6 +52,7 @@ key_bindings:
   - { chars: "\x02%", key: E, mods: Command|Shift } # split tmux window horizontally
   - { chars: "\x02\x5b\x2f", key: F, mods: Command|Shift } # start tmux search mode
   - { chars: "lfcd\n", key: F, mods: Command } # open file manager 'gokcehan/lf'
+  - { chars: "nvim .\n", key: N, mods: Command } # open neovim
   # - { chars: "lazygit\n", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
   - { chars: "\x02g", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
   - { chars: "\x02\x54", key: J, mods: Command } # open t - tmux smart session manager

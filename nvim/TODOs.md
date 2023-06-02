@@ -3,6 +3,9 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
+- tssever colors messed up
+- cmp doesn't show help for when typing in function arguments
+
 - sa" doesn't work?? but ysa" does
   - "hello world"
 

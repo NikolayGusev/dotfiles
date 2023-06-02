@@ -42,6 +42,7 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 2,
   "workbench.editor.limit.perEditorGroup": true,
+  "workbench.sideBar.location": "right",
 
 
   // General usability

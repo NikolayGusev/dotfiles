@@ -18,7 +18,7 @@
 
   // General visiblitity
   "editor.renderWhitespace": "none",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   "workbench.activityBar.visible": false,
   "editor.minimap.enabled": false,
   "workbench.editor.tabCloseButton": "off",

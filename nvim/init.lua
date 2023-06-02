@@ -49,11 +49,9 @@ require('lazy').setup({
         height = 0.70,
         width = 0.85,
         escape_quit = true,
-        -- highlights = {FloatBorder = {guifg = require("kimbox.palette").colors.magenta}}
       })
 
-      -- vim.keymap.set("n", "<C-o>", ":Lf<CR>")
-      vim.keymap.set("n", "<space>ff", ":Lf<CR>", { desc = "Duplicate row" })
+      map("n", "<space>ff", ":Lf<CR>", { desc = "Open LF" })
     end,
     dependencies = { { "plenary.nvim" }, { "toggleterm.nvim" } }
   },

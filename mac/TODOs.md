@@ -35,6 +35,12 @@ lazygit
 ### Lazy git
 - https://github.com/so-fancy/diff-so-fancy. Diff for lazygit that shows word diffs. Is a script so should work w/o admin permissions. https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
 
+### Stop quitting Alacritty with cmd+q
+Open Keyboard -> Shortcuts -> App shortcuts
+Add Alacritty
+Find the name of the quit command in Alacritty's items bar
+Add the command with the same name in shortcuts, but give it a different shortcut to override
+
 ### defaults example dotfile
 - https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 - https://github.com/janka102/dotfiles/blob/master/defaults.sh

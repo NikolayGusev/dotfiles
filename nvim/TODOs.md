@@ -3,6 +3,9 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
+- sa" doesn't work?? but ysa" does
+  - "hello world"
+
 - Cannot insert into empty () with rg
 - comment plugin creates a new line with comment on it
 

@@ -42,7 +42,8 @@ key_bindings:
   - { chars: "\x022", key: Key2, mods: Command } #                ... 2
   - { chars: "\x023", key: Key3, mods: Command } #                ... 3
   - { chars: "\x024", key: Key4, mods: Command } #                ... 4
-  - { chars: "\x025", key: Key5, mods: Command } #                ... 5 - { chars: "\x026", key: Key6, mods: Command } #                ... 6
+  - { chars: "\x025", key: Key5, mods: Command } #                ... 5 
+  - { chars: "\x026", key: Key6, mods: Command } #                ... 6
   - { chars: "\x027", key: Key7, mods: Command } #                ... 7
   - { chars: "\x028", key: Key8, mods: Command } #                ... 8
   - { chars: "\x029", key: Key9, mods: Command } #                ... 9
@@ -50,7 +51,8 @@ key_bindings:
   - { chars: "\x02\"", key: E, mods: Command } # split tmux window vertically
   - { chars: "\x02%", key: E, mods: Command|Shift } # split tmux window horizontally
   - { chars: "\x02\x5b\x2f", key: F, mods: Command|Shift } # start tmux search mode
-  - { chars: "lfcd\n", key: F, mods: Command } # open file manager 'gokcehan/lf'
+  - { chars: "lf\n", key: F, mods: Command } # open file manager 'gokcehan/lf'
+  # - { chars: "lazygit\n", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
   - { chars: "\x02g", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
   - { chars: "\x02\x54", key: J, mods: Command } # open t - tmux smart session manager
   - { chars: "\x02s", key: K, mods: Command } # open interactive tmux session client

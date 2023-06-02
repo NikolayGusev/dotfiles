@@ -1,0 +1,1 @@
+- Same hotkeys for lazygit and LF in nvim and in terminal.

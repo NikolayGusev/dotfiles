@@ -26,10 +26,36 @@ local map = vim.keymap.set;
 -- plugins
 require('lazy').setup({
   { "nvim-lua/plenary.nvim" },
+  { "akinsho/toggleterm.nvim" },
 
   {
     "folke/which-key.nvim",
     config = function() require("which-key").setup({}) end,
+  },
+
+  -- Sample configuration is supplied
+  {
+    "lmburns/lf.nvim",
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      -- This feature will not work if the plugin is lazy-loaded
+      vim.g.lf_netrw = 1
+
+      require("lf").setup({
+        winblend = 0,
+        highlights = { NormalFloat = { guibg = "NONE" } },
+        border = "double", -- border kind: single double shadow curved
+        height = 0.70,
+        width = 0.85,
+        escape_quit = true,
+        -- highlights = {FloatBorder = {guifg = require("kimbox.palette").colors.magenta}}
+      })
+
+      -- vim.keymap.set("n", "<C-o>", ":Lf<CR>")
+      vim.keymap.set("n", "<space>ff", ":Lf<CR>", { desc = "Duplicate row" })
+    end,
+    dependencies = { { "plenary.nvim" }, { "toggleterm.nvim" } }
   },
 
   -- targets

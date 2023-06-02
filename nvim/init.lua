@@ -101,7 +101,7 @@ require('lazy').setup({
   { "ThePrimeagen/vim-be-good" },
 
   -- Theme
-  { "gruvbox-community/gruvbox" },
+  { "catppuccin/nvim",                          name = "catppuccin" },
   -- Commands that only affect the selection, provides :B for visual commands and :S for visual searches.
   { "vim-scripts/vis" },
 
@@ -381,7 +381,7 @@ map("x", "Ik", "<Plug>(indent-object_blockwise-none-keep-end)", {})
 -- COLOR SCHEME
 
 vim.opt.termguicolors = true
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme catppuccin")
 
 vim.g.gruvbox_contrast_light = "hard" -- Light colors, values are soft/medium/hard
 

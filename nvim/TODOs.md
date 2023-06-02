@@ -3,8 +3,11 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
-- tssever colors messed up
 - cmp doesn't show help for when typing in function arguments
+
+- how to rename stuff while using option+arrows and other convinient ways of renaming?
+
+- learn undo tree
 
 - sa" doesn't work?? but ysa" does
   - "hello world"

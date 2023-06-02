@@ -7,6 +7,8 @@
 
 - ctrl+shift+J / ctrl+shift+K isn't convinient way to switch stuff in tmux. Come up with a better combos.
 
+- some kind of whichkey for the terminal
+
 
 # LF
 - allow to quit with :q

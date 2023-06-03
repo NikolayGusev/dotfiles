@@ -201,12 +201,7 @@ vim.opt.scrolloff = 999
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.inccommand = "nosplit"
--- vim.o.statusline = "%<%f %h%m%r%=%-8.(%l,%03p%%%)"
--- vim.o.statusline = "%<%f %h%m%r%=%-14.(%l,%=vim.fn.matchstr('%3p', '\\s*\\(\\d+\\)%%'),%L%)"
--- vim.o.statusline = "%<%f\ %h%m%r%=%-14.(%l,%=string.match(vim.fn.line('.'), '\\s*\\(\\d+\\)%%'),%L%)"
--- Disable ruler
--- vim.opt.ruler = false
--- vim.opt.statusline = "%<%t"
+vim.o.undofile = true -- Save undo history
 
 
 vim.opt.gdefault = true -- 'g' flag by default for replaces

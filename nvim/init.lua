@@ -132,7 +132,17 @@ require('lazy').setup({
   { "rhysd/clever-f.vim" },
   -- Autoclear search (/) highlight when cursor moves.
   { "romainl/vim-cool" },
+  {
+    "ThePrimeagen/harpoon",
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    opts = {
+      menu = {
+        width = vim.api.nvim_win_get_width(0) - 32,
+      }
+    }
+  },
 
+  -- copy/paste
   { "svermeulen/vim-cutlass" },
   { "svermeulen/vim-yoink" },
   { "svermeulen/vim-subversive" },
@@ -142,13 +152,13 @@ require('lazy').setup({
   { "markonm/traces.vim" },
 
   -- Comments
-  { 'numToStr/Comment.nvim',                    config = function() require('Comment').setup() end, },
+  { 'numToStr/Comment.nvim',    config = function() require('Comment').setup() end, },
 
   -- Practice vim
   { "ThePrimeagen/vim-be-good" },
 
   -- Theme
-  { "catppuccin/nvim",                          name = "catppuccin" },
+  { "catppuccin/nvim",          name = "catppuccin" },
   -- Commands that only affect the selection, provides :B for visual commands and :S for visual searches.
   { "vim-scripts/vis" },
 
@@ -246,6 +256,11 @@ map("v", "<leader>j", "J", { silent = true })
 
 map("n", "gd", "<Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>", {})
 map("n", "gD", "<Cmd>call VSCodeNotify('references-view.find')<CR>", {})
+
+map("n", "gj", "<cmd>lua require('harpoon.ui').nav_next()<CR>", {})
+map("n", "gk", "<cmd>lua require('harpoon.ui').nav_prev()<CR>", {})
+map("n", "gl", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", {})
+map("n", "gL", "<cmd>lua require('harpoon.mark').add_file()<CR>", {})
 
 map("n", "<leader>r", ":%s/", {})
 map("n", "<Leader>R", ":%s/\\<<C-r><C-w>\\>/", {})

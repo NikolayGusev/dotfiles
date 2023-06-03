@@ -582,6 +582,7 @@ if not vim.g.vscode then
   -- map('n', 'gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
   -- map('n', '<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
   map('n', '<space>jj', require('telescope.builtin').lsp_document_symbols, { desc = '[D]ocument [S]ymbols' })
+  map('n', '<space>ee', require('telescope.builtin').diagnostics, {})
   -- map('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 end
 

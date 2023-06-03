@@ -182,6 +182,7 @@ require('lazy').setup({
     },
   },
 
+  { "ray-x/lsp_signature.nvim" },
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -570,6 +571,8 @@ map('n', '<leader><leader>j', function() require('trevj').format_at_cursor() end
 
 
 -- LSP
+
+require("lsp_signature").setup({})
 
 if not vim.g.vscode then
   map('n', '<space>xr', vim.lsp.buf.rename, { desc = '[R]e[n]ame' })

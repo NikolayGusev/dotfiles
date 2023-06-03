@@ -70,6 +70,15 @@ require('lazy').setup({
       end,
     },
   },
+  {
+    "RRethy/vim-illuminate", -- highlights words under the cursor
+    config = function()
+      vim.cmd("hi IlluminatedWordWrite guibg=#885252 gui=underline")
+      vim.cmd("hi IlluminatedWordRead guibg=#525252 gui=none")
+      vim.cmd("hi IlluminatedWordRead guibg=#525252 gui=none")
+      require('illuminate').configure({ delay = 20, })
+    end
+  },
 
   -- LF vim
   {

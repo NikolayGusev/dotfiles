@@ -6,6 +6,11 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 - cmp doesn't show help for when typing in function arguments
 
 - how to rename stuff while using option+arrows and other convinient ways of renaming?
+- highlight selected word (other instances of this word elsewhere)
+
+- lsp refactoring button
+
+- make LF or telescope default on startup
 
 - learn undo tree
 

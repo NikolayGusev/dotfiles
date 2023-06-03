@@ -700,3 +700,5 @@ vim.cmd([[
     autocmd FocusGained * checktime
   augroup END
 ]])
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]

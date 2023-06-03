@@ -32,8 +32,8 @@ require('lazy').setup({
     "folke/which-key.nvim",
     config = function() require("which-key").setup({}) end,
   },
+  { 'tpope/vim-sleuth' }, -- Detect tabstop and shiftwidth automatically
 
-  -- Sample configuration is supplied
   {
     "lmburns/lf.nvim",
     lazy = false,

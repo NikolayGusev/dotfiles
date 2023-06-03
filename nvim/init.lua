@@ -575,14 +575,14 @@ map('n', '<leader><leader>j', function() require('trevj').format_at_cursor() end
 require("lsp_signature").setup({})
 
 if not vim.g.vscode then
-  map('n', '<space>xr', vim.lsp.buf.rename, { desc = '[R]e[n]ame' })
+  map('n', '<space>xr', vim.lsp.buf.rename, { desc = '[x]Refactoring [R]ename' })
   map('n', 'gd', vim.lsp.buf.definition, { desc = '[G]oto [D]efinition' })
-  map('n', 'gD', require('telescope.builtin').lsp_references, { desc = '[G]oto [R]eferences' })
-  map('n', 'gh', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
+  map('n', 'gD', require('telescope.builtin').lsp_references, { desc = 'Goto references' })
+  map('n', 'gh', vim.lsp.buf.hover, { desc = '[H]over Documentation' })
   -- map('n', 'gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
   -- map('n', '<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
-  map('n', '<space>jj', require('telescope.builtin').lsp_document_symbols, { desc = '[D]ocument [S]ymbols' })
-  map('n', '<space>ee', require('telescope.builtin').diagnostics, {})
+  map('n', '<space>jj', require('telescope.builtin').lsp_document_symbols, { desc = 'Jump [J]Symbols' })
+  map('n', '<space>ee', require('telescope.builtin').diagnostics, {desc = '[E]rrors [E]rrors}'})
   -- map('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 end
 

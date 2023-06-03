@@ -582,7 +582,7 @@ if not vim.g.vscode then
   -- map('n', 'gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
   -- map('n', '<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
   map('n', '<space>jj', require('telescope.builtin').lsp_document_symbols, { desc = 'Jump [J]Symbols' })
-  map('n', '<space>ee', require('telescope.builtin').diagnostics, {desc = '[E]rrors [E]rrors}'})
+  map('n', '<space>ee', require('telescope.builtin').diagnostics, { desc = '[E]rrors [E]rrors}' })
   -- map('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 end
 
@@ -610,6 +610,9 @@ local servers = {
   -- pyright = {},
   -- rust_analyzer = {},
   tsserver = {},
+  -- TODO: use this settings to make eslint work in mono-repo
+  -- https://www.reddit.com/r/neovim/comments/12fxw01/lsp_hell_with_eslint_linterformater/
+  eslint = {},
 
   lua_ls = {
     Lua = {

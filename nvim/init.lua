@@ -159,6 +159,7 @@ vim.cmd("language en_US")
 vim.g.mapleader = ","
 map("n", "<leader><leader>/", ":noh<CR>", {})
 vim.opt.cursorline = true
+vim.opt.scrolloff = 999
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.inccommand = "nosplit"

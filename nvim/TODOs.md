@@ -14,6 +14,9 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 - learn undo tree
 
+- see if I need session management plugin that restores context when I reopen
+  the dir, or tmux is enough
+
 - sa" doesn't work?? but ysa" does
   - "hello world"
 

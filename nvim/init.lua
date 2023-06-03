@@ -577,7 +577,7 @@ require("lsp_signature").setup({})
 if not vim.g.vscode then
   map('n', '<space>xr', vim.lsp.buf.rename, { desc = '[R]e[n]ame' })
   map('n', 'gd', vim.lsp.buf.definition, { desc = '[G]oto [D]efinition' })
-  map('n', 'gr', require('telescope.builtin').lsp_references, { desc = '[G]oto [R]eferences' })
+  map('n', 'gD', require('telescope.builtin').lsp_references, { desc = '[G]oto [R]eferences' })
   map('n', 'gh', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
   -- map('n', 'gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
   -- map('n', '<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')

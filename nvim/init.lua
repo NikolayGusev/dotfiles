@@ -33,7 +33,28 @@ require('lazy').setup({
     config = function() require("which-key").setup({}) end,
   },
   { 'tpope/vim-sleuth' }, -- Detect tabstop and shiftwidth automatically
+  {
+    'nvim-lualine/lualine.nvim',
+    -- See `:help lualine.txt`
+    opts = {
+      sections = {
+        lualine_a = {}, -- { 'mode' },
+        lualine_b = { 'branch', 'diff', 'diagnostics' },
+        lualine_c = { 'filename' },
+        lualine_x = {}, -- {'encoding', 'fileformat', 'filetype'},
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' }
+      },
+      options = {
+        icons_enabled = false,
+        theme = 'onedark',
+        component_separators = '|',
+        section_separators = '',
+      },
+    },
+  },
 
+  -- LF vim
   {
     "lmburns/lf.nvim",
     lazy = false,
@@ -163,6 +184,14 @@ vim.opt.scrolloff = 999
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.inccommand = "nosplit"
+-- vim.o.statusline = "%<%f %h%m%r%=%-8.(%l,%03p%%%)"
+-- vim.o.statusline = "%<%f %h%m%r%=%-14.(%l,%=vim.fn.matchstr('%3p', '\\s*\\(\\d+\\)%%'),%L%)"
+-- vim.o.statusline = "%<%f\ %h%m%r%=%-14.(%l,%=string.match(vim.fn.line('.'), '\\s*\\(\\d+\\)%%'),%L%)"
+-- Disable ruler
+-- vim.opt.ruler = false
+-- vim.opt.statusline = "%<%t"
+
+
 vim.opt.gdefault = true -- 'g' flag by default for replaces
 -- Format options come from this guy: formatoptions=jcroql Last set from /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/ftplugin/typescript.vim line 1
 vim.cmd([[autocmd FileType * setlocal formatoptions-=ro]])

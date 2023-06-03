@@ -32,10 +32,9 @@ require('lazy').setup({
     "folke/which-key.nvim",
     config = function() require("which-key").setup({}) end,
   },
-  { 'tpope/vim-sleuth' }, -- Detect tabstop and shiftwidth automatically
+  { 'tpope/vim-sleuth' },        -- Detect tabstop and shiftwidth automatically
   {
-    'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
+    'nvim-lualine/lualine.nvim', -- See `:help lualine.txt`
     opts = {
       sections = {
         lualine_a = {}, -- { 'mode' },
@@ -51,6 +50,24 @@ require('lazy').setup({
         component_separators = '|',
         section_separators = '',
       },
+    },
+  },
+  {
+    'lewis6991/gitsigns.nvim', -- See `:help gitsigns.txt`
+    opts = {
+      signs = {
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
+      },
+      on_attach = function(bufnr)
+        vim.keymap.set('n', '<leader>gp', require('gitsigns').prev_hunk,
+          { buffer = bufnr, desc = '[G]o to [P]revious Hunk' })
+        vim.keymap.set('n', '<leader>gn', require('gitsigns').next_hunk, { buffer = bufnr, desc = '[G]o to [N]ext Hunk' })
+        vim.keymap.set('n', '<leader>ph', require('gitsigns').preview_hunk, { buffer = bufnr, desc = '[P]review [H]unk' })
+      end,
     },
   },
 
@@ -667,3 +684,11 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+-- Automatically reload file when reverted in Git
+vim.cmd([[
+  augroup AutoReload
+    autocmd!
+    autocmd FocusGained * checktime
+  augroup END
+]])

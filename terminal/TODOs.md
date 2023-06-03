@@ -7,6 +7,8 @@
 
 - ctrl+shift+J / ctrl+shift+K isn't convinient way to switch stuff in tmux. Come up with a better combos.
 
+- cmd-q doesn't work in lazygit (only q works)
+
 - some kind of whichkey for the terminal
 
 
@@ -16,3 +18,7 @@
 # Fish
 - add to git this one 
   - .config/fish/functions/lfcd.fish
+
+# Lazygit
+- Open file for edit from lazygit with neovim when doing "e" on a file.
+

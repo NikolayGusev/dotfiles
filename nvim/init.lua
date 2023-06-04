@@ -245,6 +245,11 @@ if not vim.g.vscode then
   map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
   map('n', 'L', "<C-d>", { silent = true, noremap = true })
   map('n', 'H', "<C-u>", { silent = true, noremap = true })
+
+  vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
+  vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
+  vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
+  vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
 end
 
 

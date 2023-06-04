@@ -4,6 +4,12 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 # General
 
 - I still need shift-cmd-[1-0] to create a mark and cmd-[1-0] to recall it
+
+- consider https://github.com/anuvyklack/hydra.nvim
+  - window utils
+  - git mode
+  - ?
+
 - cmp doesn't show help for when typing in function arguments
 - spider doesn't work with umlauts - it stops on them
   - Is it maybe possible to have a custom alphabet?

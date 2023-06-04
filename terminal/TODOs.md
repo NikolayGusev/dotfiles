@@ -13,7 +13,9 @@
   - nvim
 
 - Navigation hierarchy:
-  - nvim within file
+  - 💡 nvim within file
+    - use regular marks?
+    - get a plugin that mimics bookmarks?
   - nvim between files
   - nvim splits
     - ? use tmux instead?

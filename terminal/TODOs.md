@@ -8,6 +8,10 @@
 - christoomey/vim-tmux-navigator
 - https://github.com/joshmedeski/dotfiles/blob/a0e6a8d14e4946bb1df707a7522bcd05ba0b5364/.config/nvim/lua/plugins/tmux-navigator.lua#L3
 
+- use "Q" OR "<Cmd-Q>" everywhere to close tab?
+  - vimium
+  - nvim
+
 - Navigation hierarchy:
   - nvim within file
   - nvim between files

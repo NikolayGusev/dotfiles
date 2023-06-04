@@ -42,6 +42,7 @@
 
 # LF
 - allow to quit with :q
+- show available hotkeys with ? (something similar to which key?)
 
 # Fish
 - add to git this one 

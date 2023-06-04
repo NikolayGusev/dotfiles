@@ -21,15 +21,19 @@
       - gj/gk - next prev bookmark
       - gl - show bookmarks
       - gL - add bookmark
-  - 💡 nvim splits
-    - ? use tmux instead?
-      - Not sure if this is possible because for example DAP is using windows inside of nvim. Same for quicklist.
-  - 💡 tmux panes
+  - ✅ nvim splits
+    - ctrl-hjkl to navigation
+    - alt-hjkl to resize
     - jump around - left/right/up/down
-  - 💡 tmux tabs
+  - ✅ tmux panes
+
+  - ✅ tmux tabs
     - next/prev
       - cmd+shift+[, cmd+shift+]
+    - reorder 
+      - "ctrl+b ,", "ctrl+b ."
     - switch to specific
+      - cmd+[0-9]
   - 💡 tmux sessions
     - next/prev
     - show menu to pick one

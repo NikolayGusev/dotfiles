@@ -106,7 +106,7 @@ require('lazy').setup({
   },
 
   {
-    'nvim-telescope/telescope.nvim',
+    "nvim-telescope/telescope.nvim",
     tag = '0.1.1',
     config = function()
       if not vim.g.vscode then
@@ -117,11 +117,11 @@ require('lazy').setup({
         vim.keymap.set('n', '<space>g', builtin.live_grep, {})
       end
     end,
-    dependencies = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-fzf-native.nvim' }
+    dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope-fzf-native.nvim" }
   },
-  { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+  { "nvim-telescope/telescope-fzf-native.nvim", build = 'make' },
   {
-    'stevearc/oil.nvim',
+    "stevearc/oil.nvim",
     opts = {
       win_options = {
         concealcursor = "nc", -- do not pop file id when searching with e.g. "/"
@@ -134,7 +134,7 @@ require('lazy').setup({
       },
     },
     dependencies = {
-      'nvim-tree/nvim-web-devicons' },
+      "nvim-tree/nvim-web-devicons" },
   },
 
   -- targets

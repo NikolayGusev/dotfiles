@@ -3,6 +3,12 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
+- make sure that same controls are used to scroll up down preview in
+  - lazygit
+  - oil
+  - LF
+  - telescope
+
 - I still need shift-cmd-[1-0] to create a mark and cmd-[1-0] to recall it
 
 - remove packages from lazynvim which are not used on thier own but rather are only the dependencies for other packages (leave them in dependencies though ofc)

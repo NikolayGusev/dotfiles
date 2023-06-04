@@ -16,23 +16,28 @@
   - 💡 nvim within file
     - use regular marks?
     - get a plugin that mimics bookmarks?
-  - nvim between files
-  - nvim splits
+  - 💡 nvim between files
+    - harpoon
+      - gj/gk - next prev bookmark
+      - gl - show bookmarks
+      - gL - add bookmark
+  - 💡 nvim splits
     - ? use tmux instead?
       - Not sure if this is possible because for example DAP is using windows inside of nvim. Same for quicklist.
-  - tmux panes
+  - 💡 tmux panes
     - jump around - left/right/up/down
-  - tmux tabs
+  - 💡 tmux tabs
     - next/prev
+      - cmd+shift+[, cmd+shift+]
     - switch to specific
-  - tmux sessions
+  - 💡 tmux sessions
     - next/prev
     - show menu to pick one
-  - amethyst windows
+  - 💡 amethyst windows
     - next/prev
-  - amethyst layouts
+  - 💡 amethyst layouts
     - next/prev
-  - desktops
+  - 💡 desktops
     - move
     - next/prev
     - switch to specific

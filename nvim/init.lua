@@ -224,6 +224,14 @@ vim.opt.smartcase = true
 vim.opt.inccommand = "nosplit"
 vim.o.undofile = true -- Save undo history
 
+if not vim.g.vscode then
+  map('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+  map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+  map('n', 'L', "<C-d>", { silent = true, noremap = true })
+  map('n', 'H', "<C-u>", { silent = true, noremap = true })
+end
+
+
 
 vim.opt.gdefault = true -- 'g' flag by default for replaces
 -- Format options come from this guy: formatoptions=jcroql Last set from /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/ftplugin/typescript.vim line 1
@@ -231,8 +239,10 @@ vim.cmd([[autocmd FileType * setlocal formatoptions-=ro]])
 
 map("n", "gg", "gg0", {})
 map("n", "G", "G$", {})
-map("n", "<S-L>", "<S-L>zz", {})
-map("n", "<S-H>", "<S-H>zz", {})
+if vim.g.vscode then
+  map("n", "<S-L>", "<S-L>zz", {})
+  map("n", "<S-H>", "<S-H>zz", {})
+end
 map("n", "J", "<Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>", {})
 map("n", "K", "<Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>", {})
 map("v", "<", "<gv", {})

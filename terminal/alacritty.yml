@@ -62,7 +62,9 @@ key_bindings:
   - { chars: "clear\n", key: K, mods: Command|Shift } # open interactive tmux session client
   - { chars: "\x02L", key: L, mods: Command } # switch to the last tmux session
   - { chars: "\x0f", key: LBracket, mods: Command } # navigate back (ctrl+o)
+  - { chars: "\x09", key: RBracket, mods: Command }
   - { chars: "\x02p", key: LBracket, mods: Command|Shift } # switch to next tmux window
+  - { chars: "\x02n", key: RBracket, mods: Command|Shift }
   - { chars: "\x02u", key: O, mods: Command }
   - { chars: ":GoToFile\n", key: P, mods: Command } # files
   - { chars: ":GoToCommand\n", key: P, mods: Command|Shift } # commands
@@ -70,8 +72,6 @@ key_bindings:
   - { chars: ":q\n", key: Q, mods: Command } # quit vim
   - { chars: "\x1b\x5b\x41\x0a", key: R, mods: Command } # repeat last command?
   - { chars: "^R", key: R, mods: Command|Shift }
-  - { chars: "\x09", key: RBracket, mods: Command }
-  - { chars: "\x02n", key: RBracket, mods: Command|Shift }
   - { chars: "\x1b\x3a\x77\x0a", key: S, mods: Command } # save vim buffer
   - { chars: ":wa\n", key: S, mods: Command|Shift } # save all
   - { chars: "\x02:", key: Semicolon, mods: Command } # enter the tmux command prompt

@@ -350,7 +350,7 @@ map("n", "<space>", ":call VSCodeNotify('vspacecode.space')<CR>", {})
 map("v", "<space>", "<Cmd>call VSCodeNotifyVisual('vspacecode.space', 0)<CR>", {})
 
 -- cleaver-f
-map("n", "<Esc>", ":<C-u>call clever_f#reset()<CR>", {})
+map("n", "<Esc>", ":<C-u>call clever_f#reset()<CR>", { silent = true })
 vim.g.clever_f_fix_key_direction = 1
 
 -- autocmd ColorScheme * highlight default CleverFMyOwnLabel cterm=bold,underline gui=bold,underline

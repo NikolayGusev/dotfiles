@@ -3,7 +3,10 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
+- I still need shift-cmd-[1-0] to create a mark and cmd-[1-0] to recall it
 - cmp doesn't show help for when typing in function arguments
+- spider doesn't work with umlauts - it stops on them
+  - Is it maybe possible to have a custom alphabet?
 
 - how to rename stuff while using option+arrows and other convinient ways of renaming?
 - highlight selected word (other instances of this word elsewhere)

@@ -11,6 +11,9 @@
 - use "Q" OR "<Cmd-Q>" everywhere to close tab?
   - vimium
   - nvim
+  - lf
+  - lazygit
+  - browser?
 
 - Navigation hierarchy:
   - 💡 nvim within file

@@ -38,6 +38,10 @@ font:
 
 
 key_bindings:
+  - { chars: "\x1bh", key: H, mods: Alt } # have to bind alt in Alacritty to make it work in temrinal
+  - { chars: "\x1bj", key: J, mods: Alt } # ...
+  - { chars: "\x1bk", key: K, mods: Alt } # ...
+  - { chars: "\x1bl", key: L, mods: Alt } # ...
   - { chars: "\x021", key: Key1, mods: Command } # select tmux window 1
   - { chars: "\x022", key: Key2, mods: Command } #                ... 2
   - { chars: "\x023", key: Key3, mods: Command } #                ... 3

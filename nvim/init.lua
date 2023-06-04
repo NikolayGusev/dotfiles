@@ -136,6 +136,21 @@ require('lazy').setup({
     dependencies = {
       "nvim-tree/nvim-web-devicons" },
   },
+  {
+    "aserowy/tmux.nvim",
+    config = function()
+      require('tmux').setup({
+        copy_sync = {
+          enabled = false -- Breaks copy-paste related stuff, don't have time to fix now. See also https://github.com/aserowy/tmux.nvim/issues/88
+        },
+        resize = {
+          enable_default_keybindings = true,
+          resize_step_x = 3,
+          resize_step_y = 1,
+        }
+      })
+    end,
+  },
 
   -- targets
   { "machakann/vim-sandwich" },
@@ -245,11 +260,6 @@ if not vim.g.vscode then
   map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
   map('n', 'L', "<C-d>", { silent = true, noremap = true })
   map('n', 'H', "<C-u>", { silent = true, noremap = true })
-
-  vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
-  vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
-  vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
-  vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
 end
 
 

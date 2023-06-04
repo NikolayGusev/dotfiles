@@ -47,8 +47,8 @@ key_bindings:
   - { chars: "\x027", key: Key7, mods: Command } #                ... 7
   - { chars: "\x028", key: Key8, mods: Command } #                ... 8
   - { chars: "\x029", key: Key9, mods: Command } #                ... 9
-  - { chars: "\x02n", key: K, mods: Control|Shift } # next window
-  - { chars: "\x02p", key: J, mods: Control|Shift } # prev window
+  # - { chars: "\x02n", key: K, mods: Control|Shift } # next window
+  # - { chars: "\x02p", key: J, mods: Control|Shift } # prev window
   - { chars: "\x02,", key: R, mods: Command|Shift } # rename the current tmux window
   - { chars: "\x02\"", key: E, mods: Command } # split tmux window vertically
   - { chars: "\x02%", key: E, mods: Command|Shift } # split tmux window horizontally
@@ -65,6 +65,8 @@ key_bindings:
   - { chars: "\x09", key: RBracket, mods: Command }
   - { chars: "\x02p", key: LBracket, mods: Command|Shift } # switch to next tmux window
   - { chars: "\x02n", key: RBracket, mods: Command|Shift }
+  - { chars: "\x02,", key: Comma, mods: Command|Shift } # move tmux window left
+  - { chars: "\x02.", key: Period, mods: Command|Shift } # move tmux window right
   - { chars: "\x02u", key: O, mods: Command }
   - { chars: ":GoToFile\n", key: P, mods: Command } # files
   - { chars: ":GoToCommand\n", key: P, mods: Command|Shift } # commands

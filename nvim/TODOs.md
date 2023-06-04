@@ -5,6 +5,7 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 - I still need shift-cmd-[1-0] to create a mark and cmd-[1-0] to recall it
 
+- remove packages from lazynvim which are not used on thier own but rather are only the dependencies for other packages (leave them in dependencies though ofc)
 - consider https://github.com/anuvyklack/hydra.nvim
   - window utils
   - git mode

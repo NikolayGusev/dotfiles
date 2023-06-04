@@ -120,16 +120,32 @@ require('lazy').setup({
     dependencies = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-fzf-native.nvim' }
   },
   { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+  {
+    'stevearc/oil.nvim',
+    opts = {
+      win_options = {
+        concealcursor = "nc", -- do not pop file id when searching with e.g. "/"
+      },
+
+      keymaps = {
+        ["<C-p>"] = "actions.preview_scroll_up",
+        ["<C-n>"] = "actions.preview_scroll_down",
+        ["gh"] = "actions.preview",
+      },
+    },
+    dependencies = {
+      'nvim-tree/nvim-web-devicons' },
+  },
 
   -- targets
   { "machakann/vim-sandwich" },
-  { "julian/vim-textobj-variable-segment",      dependencies = { { "kana/vim-textobj-user" }, } },
+  { "julian/vim-textobj-variable-segment", dependencies = { { "kana/vim-textobj-user" }, } },
   { "urxvtcd/vim-indent-object" },
   { "wellle/targets.vim" },
-  { "D4KU/vim-textobj-chainmember",             dependencies = { { "kana/vim-textobj-user" }, } },
+  { "D4KU/vim-textobj-chainmember",        dependencies = { { "kana/vim-textobj-user" }, } },
 
   --nav
-  { "ggandor/leap.nvim",                        dependencies = { { "tpope/vim-repeat" }, } },
+  { "ggandor/leap.nvim",                   dependencies = { { "tpope/vim-repeat" }, } },
   { "rhysd/clever-f.vim" },
   -- Autoclear search (/) highlight when cursor moves.
   { "romainl/vim-cool" },
@@ -610,6 +626,26 @@ if not vim.g.vscode then
   map('n', '<space>jj', require('telescope.builtin').lsp_document_symbols, { desc = 'Jump [J]Symbols' })
   map('n', '<space>ee', require('telescope.builtin').diagnostics, { desc = '[E]rrors [E]rrors}' })
   -- map('n', '<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+
+  -- Oil
+  map("n", "-", require("oil").open, { desc = "Open parent directory (oil)" })
+
+  -- disable netrw
+  vim.g.loaded_netrw = 1
+  vim.g.loaded_netrwPlugin = 1
+
+  -- delete_to_trash option, add and test
+
+  -- discard in oil preview with a "d" key
+  vim.api.nvim_create_autocmd("FileType", {
+    pattern = "oil_preview",
+    callback = function(args)
+      vim.keymap.set("n", "d", function()
+        vim.api.nvim_win_close(0, true)
+        require("oil").discard_all_changes()
+      end, { buffer = args.buf })
+    end,
+  })
 end
 
 

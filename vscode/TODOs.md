@@ -1,3 +1,8 @@
+- ctrl+hjk (l already does that) should go to the terminal tabs when I press those in the terminal
+  - !!! Actually those keys seem to work already when there's an app running in the terminal (so I cannot type anything).
+  - Else it doesn't work that well, because I press ctrl+k to go up, but instead I type this "K" in the terminal that I have later to delete.
+    - Might as well just do nothing, at least don't type.
+
 - Going to the problems panel doesn't work well
   - I have to go down with a ctrl+<arrow down> else I'll type in filter
   - I have to use <C-p/n> to move around. "j/k" would be entered in filter instead of moving me upward/downwards.

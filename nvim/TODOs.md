@@ -3,6 +3,9 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
+- Telescope should exit on Esc even in insert mode
+  - Make sure it is possible to exit insert mode with some other key
+
 - make sure that same controls are used to scroll up down preview in
   - lazygit
   - oil
@@ -26,7 +29,9 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 - lsp refactoring button
 
-- make LF or telescope default on startup
+# oil and lf
+  - make LF, telescope or oil default on startup
+  - LF doesn't open from oil
 
 - learn undo tree
 

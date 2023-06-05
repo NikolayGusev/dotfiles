@@ -15,6 +15,7 @@
   - lazygit
   - browser?
 
+- ❗ See how other apps are using navigation and copy
 - Navigation hierarchy:
   - 💡 nvim within file
     - use regular marks?
@@ -27,9 +28,8 @@
   - ✅ nvim splits
     - ctrl-hjkl to navigation
     - alt-hjkl to resize
-    - jump around - left/right/up/down
   - ✅ tmux panes
-
+    - Same as above
   - ✅ tmux tabs
     - next/prev
       - cmd+shift+[, cmd+shift+]
@@ -38,12 +38,15 @@
     - switch to specific
       - cmd+[0-9]
   - 💡 tmux sessions
-    - next/prev
-    - show menu to pick one
+    - 💡 next/prev
+    - show menu to pick one - cmd+o
+    - 💡 fuzzy find/open sessions - https://github.com/joshmedeski/t-smart-tmux-session-manager
+    - detach from session
   - 💡 amethyst windows
     - next/prev
   - 💡 amethyst layouts
     - next/prev
+    - cmd+enter was removed for "swap current window with main window" because it breaks logseq's cycle todo statuses hotkey
   - 💡 desktops
     - move
     - next/prev

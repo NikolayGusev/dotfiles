@@ -115,6 +115,28 @@ require('lazy').setup({
         vim.keymap.set('n', '<space><space>', builtin.find_files, {})
         vim.keymap.set('n', '<space>bb', builtin.buffers, {})
         vim.keymap.set('n', '<space>g', builtin.live_grep, {})
+
+        local actions = require("telescope.actions")
+
+        require("telescope").setup({
+          defaults = {
+            file_ignore_patterns = { ".git/", "node_modules" },
+            layout_config = {
+              preview_width = 0.6,
+              prompt_position = "top",
+            },
+            path_display = { "smart" },
+            prompt_position = "top",
+            sorting_strategy = "ascending",
+
+            mappings = {
+              i = {
+                ["<esc>"] = actions.close,                 -- close dialog with single Esc
+                ["<C-c>"] = { "<esc>", type = "command" }, -- go to normal mode
+              },
+            },
+          },
+        })
       end
     end,
     dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope-fzf-native.nvim" }

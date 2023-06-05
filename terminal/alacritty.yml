@@ -61,17 +61,17 @@ key_bindings:
   - { chars: "nvim .\n", key: N, mods: Command } # open neovim
   # - { chars: "lazygit\n", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
   - { chars: "\x02g", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
-  - { chars: "\x02\x54", key: J, mods: Command } # open t - tmux smart session manager
-  - { chars: "\x02s", key: K, mods: Command } # open interactive tmux session client
+  # - { chars: "\x02\x54", key: J, mods: Command } # open t - tmux smart session manager
+  - { chars: "\x02s", key: O, mods: Command } # open interactive tmux session client
   - { chars: "clear\n", key: K, mods: Command|Shift } # open interactive tmux session client
   - { chars: "\x02L", key: L, mods: Command } # switch to the last tmux session
   - { chars: "\x0f", key: LBracket, mods: Command } # navigate back (ctrl+o)
-  - { chars: "\x09", key: RBracket, mods: Command } # navigate forward (tab)
+  - { chars: "\x09", key: RBracket, mods: Command } # navigate forward (tab, change to ctrl+i?)
   - { chars: "\x02p", key: LBracket, mods: Command|Shift } # switch to next tmux window
   - { chars: "\x02n", key: RBracket, mods: Command|Shift }
   - { chars: "\x02,", key: Comma, mods: Command|Shift } # move tmux window left
   - { chars: "\x02.", key: Period, mods: Command|Shift } # move tmux window right
-  - { chars: "\x02u", key: O, mods: Command }
+  # - { chars: "\x02u", key: O, mods: Command } # what's that?
   - { chars: ":GoToFile\n", key: P, mods: Command } # files
   - { chars: ":GoToCommand\n", key: P, mods: Command|Shift } # commands
   # - { key: Period, mods: Command, chars: "\x1b\x20\x2e\x0a" } (causes popup to be unfocused)

@@ -76,7 +76,7 @@ key_bindings:
   - { chars: ":GoToCommand\n", key: P, mods: Command|Shift } # commands
   # - { key: Period, mods: Command, chars: "\x1b\x20\x2e\x0a" } (causes popup to be unfocused)
   - { chars: ":q\n", key: Q, mods: Command } # quit vim
-  - { chars: "\x1b\x5b\x41\x0a", key: R, mods: Command } # repeat last command?
+  - { chars: "\x1b\x5b\x41\x0d", key: R, mods: Command } # repeat last command?
   # - { chars: "^R", key: R, mods: Command|Shift } # not sure what's that
   - { chars: "\x1b\x3a\x77\x0a", key: S, mods: Command } # save vim buffer
   - { chars: ":wa\n", key: S, mods: Command|Shift } # save all

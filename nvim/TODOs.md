@@ -3,8 +3,7 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
-- Telescope should exit on Esc even in insert mode
-  - Make sure it is possible to exit insert mode with some other key
+- Spider - see if it is possible now not to move along the words-in-words, only skip non letter symbols while jumping around
 
 - make sure that same controls are used to scroll up down preview in
   - lazygit

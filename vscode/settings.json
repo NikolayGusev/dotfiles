@@ -912,14 +912,14 @@
       "commands": ["gitlens.toggleCodeLens", "gitlens.toggleLineBlame"]
     },
     {
-      "keys": "t.s",
+      "keys": "t.S",
       "name": "Toggle sticky scroll",
       "type": "command",
       "command": "editor.action.toggleStickyScroll"
     },
     {
       "name": "Toggle side bar visibility",
-      "keys": "t.S",
+      "keys": "t.s",
       "type": "command",
       "command": "workbench.action.toggleSidebarVisibility"
     },

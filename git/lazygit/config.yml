@@ -52,7 +52,7 @@ customCommands:
             value: 'git ls-files -v | grep ''^[[:lower:]]''; false'
           - name: 'reset all assume unchanged files'
             description: 'Global command'
-            value: 'git update-index --really-refresh; true'
+            value: 'git ls-files -v | grep ''^[a-z]'' | cut -c3- | xargs git update-index --no-assume-unchanged --'
     command: "{{index .PromptResponses 0}}"
   - key: 'P'
     command: "git push --force {{.SelectedRemote.RefName}} {{.SelectedLocalCommit.Sha}}:{{.SelectedLocalBranch.RefName}}"

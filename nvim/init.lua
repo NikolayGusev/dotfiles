@@ -293,8 +293,8 @@ vim.cmd([[autocmd FileType * setlocal formatoptions-=ro]])
 map("n", "gg", "gg0", {})
 map("n", "G", "G$", {})
 if vim.g.vscode then
-  map("n", "<S-L>", "<S-L>zz", {})
-  map("n", "<S-H>", "<S-H>zz", {})
+  map("n", "<S-L>", "<C-d>zz", {})
+  map("n", "<S-H>", "<C-u>zz", {})
 end
 map("n", "J", "<Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>", {})
 map("n", "K", "<Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>", {})

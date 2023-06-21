@@ -206,19 +206,29 @@ require('lazy').setup({
   { "markonm/traces.vim" },
 
   -- Comments
-  { 'numToStr/Comment.nvim',    config = function() require('Comment').setup() end, },
+  {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup({
+        pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+      })
+    end,
+  },
 
   -- Practice vim
   { "ThePrimeagen/vim-be-good" },
 
   -- Theme
-  { "catppuccin/nvim",          name = "catppuccin" },
+  { "catppuccin/nvim",         name = "catppuccin" },
   -- Commands that only affect the selection, provides :B for visual commands and :S for visual searches.
   { "vim-scripts/vis" },
 
   {
     "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate"
+    run = ":TSUpdate",
+    dependencies = {
+      'JoosepAlviste/nvim-ts-context-commentstring',
+    },
   },
   { "nvim-treesitter/nvim-treesitter-textobjects" },
 
@@ -559,6 +569,9 @@ end
 require("nvim-treesitter.install").prefer_git = true
 
 require 'nvim-treesitter.configs'.setup {
+  context_commentstring = {
+    enable = true,
+  },
   textobjects = {
     select = {
       enable = true,

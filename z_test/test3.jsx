@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => <h1 style={props.style}> Hello Eggh {props.cat} </h1>;
 
-const World = function (props) {
+const World = function(props) {
   return (
     <>
       <a href="hello" style={props.style}>

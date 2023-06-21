@@ -551,25 +551,6 @@ if vim.g.vscode then
 
   map("n", "zj", ":call VSCodeNotify('editor.gotoNextFold')<CR>", {})
   map("n", "zk", ":call VSCodeNotify('editor.gotoPreviousFold')<CR>", {})
-
-  _G.MoveCursor = function(direction)
-    if vim.fn.reg_recording() == '' and vim.fn.reg_executing() == '' then
-      return 'g' .. direction
-    else
-      return direction
-    end
-  end
-
-  -- https://github.com/vscode-neovim/vscode-neovim/issues/58#issuecomment-1229279216
-  local function moveCursor(direction)
-    if (vim.fn.reg_recording() == '' and vim.fn.reg_executing() == '') then
-      return ('g' .. direction)
-    else
-      return direction
-    end
-  end
-  map('n', 'k', function() return moveCursor('k') end, { expr = true, remap = true })
-  map('n', 'j', function() return moveCursor('j') end, { expr = true, remap = true })
 end
 
 

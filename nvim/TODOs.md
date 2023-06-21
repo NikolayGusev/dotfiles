@@ -5,6 +5,8 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 - Spider - see if it is possible now not to move along the words-in-words, only skip non letter symbols while jumping around
 
+- TBD: When doing change with Leap scope leap to the current row as this is what I do usually.
+
 - make sure that same controls are used to scroll up down preview in
   - lazygit
   - oil

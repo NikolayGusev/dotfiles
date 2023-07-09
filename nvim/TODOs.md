@@ -3,6 +3,7 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
 
+- Stop jumping forward to another string when doing things like "va(" or "da("
 - Spider - see if it is possible now not to move along the words-in-words, only skip non letter symbols while jumping around
 
 - TBD: When doing change with Leap scope leap to the current row as this is what I do usually.

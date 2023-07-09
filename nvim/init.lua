@@ -277,7 +277,7 @@ require('lazy').setup({
 vim.g.vim_be_good_delete_me_offset = 35
 
 -- General
-vim.cmd("language en_US")
+vim.cmd("language en_US.UTF-8")
 vim.g.mapleader = ","
 map("n", "<leader><leader>/", ":noh<CR>", {})
 vim.opt.cursorline = true

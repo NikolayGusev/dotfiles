@@ -1,3 +1,4 @@
+- Tmux shouldn't kill session on computer restart
 - Same hotkeys for lazygit and LF in nvim and in terminal.
 
 

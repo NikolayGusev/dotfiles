@@ -54,6 +54,7 @@ key_bindings:
   # - { chars: "\x02n", key: K, mods: Control|Shift } # next window
   # - { chars: "\x02p", key: J, mods: Control|Shift } # prev window
   - { chars: "\x02r", key: R, mods: Command|Shift } # rename the current tmux window
+  - { chars: "\x02$", key: R, mods: Control|Command|Shift } # rename the current tmux session
   - { chars: "\x02\"", key: E, mods: Command } # split tmux window vertically
   - { chars: "\x02%", key: E, mods: Command|Shift } # split tmux window horizontally
   - { chars: "\x02\x5b\x2f", key: F, mods: Command|Shift } # start tmux search mode

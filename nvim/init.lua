@@ -702,6 +702,7 @@ local servers = {
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
+  kotlin_language_server = {},
   tsserver = {},
   -- TODO: use this settings to make eslint work in mono-repo
   -- https://www.reddit.com/r/neovim/comments/12fxw01/lsp_hell_with_eslint_linterformater/

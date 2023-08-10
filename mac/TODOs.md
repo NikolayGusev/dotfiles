@@ -58,3 +58,10 @@ Alternative version
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 ```
+
+```
+# Do not close apps with "cmd+h". 
+# Use ```osascript -e 'id of app "ApplicationName"'``` to get the app id.
+defaults write org.alacritty NSUserKeyEquivalents -dict-add "Hide alacritty" -string "@~h"
+defaults write com.google.Chrome NSUserKeyEquivalents -dict-add "Hide Google Chrome" -string "@~h"
+```

@@ -1,0 +1,2 @@
+- [ ] cmd+R to restart build
+- [ ] Autohide for left and bottom menus on cursor move (or similar)

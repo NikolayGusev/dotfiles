@@ -17,10 +17,13 @@
   - browser?
 
 - ❗ See how other apps are using navigation and copy
+- Decide if everything should be within max two keys pressed at once, not 3 or 4
 - Navigation hierarchy:
-  - 💡 nvim within file
+  - 💡 nvim within file - hardlinks
     - use regular marks?
     - get a plugin that mimics bookmarks?
+  - nvim relative
+    - cmd + [, cmd + ] - prev, next
   - 💡 nvim between files
     - harpoon
       - gj/gk - next prev bookmark

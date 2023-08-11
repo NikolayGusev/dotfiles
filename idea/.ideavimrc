@@ -91,38 +91,38 @@ vnoremap mm ""dd
 
 " TODO: add lazygit in the terminal 
 " TODO: remove this mapping (Optional) Add/edit actions
-nnoremap <leader>gl    :action Vcs.Show.Log<CR>
-vnoremap <leader>gl    :action Vcs.Show.Log<CR>
+nnoremap <leader>gl    :action Vcs.Show.Log<cr>
+vnoremap <leader>gl    :action Vcs.Show.Log<cr>
 
-map <D-1> :action GotoBookmark1<CR>
-map <D-2> :action GotoBookmark2<CR>
-map <D-3> :action GotoBookmark3<CR>
-map <D-4> :action GotoBookmark4<CR>
-map <D-5> :action GotoBookmark5<CR>
-map <D-6> :action GotoBookmark6<CR>
-map <D-7> :action GotoBookmark7<CR>
-map <D-8> :action GotoBookmark8<CR>
-map <D-9> :action GotoBookmark9<CR>
-map <D-0> :action GotoBookmark0<CR>
+map <D-1> :action GotoBookmark1<cr>
+map <D-2> :action GotoBookmark2<cr>
+map <D-3> :action GotoBookmark3<cr>
+map <D-4> :action GotoBookmark4<cr>
+map <D-5> :action GotoBookmark5<cr>
+map <D-6> :action GotoBookmark6<cr>
+map <D-7> :action GotoBookmark7<cr>
+map <D-8> :action GotoBookmark8<cr>
+map <D-9> :action GotoBookmark9<cr>
+map <D-0> :action GotoBookmark0<cr>
 
-map <S-D-1> :action ToggleBookmark1<CR>
-map <S-D-2> :action ToggleBookmark2<CR>
-map <S-D-3> :action ToggleBookmark3<CR>
-map <S-D-4> :action ToggleBookmark4<CR>
-map <S-D-5> :action ToggleBookmark5<CR>
-map <S-D-6> :action ToggleBookmark6<CR>
-map <S-D-7> :action ToggleBookmark7<CR>
-map <S-D-8> :action ToggleBookmark8<CR>
-map <S-D-9> :action ToggleBookmark9<CR>
-map <S-D-0> :action ToggleBookmark0<CR>
+map <S-D-1> :action ToggleBookmark1<cr>
+map <S-D-2> :action ToggleBookmark2<cr>
+map <S-D-3> :action ToggleBookmark3<cr>
+map <S-D-4> :action ToggleBookmark4<cr>
+map <S-D-5> :action ToggleBookmark5<cr>
+map <S-D-6> :action ToggleBookmark6<cr>
+map <S-D-7> :action ToggleBookmark7<cr>
+map <S-D-8> :action ToggleBookmark8<cr>
+map <S-D-9> :action ToggleBookmark9<cr>
+map <S-D-0> :action ToggleBookmark0<cr>
 
 
 " Intellimacs overrides
 let g:WhichKeyDesc_Leader_Space = "<leader>, M-x"
-nnoremap <leader>,    :action GotoAction<CR>
-vnoremap <leader>,    :action GotoAction<CR>
+nnoremap <leader>, :action GotoAction<cr>
+vnoremap <leader>, :action GotoAction<cr>
 let g:WhichKeyDesc_Files_GotoFile = "<leader><leader> goto-file"
-nnoremap <leader><leader>    :action GotoFile<CR>
-vnoremap <leader><leader>    :action GotoFile<CR>
+nnoremap <leader><leader> :action GotoFile<cr>
+vnoremap <leader><leader> :action GotoFile<cr>
 
 

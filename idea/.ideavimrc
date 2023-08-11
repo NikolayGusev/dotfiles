@@ -48,8 +48,10 @@ map F :action AceTargetAction<cr>
 map <leader>g :action AceLineAction<cr>
 
 " TODO: Ace as a vim motion
+" It is possible to use ace while holding shift to simulate this
 " See https://github.com/acejump/AceJump/issues/397#issuecomment-1654254680
 
+" TODO: investigate how to work with this
 " (Optional) Enable other Intellimacs modules
 " source ~/.intellimacs/extra.vim
 " source ~/.intellimacs/major.vim
@@ -113,4 +115,14 @@ map <S-D-7> :action ToggleBookmark7<CR>
 map <S-D-8> :action ToggleBookmark8<CR>
 map <S-D-9> :action ToggleBookmark9<CR>
 map <S-D-0> :action ToggleBookmark0<CR>
+
+
+" Intellimacs overrides
+let g:WhichKeyDesc_Leader_Space = "<leader>, M-x"
+nnoremap <leader>,    :action GotoAction<CR>
+vnoremap <leader>,    :action GotoAction<CR>
+let g:WhichKeyDesc_Files_GotoFile = "<leader><leader> goto-file"
+nnoremap <leader><leader>    :action GotoFile<CR>
+vnoremap <leader><leader>    :action GotoFile<CR>
+
 

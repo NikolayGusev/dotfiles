@@ -8,8 +8,7 @@ set scrolloff=1
 set incsearch
 
 """ IdeaVim options
-" joins string concats, nested ifs, comments,
-" removes extra bracers, koltin one line funcs, potential chain calls, etc with regular "J" in vim
+" joins string concats, nested ifs, comments, removes extra bracers, koltin one line funcs, potential chain calls, etc with regular "J" in vim
 set ideajoin 
 " TODO: what is this? Map vim marks to IDEA global marks
 set ideamarks
@@ -64,6 +63,11 @@ nnoremap Y y$
 nnoremap gh :action QuickJavaDoc<cr>
 nnoremap ge :action ShowErrorDescription<cr>
 nnoremap ; :action ShowIntentionActions<cr>
+
+" TODO: probably should drop that and use native macos commands for next/prev tab
+nnoremap J :action PreviousTab<cr>
+nnoremap K :action NextTab<cr>
+nnoremap <leader>j J
 
 
 " TODO: m to cut, d to delete

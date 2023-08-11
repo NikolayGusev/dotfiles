@@ -1,0 +1,72 @@
+set noerrorbells 
+set visualbell
+
+" hallo
+
+set scrolloff=1
+set incsearch
+
+""" IdeaVim options
+" joins string concats, nested ifs, comments,
+" removes extra bracers, koltin one line funcs, potential chain calls, etc with regular "J" in vim
+set ideajoin 
+" TODO: what is this? Map vim marks to IDEA global marks
+set ideamarks
+
+""" IdeaVim actions
+nmap [[ <Action>(MethodUp)
+nmap ]] <Action>(MethodDown)
+
+" Keys from vim-gitgutter
+nmap ]c <Action>(VcsShowNextChangeMarker)
+nmap [c <Action>(VcsShowPrevChangeMarker)
+" Not from vim-gitgutter. ={motion} is for indenting. =c does nothing
+nmap =c <Action>(VcsShowCurrentChangeMarker)
+
+
+source ~/.intellimacs/spacemacs.vim
+
+
+" See - https://github.com/JetBrains/ideavim/blob/master/doc/IdeaVim%20Plugins.md
+set surround
+" set multiple-cursors
+set commentary
+set argtextobj
+" set easymotion
+" set textobj-entire
+set ReplaceWithRegister
+Plug 'machakann/vim-highlightedyank'
+Plug 'michaeljsmith/vim-indent-object'
+
+
+" TODO: Ace hotkey in vim
+" Press `f` to activate AceJump
+map f :action AceAction<cr>
+" Press `F` to activate Target Mode
+map F :action AceTargetAction<cr>
+" Press `g` to activate Line Mode
+map <leader>g :action AceLineAction<cr>
+
+" TODO: Ace as a vim motion
+" See https://github.com/acejump/AceJump/issues/397#issuecomment-1654254680
+
+" (Optional) Enable other Intellimacs modules
+" source ~/.intellimacs/extra.vim
+" source ~/.intellimacs/major.vim
+" source ~/.intellimacs/hybrid.vim
+
+" (Optional) Enable which-key plugin
+source ~/.intellimacs/which-key.vim
+
+" (Optional) My own vim commands
+nnoremap Y y$
+nnoremap gh :action QuickJavaDoc<cr>
+nnoremap ge :action ShowErrorDescription<cr>
+nnoremap ; :action ShowIntentionActions<cr>
+
+
+
+" (Optional) Add/edit actions
+nnoremap <leader>gl    :action Vcs.Show.Log<CR>
+vnoremap <leader>gl    :action Vcs.Show.Log<CR>
+

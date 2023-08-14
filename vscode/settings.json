@@ -621,6 +621,13 @@
       "type": "command",
       "command": "workbench.files.action.showActiveFileInExplorer"
     },
+        {
+      "keys": "f.y.b",
+      "name": "Open in bitbucket",
+      "type": "command",
+      "command": "workbench.files.tasks.runTask",
+      "args": "Open in bitbucket"
+    },
     {
       "keys": "g.d",
       "name": "Diff",

@@ -154,9 +154,13 @@ require('lazy').setup({
         ["<C-n>"] = "actions.preview_scroll_down",
         ["gh"] = "actions.preview",
       },
+      view_options = {
+        show_hidden = true, -- Show files and directories that start with "."
+      }
     },
     dependencies = {
-      "nvim-tree/nvim-web-devicons" },
+      "nvim-tree/nvim-web-devicons"
+    },
   },
   {
     "aserowy/tmux.nvim",

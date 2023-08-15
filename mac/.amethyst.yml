@@ -239,6 +239,71 @@ swap-main:
 #   mod: mod1
 #   key: i
 
+focus-screen-1:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-2:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-3:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-4:
+  mod: <NONE>
+  key: <NONE>
+
+throw-screen-1:
+  mod: <NONE>
+  key: <NONE>
+throw-screen-2:
+  mod: <NONE>
+  key: <NONE>
+throw-screen-3:
+  mod: <NONE>
+  key: <NONE>
+throw-screen-4:
+  mod: <NONE>
+  key: <NONE>
+
+
+throw-space-1:
+  mod: <NONE>
+  key: <NONE>
+throw-space-2:
+  mod: <NONE>
+  key: <NONE>
+throw-space-3:
+  mod: <NONE>
+  key: <NONE>
+throw-space-4:
+  mod: <NONE>
+  key: <NONE>
+throw-space-5:
+  mod: <NONE>
+  key: <NONE>
+throw-space-6:
+  mod: <NONE>
+  key: <NONE>
+throw-space-7:
+  mod: <NONE>
+  key: <NONE>
+throw-space-8:
+  mod: <NONE>
+  key: <NONE>
+throw-space-9:
+  mod: <NONE>
+  key: <NONE>
+throw-space-10:
+  mod: <NONE>
+  key: <NONE>
+throw-space-11:
+  mod: <NONE>
+  key: <NONE>
+throw-space-12:
+  mod: <NONE>
+  key: <NONE>
+
+
 # Select tall layout
 select-tall-layout:
   mod: <NONE>

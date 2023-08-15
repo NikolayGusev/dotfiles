@@ -51,6 +51,7 @@ enables-layout-hud-on-space-change: true
 layouts:
   - fullscreen
   - two-pane
+  - tall
 
 # true to maintain layout state across application executions (default true).
 restore-layouts-on-launch: true

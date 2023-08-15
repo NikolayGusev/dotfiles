@@ -112,7 +112,7 @@ require('lazy').setup({
       if not vim.g.vscode then
         require('telescope').load_extension('fzf')
         local builtin = require('telescope.builtin')
-        vim.keymap.set('n', '<space><space>', builtin.find_files, {})
+        vim.keymap.set('n', '<space><space>', ':lua require"telescope.builtin".find_files({ hidden = true })<CR>', {})
         vim.keymap.set('n', '<space>bb', builtin.buffers, {})
         vim.keymap.set('n', '<space>g', builtin.live_grep, {})
 

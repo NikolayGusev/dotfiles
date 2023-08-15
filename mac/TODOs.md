@@ -1,11 +1,7 @@
 ## Tasks
 
-- [ ] on amethyst reload it sets default hotkeys
-    - including cmd+w which overrides default close tab in macos
-
-### Link dotfiles
-Alacritty
-lazygit
+- [ ] cmd+' should switch to main window only, not toggle between main and secondary one
+- [ ] cmd+j/k should only change rotate secondary windows and not change the focus
 
 ### Sofle
 - mod1 + left right move with cmd instead of control. As a result it jumps just as home/end buttons do, not word by word.

@@ -121,9 +121,11 @@ nmap <leader><leader> :action GotoFile<cr>
 
 " NerdTree
 " See https://github.com/JetBrains/ideavim/wiki/NERDTree-support
-let g:WhichKeyDesc_Files_GotoFile = "<leader>ff find file in project view"
+let g:WhichKeyDesc_Files_GotoFile = "<leader>ff Jump to file in Project View"
 nmap <leader>ff :NERDTreeFind<cr>
+let g:WhichKeyDesc_Files_GotoFile = "<leader>ts Toggle Project View"
+nmap <leader>ts :NERDTreeToggle<cr>
 let g:NERDTreeMapActivateNode='l'
-let g:NERDTreeMapCloseDir='h'
+let g:NERDTreeMapJumpParent='h'
 
 

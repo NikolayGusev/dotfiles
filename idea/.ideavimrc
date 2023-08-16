@@ -12,6 +12,8 @@ set incsearch
 set ideajoin 
 " TODO: what is this? Map vim marks to IDEA global marks
 set ideamarks
+" Proper navigation in project tree
+set NERDTree
 
 """ IdeaVim actions
 nmap [[ <Action>(MethodUp)
@@ -115,7 +117,13 @@ let g:WhichKeyDesc_Leader_Space = "<leader>, M-x"
 nnoremap <leader>, :action GotoAction<cr>
 vnoremap <leader>, :action GotoAction<cr>
 let g:WhichKeyDesc_Files_GotoFile = "<leader><leader> goto-file"
-nnoremap <leader><leader> :action GotoFile<cr>
-vnoremap <leader><leader> :action GotoFile<cr>
+nmap <leader><leader> :action GotoFile<cr>
+
+" NerdTree
+" See https://github.com/JetBrains/ideavim/wiki/NERDTree-support
+let g:WhichKeyDesc_Files_GotoFile = "<leader>ff find file in project view"
+nmap <leader>ff :NERDTreeFind<cr>
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapCloseDir='h'
 
 

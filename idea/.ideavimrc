@@ -38,18 +38,11 @@ set ReplaceWithRegister
 Plug 'machakann/vim-highlightedyank'
 Plug 'michaeljsmith/vim-indent-object'
 
-
-" TODO: Ace hotkey in vim
-" Press `f` to activate AceJump
-map f :action AceAction<cr>
-" Press `F` to activate Target Mode
-map F :action AceTargetAction<cr>
-" Press `g` to activate Line Mode
-map <leader>g :action AceLineAction<cr>
-
 " TODO: Ace as a vim motion
 " It is possible to use ace while holding shift to simulate this
 " See https://github.com/acejump/AceJump/issues/397#issuecomment-1654254680
+
+nnoremap ' :action AceAction<cr>
 
 " TODO: investigate how to work with this
 " (Optional) Enable other Intellimacs modules

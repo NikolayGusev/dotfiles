@@ -1,10 +1,20 @@
 #! /bin/bash
 
+
+mkdir -p ~/.config/nvim
 ln -fns $(pwd)/nvim/init.lua ~/.config/nvim/init.lua
 ln -fns $(pwd)/nvim/lazy-lock.json ~/.config/nvim/lazy-lock.json
+
 ln -fns $(pwd)/git/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
+
+mkdir -p ~/.config/alacritty
 ln -fns $(pwd)/terminal/alacritty.yml ~/.config/alacritty/alacritty.yml
+
+mkdir -p ~/.config/tmux
+ln -fns $(pwd)/terminal/tmux.conf ~/.config/tmux/tmux.conf
+
 ln -fns $(pwd)/idea/.ideavimrc ~/.ideavimrc
+
 ln -fns $(pwd)/mac/.amethyst.yml ~/.amethyst.yml
 
 for filename in vscode/*.*; do

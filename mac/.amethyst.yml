@@ -31,10 +31,10 @@ window-margin-size: 10
 
 
 # Padding to apply between windows and edge of the screen (in px, default 0).
-screen-padding-left: 15
-screen-padding-right: 15
-screen-padding-top: 15
-screen-padding-bottom: 15
+screen-padding-left: 10
+screen-padding-right: 10
+screen-padding-top: 10
+screen-padding-bottom: 10
 
 # true to display the name of the layout when a new layout is selected (default true).
 enables-layout-hud: true

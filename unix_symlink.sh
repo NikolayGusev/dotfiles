@@ -10,6 +10,9 @@ ln -fns $(pwd)/git/lazygit/config.yml ~/Library/Application\ Support/lazygit/con
 mkdir -p ~/.config/alacritty
 ln -fns $(pwd)/terminal/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+mkdir -p ~/.config/fish/functions
+ln -fns $(pwd)/terminal/lfcd.fish ~/.config/fish/functions
+
 mkdir -p ~/.config/tmux
 ln -fns $(pwd)/terminal/tmux.conf ~/.config/tmux/tmux.conf
 

@@ -79,7 +79,9 @@ require('lazy').setup({
       require('illuminate').configure({ delay = 20, })
     end
   },
-
+  {
+    "tpope/vim-obsession" -- save vim sessions
+  },
   -- LF vim
   {
     "lmburns/lf.nvim",

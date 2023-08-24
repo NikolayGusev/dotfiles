@@ -7,9 +7,12 @@ window:
     y: 8
   dynamic_padding: false
 
-    #shell:
-  #  program: fish
-      #program: /usr/local/bin/fish
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
 
 # Font configuration (changes require restart)
 font:

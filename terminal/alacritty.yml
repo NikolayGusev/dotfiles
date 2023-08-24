@@ -60,7 +60,8 @@ key_bindings:
   - { chars: "\x02$", key: R, mods: Control|Command|Shift } # rename the current tmux session
   - { chars: "\x02\"", key: E, mods: Command } # split tmux window vertically
   - { chars: "\x02%", key: E, mods: Command|Shift } # split tmux window horizontally
-  - { chars: "\x02\x5b\x2f", key: F, mods: Command|Shift } # start tmux search mode
+  # - { chars: "\x02\x5b\x2f", key: F, mods: Command|Shift } # start tmux search mode
+  - { chars: "\x02\x5b", key: F, mods: Command|Shift } # start tmux vi mode
   - { chars: "lfcd\n", key: F, mods: Command } # open file manager 'gokcehan/lf'
   - { chars: "nvim .\n", key: N, mods: Command } # open neovim
   # - { chars: "lazygit\n", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'

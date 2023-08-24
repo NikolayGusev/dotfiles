@@ -89,27 +89,31 @@ vnoremap mm ""dd
 nnoremap <leader>gl    :action Vcs.Show.Log<cr>
 vnoremap <leader>gl    :action Vcs.Show.Log<cr>
 
-map <D-1> :action GotoBookmark1<cr>
-map <D-2> :action GotoBookmark2<cr>
-map <D-3> :action GotoBookmark3<cr>
-map <D-4> :action GotoBookmark4<cr>
-map <D-5> :action GotoBookmark5<cr>
-map <D-6> :action GotoBookmark6<cr>
-map <D-7> :action GotoBookmark7<cr>
-map <D-8> :action GotoBookmark8<cr>
-map <D-9> :action GotoBookmark9<cr>
-map <D-0> :action GotoBookmark0<cr>
-
-map <S-D-1> :action ToggleBookmark1<cr>
-map <S-D-2> :action ToggleBookmark2<cr>
-map <S-D-3> :action ToggleBookmark3<cr>
-map <S-D-4> :action ToggleBookmark4<cr>
-map <S-D-5> :action ToggleBookmark5<cr>
-map <S-D-6> :action ToggleBookmark6<cr>
-map <S-D-7> :action ToggleBookmark7<cr>
-map <S-D-8> :action ToggleBookmark8<cr>
-map <S-D-9> :action ToggleBookmark9<cr>
-map <S-D-0> :action ToggleBookmark0<cr>
+" TODO: cmd mod doesn't work
+" map <D-v> <Nop> (do not allow paste with cmd-v because it messes up with
+" search when idea is slow - I paste into search but text gets pasted into
+" code)
+" map <D-1> :action GotoBookmark1<cr>
+" map <D-2> :action GotoBookmark2<cr>
+" map <D-3> :action GotoBookmark3<cr>
+" map <D-4> :action GotoBookmark4<cr>
+" map <D-5> :action GotoBookmark5<cr>
+" map <D-6> :action GotoBookmark6<cr>
+" map <D-7> :action GotoBookmark7<cr>
+" map <D-8> :action GotoBookmark8<cr>
+" map <D-9> :action GotoBookmark9<cr>
+" map <D-0> :action GotoBookmark0<cr>
+"
+" map <S-D-1> :action ToggleBookmark1<cr>
+" map <S-D-2> :action ToggleBookmark2<cr>
+" map <S-D-3> :action ToggleBookmark3<cr>
+" map <S-D-4> :action ToggleBookmark4<cr>
+" map <S-D-5> :action ToggleBookmark5<cr>
+" map <S-D-6> :action ToggleBookmark6<cr>
+" map <S-D-7> :action ToggleBookmark7<cr>
+" map <S-D-8> :action ToggleBookmark8<cr>
+" map <S-D-9> :action ToggleBookmark9<cr>
+" map <S-D-0> :action ToggleBookmark0<cr>
 
 
 " Intellimacs overrides

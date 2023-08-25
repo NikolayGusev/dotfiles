@@ -1,7 +1,6 @@
 # https://pkg.go.dev/github.com/gokcehan/lf#hdr-Configuration
 
 # TODO
-# open directory in nvim?
 # learn how to push and pop, use cmd+[ and cmd+] to jump around?
 
 # Use the `dim` attribute instead of underline for the cursor in the preview pane
@@ -16,6 +15,7 @@ map x :cut
 map d :delete
 map i :invert
 map v $less $f
+map E $$EDITOR "$(dirname $f)"     # seems unnecessary - it is better to open a new nvim session by "q" -> "cmd+n"
 map gp cd ~/Projects
 map f #unmap
 map ff :fzf_select

@@ -1,0 +1,39 @@
+# https://pkg.go.dev/github.com/gokcehan/lf#hdr-Configuration
+
+# TODO
+# fzf in current path
+# fzf to change path?
+# open in nvim?
+# open directory in nvim?
+
+# Use the `dim` attribute instead of underline for the cursor in the preview pane
+set cursorpreviewfmt "\033[7;2m"
+#set cursorpreviewfmt "\033[7;90m"
+
+set scrolloff 5
+
+map a push :touch<space>
+map A push :mkdir<space>
+map x :cut
+map d :delete
+map i :invert
+map v $less $f
+
+# move to sibling dir
+map J :updir; set dironly true; down; set dironly false; open
+map K :updir; set dironly true; up; set dironly false; open
+
+
+# Commands
+cmd mkdir %{{
+    IFS=" "
+    mkdir -p -- "$*"
+    lf -remote "send $id select \"$*\""
+}}
+
+cmd touch %{{
+    IFS=" "
+    touch -- "$*"
+    lf -remote "send $id select \"$*\""
+}}
+

@@ -15,6 +15,9 @@ ln -fns $(pwd)/terminal/lfcd.fish ~/.config/fish/functions
 mkdir -p ~/.config/tmux
 ln -fns $(pwd)/terminal/tmux.conf ~/.config/tmux/tmux.conf
 
+mkdir -p ~/.config/lf
+ln -fns $(pwd)/terminal/lfrc ~/.config/lf/lfrc
+
 ln -fns $(pwd)/idea/.ideavimrc ~/.ideavimrc
 
 ln -fns $(pwd)/mac/.amethyst.yml ~/.amethyst.yml

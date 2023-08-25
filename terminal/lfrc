@@ -19,6 +19,7 @@ map d :delete
 map i :invert
 map v $less $f
 map f :fzf_select
+map gp cd ~/Projects
 
 map <c-c> :copy_to_clipboard
 

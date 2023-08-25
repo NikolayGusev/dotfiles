@@ -1,9 +1,7 @@
 # https://pkg.go.dev/github.com/gokcehan/lf#hdr-Configuration
 
 # TODO
-# open in nvim?
 # open directory in nvim?
-# proper rename, e.g. in vim?
 # learn how to push and pop, use cmd+[ and cmd+] to jump around?
 
 # Use the `dim` attribute instead of underline for the cursor in the preview pane

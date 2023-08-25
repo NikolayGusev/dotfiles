@@ -5,6 +5,8 @@
 # fzf to change path?
 # open in nvim?
 # open directory in nvim?
+# proper rename, e.g. in vim?
+# learn how to push and pop, use cmd+[ and cmd+] to jump around?
 
 # Use the `dim` attribute instead of underline for the cursor in the preview pane
 set cursorpreviewfmt "\033[7;2m"
@@ -18,6 +20,11 @@ map x :cut
 map d :delete
 map i :invert
 map v $less $f
+
+map <c-c> :copy_to_clipboard
+
+map gyy :yank-path
+map gyd :yank-dirname
 
 # move to sibling dir
 map J :updir; set dironly true; down; set dironly false; open
@@ -35,5 +42,21 @@ cmd touch %{{
     IFS=" "
     touch -- "$*"
     lf -remote "send $id select \"$*\""
+}}
+
+cmd yank-path %{{
+    if type pbcopy > /dev/null 2>&1; then
+	    printf '%s' "$f" | pbcopy
+    elif type xsel > /dev/null 2>&1; then
+	    printf '%s' "$f" | xsel -ib
+    fi
+}}
+
+cmd yank-dirname %{{
+    if type pbcopy > /dev/null 2>&1; then
+	    printf '%s' "$(dirname $f)" | pbcopy
+    elif type xsel > /dev/null 2>&1; then
+	    printf '%s' "$(dirname $f)" | xsel -ib
+    fi
 }}
 

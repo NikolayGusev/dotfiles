@@ -1,6 +1,5 @@
 #! /bin/bash
 
-
 mkdir -p ~/.config/nvim
 ln -fns $(pwd)/nvim/init.lua ~/.config/nvim/init.lua
 ln -fns $(pwd)/nvim/lazy-lock.json ~/.config/nvim/lazy-lock.json

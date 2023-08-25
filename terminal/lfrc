@@ -1,8 +1,6 @@
 # https://pkg.go.dev/github.com/gokcehan/lf#hdr-Configuration
 
 # TODO
-# fzf in current path
-# fzf to change path?
 # open in nvim?
 # open directory in nvim?
 # proper rename, e.g. in vim?
@@ -20,6 +18,7 @@ map x :cut
 map d :delete
 map i :invert
 map v $less $f
+map f :fzf_select
 
 map <c-c> :copy_to_clipboard
 
@@ -60,3 +59,8 @@ cmd yank-dirname %{{
     fi
 }}
 
+cmd fzf_select ${{
+    local selection
+    selection=$(fzf)
+    lf -remote "send $id select \"$selection\""
+}}

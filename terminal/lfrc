@@ -1,11 +1,7 @@
 # https://pkg.go.dev/github.com/gokcehan/lf#hdr-Configuration
 
-# TODO
-# learn how to push and pop, use cmd+[ and cmd+] to jump around?
-
 # Use the `dim` attribute instead of underline for the cursor in the preview pane
 set cursorpreviewfmt "\033[7;2m"
-#set cursorpreviewfmt "\033[7;90m"
 
 set scrolloff 5
 

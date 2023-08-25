@@ -38,3 +38,5 @@ code --install-extension VSpaceCode.vspacecode
 code --install-extension VSpaceCode.whichkey
 code --install-extension XadillaX.viml
 code --install-extension zenclabs.previewjs
+
+code --uninstall-extension vscodevim.vim

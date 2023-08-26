@@ -152,11 +152,16 @@ require('lazy').setup({
       },
 
       keymaps = {
+        ["g?"] = "actions.show_help",
+        ["<CR>"] = "actions.select",
+        ["-"] = "actions.parent",
+        ["_"] = "actions.open_cwd",
         ["<C-p>"] = "actions.preview_scroll_up",
         ["<C-n>"] = "actions.preview_scroll_down",
         ["gh"] = "actions.preview",
         ["<space>f"] = ":lua require('lf').start(require('oil').get_current_dir())<CR>",
       },
+      use_default_keymaps = false,
       view_options = {
         show_hidden = true, -- Show files and directories that start with "."
       }

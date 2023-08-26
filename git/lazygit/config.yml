@@ -18,6 +18,7 @@ git:
   branchLogCmd: "bash -c 'git diff --word-diff=color $(git merge-base {{branchName}} origin/master) {{branchName}}'"
   allBranchesLogCmd: "git log --all --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline --"
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
+quitOnTopLevelReturn: true
 keybinding:
   universal:
     prevItem: null #override up/down to move commits in commits pane

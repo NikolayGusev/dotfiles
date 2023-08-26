@@ -142,9 +142,8 @@ This is a minimalist config with nothing but crucial things and lazy loading.
 - Vimium
   - shift+w - open tab in a new window
 
-# Strategic
-
-- switch to lua and lazy.nvim - https://github.com/folke/lazy.nvim#-structuring-your-plugins
+# Keep autocentered after jump
+For future reference - https://github.com/nvim-telescope/telescope.nvim/issues/182#issuecomment-1160555013
 
 ## "Couldn't fix" issues
 

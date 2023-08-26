@@ -14,8 +14,9 @@ map v $less $f
 map E $$EDITOR "$(dirname $f)"     # seems unnecessary - it is better to open a new nvim session by "q" -> "cmd+n"
 map gp cd ~/Projects
 map f #unmap
-map ff :fzf_select
-map fg :rg_search_files_or_content
+map ff :fzf_select_file
+map fd :fzf_select_dir
+map fg :rg_search_files_or_content_exact
 
 map <c-c> :copy_to_clipboard
 
@@ -56,13 +57,19 @@ cmd yank-dirname %{{
     fi
 }}
 
-cmd fzf_select ${{
+cmd fzf_select_file ${{
     local selection
-    selection=$(find . -print | fzf) # search for both files and directories
+    selection=$(fzf)
     lf -remote "send $id select \"$selection\""
 }}
 
-cmd rg_search_files_or_content ${{
+cmd fzf_select_dir ${{
+    local selection
+    selection=$(find . -type d -print | fzf)
+    lf -remote "send $id select \"$selection\""
+}}
+
+cmd rg_search_files_or_content_exact ${{
     local selection
     # see https://github.com/junegunn/fzf/issues/2789#issuecomment-1097770616
     # ~3 - show file header

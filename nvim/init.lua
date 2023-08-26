@@ -101,7 +101,7 @@ require('lazy').setup({
       })
 
       if not vim.g.vscode then
-        map("n", "<space>ff", ":Lf<CR>", { desc = "Open LF" })
+        map("n", "<space>f", ":Lf<CR>", { desc = "Open LF" })
       end
     end,
     dependencies = { { "plenary.nvim" }, { "toggleterm.nvim" } }

@@ -91,7 +91,7 @@ key_bindings:
   - { chars: "\x02:", key: Semicolon, mods: Command } # enter the tmux command prompt
   - { chars: "\x02c", key: T, mods: Command } # create a new tmux window
   - { chars: "\x02S", key: T, mods: Command|Shift } # create a new tmux window
-  - { chars: "\x02x", key: W, mods: Command } # kill the current pane
+  - { chars: "\x02X", key: W, mods: Command } # kill the current pane
   - { chars: "\x02z", key: Z, mods: Command } # toggle zoom state of the current tmux pane
 
   # Rebind alt

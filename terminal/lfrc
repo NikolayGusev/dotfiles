@@ -65,7 +65,7 @@ cmd fzf_select_file ${{
 
 cmd fzf_select_dir ${{
     local selection
-    selection=$(find . -type d -print | fzf)
+    selection=$(fd -t d | fzf)
     lf -remote "send $id select \"$selection\""
 }}
 

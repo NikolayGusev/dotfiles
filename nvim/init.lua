@@ -135,6 +135,8 @@ require('lazy').setup({
               i = {
                 ["<esc>"] = actions.close,                 -- close dialog with single Esc
                 ["<C-c>"] = { "<esc>", type = "command" }, -- go to normal mode
+                ["<S-j>"] = actions.preview_scrolling_down,
+                ["<S-k>"] = actions.preview_scrolling_up,
               },
             },
           },

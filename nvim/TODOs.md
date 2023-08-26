@@ -1,3 +1,12 @@
+# Oil
+- Show preview automatically when there's enough space
+- <space>-f-f to open lf
+
+# bookmarks
+- cmd+1-0, cmd+shift+1-0
+  - tmux bookmarks instead?
+    - I don't care about nvim, probably I want to bind to both nvim files and to tmux
+
 # stop moving my cursor!
 Many commands move cursor as a side effect.
 - yank

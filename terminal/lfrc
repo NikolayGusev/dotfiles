@@ -58,15 +58,16 @@ cmd yank-dirname %{{
 
 cmd fzf_select ${{
     local selection
-    selection=$(fzf)
+    selection=$(find . -print | fzf) # search for both files and directories
     lf -remote "send $id select \"$selection\""
 }}
 
 cmd rg_search_files_or_content ${{
     local selection
     # see https://github.com/junegunn/fzf/issues/2789#issuecomment-1097770616
+    # ~3 - show file header
     selection=$(rg --line-number --with-filename . --color=always --field-match-separator ' '\
-	   | fzf --ansi --preview "bat --color=always {1} --highlight-line {2}" \
-	       --preview-window ~8,+{2}-5 | cut -d " " -f 1)
+	   | fzf --exact --ansi --preview "bat --color=always {1} --highlight-line {2}" \
+	       --preview-window ~3,+{2}-5 | cut -d " " -f 1)
     lf -remote "send $id select \"$selection\""
 }}

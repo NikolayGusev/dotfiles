@@ -23,7 +23,7 @@ keybinding:
   universal:
     prevItem: null #override up/down to move commits in commits pane
     nextItem: null #override up/down to move commits in commits pane
-    confirm: 'y'
+    confirm: 'y' # see https://github.com/jesseduffield/lazygit/issues/2611 for both enter and y option
   commits:
     moveDownCommit: '<down>' # move commit down one
     moveUpCommit: '<up>' # move commit up one

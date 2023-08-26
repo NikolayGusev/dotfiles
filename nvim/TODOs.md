@@ -1,7 +1,15 @@
+# stop moving my cursor!
+Many commands move cursor as a side effect.
+- yank
+- change/add/remove surrounding
+
+
 # Migrate my stuff to nvim kickstater config
 This is a minimalist config with nothing but crucial things and lazy loading.
 
 # General
+
+- yis - yank inside sentence - doesn't work
 
 - Stop jumping forward to another string when doing things like "va(" or "da("
 - Spider - see if it is possible now not to move along the words-in-words, only skip non letter symbols while jumping around

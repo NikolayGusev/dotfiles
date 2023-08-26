@@ -22,6 +22,7 @@ keybinding:
   universal:
     prevItem: null #override up/down to move commits in commits pane
     nextItem: null #override up/down to move commits in commits pane
+    confirm: 'y'
   commits:
     moveDownCommit: '<down>' # move commit down one
     moveUpCommit: '<up>' # move commit up one

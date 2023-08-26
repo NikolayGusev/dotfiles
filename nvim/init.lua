@@ -669,10 +669,9 @@ if not vim.g.vscode then
   map("n", "-", require("oil").open, { desc = "Open parent directory (oil)" })
 
   -- disable netrw
-  vim.g.loaded_netrw = 1
-  vim.g.loaded_netrwPlugin = 1
-
-  -- delete_to_trash option, add and test
+  -- disabling those breaks oil autocmd, else I can disable once again
+  -- vim.g.loaded_netrw = 1
+  -- vim.g.loaded_netrwPlugin = 1
 
   -- discard in oil preview with a "d" key
   vim.api.nvim_create_autocmd("FileType", {
@@ -804,5 +803,16 @@ vim.cmd([[
     autocmd FocusGained * checktime
   augroup END
 ]])
+
+vim.api.nvim_create_autocmd("User", {
+  pattern = "OilEnter",
+  callback = vim.schedule_wrap(function(args)
+    local oil = require("oil")
+    if vim.api.nvim_get_current_buf() == args.data.buf and oil.get_cursor_entry() then
+      oil.select({ preview = true })
+    end
+  end),
+})
+
 
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]

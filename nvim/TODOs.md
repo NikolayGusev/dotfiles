@@ -1,6 +1,3 @@
-# Oil
-- Show preview automatically when there's enough space
-
 # bookmarks
 - cmd+1-0, cmd+shift+1-0
   - tmux bookmarks instead?

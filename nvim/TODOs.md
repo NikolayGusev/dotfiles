@@ -1,6 +1,5 @@
 # Oil
 - Show preview automatically when there's enough space
-- <space>-f-f to open lf
 
 # bookmarks
 - cmd+1-0, cmd+shift+1-0

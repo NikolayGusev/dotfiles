@@ -155,6 +155,7 @@ require('lazy').setup({
         ["<C-p>"] = "actions.preview_scroll_up",
         ["<C-n>"] = "actions.preview_scroll_down",
         ["gh"] = "actions.preview",
+        ["<space>f"] = ":lua require('lf').start(require('oil').get_current_dir())<CR>",
       },
       view_options = {
         show_hidden = true, -- Show files and directories that start with "."

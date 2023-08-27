@@ -109,10 +109,21 @@ require('lazy').setup({
 
   {
     "nvim-telescope/telescope.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+
+      "debugloop/telescope-undo.nvim",
+    },
+  },
+
+  {
+    "nvim-telescope/telescope.nvim",
     tag = '0.1.1',
     config = function()
       if not vim.g.vscode then
         require('telescope').load_extension('fzf')
+        require("telescope").load_extension("undo")
+
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<space><space>', ':lua require"telescope.builtin".find_files({ hidden = true })<CR>', {})
         vim.keymap.set('n', '<space>bb', builtin.buffers, {})
@@ -120,7 +131,16 @@ require('lazy').setup({
 
         local actions = require("telescope.actions")
 
+
         require("telescope").setup({
+          extensions = {
+            undo = {
+              use_delta = true,
+              diff_context_lines = 7,
+              -- telescope-undo.nvim config, see below
+            },
+          },
+
           defaults = {
             file_ignore_patterns = { ".git/", "node_modules" },
             layout_config = {
@@ -824,6 +844,7 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    -- 1
   },
 }
 
@@ -835,7 +856,17 @@ vim.cmd([[
   augroup END
 ]])
 
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
+function format_with_undojoin()
+  local undotree = vim.fn.undotree()
+  if undotree.seq_last ~= undotree.seq_cur then
+    return -- don't try to format again if I tried to undo
+  end
+
+  vim.cmd('undojoin | lua vim.lsp.buf.format()')
+end
+
+vim.cmd [[autocmd BufWritePre * lua format_with_undojoin()]]
 
 -- Automatically load previous session when starting with no args
 if #vim.fn.argv() == 0 then

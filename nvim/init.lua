@@ -833,3 +833,11 @@ vim.cmd([[
 ]])
 
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
+-- Automatically load previous session when starting with no args
+if #vim.fn.argv() == 0 then
+  local session_file = vim.fn.getcwd() .. '/session.vim'
+  if vim.fn.filereadable(session_file) == 1 then
+    vim.cmd('source ' .. session_file)
+  end
+end

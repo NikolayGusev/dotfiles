@@ -102,6 +102,7 @@ require('lazy').setup({
 
       if not vim.g.vscode then
         map("n", "<space>lfcd", ":Lf<CR>", { desc = "Open LF" }) -- same as "lfcd<cr>" in shell (see Alacritty keymaps)
+        map("n", "<space>f", ":Lf<CR>", { desc = "Open LF" })
       end
     end,
     dependencies = { { "plenary.nvim" }, { "toggleterm.nvim" } }

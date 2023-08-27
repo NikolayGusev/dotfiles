@@ -64,7 +64,7 @@ key_bindings:
   - { chars: "\x02%", key: E, mods: Command|Shift } # split tmux window horizontally
   # - { chars: "\x02\x5b\x2f", key: F, mods: Command|Shift } # start tmux search mode
   - { chars: "\x02\x5b", key: F, mods: Command|Shift } # start tmux vi mode
-  - { chars: "lfcd\n", key: F, mods: Command } # open file manager 'gokcehan/lf'
+  - { chars: " lfcd\n", key: F, mods: Command } # open file manager 'gokcehan/lf', same as <space>lfcd in nvim
   - { chars: "nvim\n", key: N, mods: Command } # open neovim
   - { action: SpawnNewInstance, key: N, mods: Command|Shift } # new alacritty widnow
   # - { chars: "lazygit\n", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'

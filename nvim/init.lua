@@ -336,6 +336,9 @@ vim.opt.gdefault = true -- 'g' flag by default for replaces
 -- Format options come from this guy: formatoptions=jcroql Last set from /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/ftplugin/typescript.vim line 1
 vim.cmd([[autocmd FileType * setlocal formatoptions-=ro]])
 
+map("n", "q", ":q<CR>", {})
+map("v", "q", "<Esc>:q<CR>", {})
+map("n", "Q", "q", {})
 map("n", "gg", "gg0", {})
 map("n", "G", "G$", {})
 if vim.g.vscode then

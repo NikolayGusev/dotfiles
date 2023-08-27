@@ -232,6 +232,28 @@ require('lazy').setup({
   -- Practice vim
   { "ThePrimeagen/vim-be-good" },
 
+  {
+    "Pocco81/auto-save.nvim",
+    config = function()
+      require("auto-save").setup({
+        execution_message = {
+          message = function()
+            return ""
+          end,
+        },
+        condition = function(buf)
+          local path = vim.loop.cwd() .. "/.git"
+          local ok, err = vim.loop.fs_stat(path)
+          if not ok then
+            return false -- don't save when not in git repo
+          end
+
+          return true
+        end,
+      })
+    end
+  },
+
   -- Theme
   { "catppuccin/nvim",         name = "catppuccin" },
   -- Commands that only affect the selection, provides :B for visual commands and :S for visual searches.

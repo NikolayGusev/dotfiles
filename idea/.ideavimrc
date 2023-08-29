@@ -75,11 +75,11 @@ nnoremap d "_d
 nnoremap D "_D
 vnoremap d "_d
 
-nnoremap m ""d
-nnoremap M ""D
-vnoremap m ""d
-nnoremap mm ""dd
-vnoremap mm ""dd
+nnoremap m d
+nnoremap M D
+vnoremap m d
+nnoremap mm dd
+vnoremap mm dd
 
 
 " TODO: m to cut, d to delete

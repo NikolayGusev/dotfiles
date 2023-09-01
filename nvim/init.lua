@@ -127,7 +127,7 @@ require('lazy').setup({
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<space><space>', ':lua require"telescope.builtin".find_files({ hidden = true })<CR>', {})
-        vim.keymap.set('n', '<space>bb', builtin.buffers, {})
+        vim.keymap.set('n', '<space>bb', ':lua require"telescope.builtin".buffers({ sort_mru = true })<CR>', {})
         vim.keymap.set('n', '<space>g', builtin.live_grep, {})
 
         local actions = require("telescope.actions")

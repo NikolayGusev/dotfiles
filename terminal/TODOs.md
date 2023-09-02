@@ -1,6 +1,8 @@
-- Tmux shouldn't kill session on computer restart
-- Same hotkeys for lazygit and LF in nvim and in terminal.
-
+# Cheatsh in tmux with fzf
+- https://www.youtube.com/watch?v=hJzqEAf2U4I&t=530s
+- pipe into bat
+- show in tmux popup
+- map to cmd+h? That means that I have to unmap cmd+h from hide first.
 
 # navigation between vim and tmux
 

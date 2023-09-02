@@ -1,5 +1,7 @@
 #! /bin/bash
 
+chmod u+x $(pwd)/terminal/scripts/chtsh.sh
+
 mkdir -p ~/.config/nvim
 ln -fns $(pwd)/nvim/init.lua ~/.config/nvim/init.lua
 ln -fns $(pwd)/nvim/lazy-lock.json ~/.config/nvim/lazy-lock.json

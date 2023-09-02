@@ -56,6 +56,7 @@ key_bindings:
   - { chars: "\x029", key: Key9, mods: Command } #                ... 9
   # - { chars: "\x02n", key: K, mods: Control|Shift } # next window
   # - { chars: "\x02p", key: J, mods: Control|Shift } # prev window
+  - { chars: "\x02h", key: H, mods: Command } # edits current command in $EDITOR
   - { chars: "\x1bv", key: X, mods: Command } # edits current command in $EDITOR
   - { chars: "\x02e", key: X, mods: Command|Shift } # show current window output in $EDITOR
   - { chars: "\x02r", key: R, mods: Command|Shift } # rename the current tmux window

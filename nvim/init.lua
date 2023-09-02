@@ -359,7 +359,7 @@ vim.cmd([[autocmd FileType * setlocal formatoptions-=ro]])
 
 map("n", "q", ":q<CR>", {})
 map("v", "q", "<Esc>:q<CR>", {})
-map("n", "Q", "q", {})
+map("n", "Q", "q", { noremap = true })
 map("n", "gg", "gg0", {})
 map("n", "G", "G$", {})
 if vim.g.vscode then

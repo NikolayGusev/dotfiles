@@ -518,6 +518,29 @@ map("x", "m", "d", { nowait = true })
 map("n", "mm", "dd", {})
 map("n", "M", "D", {})
 
+-- Marks (see Alacritty as well)
+map("n", "<leader>ms1", "m1", { noremap = true })
+map("n", "<leader>ms2", "m2", { noremap = true })
+map("n", "<leader>ms3", "m3", { noremap = true })
+map("n", "<leader>ms4", "m4", { noremap = true })
+map("n", "<leader>ms5", "m5", { noremap = true })
+map("n", "<leader>ms6", "m6", { noremap = true })
+map("n", "<leader>ms7", "m7", { noremap = true })
+map("n", "<leader>ms8", "m8", { noremap = true })
+map("n", "<leader>ms9", "m9", { noremap = true })
+map("n", "<leader>ms0", "m0", { noremap = true })
+
+map("n", "<leader>mj1", "`1", { noremap = true })
+map("n", "<leader>mj2", "`2", { noremap = true })
+map("n", "<leader>mj3", "`3", { noremap = true })
+map("n", "<leader>mj4", "`4", { noremap = true })
+map("n", "<leader>mj5", "`5", { noremap = true })
+map("n", "<leader>mj6", "`6", { noremap = true })
+map("n", "<leader>mj7", "`7", { noremap = true })
+map("n", "<leader>mj8", "`8", { noremap = true })
+map("n", "<leader>mj9", "`9", { noremap = true })
+map("n", "<leader>mj0", "`0", { noremap = true })
+
 vim.opt.clipboard:append("unnamed") -- use the clipboards of vim and win
 -- This breaks vim-cool plugin:
 -- vim cool inserts "<Plug>(StopHL)" when I do "i" or "c" right after moving to the next result.

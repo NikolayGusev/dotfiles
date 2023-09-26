@@ -605,7 +605,11 @@ map("x", "Ik", "<Plug>(indent-object_blockwise-none-keep-end)", {})
 -- COLOR SCHEME
 
 vim.opt.termguicolors = true
-vim.cmd("colorscheme catppuccin")
+if vim.g.vscode then
+  vim.cmd("colorscheme catppuccin-latte")
+else
+  vim.cmd("colorscheme catppuccin")
+end
 
 vim.g.gruvbox_contrast_light = "hard" -- Light colors, values are soft/medium/hard
 

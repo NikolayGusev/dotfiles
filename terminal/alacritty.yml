@@ -94,7 +94,7 @@ key_bindings:
   - { chars: "\x02\x5b", key: F, mods: Command|Shift } # start tmux vi mode
   - { chars: " lfcd\n", key: F, mods: Command } # open file manager 'gokcehan/lf', same as <space>lfcd in nvim
   - { chars: "nvim\n", key: N, mods: Command } # open neovim
-  - { action: SpawnNewInstance, key: N, mods: Command|Shift } # new alacritty widnow
+  - { action: SpawnNewInstance, key: N, mods: Control|Command|Shift } # new alacritty widnow
   # - { chars: "lazygit\n", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
   - { chars: "\x02g", key: G, mods: Command } # open git manager 'jesseduffield/lazygit'
   # - { chars: "\x02\x54", key: J, mods: Command } # open t - tmux smart session manager

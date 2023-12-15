@@ -18,6 +18,7 @@ map ff :fzf_select_file
 map fd :fzf_select_dir
 map fg :rg_search_files_or_content_exact
 map <esc> quit
+map <enter> open
 
 map <c-c> :copy_to_clipboard
 

@@ -141,7 +141,7 @@ key_bindings:
   - { key: P,         mods: Alt,       chars: "\x1bp"                       }
   - { key: Q,         mods: Alt,       chars: "\x1bq"                       }
   - { key: R,         mods: Alt,       chars: "\x1br"                       }
-  - { key: S,         mods: Alt,       chars: "\x1bs"                       }
+    # - { key: S,         mods: Alt,       chars: "\x1bs"                       } # enable ß with alt+s. Note: by default alt+s repeats command with "sudo " prefix.
   - { key: T,         mods: Alt,       chars: "\x1bt"                       }
   - { key: U,         mods: Alt,       chars: "\x1bu"                       }
   - { key: V,         mods: Alt,       chars: "\x1bv"                       }

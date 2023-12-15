@@ -1,5 +1,7 @@
 os:
-  editCommand: 'code'
+  # editCommand: 'code'
+  editCommand: 'nvim'
+  editCommandTemplate: '{{editor}} -n "$(pwd)/{{filename}}"' # on "e" open file directly in  lazygit tmux tab
 notARepository: 'skip' # one of: 'prompt' | 'create' | 'skip' | 'quit'
 git:
   paging:

@@ -429,10 +429,22 @@ vim.g.clever_f_across_no_line = 1
 vim.g.clever_f_smart_case = 1
 
 -- nvim-spider
-map({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<CR>", { desc = "Spider-w" })
-map({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<CR>", { desc = "Spider-e" })
-map({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b')<CR>", { desc = "Spider-b" })
-map({ "n", "o", "x" }, "ge", "<cmd>lua require('spider').motion('ge')<CR>", { desc = "Spider-ge" })
+map({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w', {subwordMovement = false})<CR>",
+  { desc = "Spider-w" })
+map({ "n", "o", "x" }, "<leader>w", "<cmd>lua require('spider').motion('w')<CR>",
+  { desc = "Spider-w innerword" })
+map({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e', {subwordMovement = false})<CR>",
+  { desc = "Spider-e" })
+map({ "n", "o", "x" }, "<leader>e", "<cmd>lua require('spider').motion('e')<CR>",
+  { desc = "Spider-e innerword" })
+map({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b', {subwordMovement = false})<CR>",
+  { desc = "Spider-b" })
+map({ "n", "o", "x" }, "<leader>b", "<cmd>lua require('spider').motion('b')<CR>",
+  { desc = "Spider-b innerword" })
+map({ "n", "o", "x" }, "ge", "<cmd>lua require('spider').motion('ge', {subwordMovement = false})<CR>",
+  { desc = "Spider-ge" })
+map({ "n", "o", "x" }, "<leader>ge", "<cmd>lua require('spider').motion('ge')<CR>",
+  { desc = "Spider-ge innerword" })
 
 -- Sandwich
 vim.g.sandwich_recipes = vim.deepcopy(vim.g.sandwich_default_recipes)

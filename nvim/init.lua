@@ -32,7 +32,19 @@ require('lazy').setup({
     "folke/which-key.nvim",
     config = function() require("which-key").setup({}) end,
   },
-  { 'tpope/vim-sleuth' },        -- Detect tabstop and shiftwidth automatically
+  {
+    'tpope/vim-sleuth',
+    config = function()
+      -- These defaults are used when Sleuth didn't detect other styling
+      -- Use spaces instead of tabs
+      vim.o.expandtab = true
+
+      -- Set the number of spaces per tab
+      vim.o.tabstop = 4
+      vim.o.softtabstop = 4
+      vim.o.shiftwidth = 4
+    end
+  },                             -- Detect tabstop and shiftwidth automatically
   {
     'nvim-lualine/lualine.nvim', -- See `:help lualine.txt`
     opts = {
@@ -211,13 +223,13 @@ require('lazy').setup({
 
   -- targets
   { "machakann/vim-sandwich" },
-  { "julian/vim-textobj-variable-segment", dependencies = { { "kana/vim-textobj-user" }, } },
+  { "julian/vim-textobj-variable-segment",      dependencies = { { "kana/vim-textobj-user" }, } },
   { "urxvtcd/vim-indent-object" },
   { "wellle/targets.vim" },
-  { "D4KU/vim-textobj-chainmember",        dependencies = { { "kana/vim-textobj-user" }, } },
+  { "D4KU/vim-textobj-chainmember",             dependencies = { { "kana/vim-textobj-user" }, } },
 
   --nav
-  { "ggandor/leap.nvim",                   dependencies = { { "tpope/vim-repeat" }, } },
+  { "ggandor/leap.nvim",                        dependencies = { { "tpope/vim-repeat" }, } },
   { "rhysd/clever-f.vim" },
   -- Autoclear search (/) highlight when cursor moves.
   { "romainl/vim-cool" },

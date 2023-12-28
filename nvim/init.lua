@@ -383,9 +383,6 @@ if vim.g.vscode then
 
   map("n", ";", "<Cmd>call VSCodeNotify('editor.action.quickFix')<CR>", {})
   map("v", ";", "<Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>", {})
-else
-  map('n', ';', vim.lsp.buf.code_action, { noremap = true, silent = true })
-  map('v', ';', vim.lsp.buf.code_action, { noremap = true, silent = true })
 end
 
 
@@ -767,6 +764,10 @@ require("lsp_signature").setup({})
 
 if not vim.g.vscode then
   map('n', '<space>xr', vim.lsp.buf.rename, { desc = '[x]Refactoring [R]ename' })
+
+  map('n', ';', vim.lsp.buf.code_action, { noremap = true, silent = true })
+  map('v', ';', vim.lsp.buf.code_action, { noremap = true, silent = true })
+
   map('n', 'gd', vim.lsp.buf.definition, { desc = '[G]oto [D]efinition' })
   map('n', 'gD', require('telescope.builtin').lsp_references, { desc = 'Goto references' })
   map('n', 'gh', vim.lsp.buf.hover, { desc = '[H]over Documentation' })

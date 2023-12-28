@@ -377,13 +377,20 @@ map("n", "G", "G$", {})
 if vim.g.vscode then
   map("n", "<S-L>", "<C-d>zz", {})
   map("n", "<S-H>", "<C-u>zz", {})
+
+  map("n", "J", "<Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>", {})
+  map("n", "K", "<Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>", {})
+
+  map("n", ";", "<Cmd>call VSCodeNotify('editor.action.quickFix')<CR>", {})
+  map("v", ";", "<Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>", {})
+else
+  map('n', ';', vim.lsp.buf.code_action, { noremap = true, silent = true })
+  map('v', ';', vim.lsp.buf.code_action, { noremap = true, silent = true })
 end
-map("n", "J", "<Cmd>call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>", {})
-map("n", "K", "<Cmd>call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>", {})
+
+
 map("v", "<", "<gv", {})
 map("v", ">", ">gv", {})
-map("n", ";", "<Cmd>call VSCodeNotify('editor.action.quickFix')<CR>", {})
-map("v", ";", "<Cmd>call VSCodeCallVisual('editor.action.quickFix', 1)<CR>", {})
 map("v", "<leader>f", "<Cmd>call VSCodeCallVisual('multiCommand.searchSelected', 1)<CR><Esc>", {})
 
 map("n", "<C-d>", ":.t-1<CR>", { desc = "Duplicate row" })

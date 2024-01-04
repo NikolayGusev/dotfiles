@@ -307,6 +307,12 @@ require('lazy').setup({
   { "mizlan/iswap.nvim" },
   { "AckslD/nvim-trevJ.lua" },
 
+  { "williamboman/mason.nvim" },
+  { "mfussenegger/nvim-dap" },
+  { "rcarriga/nvim-dap-ui" },
+  { "jay-babu/mason-nvim-dap.nvim" },
+
+
   -- lsp
   {
     -- LSP Configuration & Plugins
@@ -362,8 +368,6 @@ if not vim.g.vscode then
   map('n', 'L', "<C-d>", { silent = true, noremap = true })
   map('n', 'H', "<C-u>", { silent = true, noremap = true })
 end
-
-
 
 vim.opt.gdefault = true -- 'g' flag by default for replaces
 -- Format options come from this guy: formatoptions=jcroql Last set from /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/ftplugin/typescript.vim line 1
@@ -945,3 +949,83 @@ if #vim.fn.argv() == 0 then
     vim.cmd('source ' .. session_file)
   end
 end
+
+
+
+
+-- DAP
+require("mason").setup()
+require("mason-nvim-dap").setup({
+  -- ensure_installed = { "js@1.76.1" }
+  ensure_installed = { "js" }
+})
+
+
+local dap = require('dap')
+require("dapui").setup()
+
+dap.adapters["pwa-node"] = {
+  type = "server",
+  host = "localhost",
+  port = "${port}", --let both ports be the same for now...
+  executable = {
+    command = "node",
+    -- -- 💀 Make sure to update this path to point to your installation
+    args = { vim.fn.stdpath('data') .. "/mason/packages/js-debug-adapter/js-debug/src/dapDebugServer.js", "${port}" },
+  },
+}
+
+dap.configurations.javascript = {
+  {
+    type = 'pwa-node',
+    request = 'launch',
+    name = 'Launch Current File (pwa-node)',
+    cwd = "${workspaceFolder}", -- vim.fn.getcwd(),
+    args = { '${file}' },
+    sourceMaps = true,
+    protocol = 'inspector',
+  }
+}
+
+dap.configurations.typescript = {
+  {
+    type = 'pwa-node',
+    request = 'launch',
+    name = 'Launch Current File (Typescript)',
+    cwd = "${workspaceFolder}",
+    runtimeArgs = { '--loader=ts-node/esm' },
+    program = "${file}",
+    runtimeExecutable = 'node',
+    -- args = { '${file}' },
+    sourceMaps = true,
+    protocol = 'inspector',
+    outFiles = { "${workspaceFolder}/**/**/*", "!**/node_modules/**" },
+    skipFiles = { '<node_internals>/**', 'node_modules/**' },
+    resolveSourceMapLocations = {
+      "${workspaceFolder}/**",
+      "!**/node_modules/**",
+    },
+  }
+}
+
+dap.listeners.after.event_initialized["dapui_config"] = function()
+  require("dapui").open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+  require("dapui").close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+  require("dapui").close()
+end
+
+if not vim.g.vscode then
+  map("n", "<space>db", ':DapToggleBreakpoint<CR>')
+  map("n", "<space>dt", function() require("dapui").toggle() end)
+  map("n", "<space>dc", ':DapContinue<CR>') -- This also starts a debugger
+  map("n", "<space>dx", ':DapTerminate<CR>')
+  map("n", "<space>ds", ':DapStepOver<CR>')
+  map("n", "<space>do", ':DapStepOut<CR>')
+  map("n", "<space>di", ':DapStepInto<CR>')
+  map("n", "<space>dj", function() require("dap").run_to_cursor() end)
+end
+-- End DAP

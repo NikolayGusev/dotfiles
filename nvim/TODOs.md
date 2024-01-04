@@ -3,6 +3,14 @@
   - tmux bookmarks instead?
     - I don't care about nvim, probably I want to bind to both nvim files and to tmux
 
+# DAP
+- How to input stop condition for the breakpoint?
+- Save breakpoints between nvim restarts.
+- when debugger breaks due to some error (like assignment to const) it should tell me something, ideally stop and show an error
+- inline virtual text for values 
+- https://github.com/rcarriga/nvim-dap-ui#floating-elements
+- debug ts files that import other files
+
 # stop moving my cursor!
 Many commands move cursor as a side effect.
 - yank

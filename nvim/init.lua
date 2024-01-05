@@ -957,8 +957,7 @@ end
 -- DAP
 require("mason").setup()
 require("mason-nvim-dap").setup({
-  -- ensure_installed = { "js@1.76.1" }
-  ensure_installed = { "js" }
+  ensure_installed = { "js", "codelldb" }
 })
 require("nvim-dap-virtual-text").setup()
 
@@ -975,6 +974,25 @@ dap.adapters["pwa-node"] = {
     args = {
       require('mason-registry').get_package('js-debug-adapter'):get_install_path() .. '/js-debug/src/dapDebugServer.js',
       "${port}" },
+  },
+}
+
+dap.adapters.lldb = {
+  type = 'server',
+  port = '${port}',
+  name = "lldb",
+  executable = {
+    command = "codelldb",
+    args = { "--port", "${port}" },
+  },
+}
+
+dap.configurations.rust = {
+  {
+    name = "Launch",
+    type = "lldb",
+    request = "launch",
+    program = "${workspaceFolder}/target/debug/temp-rust-experiments",
   },
 }
 

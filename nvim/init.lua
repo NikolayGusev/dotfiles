@@ -831,6 +831,7 @@ local servers = {
   -- TODO: use this settings to make eslint work in mono-repo
   -- https://www.reddit.com/r/neovim/comments/12fxw01/lsp_hell_with_eslint_linterformater/
   eslint = {},
+  rust_analyzer = {},
 
   lua_ls = {
     Lua = {

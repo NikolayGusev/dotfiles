@@ -311,6 +311,7 @@ require('lazy').setup({
   { "mfussenegger/nvim-dap" },
   { "rcarriga/nvim-dap-ui" },
   { "jay-babu/mason-nvim-dap.nvim" },
+  { "theHamsta/nvim-dap-virtual-text" },
 
 
   -- lsp
@@ -959,6 +960,7 @@ require("mason-nvim-dap").setup({
   -- ensure_installed = { "js@1.76.1" }
   ensure_installed = { "js" }
 })
+require("nvim-dap-virtual-text").setup()
 
 
 local dap = require('dap')

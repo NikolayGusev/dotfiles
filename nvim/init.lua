@@ -774,6 +774,7 @@ if not vim.g.vscode then
   map('v', ';', vim.lsp.buf.code_action, { noremap = true, silent = true })
 
   map('n', 'gd', vim.lsp.buf.definition, { desc = '[G]oto [D]efinition' })
+  map('n', 'gE', vim.diagnostic.open_float, { desc = '[G]oto [E]rror' })
   -- TODO: how do I ignore usages in import statements in typescript?
   map('n', 'gD', function() require('telescope.builtin').lsp_references({ include_declaration = false }) end,
     { desc = 'Goto references' })

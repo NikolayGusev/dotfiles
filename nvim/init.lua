@@ -833,6 +833,7 @@ local servers = {
   -- https://www.reddit.com/r/neovim/comments/12fxw01/lsp_hell_with_eslint_linterformater/
   eslint = {},
   rust_analyzer = {},
+  marksman = {},
 
   lua_ls = {
     Lua = {
